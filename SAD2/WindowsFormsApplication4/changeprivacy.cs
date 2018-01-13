@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -32,13 +32,36 @@ namespace WindowsFormsApplication4
             string npass = newp.Text;
             string rpass = retype.Text;
             string query = "";
-            if (rpass == npass)
+            string query1 = "SELECT * FROM login";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query1, conn);
+            MySqlDataAdapter member = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            member.Fill(dt);
+            if (String.IsNullOrEmpty(old.Text) &&
+                String.IsNullOrEmpty(newp.Text) &&
+                String.IsNullOrEmpty(retype.Text))
             {
-                query += "UPDATE user SET password='" + rpass + "' WHERE password='" + old.Text + "'; ";
-                MessageBox.Show("Password successfuly changed.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Please fill all what is required.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else MessageBox.Show("Password does not match!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            executeQuery(query);
+            else if (old.Text != dt.Rows[0][2].ToString())
+            {
+                MessageBox.Show("Password is incorrect.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (rpass == npass)
+                {
+                    query += "UPDATE login SET password='" + rpass + "' WHERE password='" + old.Text + "'; ";
+                    MessageBox.Show("Password successfuly changed.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    executeQuery(query);
+                }
+                else
+                {
+                    MessageBox.Show("Password does not match!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
         }
     }
 }
