@@ -39,8 +39,14 @@ namespace WindowsFormsApplication4
 
         private void logout_Click(object sender, EventArgs e)
         {
-            this.Close();
-            previousform.Show();
+             DialogResult dialog = MessageBox.Show("Are you sure you want to log out?",
+          "Log Out", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                this.Close();
+                Form1 a = new Form1();
+                a.Show();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
