@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +23,7 @@ namespace WindowsFormsApplication4
             conn = new MySqlConnection("server=localhost;Database=final;uid=root; Pwd = root;");
             sidepanel.Height = button1.Height;
             sidepanel.Top = button1.Top;
-            userControl11.BringToFront();
+            prodcategory1.BringToFront();
 
         }
 
@@ -39,7 +39,7 @@ namespace WindowsFormsApplication4
 
         private void logout_Click(object sender, EventArgs e)
         {
-             DialogResult dialog = MessageBox.Show("Are you sure you want to log out?",
+            DialogResult dialog = MessageBox.Show("Are you sure you want to log out?",
           "Log Out", MessageBoxButtons.YesNo);
             if (dialog == DialogResult.Yes)
             {
@@ -47,13 +47,14 @@ namespace WindowsFormsApplication4
                 Form1 a = new Form1();
                 a.Show();
             }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
              sidepanel.Height = button1.Height;
             sidepanel.Top = button1.Top;
-            userControl11.BringToFront();
+            prodcategory1.BringToFront();
         }
 
         private void button5_Click(object sender, EventArgs e)
