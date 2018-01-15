@@ -42,73 +42,19 @@ namespace WindowsFormsApplication4
 
         private void textBox1_Click(object sender, EventArgs e)
         {
-            if (firstname.Text == "Firstname")
-            {
-                firstname.Text = "";
-            }
-            if (lastname.Text == "")
-            {
-                lastname.Text = "Lastname";
 
-            }
-            if (gender.Text == "")
-            {
-                gender.Text = "Gender";
-            }
-            if (email.Text == "")
-            {
-                email.Text = "Email";
-            }
-            if (contact.Text == "")
-            {
-                contact.Text = "###-####-####";
-            }
 
         }
 
         private void textBox2_Click(object sender, EventArgs e)
         {
-            if (firstname.Text == "")
-            {
-                firstname.Text = "Firstname";
-            }
-            if (lastname.Text == "Lastname")
-            {
-                lastname.Text = "";
-            }
-            if (gender.Text == "")
-            {
-                gender.Text = "Gender";
-            }
-            if (contact.Text == "")
-            {
-                contact.Text = "###-####-####";
-            }
+
 
         }
 
         private void textBox3_Click(object sender, EventArgs e)
         {
-            if (firstname.Text == "")
-            {
-                firstname.Text = "Firstname";
-            }
-            if (lastname.Text == "")
-            {
-                lastname.Text = "Lastname";
-            }
-            if (gender.Text == "")
-            {
-                gender.Text = "Gender";
-            }
-            if (email.Text == "")
-            {
-                email.Text = "Email";
-            }
-            if (contact.Text == "")
-            {
-                contact.Text = "###-####-####";
-            }
+ 
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
@@ -143,51 +89,14 @@ namespace WindowsFormsApplication4
 
         private void contact_Click(object sender, EventArgs e)
         {
-            if (firstname.Text == "")
-            {
-                firstname.Text = "Firstname";
-            }
-            if (lastname.Text == "")
-            {
-                lastname.Text = "Lastname";
-            }
-            if (gender.Text == "")
-            {
-                gender.Text = "Gender";
-            }
-            if (email.Text == "")
-            {
-                email.Text = "Email";
-            }
-            if (contact.Text == "###-####-####")
-            {
-                contact.Text = "";
-            }
+
+
            
         }
 
         private void gender_Click(object sender, EventArgs e)
         {
-            if (firstname.Text == "")
-            {
-                firstname.Text = "Firstname";
-            }
-            if (lastname.Text == "")
-            {
-                lastname.Text = "Lastname";
-            }
-            if (gender.Text == "Gender")
-            {
-                gender.Text = "";
-            }
-            if (email.Text == "")
-            {
-                email.Text = "Email";
-            }
-            if (contact.Text == "")
-            {
-                contact.Text = "###-####-####";
-            }
+
            
         }
 
@@ -260,6 +169,17 @@ namespace WindowsFormsApplication4
                 usertype.Text = dataGridView1.Rows[e.RowIndex].Cells["type"].Value.ToString();
                 select_login_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["login_login_id"].Value.ToString());
             }
+        }
+
+        private void UserControl2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form3 a = new Form3();
+            a.Show();
         }
     }
 }
