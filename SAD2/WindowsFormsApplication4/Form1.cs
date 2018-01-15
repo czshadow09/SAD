@@ -24,7 +24,7 @@ namespace WindowsFormsApplication4
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void btnuser_TextChanged(object sender, EventArgs e)
