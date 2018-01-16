@@ -14,21 +14,28 @@ namespace WindowsFormsApplication4
     public partial class UserControl2 : UserControl
     {
         MySqlConnection conn;
-        
+
+        public Form prevform { get; set; }
+
         public UserControl2()
         {
             InitializeComponent();
             conn = new MySqlConnection("server=localhost;Database=final;uid=root; Pwd = root;");
 
         }
-        
+        public void getText(string text)
+        {
+            username.Text = text;
+        }
         private void executeQuery(string q)
         {
             conn.Open();
             MySqlCommand comm = new MySqlCommand(q, conn);
             comm.ExecuteNonQuery();
             conn.Close();
+            loadAll();
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -117,6 +124,7 @@ namespace WindowsFormsApplication4
             dataGridView1.DataSource = dt;
             dataGridView1.Columns["user_id"].Visible = false;
             dataGridView1.Columns["login_login_id"].Visible = false;
+            dataGridView1.Columns["password"].Visible = false;
             dataGridView1.Columns["login_id"].Visible = false;
             dataGridView1.Columns["firstname"].HeaderText = "First Name";
             dataGridView1.Columns["lastname"].HeaderText = "Last Name";
@@ -150,8 +158,11 @@ namespace WindowsFormsApplication4
                 {
                     Form3 a = new Form3();
                     a.Show();
+                    string query1 = "INSERT INTO user(firstname, lastname, gender, contact, email, type, login_login_id) values('" + firstname.Text + "', '" + lastname.Text + "' , '" + gender.Text + "' , '" + contact.Text + "' , '" + email.Text + "' , '" + usertype.Text + "' , (select login_id from login where username= '" + username.Text + "'))";
+                    executeQuery(query1);
                 }
             }
+
         }
        
         private int select_user_id;
@@ -173,7 +184,7 @@ namespace WindowsFormsApplication4
 
         private void UserControl2_Load(object sender, EventArgs e)
         {
-
+            loadAll();
         }
 
         private void button1_Click(object sender, EventArgs e)
