@@ -23,7 +23,7 @@ namespace WindowsFormsApplication4
             conn = new MySqlConnection("server=localhost;Database=final;uid=root; Pwd = root;");
             sidepanel.Height = button1.Height;
             sidepanel.Top = button1.Top;
-            prodcategory1.BringToFront();
+            userControl11.BringToFront();
 
         }
 
@@ -54,7 +54,7 @@ namespace WindowsFormsApplication4
         {
              sidepanel.Height = button1.Height;
             sidepanel.Top = button1.Top;
-            prodcategory1.BringToFront();
+            userControl11.BringToFront();
         }
 
         private void button5_Click(object sender, EventArgs e)
