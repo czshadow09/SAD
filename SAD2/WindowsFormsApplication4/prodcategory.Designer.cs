@@ -29,12 +29,11 @@ namespace WindowsFormsApplication4
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(prodcategory));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.category = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,10 +48,12 @@ namespace WindowsFormsApplication4
             this.Pprice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Update = new System.Windows.Forms.Button();
-            this.Add = new System.Windows.Forms.Button();
             this.categ = new System.Windows.Forms.TextBox();
             this.desc = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.category)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -63,7 +64,7 @@ namespace WindowsFormsApplication4
             // 
             this.category.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.category.Location = new System.Drawing.Point(195, 130);
-            this.category.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.category.Margin = new System.Windows.Forms.Padding(4);
             this.category.Name = "category";
             this.category.Size = new System.Drawing.Size(636, 417);
             this.category.TabIndex = 0;
@@ -83,18 +84,18 @@ namespace WindowsFormsApplication4
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.Location = new System.Drawing.Point(427, 42);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
@@ -103,21 +104,6 @@ namespace WindowsFormsApplication4
             this.dataGridView1.Size = new System.Drawing.Size(595, 640);
             this.dataGridView1.TabIndex = 51;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // button3
-            // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(357, 604);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(63, 57);
-            this.button3.TabIndex = 60;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // search
             // 
@@ -173,6 +159,10 @@ namespace WindowsFormsApplication4
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.quan);
             this.panel2.Controls.Add(this.label6);
@@ -181,12 +171,9 @@ namespace WindowsFormsApplication4
             this.panel2.Controls.Add(this.Pprice);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.Update);
-            this.panel2.Controls.Add(this.Add);
             this.panel2.Controls.Add(this.categ);
             this.panel2.Controls.Add(this.desc);
             this.panel2.Controls.Add(this.dataGridView1);
-            this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.search);
             this.panel2.Controls.Add(this.id);
             this.panel2.Controls.Add(this.label2);
@@ -204,7 +191,7 @@ namespace WindowsFormsApplication4
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(24, 395);
+            this.label7.Location = new System.Drawing.Point(24, 388);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(107, 28);
             this.label7.TabIndex = 84;
@@ -214,7 +201,7 @@ namespace WindowsFormsApplication4
             // 
             this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quan.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.quan.Location = new System.Drawing.Point(29, 425);
+            this.quan.Location = new System.Drawing.Point(29, 418);
             this.quan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(375, 34);
@@ -225,7 +212,7 @@ namespace WindowsFormsApplication4
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(24, 313);
+            this.label6.Location = new System.Drawing.Point(24, 306);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(132, 28);
             this.label6.TabIndex = 82;
@@ -235,7 +222,7 @@ namespace WindowsFormsApplication4
             // 
             this.Sprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sprice.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Sprice.Location = new System.Drawing.Point(29, 342);
+            this.Sprice.Location = new System.Drawing.Point(29, 335);
             this.Sprice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Sprice.Name = "Sprice";
             this.Sprice.Size = new System.Drawing.Size(375, 34);
@@ -246,7 +233,7 @@ namespace WindowsFormsApplication4
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(24, 231);
+            this.label5.Location = new System.Drawing.Point(24, 224);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(172, 28);
             this.label5.TabIndex = 80;
@@ -256,7 +243,7 @@ namespace WindowsFormsApplication4
             // 
             this.Pprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pprice.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.Pprice.Location = new System.Drawing.Point(29, 261);
+            this.Pprice.Location = new System.Drawing.Point(29, 254);
             this.Pprice.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Pprice.Name = "Pprice";
             this.Pprice.Size = new System.Drawing.Size(375, 34);
@@ -267,7 +254,7 @@ namespace WindowsFormsApplication4
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(24, 153);
+            this.label4.Location = new System.Drawing.Point(24, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(111, 28);
             this.label4.TabIndex = 78;
@@ -278,51 +265,17 @@ namespace WindowsFormsApplication4
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(24, 71);
+            this.label3.Location = new System.Drawing.Point(24, 64);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 28);
             this.label3.TabIndex = 77;
             this.label3.Text = "Description:";
             // 
-            // Update
-            // 
-            this.Update.FlatAppearance.BorderSize = 0;
-            this.Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Update.Location = new System.Drawing.Point(194, 512);
-            this.Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(179, 69);
-            this.Update.TabIndex = 75;
-            this.Update.Text = "Update";
-            this.Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Update.UseVisualStyleBackColor = true;
-            this.Update.Click += new System.EventHandler(this.Update_Click);
-            // 
-            // Add
-            // 
-            this.Add.FlatAppearance.BorderSize = 0;
-            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(29, 512);
-            this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(143, 66);
-            this.Add.TabIndex = 74;
-            this.Add.Text = " Add";
-            this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
-            // 
             // categ
             // 
             this.categ.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categ.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.categ.Location = new System.Drawing.Point(29, 182);
+            this.categ.Location = new System.Drawing.Point(29, 175);
             this.categ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.categ.Name = "categ";
             this.categ.Size = new System.Drawing.Size(375, 34);
@@ -332,11 +285,80 @@ namespace WindowsFormsApplication4
             // 
             this.desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.desc.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.desc.Location = new System.Drawing.Point(29, 101);
+            this.desc.Location = new System.Drawing.Point(29, 94);
             this.desc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.desc.Name = "desc";
             this.desc.Size = new System.Drawing.Size(375, 34);
             this.desc.TabIndex = 72;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(104, 527);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(192, 84);
+            this.button4.TabIndex = 85;
+            this.button4.Text = "Add Category";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(359, 606);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(63, 57);
+            this.button2.TabIndex = 88;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(213, 461);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(179, 69);
+            this.button5.TabIndex = 87;
+            this.button5.Text = "Update";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(47, 461);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(143, 67);
+            this.button6.TabIndex = 86;
+            this.button6.Text = " Add";
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // prodcategory
             // 
@@ -346,7 +368,7 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.category);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "prodcategory";
             this.Size = new System.Drawing.Size(1021, 682);
             this.Load += new System.EventHandler(this.prodcategory_Load);
@@ -364,7 +386,6 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.DataGridView category;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox search;
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label2;
@@ -373,8 +394,6 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button Update;
-        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.TextBox categ;
         private System.Windows.Forms.TextBox desc;
         private System.Windows.Forms.Label label6;
@@ -383,5 +402,9 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.TextBox Pprice;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox quan;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
