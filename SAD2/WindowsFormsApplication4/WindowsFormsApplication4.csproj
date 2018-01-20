@@ -66,11 +66,17 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="addcategoryp.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="addcategoryp.Designer.cs">
+      <DependentUpon>addcategoryp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In.Designer.cs">
+      <DependentUpon>In.cs</DependentUpon>
     </Compile>
     <Compile Include="home.cs">
       <SubType>UserControl</SubType>
@@ -83,6 +89,12 @@
     </Compile>
     <Compile Include="inventory.Designer.cs">
       <DependentUpon>inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Out.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Out.Designer.cs">
+      <DependentUpon>Out.cs</DependentUpon>
     </Compile>
     <Compile Include="prodcategory.cs">
       <SubType>UserControl</SubType>
@@ -113,8 +125,11 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="addcategoryp.resx">
+      <DependentUpon>addcategoryp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="In.resx">
+      <DependentUpon>In.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="home.resx">
       <DependentUpon>home.cs</DependentUpon>
@@ -122,8 +137,12 @@
     <EmbeddedResource Include="inventory.resx">
       <DependentUpon>inventory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Out.resx">
+      <DependentUpon>Out.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="prodcategory.resx">
       <DependentUpon>prodcategory.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,6 +152,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
@@ -152,6 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel-48.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
