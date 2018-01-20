@@ -30,11 +30,13 @@ namespace WindowsFormsApplication4
         private void btnuser_TextChanged(object sender, EventArgs e)
         {
             btnuser.ForeColor = Color.Black;
+            this.AcceptButton = btnok;
         }
 
         private void btnpass_TextChanged(object sender, EventArgs e)
         {
             btnpass.ForeColor = Color.Black;
+            this.AcceptButton = btnok;
         }
 
         private void btnuser_Click(object sender, EventArgs e)
