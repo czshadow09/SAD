@@ -67,11 +67,7 @@ namespace WindowsFormsApplication4
             conn.Close();
             DataTable dt = new DataTable();
             user.Fill(dt);
-            if (String.IsNullOrEmpty(desc.Text) || String.IsNullOrEmpty(categ.Text) || String.IsNullOrEmpty(Pprice.Text) || String.IsNullOrEmpty(Sprice.Text) || String.IsNullOrEmpty(quan.Text))
-            {
-                MessageBox.Show("Please fill up all the fields.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
+            if (!String.IsNullOrEmpty(desc.Text) && !String.IsNullOrEmpty(categ.Text))
             {
                 if (dt.Rows.Count >= 1) MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
@@ -86,21 +82,21 @@ namespace WindowsFormsApplication4
         private void Update_Click(object sender, EventArgs e)
         {
             string query = "";
-            string query2 = "SELECT description FROM product WHERE product_id='" + id.Text + "' ";
+            string query2 = "SELECT description FROM product WHERE description='" + desc.Text + "' ";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query2, conn);
             MySqlDataAdapter user = new MySqlDataAdapter(com);
             conn.Close();
             DataTable dt = new DataTable();
             user.Fill(dt);
-            if (String.IsNullOrEmpty(id.Text) || String.IsNullOrEmpty(desc.Text) || String.IsNullOrEmpty(categ.Text) || String.IsNullOrEmpty(Pprice.Text) || String.IsNullOrEmpty(Sprice.Text))
-                MessageBox.Show("Please choose a product by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (String.IsNullOrEmpty(desc.Text) && String.IsNullOrEmpty(categ.Text) && String.IsNullOrEmpty(Pprice.Text) && String.IsNullOrEmpty(Sprice.Text))
+                MessageBox.Show("Please choose a product by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
                 query += " UPDATE product SET description='" + desc.Text + "', category='" + categ.Text + "', purchase_price='" + Pprice.Text + "', store_price='" + Sprice.Text + "', tot_quantity='" + quan.Text + "' WHERE product_id='" + id.Text + "'; ";
                 MessageBox.Show("Product updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                executeQuery(query);
             }
+            executeQuery(query);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -115,6 +111,17 @@ namespace WindowsFormsApplication4
                 quan.Text = dataGridView1.Rows[e.RowIndex].Cells["tot_quantity"].Value.ToString();
                 id.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            addcategoryp a = new addcategoryp();
+            a.Show();
         }
     }
 }
