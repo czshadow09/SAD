@@ -28,30 +28,27 @@ namespace WindowsFormsApplication4
             loadAll();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void prodcategory_Load(object sender, EventArgs e)
         {
             loadAll();
         }
         private void loadAll()
         {
-            string query = "select * from product;";
+            string query = "select p.product_id, p.description, c.name, p.purchase_price, store_price, tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
             conn.Close();
             DataTable dt = new DataTable();
             adp.Fill(dt);
+            for (int x = 0; x < dt.Rows.Count; x++)
+            {
+                categ.Items.Add(dt.Rows[x][2].ToString());
+            }
             dataGridView1.DataSource = dt;
             dataGridView1.Columns["product_id"].Visible = false;
-            dataGridView1.Columns["stock_in"].Visible = false;
-            dataGridView1.Columns["stock_out"].Visible = false;
             dataGridView1.Columns["description"].HeaderText = "Product Name";
-            dataGridView1.Columns["category"].HeaderText = "Category";
+            dataGridView1.Columns["name"].HeaderText = "Category";
             dataGridView1.Columns["purchase_price"].HeaderText = "Purchase Price";
             dataGridView1.Columns["store_price"].HeaderText = "Store Price";
             dataGridView1.Columns["tot_quantity"].HeaderText = "Quantity";
@@ -67,7 +64,11 @@ namespace WindowsFormsApplication4
             conn.Close();
             DataTable dt = new DataTable();
             user.Fill(dt);
-            if (!String.IsNullOrEmpty(desc.Text) && !String.IsNullOrEmpty(categ.Text))
+            if (String.IsNullOrEmpty(desc.Text) || String.IsNullOrEmpty(categ.Text) || String.IsNullOrEmpty(Pprice.Text) || String.IsNullOrEmpty(Sprice.Text) || String.IsNullOrEmpty(quan.Text))
+            {
+                MessageBox.Show("Please fill up all the fields.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
             {
                 if (dt.Rows.Count >= 1) MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
@@ -82,21 +83,21 @@ namespace WindowsFormsApplication4
         private void Update_Click(object sender, EventArgs e)
         {
             string query = "";
-            string query2 = "SELECT description FROM product WHERE description='" + desc.Text + "' ";
+            string query2 = "SELECT description FROM product WHERE product_id='" + id.Text + "' ";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query2, conn);
             MySqlDataAdapter user = new MySqlDataAdapter(com);
             conn.Close();
             DataTable dt = new DataTable();
             user.Fill(dt);
-            if (String.IsNullOrEmpty(desc.Text) && String.IsNullOrEmpty(categ.Text) && String.IsNullOrEmpty(Pprice.Text) && String.IsNullOrEmpty(Sprice.Text))
-                MessageBox.Show("Please choose a product by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (String.IsNullOrEmpty(id.Text) || String.IsNullOrEmpty(desc.Text) || String.IsNullOrEmpty(categ.Text) || String.IsNullOrEmpty(Pprice.Text) || String.IsNullOrEmpty(Sprice.Text))
+                MessageBox.Show("Please choose a product by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
                 query += " UPDATE product SET description='" + desc.Text + "', category='" + categ.Text + "', purchase_price='" + Pprice.Text + "', store_price='" + Sprice.Text + "', tot_quantity='" + quan.Text + "' WHERE product_id='" + id.Text + "'; ";
                 MessageBox.Show("Product updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                executeQuery(query);
             }
-            executeQuery(query);
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
