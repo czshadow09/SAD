@@ -45,7 +45,6 @@ namespace WindowsFormsApplication4
             this.usertype = new System.Windows.Forms.ComboBox();
             this.contact = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.Add = new System.Windows.Forms.Button();
             this.lastname = new System.Windows.Forms.TextBox();
             this.firstname = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,6 +57,7 @@ namespace WindowsFormsApplication4
             this.label12 = new System.Windows.Forms.Label();
             this.retype = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -171,7 +171,7 @@ namespace WindowsFormsApplication4
             "Male",
             "Female"});
             this.gender.Location = new System.Drawing.Point(19, 190);
-            this.gender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gender.Margin = new System.Windows.Forms.Padding(4);
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(375, 35);
             this.gender.TabIndex = 80;
@@ -194,7 +194,7 @@ namespace WindowsFormsApplication4
             "Admin",
             "Employee"});
             this.usertype.Location = new System.Drawing.Point(19, 375);
-            this.usertype.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usertype.Margin = new System.Windows.Forms.Padding(4);
             this.usertype.Name = "usertype";
             this.usertype.Size = new System.Drawing.Size(375, 35);
             this.usertype.TabIndex = 78;
@@ -226,23 +226,6 @@ namespace WindowsFormsApplication4
             this.button2.Text = "Update";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // Add
-            // 
-            this.Add.FlatAppearance.BorderSize = 0;
-            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.ForeColor = System.Drawing.Color.Black;
-            this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(28, 614);
-            this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(143, 62);
-            this.Add.TabIndex = 75;
-            this.Add.Text = " Add";
-            this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // lastname
             // 
@@ -383,11 +366,29 @@ namespace WindowsFormsApplication4
             this.dataGridView1.Size = new System.Drawing.Size(595, 640);
             this.dataGridView1.TabIndex = 50;
             // 
+            // button6
+            // 
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(27, 610);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(143, 67);
+            this.button6.TabIndex = 95;
+            this.button6.Text = " Add";
+            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.retype);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.newp);
@@ -406,7 +407,6 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.usertype);
             this.Controls.Add(this.contact);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.Add);
             this.Controls.Add(this.lastname);
             this.Controls.Add(this.firstname);
             this.Controls.Add(this.id);
@@ -441,7 +441,6 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.ComboBox usertype;
         private System.Windows.Forms.TextBox contact;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.TextBox lastname;
         private System.Windows.Forms.TextBox firstname;
         private System.Windows.Forms.Label label7;
@@ -454,5 +453,6 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox retype;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button6;
     }
 }

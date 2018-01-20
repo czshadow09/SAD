@@ -33,6 +33,7 @@ namespace WindowsFormsApplication4
             MySqlCommand comm = new MySqlCommand(q, conn);
             comm.ExecuteNonQuery();
             conn.Close();
+            loadAll();
         }
 
 
@@ -136,86 +137,48 @@ namespace WindowsFormsApplication4
         
         private void Add_Click(object sender, EventArgs e)
         {
-            string query = "SELECT username From login WHERE username='" + username.Text + "' ";
+            string query = "SELECT email From user WHERE email='" + email.Text + "' ";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter member = new MySqlDataAdapter(com);
             conn.Close();
             DataTable dt = new DataTable();
             member.Fill(dt);
-            if (String.IsNullOrEmpty(firstname.Text) ||
-                String.IsNullOrEmpty(lastname.Text) ||
-                String.IsNullOrEmpty(gender.Text) ||
-                String.IsNullOrEmpty(contact.Text) ||
-                String.IsNullOrEmpty(email.Text) ||
-                String.IsNullOrEmpty(usertype.Text) ||
-                String.IsNullOrEmpty(username.Text) ||
-                String.IsNullOrEmpty(newp.Text) ||
-                String.IsNullOrEmpty(retype.Text))
+            if (String.IsNullOrEmpty(firstname.Text) &&
+                String.IsNullOrEmpty(lastname.Text) &&
+                String.IsNullOrEmpty(gender.Text) &&
+                String.IsNullOrEmpty(contact.Text) &&
+                String.IsNullOrEmpty(email.Text) &&
+                String.IsNullOrEmpty(usertype.Text))
                 MessageBox.Show("Please fill all the fields.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
-                if (dt.Rows.Count >= 1)
-                {
-                    MessageBox.Show("Username already exist. Please choose a different username", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else if(newp.Text != retype.Text)
-                {
-                    MessageBox.Show("Password does not match", "Not matched", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                if (dt.Rows.Count >= 1) MessageBox.Show("Email already exist. Please choose a different email", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {
-                    string query1 = "INSERT INTO login(username, password) values('" + username.Text + "', '" + retype.Text + "')";
+                    
+                   
+                    string query1 = "INSERT INTO user(firstname, lastname, gender, contact, email, type, login_login_id) values('" + firstname.Text + "', '" + lastname.Text + "' , '" + gender.Text + "' , '" + contact.Text + "' , '" + email.Text + "' , '" + usertype.Text + "' , (select login_id from login where username= '" + username.Text + "'))";
                     executeQuery(query1);
-                    string query2 = "INSERT INTO user(firstname, lastname, gender, contact, email, type, login_login_id) values('" + firstname.Text + "', '" + lastname.Text + "' , '" + gender.Text + "' , '" + contact.Text + "' , '" + email.Text + "' , '" + usertype.Text + "' , (select login_id from login where username= '" + username.Text + "'))";
-                    executeQuery(query2);
-                    MessageBox.Show("User added to the database.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    loadAll();
                 }
             }
 
         }
-        private void Update_Click(object sender, EventArgs e)
-        {
-            string query = "";
-            string query2 = "SELECT firstname FROM user WHERE firstname='" + firstname.Text + "' ";
-            conn.Open();
-            MySqlCommand com = new MySqlCommand(query2, conn);
-            MySqlDataAdapter user = new MySqlDataAdapter(com);
-            conn.Close();
-            DataTable dt = new DataTable();
-            user.Fill(dt);
-            if (String.IsNullOrEmpty(firstname.Text) && String.IsNullOrEmpty(lastname.Text) && String.IsNullOrEmpty(gender.Text) && String.IsNullOrEmpty(email.Text) && String.IsNullOrEmpty(contact.Text) && String.IsNullOrEmpty(usertype.Text))
-            {
-                MessageBox.Show("Please choose a product by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (!String.IsNullOrEmpty(username.Text) || !String.IsNullOrEmpty(newp.Text) || !String.IsNullOrEmpty(retype.Text))
-            {
-                MessageBox.Show("Username or password can only be updated in the change privacy module!", "Note", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                query += " UPDATE user SET firstname='" + firstname.Text + "', lastname='" + lastname.Text + "', gender='" + gender.Text + "', email='" + email.Text + "', contact='" + contact.Text + "', type='" + usertype.Text + "' WHERE user_id='" + id.Text + "'; ";
-                MessageBox.Show("User updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                executeQuery(query);
-                loadAll();
-            }
-        }
-
+       
         private int select_user_id;
+        private int select_login_id;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex > -1)
             {
-                select_user_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["user_id"].Value.ToString());
+                select_user_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["id"].Value.ToString());
                 firstname.Text = dataGridView1.Rows[e.RowIndex].Cells["firstname"].Value.ToString();
                 lastname.Text = dataGridView1.Rows[e.RowIndex].Cells["lastname"].Value.ToString();
                 gender.Text = dataGridView1.Rows[e.RowIndex].Cells["gender"].Value.ToString();
                 contact.Text = dataGridView1.Rows[e.RowIndex].Cells["contact"].Value.ToString();
                 email.Text = dataGridView1.Rows[e.RowIndex].Cells["email"].Value.ToString();
                 usertype.Text = dataGridView1.Rows[e.RowIndex].Cells["type"].Value.ToString();
-                id.Text = dataGridView1.Rows[e.RowIndex].Cells["user_id"].Value.ToString();
+                select_login_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["login_login_id"].Value.ToString());
             }
         }
 
@@ -233,6 +196,5 @@ namespace WindowsFormsApplication4
         {
 
         }
-
     }
 }
