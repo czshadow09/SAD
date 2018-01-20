@@ -30,40 +30,13 @@ namespace WindowsFormsApplication4
 
         private void Out_Click(object sender, EventArgs e)
         {
-
+            Out a = new Out();
+            a.Show();
         }
 
         private void inventory_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM product;";
-            conn.Open();
-            MySqlCommand com = new MySqlCommand(query, conn);
-            MySqlDataAdapter adp = new MySqlDataAdapter(com);
-            conn.Close();
-            DataTable dt = new DataTable();
-            adp.Fill(dt);
-            for (int x = 0; x < dt.Rows.Count; x++)
-            {
-                categ.Items.Add(dt.Rows[x][2].ToString());
-            }
-            dataGridView1.DataSource = dt;
-            dataGridView1.Columns["product_id"].Visible = false;
-            dataGridView1.Columns["stock_in"].Visible = false;
-            dataGridView1.Columns["stock_out"].Visible = false;
-            dataGridView1.Columns["description"].HeaderText = "Product Name";
-            dataGridView1.Columns["category"].HeaderText = "Category";
-            dataGridView1.Columns["purchase_price"].HeaderText = "Purchase Price";
-            dataGridView1.Columns["store_price"].HeaderText = "Store Price";
-            dataGridView1.Columns["tot_quantity"].HeaderText = "Quantity";
-            dataGridView2.DataSource = dt;
-            dataGridView2.Columns["product_id"].Visible = false;
-            dataGridView2.Columns["description"].HeaderText = "Product Name";
-            dataGridView2.Columns["category"].HeaderText = "Category";
-            dataGridView2.Columns["purchase_price"].HeaderText = "Purchase Price";
-            dataGridView2.Columns["store_price"].HeaderText = "Store Price";
-            dataGridView2.Columns["stock_in"].HeaderText = "In";
-            dataGridView2.Columns["stock_out"].HeaderText = "Out";
-            dataGridView2.Columns["tot_quantity"].HeaderText = "Quantity";
+            loadAll();
         }
         private void loadAll()
         {
@@ -92,6 +65,12 @@ namespace WindowsFormsApplication4
             dataGridView2.Columns["stock_in"].HeaderText = "In";
             dataGridView2.Columns["stock_out"].HeaderText = "Out";
             dataGridView2.Columns["tot_quantity"].HeaderText = "Quantity";
+        }
+
+        private void In_Click(object sender, EventArgs e)
+        {
+            In a = new In();
+            a.Show();
         }
     }
 }
