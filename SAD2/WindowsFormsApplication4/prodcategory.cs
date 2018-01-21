@@ -31,6 +31,7 @@ namespace WindowsFormsApplication4
         private void prodcategory_Load(object sender, EventArgs e)
         {
             loadAll();
+            loadAll2();
         }
         private void loadAll()
         {
@@ -41,10 +42,6 @@ namespace WindowsFormsApplication4
             conn.Close();
             DataTable dt = new DataTable();
             adp.Fill(dt);
-            for (int x = 0; x < dt.Rows.Count; x++)
-            {
-                categ.Items.Add(dt.Rows[x][2].ToString());
-            }
             dataGridView1.DataSource = dt;
             dataGridView1.Columns["product_id"].Visible = false;
             dataGridView1.Columns["description"].HeaderText = "Product Name";
@@ -52,6 +49,21 @@ namespace WindowsFormsApplication4
             dataGridView1.Columns["purchase_price"].HeaderText = "Purchase Price";
             dataGridView1.Columns["store_price"].HeaderText = "Store Price";
             dataGridView1.Columns["tot_quantity"].HeaderText = "Quantity";
+        }
+
+        private void loadAll2()
+        {
+            string query = "select name from category;";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            for (int x = 0; x < dt.Rows.Count; x++)
+            {
+                categ.Items.Add(dt.Rows[x][0].ToString());
+            }
         }
         private int select_user_id;
 
@@ -73,7 +85,7 @@ namespace WindowsFormsApplication4
                 if (dt.Rows.Count >= 1) MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                 {
-                    string query1 = "INSERT INTO product(description, category, purchase_price, store_price, tot_quantity) VALUES('" + desc.Text + "', '" + categ.Text + "', '" + Pprice.Text + "', '" + Sprice.Text + "', '" + quan.Text + "');";
+                    string query1 = "INSERT INTO product(description, purchase_price, store_price, stock_in, stock_out, tot_quantity, category_cat_id) VALUES('" + desc.Text + "', '" + Pprice.Text + "', '" + Sprice.Text + "', 0 , 0 , '" + quan.Text + "', (SELECT cat_id FROM category WHERE name='" + categ.Text + "'));";
                     MessageBox.Show("Product added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     executeQuery(query1);
                 }
@@ -83,7 +95,7 @@ namespace WindowsFormsApplication4
         private void Update_Click(object sender, EventArgs e)
         {
             string query = "";
-            string query2 = "SELECT description FROM product WHERE product_id='" + id.Text + "' ";
+            string query2 = "SELECT description FROM product WHERE description='" + desc.Text + "' ";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query2, conn);
             MySqlDataAdapter user = new MySqlDataAdapter(com);
@@ -94,9 +106,16 @@ namespace WindowsFormsApplication4
                 MessageBox.Show("Please choose a product by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
-                query += " UPDATE product SET description='" + desc.Text + "', category='" + categ.Text + "', purchase_price='" + Pprice.Text + "', store_price='" + Sprice.Text + "', tot_quantity='" + quan.Text + "' WHERE product_id='" + id.Text + "'; ";
-                MessageBox.Show("Product updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                executeQuery(query);
+                if (dt.Rows.Count >= 1)
+                {
+                    MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    query += " UPDATE product SET description='" + desc.Text +  "', purchase_price='" + Pprice.Text + "', store_price='" + Sprice.Text + "', tot_quantity='" + quan.Text + "', category_cat_id = (SELECT cat_id FROM category WHERE name='" + categ.Text + "') WHERE product_id='" + id.Text + "'; ";
+                    MessageBox.Show("Product updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    executeQuery(query);
+                }
             }
         }
 
@@ -106,7 +125,7 @@ namespace WindowsFormsApplication4
             {
                 select_user_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
                 desc.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
-                categ.Text = dataGridView1.Rows[e.RowIndex].Cells["category"].Value.ToString();
+                categ.Text = dataGridView1.Rows[e.RowIndex].Cells["name"].Value.ToString();
                 Pprice.Text = dataGridView1.Rows[e.RowIndex].Cells["purchase_price"].Value.ToString();
                 Sprice.Text = dataGridView1.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
                 quan.Text = dataGridView1.Rows[e.RowIndex].Cells["tot_quantity"].Value.ToString();
@@ -114,12 +133,7 @@ namespace WindowsFormsApplication4
             }
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void AddC_Cick(object sender, EventArgs e)
         {
             addcategoryp a = new addcategoryp();
             a.Show();
