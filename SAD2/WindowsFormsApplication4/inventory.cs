@@ -28,12 +28,6 @@ namespace WindowsFormsApplication4
             loadAll();
         }
 
-        private void Out_Click(object sender, EventArgs e)
-        {
-            Out a = new Out();
-            a.Show();
-        }
-
         private void inventory_Load(object sender, EventArgs e)
         {
             string query = "SELECT * FROM category;";
@@ -66,10 +60,9 @@ namespace WindowsFormsApplication4
             dataGridView1.Columns["store_price"].HeaderText = "Store Price";
             dataGridView1.Columns["tot_quantity"].HeaderText = "Quantity";
         }
-        
         private void loadAll2()
         {
-            string query = "select p.description, c.name, p.purchase_price, p.store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
+            string query = "select p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -89,6 +82,11 @@ namespace WindowsFormsApplication4
         private void In_Click(object sender, EventArgs e)
         {
             In a = new In();
+            a.Show();
+        }
+        private void Out_Click(object sender, EventArgs e)
+        {
+            Out a = new Out();
             a.Show();
         }
     }
