@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication4
+namespace WindowsFormsApplication4
 {
     partial class addcategoryp
     {
@@ -29,32 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(addcategoryp));
-            this.label7 = new System.Windows.Forms.Label();
-            this.quan = new System.Windows.Forms.TextBox();
-            this.Add = new System.Windows.Forms.Button();
             this.cancel = new System.Windows.Forms.Button();
+            this.Add = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.categ = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label7
+            // cancel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(28, 53);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 28);
-            this.label7.TabIndex = 86;
-            this.label7.Text = "Name:";
-            // 
-            // quan
-            // 
-            this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quan.ForeColor = System.Drawing.SystemColors.ButtonShadow;
-            this.quan.Location = new System.Drawing.Point(171, 53);
-            this.quan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.quan.Name = "quan";
-            this.quan.Size = new System.Drawing.Size(140, 34);
-            this.quan.TabIndex = 85;
+            this.cancel.FlatAppearance.BorderSize = 0;
+            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cancel.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
+            this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.cancel.Location = new System.Drawing.Point(120, 83);
+            this.cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancel.Name = "cancel";
+            this.cancel.Size = new System.Drawing.Size(128, 54);
+            this.cancel.TabIndex = 92;
+            this.cancel.Text = "Cancel";
+            this.cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.cancel.UseVisualStyleBackColor = true;
+            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // Add
             // 
@@ -64,45 +61,50 @@
             this.Add.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(22, 116);
-            this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Add.Location = new System.Drawing.Point(8, 83);
+            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(143, 66);
-            this.Add.TabIndex = 87;
+            this.Add.Size = new System.Drawing.Size(107, 54);
+            this.Add.TabIndex = 91;
             this.Add.Text = " Add";
             this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // cancel
+            // label7
             // 
-            this.cancel.FlatAppearance.BorderSize = 0;
-            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.cancel.Image = global::WindowsFormsApplication4.Properties.Resources.cancel_48;
-            this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancel.Location = new System.Drawing.Point(171, 116);
-            this.cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(170, 66);
-            this.cancel.TabIndex = 88;
-            this.cancel.Text = "Cancel";
-            this.cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.cancel.UseVisualStyleBackColor = true;
-            this.cancel.Click += new System.EventHandler(this.cancel_Click);
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(13, 32);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 22);
+            this.label7.TabIndex = 90;
+            this.label7.Text = "Name:";
+            // 
+            // categ
+            // 
+            this.categ.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categ.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.categ.Location = new System.Drawing.Point(120, 32);
+            this.categ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.categ.Name = "categ";
+            this.categ.Size = new System.Drawing.Size(106, 28);
+            this.categ.TabIndex = 89;
             // 
             // addcategoryp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(341, 207);
+            this.ClientSize = new System.Drawing.Size(256, 168);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.quan);
+            this.Controls.Add(this.categ);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "addcategoryp";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Category";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -111,9 +113,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox quan;
-        private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button cancel;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox categ;
     }
 }
