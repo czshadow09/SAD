@@ -25,7 +25,7 @@ namespace WindowsFormsApplication4
             MySqlCommand comm = new MySqlCommand(q, conn);
             comm.ExecuteNonQuery();
             conn.Close();
-            loadAll();
+            
         }
 
         private void inventory_Load(object sender, EventArgs e)
@@ -41,25 +41,10 @@ namespace WindowsFormsApplication4
             {
                 categ.Items.Add(dt.Rows[x][1].ToString());
             }
-            loadAll();
+          
             loadAll2();
         }
-        private void loadAll()
-        {
-            string query = "select p.description, c.name, p.purchase_price, p.store_price, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
-            conn.Open();
-            MySqlCommand com = new MySqlCommand(query, conn);
-            MySqlDataAdapter adp = new MySqlDataAdapter(com);
-            conn.Close();
-            DataTable dt = new DataTable();
-            adp.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.Columns["description"].HeaderText = "Product Name";
-            dataGridView1.Columns["name"].HeaderText = "Category";
-            dataGridView1.Columns["purchase_price"].HeaderText = "Purchase Price";
-            dataGridView1.Columns["store_price"].HeaderText = "Store Price";
-            dataGridView1.Columns["tot_quantity"].HeaderText = "Quantity";
-        }
+
         private void loadAll2()
         {
             string query = "select p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
