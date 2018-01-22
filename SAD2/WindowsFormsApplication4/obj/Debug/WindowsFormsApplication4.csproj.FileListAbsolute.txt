@@ -119,3 +119,24 @@ D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\W
 D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
 D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
 D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form3.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.addcategoryp.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.In.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.home.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Out.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl1.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb

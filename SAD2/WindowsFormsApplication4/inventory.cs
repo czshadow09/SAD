@@ -45,7 +45,7 @@ namespace WindowsFormsApplication4
             loadAll2();
         }
 
-        private void loadAll2()
+        public void loadAll2()
         {
             string query = "select p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
             conn.Open();
