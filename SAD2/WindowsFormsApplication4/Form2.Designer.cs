@@ -44,7 +44,6 @@
             this.userControl21 = new WindowsFormsApplication4.UserControl2();
             this.inventory1 = new WindowsFormsApplication4.inventory();
             this.userControl11 = new WindowsFormsApplication4.UserControl1();
-            this.prodcategory1 = new WindowsFormsApplication4.prodcategory();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -180,7 +179,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(260, 62);
             this.button3.TabIndex = 2;
-            this.button3.Text = "     Order List";
+            this.button3.Text = "     Transactions";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -233,9 +232,11 @@
             // userControl21
             // 
             this.userControl21.BackColor = System.Drawing.Color.GhostWhite;
+            this.userControl21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.userControl21.Location = new System.Drawing.Point(291, 45);
             this.userControl21.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.userControl21.Name = "userControl21";
+            this.userControl21.prevform = null;
             this.userControl21.Size = new System.Drawing.Size(1021, 682);
             this.userControl21.TabIndex = 4;
             // 
@@ -259,22 +260,12 @@
             this.userControl11.Size = new System.Drawing.Size(1021, 682);
             this.userControl11.TabIndex = 2;
             // 
-            // prodcategory1
-            // 
-            this.prodcategory1.BackColor = System.Drawing.Color.GhostWhite;
-            this.prodcategory1.Location = new System.Drawing.Point(291, 45);
-            this.prodcategory1.Margin = new System.Windows.Forms.Padding(4);
-            this.prodcategory1.Name = "prodcategory1";
-            this.prodcategory1.Size = new System.Drawing.Size(1021, 682);
-            this.prodcategory1.TabIndex = 6;
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1312, 729);
-            this.Controls.Add(this.prodcategory1);
             this.Controls.Add(this.changeprivacy1);
             this.Controls.Add(this.userControl21);
             this.Controls.Add(this.inventory1);
@@ -313,6 +304,5 @@
         private inventory inventory1;
         private UserControl2 userControl21;
         private changeprivacy changeprivacy1;
-        private prodcategory prodcategory1;
     }
 }
