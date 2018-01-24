@@ -28,12 +28,6 @@ namespace WindowsFormsApplication4
 
         }
 
-        private void prodcategory_Load(object sender, EventArgs e)
-        {
-
-            loadAll2();
-        }
-
 
         private void loadAll2()
         {
@@ -103,14 +97,6 @@ namespace WindowsFormsApplication4
             }
         }
 
-
-
-        private void AddC_Cick(object sender, EventArgs e)
-        {
-            addcategoryp a = new addcategoryp();
-            a.Show();
-        }
-
         private void AddC_Click(object sender, EventArgs e)
         {
             addcategoryp a = new addcategoryp();
@@ -125,6 +111,11 @@ namespace WindowsFormsApplication4
         private void categ_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void prod_Load(object sender, EventArgs e)
+        {
+            loadAll2();
         }
     }
 
