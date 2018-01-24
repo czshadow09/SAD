@@ -64,6 +64,11 @@ namespace WindowsFormsApplication4
             dataGridView2.Columns["tot_quantity"].HeaderText = "Quantity";
         }
 
+        public void load()
+        {
+            loadAll2();
+        }
+
         private void In_Click(object sender, EventArgs e)
         {
             In a = new In();
@@ -79,6 +84,21 @@ namespace WindowsFormsApplication4
         {
             prod a = new prod();
             a.Show();
+        }
+
+        private void Se_Click(object sender, EventArgs e)
+        {
+            string query = "select p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
+
+
+
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView2.DataSource = dt;
         }
     }
 }

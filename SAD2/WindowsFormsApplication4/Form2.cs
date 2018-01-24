@@ -61,6 +61,7 @@ namespace WindowsFormsApplication4
         {
             sidepanel.Height = button5.Height;
             sidepanel.Top = button5.Top;
+
             changeprivacy1.BringToFront();
         }
 

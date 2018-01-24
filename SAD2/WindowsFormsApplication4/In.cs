@@ -55,6 +55,8 @@ namespace WindowsFormsApplication4
                 MessageBox.Show("Stocked in '" + quan.Text + "' items!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 executeQuery(query1);
                 this.Close();
+                inventory i = new inventory();
+                i.load();
             }
         }
 
