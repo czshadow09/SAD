@@ -49,7 +49,6 @@ namespace WindowsFormsApplication4
                 categ.Items.Add(dt.Rows[x][0].ToString());
             }
         }
-        private int select_user_id;
 
         private void Add_Click(object sender, EventArgs e)
         {

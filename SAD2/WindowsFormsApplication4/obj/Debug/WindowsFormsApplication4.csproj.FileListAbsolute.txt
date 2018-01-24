@@ -122,8 +122,6 @@ D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\W
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
-C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
-C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
