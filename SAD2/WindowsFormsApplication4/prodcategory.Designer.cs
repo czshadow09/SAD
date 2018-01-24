@@ -29,10 +29,7 @@ namespace WindowsFormsApplication4
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(prodcategory));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.Update = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
             this.AddC = new System.Windows.Forms.Button();
@@ -46,24 +43,19 @@ namespace WindowsFormsApplication4
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.desc = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button3 = new System.Windows.Forms.Button();
-            this.search = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.category = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.category)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.Update);
             this.panel2.Controls.Add(this.Add);
             this.panel2.Controls.Add(this.AddC);
@@ -77,34 +69,15 @@ namespace WindowsFormsApplication4
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.desc);
-            this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.search);
             this.panel2.Controls.Add(this.id);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1021, 682);
             this.panel2.TabIndex = 1;
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(357, 606);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 57);
-            this.button2.TabIndex = 92;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // Update
             // 
@@ -166,10 +139,11 @@ namespace WindowsFormsApplication4
             this.categ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.categ.FormattingEnabled = true;
             this.categ.Location = new System.Drawing.Point(29, 183);
-            this.categ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.categ.Margin = new System.Windows.Forms.Padding(4);
             this.categ.Name = "categ";
             this.categ.Size = new System.Drawing.Size(373, 37);
             this.categ.TabIndex = 85;
+            this.categ.SelectedIndexChanged += new System.EventHandler(this.categ_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -266,32 +240,6 @@ namespace WindowsFormsApplication4
             this.desc.Size = new System.Drawing.Size(375, 34);
             this.desc.TabIndex = 72;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(427, 42);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(595, 640);
-            this.dataGridView1.TabIndex = 51;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
             // button3
             // 
             this.button3.FlatAppearance.BorderSize = 0;
@@ -306,15 +254,6 @@ namespace WindowsFormsApplication4
             this.button3.TabIndex = 60;
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // search
-            // 
-            this.search.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.Location = new System.Drawing.Point(29, 615);
-            this.search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(321, 36);
-            this.search.TabIndex = 59;
             // 
             // id
             // 
@@ -335,18 +274,6 @@ namespace WindowsFormsApplication4
             this.label2.Size = new System.Drawing.Size(256, 33);
             this.label2.TabIndex = 53;
             this.label2.Text = "Create New Product";
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(427, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(595, 46);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "Product List";
             // 
             // panel1
             // 
@@ -373,7 +300,7 @@ namespace WindowsFormsApplication4
             // 
             this.category.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.category.Location = new System.Drawing.Point(195, 130);
-            this.category.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.category.Margin = new System.Windows.Forms.Padding(4);
             this.category.Name = "category";
             this.category.Size = new System.Drawing.Size(636, 417);
             this.category.TabIndex = 0;
@@ -386,13 +313,12 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.category);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "prodcategory";
             this.Size = new System.Drawing.Size(1021, 682);
             this.Load += new System.EventHandler(this.prodcategory_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.category)).EndInit();
             this.ResumeLayout(false);
@@ -412,16 +338,12 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox desc;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox search;
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView category;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button Update;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button AddC;

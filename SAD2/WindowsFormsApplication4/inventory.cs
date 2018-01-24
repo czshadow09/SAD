@@ -74,5 +74,11 @@ namespace WindowsFormsApplication4
             Out a = new Out();
             a.Show();
         }
+
+        private void entry_Click(object sender, EventArgs e)
+        {
+            prod a = new prod();
+            a.Show();
+        }
     }
 }

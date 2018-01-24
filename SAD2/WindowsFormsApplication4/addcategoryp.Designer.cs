@@ -104,6 +104,7 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.categ);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "addcategoryp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add Category";
             this.ResumeLayout(false);
             this.PerformLayout();

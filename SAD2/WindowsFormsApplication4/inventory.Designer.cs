@@ -130,6 +130,7 @@ namespace WindowsFormsApplication4
             this.entry.Text = "New Entry";
             this.entry.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.entry.UseVisualStyleBackColor = false;
+            this.entry.Click += new System.EventHandler(this.entry_Click);
             // 
             // label3
             // 

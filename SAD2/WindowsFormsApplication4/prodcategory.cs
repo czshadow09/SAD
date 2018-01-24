@@ -25,31 +25,15 @@ namespace WindowsFormsApplication4
             MySqlCommand comm = new MySqlCommand(q, conn);
             comm.ExecuteNonQuery();
             conn.Close();
-            loadAll();
+            
         }
 
         private void prodcategory_Load(object sender, EventArgs e)
         {
-            loadAll();
+            
             loadAll2();
         }
-        private void loadAll()
-        {
-            string query = "select p.product_id, p.description, c.name, p.purchase_price, store_price, tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
-            conn.Open();
-            MySqlCommand com = new MySqlCommand(query, conn);
-            MySqlDataAdapter adp = new MySqlDataAdapter(com);
-            conn.Close();
-            DataTable dt = new DataTable();
-            adp.Fill(dt);
-            dataGridView1.DataSource = dt;
-            dataGridView1.Columns["product_id"].Visible = false;
-            dataGridView1.Columns["description"].HeaderText = "Product Name";
-            dataGridView1.Columns["name"].HeaderText = "Category";
-            dataGridView1.Columns["purchase_price"].HeaderText = "Purchase Price";
-            dataGridView1.Columns["store_price"].HeaderText = "Store Price";
-            dataGridView1.Columns["tot_quantity"].HeaderText = "Quantity";
-        }
+
 
         private void loadAll2()
         {
@@ -119,24 +103,17 @@ namespace WindowsFormsApplication4
             }
         }
 
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex > -1)
-            {
-                select_user_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
-                desc.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
-                categ.Text = dataGridView1.Rows[e.RowIndex].Cells["name"].Value.ToString();
-                Pprice.Text = dataGridView1.Rows[e.RowIndex].Cells["purchase_price"].Value.ToString();
-                Sprice.Text = dataGridView1.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
-                quan.Text = dataGridView1.Rows[e.RowIndex].Cells["tot_quantity"].Value.ToString();
-                id.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
-            }
-        }
+
 
         private void AddC_Cick(object sender, EventArgs e)
         {
             addcategoryp a = new addcategoryp();
             a.Show();
+        }
+
+        private void categ_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
