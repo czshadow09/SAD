@@ -29,7 +29,14 @@ namespace WindowsFormsApplication4
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            String query = "SELECT u.type FROM user u inner join login l ON u.login_login_id = l.login_id WHERE l.username='" + usern.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            type.Text = dt.Rows[0][0].ToString();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -109,9 +116,23 @@ namespace WindowsFormsApplication4
 
         private void button2_Click(object sender, EventArgs e)
         {
-            sidepanel.Height = button2.Height;
-            sidepanel.Top = button2.Top;
-            inventory1.BringToFront();
+            String query = "SELECT type FROM user WHERE type='" + type.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            if(type.Text == "Admin")
+            {
+                sidepanel.Height = button2.Height;
+                sidepanel.Top = button2.Top;
+                inventory1.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Only Admin can access inventory", "Authorization", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

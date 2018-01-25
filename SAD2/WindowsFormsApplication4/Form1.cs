@@ -77,6 +77,7 @@ namespace WindowsFormsApplication4
             if (dt.Rows.Count == 1)
             {
                 Form2 f = new Form2();
+                f.usern.Text = user;
                 user = dt.Rows[0][5].ToString() + " "  + dt.Rows[0][4].ToString();
                 id = dt.Rows[0][0].ToString();
 
