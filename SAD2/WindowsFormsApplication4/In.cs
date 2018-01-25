@@ -34,7 +34,7 @@ namespace WindowsFormsApplication4
 
         private void Add_Click(object sender, EventArgs e)
         {
-            string query = "select stock_in from product where description='" + name.Text + "';";
+            string query = "select stock_in, tot_quantity from product where description='" + name.Text + "';";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -42,8 +42,10 @@ namespace WindowsFormsApplication4
             DataTable dt = new DataTable();
             adp.Fill(dt);
             int input = Int32.Parse(quan.Text);
-            int db = Int32.Parse(dt.Rows[0][0].ToString());
-            int sum = input + db;
+            int stock = Int32.Parse(dt.Rows[0][0].ToString());
+            int quant = Int32.Parse(dt.Rows[0][1].ToString());
+            int sum = input + stock;
+            int tot = quant - input;
             if (String.IsNullOrEmpty(quan.Text))
             {
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -51,7 +53,7 @@ namespace WindowsFormsApplication4
 
             else
             {
-                string query1 = "UPDATE product SET stock_in='" + sum + "' where description= '" + name.Text + "';";
+                string query1 = "UPDATE product SET stock_in='" + sum + "', tot_quantity='" + tot + "' where description= '" + name.Text + "';";
                 MessageBox.Show("Stocked in '" + quan.Text + "' items!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 executeQuery(query1);
                 this.Close();

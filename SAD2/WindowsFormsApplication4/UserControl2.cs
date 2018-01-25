@@ -236,7 +236,7 @@ namespace WindowsFormsApplication4
 
         private void se_Click(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM user u inner join login l on l.login_id = u.login_login_id where firstname='" + search.Text + "';";
+            string query = "SELECT * FROM user u inner join login l on l.login_id = u.login_login_id where firstname like'" + search.Text + "%';";
             conn.Open();
             MySqlCommand comm = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(comm);

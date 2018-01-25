@@ -83,7 +83,7 @@ namespace WindowsFormsApplication4
 
         private void Se_Click(object sender, EventArgs e)
         {
-            string query = "select p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "' or p.description='" + search.Text + "';";
+            string query = "select p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where p.description like'" + search.Text + "%';";
             conn.Open();
             MySqlCommand comm = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(comm);
@@ -98,6 +98,18 @@ namespace WindowsFormsApplication4
             loadAll2();
             search.Clear();
             categ.SelectedIndex = -1;
+        }
+
+        private void categ_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string query = "select p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView2.DataSource = dt;
         }
     }
 }

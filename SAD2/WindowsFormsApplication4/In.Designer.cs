@@ -46,7 +46,7 @@ namespace WindowsFormsApplication4
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cancel.Location = new System.Drawing.Point(141, 84);
-            this.cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancel.Margin = new System.Windows.Forms.Padding(2);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(128, 54);
             this.cancel.TabIndex = 96;
@@ -64,7 +64,7 @@ namespace WindowsFormsApplication4
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Add.Location = new System.Drawing.Point(11, 84);
-            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(134, 54);
             this.Add.TabIndex = 95;
@@ -90,7 +90,7 @@ namespace WindowsFormsApplication4
             this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.quan.Location = new System.Drawing.Point(130, 49);
-            this.quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quan.Margin = new System.Windows.Forms.Padding(2);
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(111, 28);
             this.quan.TabIndex = 93;
@@ -109,6 +109,7 @@ namespace WindowsFormsApplication4
             // 
             // name
             // 
+            this.name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.name.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.name.FormattingEnabled = true;
@@ -129,7 +130,7 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.Add);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.quan);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "In";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stock In";

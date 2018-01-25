@@ -52,7 +52,7 @@ namespace WindowsFormsApplication4
             this.view.ForeColor = System.Drawing.Color.Black;
             this.view.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.view.Location = new System.Drawing.Point(363, 480);
-            this.view.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.view.Margin = new System.Windows.Forms.Padding(2);
             this.view.Name = "view";
             this.view.Size = new System.Drawing.Size(110, 36);
             this.view.TabIndex = 63;
@@ -70,7 +70,7 @@ namespace WindowsFormsApplication4
             this.Out.ForeColor = System.Drawing.Color.Black;
             this.Out.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Out.Location = new System.Drawing.Point(671, 43);
-            this.Out.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Out.Margin = new System.Windows.Forms.Padding(2);
             this.Out.Name = "Out";
             this.Out.Size = new System.Drawing.Size(62, 36);
             this.Out.TabIndex = 68;
@@ -88,7 +88,7 @@ namespace WindowsFormsApplication4
             this.In.ForeColor = System.Drawing.Color.Black;
             this.In.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.In.Location = new System.Drawing.Point(594, 43);
-            this.In.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.In.Margin = new System.Windows.Forms.Padding(2);
             this.In.Name = "In";
             this.In.Size = new System.Drawing.Size(60, 36);
             this.In.TabIndex = 67;
@@ -106,7 +106,7 @@ namespace WindowsFormsApplication4
             this.entry.ForeColor = System.Drawing.Color.Black;
             this.entry.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.entry.Location = new System.Drawing.Point(310, 43);
-            this.entry.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entry.Margin = new System.Windows.Forms.Padding(2);
             this.entry.Name = "entry";
             this.entry.Size = new System.Drawing.Size(122, 36);
             this.entry.TabIndex = 66;
@@ -133,10 +133,11 @@ namespace WindowsFormsApplication4
             this.categ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categ.FormattingEnabled = true;
             this.categ.Location = new System.Drawing.Point(143, 486);
-            this.categ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.categ.Margin = new System.Windows.Forms.Padding(2);
             this.categ.Name = "categ";
             this.categ.Size = new System.Drawing.Size(192, 28);
             this.categ.TabIndex = 62;
+            this.categ.SelectedIndexChanged += new System.EventHandler(this.categ_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -154,7 +155,7 @@ namespace WindowsFormsApplication4
             // 
             this.search.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.Location = new System.Drawing.Point(501, 486);
-            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(186, 27);
             this.search.TabIndex = 59;
@@ -169,7 +170,7 @@ namespace WindowsFormsApplication4
             this.Se.Image = ((System.Drawing.Image)(resources.GetObject("Se.Image")));
             this.Se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Se.Location = new System.Drawing.Point(692, 476);
-            this.Se.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Se.Margin = new System.Windows.Forms.Padding(2);
             this.Se.Name = "Se";
             this.Se.Size = new System.Drawing.Size(41, 42);
             this.Se.TabIndex = 60;
@@ -193,7 +194,7 @@ namespace WindowsFormsApplication4
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(26, 98);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -216,7 +217,7 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.Se);
             this.Controls.Add(this.search);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "inventory";
             this.Size = new System.Drawing.Size(766, 554);
             this.Load += new System.EventHandler(this.inventory_Load);

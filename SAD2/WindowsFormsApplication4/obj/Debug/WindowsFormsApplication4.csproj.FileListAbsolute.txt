@@ -183,3 +183,5 @@ C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\Windo
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache

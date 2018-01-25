@@ -65,6 +65,7 @@ namespace WindowsFormsApplication4
                     string query1 = "INSERT INTO product(description, purchase_price, store_price, stock_in, stock_out, tot_quantity, category_cat_id) VALUES('" + desc.Text + "', '" + Pprice.Text + "', '" + Sprice.Text + "', 0 , 0 , '" + quan.Text + "', (SELECT cat_id FROM category WHERE name='" + categ.Text + "'));";
                     MessageBox.Show("Product added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     executeQuery(query1);
+                    this.Close();
                 }
             }
         }

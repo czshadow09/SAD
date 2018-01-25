@@ -65,7 +65,7 @@ namespace WindowsFormsApplication4
             {
                 if (dif < 0)
                 {
-                    MessageBox.Show("Lacking stocked in items.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Insufficient stocked in items.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 else
                 {
