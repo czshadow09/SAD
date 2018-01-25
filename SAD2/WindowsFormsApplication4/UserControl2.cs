@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
+using System.Text.RegularExpressions;
 using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApplication4
@@ -33,12 +35,6 @@ namespace WindowsFormsApplication4
             MySqlCommand comm = new MySqlCommand(q, conn);
             comm.ExecuteNonQuery();
             conn.Close();
-        }
-
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -133,9 +129,24 @@ namespace WindowsFormsApplication4
             dataGridView1.Columns["username"].HeaderText = "User Name";
             dataGridView1.Columns["type"].HeaderText = "User Type";
         }
-        
+
+        public bool IsValid(string emailaddress)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(email.Text);
+
+                return true;
+            }
+            catch (FormatException)
+            {
+                return false;
+            }
+        }
+
         private void Add_Click(object sender, EventArgs e)
         {
+            Regex phoneNumpattern = new Regex(@"[0][9][0-9]{2}[0-9]{3}[0-9]{4}");
             string query = "SELECT username From login WHERE username='" + username.Text + "' ";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
@@ -159,6 +170,14 @@ namespace WindowsFormsApplication4
                 {
                     MessageBox.Show("Username already exist. Please choose a different username", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                else if(!phoneNumpattern.IsMatch(contact.Text))
+                {
+                    MessageBox.Show("Incorrect phone number", "Phone Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else if (!IsValid(email.Text))
+                {
+                    MessageBox.Show("Incorrect email address", "Email Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 else if(newp.Text != retype.Text)
                 {
                     MessageBox.Show("Password does not match", "Not matched", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -178,6 +197,7 @@ namespace WindowsFormsApplication4
         }
         private void Update_Click(object sender, EventArgs e)
         {
+            Regex phoneNumpattern = new Regex(@"[0][9][0-9]{2}[0-9]{3}[0-9]{4}");
             string query = "";
             string query2 = "SELECT firstname FROM user WHERE firstname='" + firstname.Text + "' ";
             conn.Open();
@@ -188,11 +208,19 @@ namespace WindowsFormsApplication4
             user.Fill(dt);
             if (String.IsNullOrEmpty(firstname.Text) && String.IsNullOrEmpty(lastname.Text) && String.IsNullOrEmpty(gender.Text) && String.IsNullOrEmpty(email.Text) && String.IsNullOrEmpty(contact.Text) && String.IsNullOrEmpty(usertype.Text))
             {
-                MessageBox.Show("Please choose a product by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please choose a user by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (!String.IsNullOrEmpty(username.Text) || !String.IsNullOrEmpty(newp.Text) || !String.IsNullOrEmpty(retype.Text))
             {
                 MessageBox.Show("Username or password can only be updated in the change privacy module!", "Note", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!phoneNumpattern.IsMatch(contact.Text))
+            {
+                MessageBox.Show("Incorrect phone number", "Phone Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!IsValid(email.Text))
+            {
+                MessageBox.Show("Incorrect email address", "Email Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

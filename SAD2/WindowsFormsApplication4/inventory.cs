@@ -27,6 +27,10 @@ namespace WindowsFormsApplication4
             conn.Close();
             
         }
+        public string MyValue
+        {
+            get { return id.Text; }
+        }
 
         private void inventory_Load(object sender, EventArgs e)
         {
@@ -47,7 +51,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll2()
         {
-            string query = "select p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
+            string query = "select p.product_id, p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -55,6 +59,7 @@ namespace WindowsFormsApplication4
             DataTable dt = new DataTable();
             adp.Fill(dt);
             dataGridView2.DataSource = dt;
+            dataGridView2.Columns["product_id"].Visible = false;
             dataGridView2.Columns["description"].HeaderText = "Product Name";
             dataGridView2.Columns["name"].HeaderText = "Category";
             dataGridView2.Columns["purchase_price"].HeaderText = "Purchase Price";
@@ -67,11 +72,13 @@ namespace WindowsFormsApplication4
         private void In_Click(object sender, EventArgs e)
         {
             In a = new In();
+            a.id.Text = dataGridView2.CurrentRow.Cells["product_id"].Value.ToString();
             a.Show();
         }
         private void Out_Click(object sender, EventArgs e)
         {
             Out a = new Out();
+            a.id.Text = dataGridView2.CurrentRow.Cells["product_id"].Value.ToString();
             a.Show();
         }
 
@@ -102,7 +109,7 @@ namespace WindowsFormsApplication4
 
         private void categ_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string query = "select p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
+            string query = "select p.product_id, p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
             conn.Open();
             MySqlCommand comm = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(comm);
@@ -110,6 +117,14 @@ namespace WindowsFormsApplication4
             DataTable dt = new DataTable();
             adp.Fill(dt);
             dataGridView2.DataSource = dt;
+        }
+
+        private int select_user_id;
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            In i = new In();
+            select_user_id = int.Parse(dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
+            id.Text = dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
         }
     }
 }

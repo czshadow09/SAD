@@ -33,8 +33,7 @@ namespace WindowsFormsApplication4
             this.Subtract = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.quan = new System.Windows.Forms.TextBox();
-            this.name = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.id = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cancel
@@ -46,7 +45,7 @@ namespace WindowsFormsApplication4
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cancel.Location = new System.Drawing.Point(141, 84);
-            this.cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancel.Margin = new System.Windows.Forms.Padding(2);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(128, 54);
             this.cancel.TabIndex = 100;
@@ -64,7 +63,7 @@ namespace WindowsFormsApplication4
             this.Subtract.Image = ((System.Drawing.Image)(resources.GetObject("Subtract.Image")));
             this.Subtract.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Subtract.Location = new System.Drawing.Point(11, 84);
-            this.Subtract.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Subtract.Margin = new System.Windows.Forms.Padding(2);
             this.Subtract.Name = "Subtract";
             this.Subtract.Size = new System.Drawing.Size(134, 54);
             this.Subtract.TabIndex = 99;
@@ -78,7 +77,7 @@ namespace WindowsFormsApplication4
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(24, 49);
+            this.label7.Location = new System.Drawing.Point(30, 23);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 22);
@@ -89,34 +88,19 @@ namespace WindowsFormsApplication4
             // 
             this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.quan.Location = new System.Drawing.Point(135, 49);
-            this.quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quan.Location = new System.Drawing.Point(141, 23);
+            this.quan.Margin = new System.Windows.Forms.Padding(2);
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(111, 28);
             this.quan.TabIndex = 97;
             // 
-            // name
+            // id
             // 
-            this.name.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.name.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.name.FormattingEnabled = true;
-            this.name.Location = new System.Drawing.Point(135, 9);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(111, 30);
-            this.name.TabIndex = 102;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(24, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 22);
-            this.label1.TabIndex = 101;
-            this.label1.Text = "Name:";
+            this.id.Location = new System.Drawing.Point(178, 59);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(58, 20);
+            this.id.TabIndex = 101;
+            this.id.Visible = false;
             // 
             // Out
             // 
@@ -124,13 +108,12 @@ namespace WindowsFormsApplication4
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(278, 149);
-            this.Controls.Add(this.name);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.id);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.Subtract);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.quan);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Out";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Out";
@@ -146,7 +129,6 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.Button Subtract;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox quan;
-        private System.Windows.Forms.ComboBox name;
-        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox id;
     }
 }

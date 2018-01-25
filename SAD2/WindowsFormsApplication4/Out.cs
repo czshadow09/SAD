@@ -29,10 +29,6 @@ namespace WindowsFormsApplication4
             conn.Close();
             DataTable dt = new DataTable();
             adp.Fill(dt);
-            for (int x = 0; x < dt.Rows.Count; x++)
-            {
-                name.Items.Add(dt.Rows[x][0].ToString());
-            }
         }
         private void executeQuery(string q)
         {
@@ -44,7 +40,7 @@ namespace WindowsFormsApplication4
 
         private void Subtract_Click(object sender, EventArgs e)
         {
-            string query = "select stock_in, stock_out from product where description='" + name.Text + "';";
+            string query = "select stock_in, stock_out from product where product_id='" + id.Text + "';";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -69,7 +65,7 @@ namespace WindowsFormsApplication4
                 }
                 else
                 {
-                    string query1 = "UPDATE product SET stock_in='" + s_in + "'- '" + input + "', stock_out='" + sum + "' where description= '" + name.Text + "';";
+                    string query1 = "UPDATE product SET stock_in='" + s_in + "'- '" + input + "', stock_out='" + sum + "' where product_id= '" + id.Text + "';";
                     MessageBox.Show("Stocked out '" + input + "' items!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     executeQuery(query1);
                     this.Close();

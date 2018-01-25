@@ -70,7 +70,7 @@ namespace WindowsFormsApplication4
             this.se.Image = ((System.Drawing.Image)(resources.GetObject("se.Image")));
             this.se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.se.Location = new System.Drawing.Point(713, -7);
-            this.se.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.se.Margin = new System.Windows.Forms.Padding(2);
             this.se.Name = "se";
             this.se.Size = new System.Drawing.Size(47, 46);
             this.se.TabIndex = 58;
@@ -82,7 +82,7 @@ namespace WindowsFormsApplication4
             // 
             this.search.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.Location = new System.Drawing.Point(467, 2);
-            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(242, 30);
             this.search.TabIndex = 57;
@@ -105,7 +105,7 @@ namespace WindowsFormsApplication4
             this.label1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(319, 2);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(446, 37);
             this.label1.TabIndex = 51;
@@ -128,7 +128,7 @@ namespace WindowsFormsApplication4
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(319, 37);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -141,7 +141,7 @@ namespace WindowsFormsApplication4
             // 
             this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id.Location = new System.Drawing.Point(260, 4);
-            this.id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.id.Margin = new System.Windows.Forms.Padding(2);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(43, 30);
             this.id.TabIndex = 63;
@@ -197,6 +197,7 @@ namespace WindowsFormsApplication4
             // 
             // gender
             // 
+            this.gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.gender.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.gender.FormattingEnabled = true;
@@ -213,13 +214,14 @@ namespace WindowsFormsApplication4
             this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.email.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.email.Location = new System.Drawing.Point(14, 205);
-            this.email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.email.Margin = new System.Windows.Forms.Padding(2);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(282, 28);
             this.email.TabIndex = 79;
             // 
             // usertype
             // 
+            this.usertype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.usertype.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usertype.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.usertype.FormattingEnabled = true;
@@ -237,7 +239,7 @@ namespace WindowsFormsApplication4
             this.contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contact.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.contact.Location = new System.Drawing.Point(14, 255);
-            this.contact.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.contact.Margin = new System.Windows.Forms.Padding(2);
             this.contact.Name = "contact";
             this.contact.Size = new System.Drawing.Size(282, 28);
             this.contact.TabIndex = 77;
@@ -247,7 +249,7 @@ namespace WindowsFormsApplication4
             this.lastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lastname.Location = new System.Drawing.Point(14, 104);
-            this.lastname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lastname.Margin = new System.Windows.Forms.Padding(2);
             this.lastname.Name = "lastname";
             this.lastname.Size = new System.Drawing.Size(282, 28);
             this.lastname.TabIndex = 74;
@@ -257,7 +259,7 @@ namespace WindowsFormsApplication4
             this.firstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.firstname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.firstname.Location = new System.Drawing.Point(14, 54);
-            this.firstname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.firstname.Margin = new System.Windows.Forms.Padding(2);
             this.firstname.Name = "firstname";
             this.firstname.Size = new System.Drawing.Size(282, 28);
             this.firstname.TabIndex = 73;
@@ -314,7 +316,7 @@ namespace WindowsFormsApplication4
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.username.Location = new System.Drawing.Point(14, 355);
-            this.username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.username.Margin = new System.Windows.Forms.Padding(2);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(282, 28);
             this.username.TabIndex = 90;
@@ -336,7 +338,7 @@ namespace WindowsFormsApplication4
             this.newp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.newp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.newp.Location = new System.Drawing.Point(14, 405);
-            this.newp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.newp.Margin = new System.Windows.Forms.Padding(2);
             this.newp.Name = "newp";
             this.newp.PasswordChar = '*';
             this.newp.Size = new System.Drawing.Size(282, 28);
@@ -359,7 +361,7 @@ namespace WindowsFormsApplication4
             this.retype.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.retype.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.retype.Location = new System.Drawing.Point(14, 457);
-            this.retype.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.retype.Margin = new System.Windows.Forms.Padding(2);
             this.retype.Name = "retype";
             this.retype.PasswordChar = '*';
             this.retype.Size = new System.Drawing.Size(282, 28);
@@ -374,7 +376,7 @@ namespace WindowsFormsApplication4
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Add.Location = new System.Drawing.Point(25, 488);
-            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(107, 54);
             this.Add.TabIndex = 97;
@@ -392,7 +394,7 @@ namespace WindowsFormsApplication4
             this.Update.Image = ((System.Drawing.Image)(resources.GetObject("Update.Image")));
             this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Update.Location = new System.Drawing.Point(151, 488);
-            this.Update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Update.Margin = new System.Windows.Forms.Padding(2);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(134, 56);
             this.Update.TabIndex = 96;
@@ -434,7 +436,7 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(766, 554);
             this.Load += new System.EventHandler(this.UserControl2_Load);

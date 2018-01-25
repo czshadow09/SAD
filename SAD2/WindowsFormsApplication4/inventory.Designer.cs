@@ -40,6 +40,7 @@ namespace WindowsFormsApplication4
             this.Se = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.id = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -200,12 +201,22 @@ namespace WindowsFormsApplication4
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(711, 349);
             this.dataGridView2.TabIndex = 71;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            // 
+            // id
+            // 
+            this.id.Location = new System.Drawing.Point(594, 13);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(57, 20);
+            this.id.TabIndex = 72;
+            this.id.Visible = false;
             // 
             // inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
+            this.Controls.Add(this.id);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.Out);
             this.Controls.Add(this.In);
@@ -240,5 +251,6 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.Button Se;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView2;
+        public System.Windows.Forms.TextBox id;
     }
 }
