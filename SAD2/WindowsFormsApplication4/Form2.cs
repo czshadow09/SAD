@@ -111,7 +111,9 @@ namespace WindowsFormsApplication4
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            sidepanel.Height = button3.Height;
+            sidepanel.Top = button3.Top;
+            transaction1.BringToFront();
         }
 
         private void button2_Click(object sender, EventArgs e)

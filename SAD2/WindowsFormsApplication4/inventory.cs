@@ -126,5 +126,10 @@ namespace WindowsFormsApplication4
             select_user_id = int.Parse(dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
             id.Text = dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
