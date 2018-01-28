@@ -182,3 +182,4 @@ C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources

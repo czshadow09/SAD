@@ -51,6 +51,11 @@ namespace WindowsFormsApplication4
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            else if (tot < 0)
+            {
+                MessageBox.Show("Insufficient items.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             else
             {
                 string query1 = "UPDATE product SET stock_in='" + sum + "', tot_quantity='" + tot + "' where product_id= '" + id.Text + "';";

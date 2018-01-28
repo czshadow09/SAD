@@ -100,7 +100,6 @@ namespace WindowsFormsApplication4
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(54, 20);
             this.id.TabIndex = 97;
-            this.id.Visible = false;
             // 
             // In
             // 

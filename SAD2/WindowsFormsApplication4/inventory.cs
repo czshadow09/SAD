@@ -27,10 +27,6 @@ namespace WindowsFormsApplication4
             conn.Close();
             
         }
-        public string MyValue
-        {
-            get { return id.Text; }
-        }
 
         private void inventory_Load(object sender, EventArgs e)
         {
@@ -51,7 +47,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll2()
         {
-            string query = "select p.product_id, p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
+            string query = "select p.product_id, p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, stock_in, stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -125,11 +121,6 @@ namespace WindowsFormsApplication4
             In i = new In();
             select_user_id = int.Parse(dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
             id.Text = dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
