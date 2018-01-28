@@ -54,6 +54,8 @@ namespace WindowsFormsApplication4
         {
             CreateDataTableColumns();
             loadAll();
+            subtot.Text = "0.00";
+            res.Text = "0.00";
         }
 
         private void firstname_TextChanged(object sender, EventArgs e)
@@ -114,6 +116,16 @@ namespace WindowsFormsApplication4
         {
             int row = dataGridView2.CurrentCell.RowIndex;
             dataGridView2.Rows.RemoveAt(row);
+        }
+
+        private void tax_KeyUp(object sender, KeyEventArgs e)
+        {
+            decimal amo = Convert.ToDecimal(subtot.Text);
+            decimal ta = Convert.ToDecimal(tax.Text);
+            decimal per = (ta / 100) * amo;
+            decimal grandto = amo + per;
+            res.Text = per.ToString();
+            gratot.Text = grandto.ToString();
         }
     }
 }
