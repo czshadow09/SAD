@@ -42,10 +42,11 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.transaction1 = new WindowsFormsApplication4.transaction();
             this.changeprivacy1 = new WindowsFormsApplication4.changeprivacy();
             this.userControl21 = new WindowsFormsApplication4.UserControl2();
             this.inventory1 = new WindowsFormsApplication4.inventory();
-            this.transaction1 = new WindowsFormsApplication4.transaction();
+            this.purchasing1 = new WindowsFormsApplication4.Purchasing();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -242,6 +243,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // transaction1
+            // 
+            this.transaction1.BackColor = System.Drawing.Color.GhostWhite;
+            this.transaction1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.transaction1.Location = new System.Drawing.Point(291, 47);
+            this.transaction1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.transaction1.Name = "transaction1";
+            this.transaction1.Size = new System.Drawing.Size(1021, 682);
+            this.transaction1.TabIndex = 6;
+            // 
             // changeprivacy1
             // 
             this.changeprivacy1.BackColor = System.Drawing.Color.GhostWhite;
@@ -272,14 +283,15 @@
             this.inventory1.Size = new System.Drawing.Size(1021, 682);
             this.inventory1.TabIndex = 3;
             // 
-            // transaction1
+            // purchasing1
             // 
-            this.transaction1.BackColor = System.Drawing.Color.GhostWhite;
-            this.transaction1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.transaction1.Location = new System.Drawing.Point(291, 47);
-            this.transaction1.Name = "transaction1";
-            this.transaction1.Size = new System.Drawing.Size(1021, 682);
-            this.transaction1.TabIndex = 6;
+            this.purchasing1.BackColor = System.Drawing.Color.GhostWhite;
+            this.purchasing1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.purchasing1.Location = new System.Drawing.Point(291, 47);
+            this.purchasing1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.purchasing1.Name = "purchasing1";
+            this.purchasing1.Size = new System.Drawing.Size(1021, 682);
+            this.purchasing1.TabIndex = 7;
             // 
             // Form2
             // 
@@ -287,6 +299,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(1312, 729);
+            this.Controls.Add(this.purchasing1);
             this.Controls.Add(this.transaction1);
             this.Controls.Add(this.changeprivacy1);
             this.Controls.Add(this.userControl21);
@@ -328,5 +341,6 @@
         private System.Windows.Forms.TextBox type;
         public System.Windows.Forms.TextBox usern;
         private transaction transaction1;
+        private Purchasing purchasing1;
     }
 }

@@ -181,7 +181,6 @@ C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\Windo
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
-C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
@@ -204,3 +203,4 @@ C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources
