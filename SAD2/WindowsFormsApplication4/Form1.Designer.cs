@@ -105,14 +105,14 @@ namespace WindowsFormsApplication4
             // btnok
             // 
             this.btnok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnok.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnok.Font = new System.Drawing.Font("Arial", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnok.ForeColor = System.Drawing.Color.Black;
-            this.btnok.Location = new System.Drawing.Point(105, 249);
-            this.btnok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnok.Location = new System.Drawing.Point(99, 248);
+            this.btnok.Margin = new System.Windows.Forms.Padding(0);
             this.btnok.Name = "btnok";
             this.btnok.Size = new System.Drawing.Size(150, 34);
             this.btnok.TabIndex = 17;
-            this.btnok.Text = "login";
+            this.btnok.Text = "LOGIN";
             this.btnok.UseVisualStyleBackColor = false;
             this.btnok.Click += new System.EventHandler(this.btnok_Click);
             // 
