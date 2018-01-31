@@ -47,7 +47,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll2()
         {
-            string query = "select p.product_id, p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, stock_in, stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
+            string query = "select p.product_id, p.description, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, stock_in, stock_out, p.tot_quantity, p.cost_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -56,6 +56,7 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             dataGridView2.DataSource = dt;
             dataGridView2.Columns["product_id"].Visible = false;
+            dataGridView2.Columns["cost_quantity"].Visible = false;
             dataGridView2.Columns["description"].HeaderText = "Product Name";
             dataGridView2.Columns["name"].HeaderText = "Category";
             dataGridView2.Columns["purchase_price"].HeaderText = "Purchase Price";
@@ -69,6 +70,7 @@ namespace WindowsFormsApplication4
         {
             In a = new In();
             a.id.Text = dataGridView2.CurrentRow.Cells["product_id"].Value.ToString();
+            a.constant.Text = cons_quan.Text;
             a.Show();
         }
         private void Out_Click(object sender, EventArgs e)
@@ -121,6 +123,10 @@ namespace WindowsFormsApplication4
             In i = new In();
             select_user_id = int.Parse(dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
             id.Text = dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
+            cons_quan.Text = dataGridView2.Rows[e.RowIndex].Cells["cost_quantity"].Value.ToString();
+            double constant = Double.Parse(cons_quan.Text);
+            constant = constant * 0.3;
+            cons_quan.Text = constant.ToString();
         }
     }
 }

@@ -41,6 +41,7 @@ namespace WindowsFormsApplication4
             this.label1 = new System.Windows.Forms.Label();
             this.entry = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.cons_quan = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -211,11 +212,19 @@ namespace WindowsFormsApplication4
             this.dataGridView2.TabIndex = 71;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
+            // cons_quan
+            // 
+            this.cons_quan.Location = new System.Drawing.Point(447, 49);
+            this.cons_quan.Name = "cons_quan";
+            this.cons_quan.Size = new System.Drawing.Size(46, 20);
+            this.cons_quan.TabIndex = 73;
+            // 
             // inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
+            this.Controls.Add(this.cons_quan);
             this.Controls.Add(this.id);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.Out);
@@ -251,5 +260,6 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button entry;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TextBox cons_quan;
     }
 }

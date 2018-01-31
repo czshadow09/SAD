@@ -46,6 +46,7 @@ namespace WindowsFormsApplication4
             int quant = Int32.Parse(dt.Rows[0][1].ToString());
             int sum = input + stock;
             int tot = quant - input;
+            int perc = int.Parse(constant.Text);
             if (String.IsNullOrEmpty(quan.Text))
             {
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -56,11 +57,16 @@ namespace WindowsFormsApplication4
                 MessageBox.Show("Insufficient items.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+
             else
             {
                 string query1 = "UPDATE product SET stock_in='" + sum + "', tot_quantity='" + tot + "' where product_id= '" + id.Text + "';";
                 MessageBox.Show("Stocked in '" + quan.Text + "' items!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 executeQuery(query1);
+                if(tot <= perc)
+                {
+                    MessageBox.Show("Item needs to be purchased", "Test", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
                 this.Close();
             }
         }

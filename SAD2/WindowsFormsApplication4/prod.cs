@@ -62,7 +62,7 @@ namespace WindowsFormsApplication4
                 if (dt.Rows.Count >= 1) MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                 {
-                    string query1 = "INSERT INTO product(description, purchase_price, store_price, stock_in, stock_out, tot_quantity, category_cat_id) VALUES('" + desc.Text + "', '" + Pprice.Text + "', '" + Sprice.Text + "', 0 , 0 , '" + quan.Text + "', (SELECT cat_id FROM category WHERE name='" + categ.Text + "'));";
+                    string query1 = "INSERT INTO product(description, purchase_price, store_price, stock_in, stock_out, tot_quantity, cost_quantity, category_cat_id) VALUES('" + desc.Text + "', '" + Pprice.Text + "', '" + Sprice.Text + "', 0 , 0 , '" + quan.Text + "', '" + quan.Text + "', (SELECT cat_id FROM category WHERE name='" + categ.Text + "'));";
                     MessageBox.Show("Product added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     executeQuery(query1);
                     this.Close();
@@ -90,7 +90,7 @@ namespace WindowsFormsApplication4
                 }
                 else
                 {
-                    query += " UPDATE product SET description='" + desc.Text + "', purchase_price='" + Pprice.Text + "', store_price='" + Sprice.Text + "', tot_quantity='" + quan.Text + "', category_cat_id = (SELECT cat_id FROM category WHERE name='" + categ.Text + "') WHERE product_id='" + id.Text + "'; ";
+                    query += " UPDATE product SET description='" + desc.Text + "', purchase_price='" + Pprice.Text + "', store_price='" + Sprice.Text + "', tot_quantity='" + quan.Text + "', cost_quantity='" + quan.Text + "', category_cat_id = (SELECT cat_id FROM category WHERE name='" + categ.Text + "') WHERE product_id='" + id.Text + "'; ";
                     MessageBox.Show("Product updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     executeQuery(query);
                 }

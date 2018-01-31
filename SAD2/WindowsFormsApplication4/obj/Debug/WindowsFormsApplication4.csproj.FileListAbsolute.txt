@@ -226,3 +226,4 @@ C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\
 C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
 C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
 C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources

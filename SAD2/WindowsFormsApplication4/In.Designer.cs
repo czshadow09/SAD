@@ -34,6 +34,7 @@ namespace WindowsFormsApplication4
             this.label7 = new System.Windows.Forms.Label();
             this.quan = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
+            this.constant = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // cancel
@@ -101,12 +102,20 @@ namespace WindowsFormsApplication4
             this.id.Size = new System.Drawing.Size(54, 20);
             this.id.TabIndex = 97;
             // 
+            // constant
+            // 
+            this.constant.Location = new System.Drawing.Point(36, 59);
+            this.constant.Name = "constant";
+            this.constant.Size = new System.Drawing.Size(50, 20);
+            this.constant.TabIndex = 98;
+            // 
             // In
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(278, 149);
+            this.Controls.Add(this.constant);
             this.Controls.Add(this.id);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.Add);
@@ -130,5 +139,6 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox quan;
         public System.Windows.Forms.TextBox id;
+        public System.Windows.Forms.TextBox constant;
     }
 }
