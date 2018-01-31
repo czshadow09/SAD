@@ -82,7 +82,7 @@
             this.Se.Image = ((System.Drawing.Image)(resources.GetObject("Se.Image")));
             this.Se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Se.Location = new System.Drawing.Point(12, 228);
-            this.Se.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Se.Margin = new System.Windows.Forms.Padding(2);
             this.Se.Name = "Se";
             this.Se.Size = new System.Drawing.Size(41, 42);
             this.Se.TabIndex = 62;
@@ -94,7 +94,7 @@
             // 
             this.search.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.Location = new System.Drawing.Point(58, 237);
-            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(192, 27);
             this.search.TabIndex = 61;
@@ -103,7 +103,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(16, 80);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -151,7 +151,7 @@
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(392, 80);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -177,9 +177,9 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(0, 273);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(417, 269);
+            this.panel1.Size = new System.Drawing.Size(433, 281);
             this.panel1.TabIndex = 99;
             // 
             // id
@@ -198,7 +198,7 @@
             this.remove.Image = ((System.Drawing.Image)(resources.GetObject("remove.Image")));
             this.remove.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.remove.Location = new System.Drawing.Point(162, 186);
-            this.remove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.remove.Margin = new System.Windows.Forms.Padding(2);
             this.remove.Name = "remove";
             this.remove.Size = new System.Drawing.Size(129, 56);
             this.remove.TabIndex = 114;
@@ -216,7 +216,7 @@
             this.add.Image = ((System.Drawing.Image)(resources.GetObject("add.Image")));
             this.add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.add.Location = new System.Drawing.Point(296, 186);
-            this.add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.add.Margin = new System.Windows.Forms.Padding(2);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(104, 56);
             this.add.TabIndex = 113;
@@ -254,7 +254,7 @@
             this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.quan.Location = new System.Drawing.Point(116, 123);
-            this.quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quan.Margin = new System.Windows.Forms.Padding(2);
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(86, 28);
             this.quan.TabIndex = 110;
@@ -375,9 +375,9 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Location = new System.Drawing.Point(420, 273);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(338, 269);
+            this.panel2.Size = new System.Drawing.Size(338, 281);
             this.panel2.TabIndex = 100;
             // 
             // textBox9
@@ -409,7 +409,7 @@
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.textBox8.Location = new System.Drawing.Point(134, 131);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(53, 28);
             this.textBox8.TabIndex = 119;
@@ -480,7 +480,7 @@
             this.tax.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tax.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.tax.Location = new System.Drawing.Point(134, 60);
-            this.tax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tax.Margin = new System.Windows.Forms.Padding(2);
             this.tax.Name = "tax";
             this.tax.Size = new System.Drawing.Size(53, 28);
             this.tax.TabIndex = 116;
@@ -543,7 +543,7 @@
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(261, 227);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 37);
             this.button2.TabIndex = 115;
@@ -566,7 +566,7 @@
             this.Controls.Add(this.Se);
             this.Controls.Add(this.search);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "transaction";
             this.Size = new System.Drawing.Size(766, 554);
             this.Load += new System.EventHandler(this.transaction_Load);
