@@ -44,5 +44,11 @@ namespace WindowsFormsApplication4
             dataGridView1.Columns["description"].HeaderText = "Product Name";
             dataGridView1.Columns["name"].HeaderText = "Category";
         }
+
+        private void Add_Click(object sender, EventArgs e)
+        {
+            prod a = new prod();
+            a.Show();
+        }
     }
 }

@@ -66,6 +66,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.refresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -162,6 +163,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.refresh);
             this.panel1.Controls.Add(this.id);
             this.panel1.Controls.Add(this.remove);
             this.panel1.Controls.Add(this.add);
@@ -551,6 +553,16 @@
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
             // 
+            // refresh
+            // 
+            this.refresh.Location = new System.Drawing.Point(31, 205);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(101, 26);
+            this.refresh.TabIndex = 116;
+            this.refresh.Text = "Refresh";
+            this.refresh.UseVisualStyleBackColor = true;
+            this.refresh.Click += new System.EventHandler(this.refresh_Click);
+            // 
             // transaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -620,5 +632,6 @@
         private System.Windows.Forms.TextBox name;
         private System.Windows.Forms.TextBox avquan;
         private System.Windows.Forms.TextBox id;
+        private System.Windows.Forms.Button refresh;
     }
 }

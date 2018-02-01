@@ -147,6 +147,7 @@
             this.Add.Text = " Add New Item";
             this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
             // button2
             // 

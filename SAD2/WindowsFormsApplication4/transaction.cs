@@ -127,5 +127,15 @@ namespace WindowsFormsApplication4
             res.Text = per.ToString();
             gratot.Text = grandto.ToString();
         }
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            loadAll();
+            name.Clear();
+            sprice.Clear();
+            avquan.Clear();
+            quan.Clear();
+            amount.Clear();
+        }
     }
 }
