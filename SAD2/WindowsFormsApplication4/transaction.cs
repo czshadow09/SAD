@@ -137,5 +137,20 @@ namespace WindowsFormsApplication4
             quan.Clear();
             amount.Clear();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = false;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+        }
     }
 }

@@ -228,3 +228,4 @@ C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\Windo
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
