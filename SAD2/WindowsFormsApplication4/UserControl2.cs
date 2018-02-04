@@ -273,5 +273,13 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void contact_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) & (Keys)e.KeyChar != Keys.Back & e.KeyChar != ('+'))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

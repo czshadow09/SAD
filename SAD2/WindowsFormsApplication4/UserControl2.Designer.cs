@@ -243,6 +243,7 @@ namespace WindowsFormsApplication4
             this.contact.Name = "contact";
             this.contact.Size = new System.Drawing.Size(282, 28);
             this.contact.TabIndex = 77;
+            this.contact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.contact_KeyPress);
             // 
             // lastname
             // 

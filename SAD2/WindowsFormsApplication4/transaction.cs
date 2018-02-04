@@ -113,6 +113,13 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             amount.Text = dt.Rows[0][0].ToString();
         }
+        private void quan_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) & (Keys)e.KeyChar != Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
 
         private void add_Click(object sender, EventArgs e)
         {
@@ -172,10 +179,7 @@ namespace WindowsFormsApplication4
             {
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (Int32.Parse(change.Text) > 0)
-            {
-                MessageBox.Show("Not enough payment.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
             else
             {
                 MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -184,5 +188,6 @@ namespace WindowsFormsApplication4
                 refr();
             }
         }
+
     }
 }

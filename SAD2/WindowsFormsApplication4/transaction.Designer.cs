@@ -198,7 +198,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.label23);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(0, 2);
+            this.panel3.Location = new System.Drawing.Point(0, -1);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(420, 281);
@@ -226,7 +226,7 @@
             this.panel4.Controls.Add(this.payment);
             this.panel4.Controls.Add(this.label17);
             this.panel4.Controls.Add(this.label18);
-            this.panel4.Location = new System.Drawing.Point(6, 3);
+            this.panel4.Location = new System.Drawing.Point(2, 2);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(382, 212);
@@ -410,6 +410,7 @@
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(86, 28);
             this.quan.TabIndex = 110;
+            this.quan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.quan_KeyPress);
             this.quan.KeyUp += new System.Windows.Forms.KeyEventHandler(this.quan_KeyUp);
             // 
             // label8
