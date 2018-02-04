@@ -56,7 +56,7 @@
             this.Update.Image = ((System.Drawing.Image)(resources.GetObject("Update.Image")));
             this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Update.Location = new System.Drawing.Point(170, 364);
-            this.Update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Update.Margin = new System.Windows.Forms.Padding(2);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(134, 56);
             this.Update.TabIndex = 106;
@@ -74,7 +74,7 @@
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Add.Location = new System.Drawing.Point(30, 364);
-            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(124, 62);
             this.Add.TabIndex = 105;
@@ -92,7 +92,7 @@
             this.AddC.Image = ((System.Drawing.Image)(resources.GetObject("AddC.Image")));
             this.AddC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddC.Location = new System.Drawing.Point(30, 429);
-            this.AddC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddC.Margin = new System.Windows.Forms.Padding(2);
             this.AddC.Name = "AddC";
             this.AddC.Size = new System.Drawing.Size(124, 58);
             this.AddC.TabIndex = 104;
@@ -130,7 +130,7 @@
             this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.quan.Location = new System.Drawing.Point(18, 334);
-            this.quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quan.Margin = new System.Windows.Forms.Padding(2);
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(282, 28);
             this.quan.TabIndex = 101;
@@ -152,7 +152,7 @@
             this.Sprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sprice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Sprice.Location = new System.Drawing.Point(18, 266);
-            this.Sprice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Sprice.Margin = new System.Windows.Forms.Padding(2);
             this.Sprice.Name = "Sprice";
             this.Sprice.Size = new System.Drawing.Size(282, 28);
             this.Sprice.TabIndex = 99;
@@ -174,7 +174,7 @@
             this.Pprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pprice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Pprice.Location = new System.Drawing.Point(18, 201);
-            this.Pprice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Pprice.Margin = new System.Windows.Forms.Padding(2);
             this.Pprice.Name = "Pprice";
             this.Pprice.Size = new System.Drawing.Size(282, 28);
             this.Pprice.TabIndex = 97;
@@ -208,7 +208,7 @@
             this.desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.desc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.desc.Location = new System.Drawing.Point(18, 71);
-            this.desc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.desc.Margin = new System.Windows.Forms.Padding(2);
             this.desc.Name = "desc";
             this.desc.Size = new System.Drawing.Size(282, 28);
             this.desc.TabIndex = 94;
@@ -217,7 +217,7 @@
             // 
             this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id.Location = new System.Drawing.Point(242, 9);
-            this.id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.id.Margin = new System.Windows.Forms.Padding(2);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(43, 28);
             this.id.TabIndex = 93;
@@ -244,7 +244,7 @@
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cancel.Location = new System.Drawing.Point(170, 428);
-            this.cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancel.Margin = new System.Windows.Forms.Padding(2);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(128, 61);
             this.cancel.TabIndex = 107;
@@ -275,7 +275,7 @@
             this.Controls.Add(this.desc);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "prod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "prod";
@@ -290,18 +290,18 @@
         private System.Windows.Forms.Button Update;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button AddC;
-        private System.Windows.Forms.ComboBox categ;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox quan;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox Sprice;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox Pprice;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox desc;
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button cancel;
+        public System.Windows.Forms.ComboBox categ;
+        public System.Windows.Forms.TextBox quan;
+        public System.Windows.Forms.TextBox Sprice;
+        public System.Windows.Forms.TextBox Pprice;
+        public System.Windows.Forms.TextBox desc;
     }
 }

@@ -75,9 +75,23 @@ namespace WindowsFormsApplication4
 
         private void Se_Click(object sender, EventArgs e)
         {
-            
+
         }
         private int select_user_id;
+
+        private void refr()
+        {
+            loadAll();
+            name.Clear();
+            sprice.Clear();
+            avquan.Clear();
+            quan.Clear();
+            amount.Clear();
+            subtot.Clear();
+            tax.Clear();
+            res.Clear();
+            gratot.Clear();
+        }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -130,18 +144,9 @@ namespace WindowsFormsApplication4
 
         private void refresh_Click(object sender, EventArgs e)
         {
-            loadAll();
-            name.Clear();
-            sprice.Clear();
-            avquan.Clear();
-            quan.Clear();
-            amount.Clear();
+            refr();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void cancel_Click(object sender, EventArgs e)
         {
@@ -151,6 +156,33 @@ namespace WindowsFormsApplication4
         private void button2_Click(object sender, EventArgs e)
         {
             panel3.Visible = true;
+        }
+
+        private void payment_KeyUp(object sender, KeyEventArgs e)
+        {
+            decimal grandtot = Convert.ToDecimal(gratot.Text);
+            decimal pay = Convert.ToDecimal(payment.Text);
+            decimal chan = grandtot - pay;
+            change.Text = chan.ToString();
+        }
+
+        private void order_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(payment.Text) || String.IsNullOrEmpty(change.Text))
+            {
+                MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (Int32.Parse(change.Text) > 0)
+            {
+                MessageBox.Show("Not enough payment.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                panel3.Visible = false;
+                panel4.Visible = false;
+                refr();
+            }
         }
     }
 }

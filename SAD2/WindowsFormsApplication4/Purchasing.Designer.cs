@@ -36,7 +36,7 @@
             this.Out = new System.Windows.Forms.Button();
             this.In = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.update = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -149,22 +149,22 @@
             this.Add.UseVisualStyleBackColor = true;
             this.Add.Click += new System.EventHandler(this.Add_Click);
             // 
-            // button2
+            // update
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Teal;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(174, 466);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 68);
-            this.button2.TabIndex = 116;
-            this.button2.Text = "Save List";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.update.FlatAppearance.BorderSize = 0;
+            this.update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.ForeColor = System.Drawing.Color.Teal;
+            this.update.Image = ((System.Drawing.Image)(resources.GetObject("update.Image")));
+            this.update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.update.Location = new System.Drawing.Point(174, 466);
+            this.update.Margin = new System.Windows.Forms.Padding(2);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(169, 68);
+            this.update.TabIndex = 116;
+            this.update.Text = "Save List";
+            this.update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.update.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -250,7 +250,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.Controls.Add(this.quant);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.update);
             this.Controls.Add(this.Se);
             this.Controls.Add(this.search);
             this.Controls.Add(this.Add);
@@ -280,7 +280,7 @@
         private System.Windows.Forms.Button Out;
         private System.Windows.Forms.Button In;
         private System.Windows.Forms.Button Add;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button update;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;

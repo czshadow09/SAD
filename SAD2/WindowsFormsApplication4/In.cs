@@ -46,7 +46,7 @@ namespace WindowsFormsApplication4
             int quant = Int32.Parse(dt.Rows[0][1].ToString());
             int sum = input + stock;
             int tot = quant - input;
-            int perc = int.Parse(constant.Text);
+            int perc = Int32.Parse(constant.Text);
             if (String.IsNullOrEmpty(quan.Text))
             {
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);

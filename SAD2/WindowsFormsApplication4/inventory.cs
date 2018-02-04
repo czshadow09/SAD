@@ -82,7 +82,7 @@ namespace WindowsFormsApplication4
 
         private void entry_Click(object sender, EventArgs e)
         {
-            purchased a = new purchased();
+            prod a = new prod();
             a.Show();
         }
 
