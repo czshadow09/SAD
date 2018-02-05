@@ -189,5 +189,18 @@ namespace WindowsFormsApplication4
             }
         }
 
+        private void tax_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) & (Keys)e.KeyChar != Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            purchased a = new purchased();
+            a.Show();
+        }
     }
 }
