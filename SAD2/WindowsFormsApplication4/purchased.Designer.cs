@@ -38,7 +38,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Refresh = new System.Windows.Forms.Button();
+            this.refresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -51,10 +51,9 @@
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Font = new System.Drawing.Font("Gill Sans MT", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(164, 10);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(219, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 33);
+            this.label2.Size = new System.Drawing.Size(187, 40);
             this.label2.TabIndex = 118;
             this.label2.Text = "Purchased List";
             // 
@@ -66,10 +65,10 @@
             this.cancel.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancel.Location = new System.Drawing.Point(894, 397);
-            this.cancel.Margin = new System.Windows.Forms.Padding(2);
+            this.cancel.Location = new System.Drawing.Point(1192, 489);
+            this.cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(117, 43);
+            this.cancel.Size = new System.Drawing.Size(156, 53);
             this.cancel.TabIndex = 117;
             this.cancel.Text = " Cancel";
             this.cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -79,22 +78,22 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(32, 60);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(43, 74);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(444, 311);
+            this.dataGridView1.Size = new System.Drawing.Size(592, 383);
             this.dataGridView1.TabIndex = 115;
             // 
             // dataGridView2
             // 
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(542, 60);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView2.Location = new System.Drawing.Point(723, 74);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(456, 311);
+            this.dataGridView2.Size = new System.Drawing.Size(608, 383);
             this.dataGridView2.TabIndex = 119;
             // 
             // label1
@@ -103,10 +102,9 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Gill Sans MT", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(171, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(228, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 33);
+            this.label1.Size = new System.Drawing.Size(188, 40);
             this.label1.TabIndex = 120;
             this.label1.Text = "Order History";
             // 
@@ -114,11 +112,11 @@
             // 
             this.retype.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.retype.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.retype.Location = new System.Drawing.Point(119, 405);
-            this.retype.Margin = new System.Windows.Forms.Padding(2);
+            this.retype.Location = new System.Drawing.Point(159, 498);
+            this.retype.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.retype.Name = "retype";
             this.retype.PasswordChar = '*';
-            this.retype.Size = new System.Drawing.Size(119, 28);
+            this.retype.Size = new System.Drawing.Size(157, 34);
             this.retype.TabIndex = 123;
             // 
             // label12
@@ -127,10 +125,9 @@
             this.label12.BackColor = System.Drawing.Color.GhostWhite;
             this.label12.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(17, 406);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(23, 500);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 22);
+            this.label12.Size = new System.Drawing.Size(128, 28);
             this.label12.TabIndex = 122;
             this.label12.Text = "Total Sales:";
             // 
@@ -139,9 +136,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(15, 11);
+            this.panel1.Location = new System.Drawing.Point(20, 14);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(482, 380);
+            this.panel1.Size = new System.Drawing.Size(642, 467);
             this.panel1.TabIndex = 124;
             // 
             // panel2
@@ -149,28 +147,36 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(523, 11);
+            this.panel2.Location = new System.Drawing.Point(697, 14);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(492, 380);
+            this.panel2.Size = new System.Drawing.Size(655, 467);
             this.panel2.TabIndex = 125;
             // 
-            // Refresh
+            // refresh
             // 
-            this.Refresh.Location = new System.Drawing.Point(701, 405);
-            this.Refresh.Name = "Refresh";
-            this.Refresh.Size = new System.Drawing.Size(103, 23);
-            this.Refresh.TabIndex = 126;
-            this.Refresh.Text = "Refresh";
-            this.Refresh.UseVisualStyleBackColor = true;
-            this.Refresh.Click += new System.EventHandler(this.Refresh_Click);
+            this.refresh.FlatAppearance.BorderSize = 0;
+            this.refresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refresh.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refresh.ForeColor = System.Drawing.Color.Teal;
+            this.refresh.Image = ((System.Drawing.Image)(resources.GetObject("refresh.Image")));
+            this.refresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.refresh.Location = new System.Drawing.Point(1019, 489);
+            this.refresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.refresh.Name = "refresh";
+            this.refresh.Size = new System.Drawing.Size(167, 52);
+            this.refresh.TabIndex = 126;
+            this.refresh.Text = "   Refresh";
+            this.refresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.refresh.UseVisualStyleBackColor = true;
             // 
             // purchased
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(1032, 441);
-            this.Controls.Add(this.Refresh);
+            this.ClientSize = new System.Drawing.Size(1376, 543);
+            this.Controls.Add(this.refresh);
             this.Controls.Add(this.retype);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dataGridView2);
@@ -178,7 +184,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "purchased";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "purchased";
@@ -204,6 +210,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button Refresh;
+        private System.Windows.Forms.Button refresh;
     }
 }
