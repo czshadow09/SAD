@@ -56,6 +56,7 @@ namespace WindowsFormsApplication4
             loadAll();
             subtot.Text = "0.00";
             res.Text = "0.00";
+            date.Text = DateTime.Now.ToString("MMMM dd, yyyy");
         }
 
         private void firstname_TextChanged(object sender, EventArgs e)
@@ -182,6 +183,8 @@ namespace WindowsFormsApplication4
 
             else
             {
+                string query = "Insert Into ordering(order_date) values(now())";
+                executeQuery(query);
                 MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 panel3.Visible = false;
                 panel4.Visible = false;

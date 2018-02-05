@@ -120,18 +120,18 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cancel.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAJUSURBVFhHvZe/Sl1BEIcvIhIsLCzEKgQfIPgEIiksUohlnsJCfAGRIJJCJKSyFhEfIIhIkkpE
-        goRUIpIiRQgSxEJELOL3O87i3r1zzt31eh344J6Z2Z25+2d2t5Urb77eDsFbWINv8Bsu4C/8ggP4CHMw
-        bM16Fzobg1X4B/8zuQQl89K6KRcaD8KideYFyeEa3sML6zZPaDAOGmav08dwDBPWfbPIEc6s4VOitTJp
-        YXzBQfPdj+ABJeGPBIYB2DfHfvIDOtcEyvnIqd+sWth7QTEK2tOec+AE9hKdh+rB90SXcgMPU8HHcmT0
-        OAQlqWnS/vZ8xDaoYA3DZ9PVsRGCa7//iQwpWpSjlTPCb7FutphNGDQ3+SiJppG4ghE5TkdKjyMYsn4r
-        4TtNoi24hG+NVrdReCfHbsMvdiANEJLwgoumqQpsyLFbloEt8AIN2GclpssJLo7k/DNRNtGRRCzYSoKL
-        czUorXxuEuhKg4sLNTpNlN3omHMJOuHtjiaqBEqmwA0eBFtpEtUU5C7CutXuLcLcJKpFmLMN63aA5rzJ
-        5vUVU23DqUSZUleI4gBeEtmF6DGl2Pt3bUnwO68Um/NSZPDQKITD6JPpPFQxw2G0a7o67g8jCR85x7G2
-        a86FRcex7oCeLdB+HEtQPOeFZMXCPgjK57qSaXT8azoGXUpLK2MJWuzN13McXkE/klDw1xamWXDUSHyx
-        hk9B/sMkCA20Jhag16eZKm1bISsSGms0VuAcvCAevT9OU6EzFZgZ+AC6nqtC6sUs9DzXlOnpPguZz/NW
-        6w7gVMOJcFrO1wAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAlRJREFUWEe9
+        l79KXUEQhy8iEiwsLMQqBB8g+AQiKSxSiGWewkJ8AZEgkkIkpLIWER8giEiSSkSChFQikiJFCBLEQkQs
+        4vc7zuLevXPO3fV6HfjgnpnZnbn7Z3a3lStvvt4OwVtYg2/wGy7gL/yCA/gIczBszXoXOhuDVfgH/zO5
+        BCXz0ropFxoPwqJ15gXJ4RrewwvrNk9oMA4aZq/Tx3AME9Z9s8gRzqzhU6K1MmlhfMFB892P4AEl4Y8E
+        hgHYN8d+8gM61wTK+cip36xa2HtBMQra055z4AT2Ep2H6sH3RJdyAw9TwcdyZPQ4BCWpadL+9nzENqhg
+        DcNn09WxEYJrv/+JDClalKOVM8JvsW62mE0YNDf5KImmkbiCETlOR0qPIxiyfivhO02iLbiEb41Wt1F4
+        J8duwy92IA0QkvCCi6apCmzIsVuWgS3wAg3YZyWmywkujuT8M1E20ZFELNhKgotzNSitfG4S6EqDiws1
+        Ok2U3eiYcwk64e2OJqoESqbADR4EW2kS1RTkLsK61e4twtwkqkWYsw3rdoDmvMnm9RVTbcOpRJlSV4ji
+        AF4S2YXoMaXY+3dtSfA7rxSb81Jk8NAohMPok+k8VDHDYbRrujruDyMJHznHsbZrzoVFx7HugJ4t0H4c
+        S1A854VkxcI+CMrnupJpdPxrOgZdSksrYwla7M3XcxxeQT+SUPDXFqZZcNRIfLGGT0H+wyQIDbQmFqDX
+        p5kqbVshKxIaazRW4By8IB69P05ToTMVmBn4ALqeq0LqxSz0PNeU6ek+C5nP81brDuBUw4lwWs7XAAAA
+        AElFTkSuQmCC
 </value>
   </data>
 </root>

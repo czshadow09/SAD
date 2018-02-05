@@ -73,6 +73,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.date = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -172,6 +173,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.date);
             this.panel1.Controls.Add(this.refresh);
             this.panel1.Controls.Add(this.id);
             this.panel1.Controls.Add(this.remove);
@@ -674,6 +676,15 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // date
+            // 
+            this.date.Location = new System.Drawing.Point(14, 247);
+            this.date.Name = "date";
+            this.date.ReadOnly = true;
+            this.date.Size = new System.Drawing.Size(223, 20);
+            this.date.TabIndex = 123;
+            this.date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // transaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -729,7 +740,6 @@
         private System.Windows.Forms.Button add;
         private System.Windows.Forms.Button remove;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox gratot;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox res;
         private System.Windows.Forms.Label label12;
@@ -755,5 +765,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button refresh;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox date;
+        public System.Windows.Forms.TextBox gratot;
     }
 }
