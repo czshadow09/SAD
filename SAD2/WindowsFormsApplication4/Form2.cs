@@ -37,6 +37,7 @@ namespace WindowsFormsApplication4
             DataTable dt = new DataTable();
             adp.Fill(dt);
             type.Text = dt.Rows[0][0].ToString();
+            loginIn.Text = "Login as:" + type.Text;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -80,9 +81,23 @@ namespace WindowsFormsApplication4
 
         private void button4_Click(object sender, EventArgs e)
         {
-            sidepanel.Height = button4.Height;
-            sidepanel.Top = button4.Top;
-            userControl21.BringToFront();
+            String query = "SELECT type FROM user WHERE type='" + type.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            if (type.Text == "Admin")
+            {
+                sidepanel.Height = button4.Height;
+                sidepanel.Top = button4.Top;
+                userControl21.BringToFront();
+            }
+            else
+            {
+                userControl21.Enabled = false;
+            }
         }
 
         private void userControl21_Load(object sender, EventArgs e)
@@ -134,7 +149,7 @@ namespace WindowsFormsApplication4
             }
             else
             {
-                MessageBox.Show("Only Admin can access inventory", "Authorization", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                inventory1.Enabled = false;
             }
         }
 

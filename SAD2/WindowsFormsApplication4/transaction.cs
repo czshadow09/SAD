@@ -42,6 +42,11 @@ namespace WindowsFormsApplication4
             dataGridView1.Columns["name"].HeaderText = "Category";
             dataGridView1.Columns["store_price"].HeaderText = "Price";
             dataGridView1.Columns["stock_out"].HeaderText = "Available";
+            quan.Enabled = false;
+            add.Enabled = false;
+            remove.Enabled = false;
+            button2.Enabled = false;
+            tax.Enabled = false;
         }
         private void CreateDataTableColumns()
         {
@@ -92,6 +97,7 @@ namespace WindowsFormsApplication4
             tax.Clear();
             res.Clear();
             gratot.Clear();
+            dataGridView2.DataSource = null;
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -101,6 +107,7 @@ namespace WindowsFormsApplication4
             name.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
             sprice.Text = dataGridView1.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
             avquan.Text = dataGridView1.Rows[e.RowIndex].Cells["stock_out"].Value.ToString();
+            quan.Enabled = true;
         }
 
         private void quan_KeyUp(object sender, KeyEventArgs e)
@@ -113,6 +120,7 @@ namespace WindowsFormsApplication4
             DataTable dt = new DataTable();
             adp.Fill(dt);
             amount.Text = dt.Rows[0][0].ToString();
+            add.Enabled = true;
         }
         private void quan_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -132,6 +140,8 @@ namespace WindowsFormsApplication4
             dataGridView2.DataSource = dt;
             decimal sum = Convert.ToDecimal(dt.Compute("SUM(Amount)", string.Empty));
             subtot.Text = sum.ToString();
+            tax.Enabled = true;
+            remove.Enabled = true;
         }
 
         private void remove_Click(object sender, EventArgs e)
@@ -148,6 +158,7 @@ namespace WindowsFormsApplication4
             decimal grandto = amo + per;
             res.Text = per.ToString();
             gratot.Text = grandto.ToString();
+            button2.Enabled = true;
         }
 
         private void refresh_Click(object sender, EventArgs e)
