@@ -33,8 +33,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Se = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.TextBox();
-            this.Out = new System.Windows.Forms.Button();
-            this.In = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
             this.update = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,6 +54,7 @@
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(57, 20);
             this.id.TabIndex = 106;
+            this.id.Visible = false;
             // 
             // label2
             // 
@@ -78,7 +77,7 @@
             this.Se.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Se.Image = ((System.Drawing.Image)(resources.GetObject("Se.Image")));
             this.Se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Se.Location = new System.Drawing.Point(212, 63);
+            this.Se.Location = new System.Drawing.Point(711, 479);
             this.Se.Margin = new System.Windows.Forms.Padding(2);
             this.Se.Name = "Se";
             this.Se.Size = new System.Drawing.Size(41, 42);
@@ -90,46 +89,12 @@
             // search
             // 
             this.search.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.Location = new System.Drawing.Point(17, 73);
+            this.search.Location = new System.Drawing.Point(475, 489);
             this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(192, 27);
+            this.search.Size = new System.Drawing.Size(232, 27);
             this.search.TabIndex = 112;
             this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
-            // 
-            // Out
-            // 
-            this.Out.BackColor = System.Drawing.Color.Silver;
-            this.Out.FlatAppearance.BorderSize = 0;
-            this.Out.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Out.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Out.ForeColor = System.Drawing.Color.Black;
-            this.Out.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Out.Location = new System.Drawing.Point(354, 316);
-            this.Out.Margin = new System.Windows.Forms.Padding(2);
-            this.Out.Name = "Out";
-            this.Out.Size = new System.Drawing.Size(62, 36);
-            this.Out.TabIndex = 105;
-            this.Out.Text = "<<";
-            this.Out.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Out.UseVisualStyleBackColor = false;
-            // 
-            // In
-            // 
-            this.In.BackColor = System.Drawing.Color.Silver;
-            this.In.FlatAppearance.BorderSize = 0;
-            this.In.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.In.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.In.ForeColor = System.Drawing.Color.Black;
-            this.In.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.In.Location = new System.Drawing.Point(354, 255);
-            this.In.Margin = new System.Windows.Forms.Padding(2);
-            this.In.Name = "In";
-            this.In.Size = new System.Drawing.Size(62, 36);
-            this.In.TabIndex = 104;
-            this.In.Text = ">>";
-            this.In.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.In.UseVisualStyleBackColor = false;
             // 
             // Add
             // 
@@ -171,7 +136,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(75, 116);
+            this.label5.Location = new System.Drawing.Point(75, 94);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(198, 26);
@@ -181,7 +146,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 150);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 128);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
@@ -197,7 +162,7 @@
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView2.Location = new System.Drawing.Point(428, 150);
+            this.dataGridView2.Location = new System.Drawing.Point(428, 128);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
@@ -230,7 +195,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(533, 116);
+            this.label6.Location = new System.Drawing.Point(533, 94);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(117, 26);
@@ -243,6 +208,7 @@
             this.quant.Name = "quant";
             this.quant.Size = new System.Drawing.Size(45, 20);
             this.quant.TabIndex = 117;
+            this.quant.Visible = false;
             // 
             // Purchasing
             // 
@@ -259,8 +225,6 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.id);
-            this.Controls.Add(this.Out);
-            this.Controls.Add(this.In);
             this.Controls.Add(this.label2);
             this.Name = "Purchasing";
             this.Size = new System.Drawing.Size(766, 554);
@@ -277,8 +241,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Se;
         public System.Windows.Forms.TextBox search;
-        private System.Windows.Forms.Button Out;
-        private System.Windows.Forms.Button In;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button update;
         private System.Windows.Forms.Label label5;

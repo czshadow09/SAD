@@ -116,6 +116,8 @@ namespace WindowsFormsApplication4
             // Se
             // 
             this.Se.AccessibleDescription = "";
+            this.Se.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Se.FlatAppearance.BorderSize = 0;
             this.Se.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Se.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -133,6 +135,8 @@ namespace WindowsFormsApplication4
             // 
             // search
             // 
+            this.search.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.search.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.Location = new System.Drawing.Point(501, 486);
             this.search.Margin = new System.Windows.Forms.Padding(2);
@@ -142,6 +146,9 @@ namespace WindowsFormsApplication4
             // 
             // view
             // 
+            this.view.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.view.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.view.BackColor = System.Drawing.Color.Silver;
             this.view.FlatAppearance.BorderSize = 0;
             this.view.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -160,6 +167,8 @@ namespace WindowsFormsApplication4
             // 
             // categ
             // 
+            this.categ.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.categ.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.categ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categ.FormattingEnabled = true;
@@ -172,6 +181,8 @@ namespace WindowsFormsApplication4
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
@@ -202,6 +213,9 @@ namespace WindowsFormsApplication4
             // 
             // dataGridView2
             // 
+            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(26, 98);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);

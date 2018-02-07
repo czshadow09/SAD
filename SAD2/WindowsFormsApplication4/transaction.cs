@@ -47,6 +47,7 @@ namespace WindowsFormsApplication4
             remove.Enabled = false;
             button2.Enabled = false;
             tax.Enabled = false;
+            date.Enabled = false;
         }
         private void CreateDataTableColumns()
         {
