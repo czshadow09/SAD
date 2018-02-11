@@ -141,8 +141,6 @@ C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\Windo
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
-C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.dll
-C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
@@ -228,7 +226,6 @@ C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\
 C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
 C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
-C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojFakesResolveAssemblyReference.cache
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\Fakes\fakes.args
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\Fakes\msd\b\Microsoft.QualityTools.Testing.Fakes.dll
@@ -254,3 +251,4 @@ C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\Fakes
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.dll
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources

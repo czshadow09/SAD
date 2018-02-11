@@ -108,7 +108,7 @@ namespace WindowsFormsApplication4
             this.btnok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnok.Font = new System.Drawing.Font("Bahnschrift", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnok.ForeColor = System.Drawing.Color.Black;
-            this.btnok.Location = new System.Drawing.Point(130, 305);
+            this.btnok.Location = new System.Drawing.Point(141, 304);
             this.btnok.Margin = new System.Windows.Forms.Padding(0);
             this.btnok.Name = "btnok";
             this.btnok.Size = new System.Drawing.Size(200, 49);

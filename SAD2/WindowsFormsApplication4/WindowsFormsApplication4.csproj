@@ -108,6 +108,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="purchase list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="purchase list.Designer.cs">
+      <DependentUpon>purchase list.cs</DependentUpon>
+    </Compile>
     <Compile Include="purchased.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="purchase list.resx">
+      <DependentUpon>purchase list.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="purchased.resx">
       <DependentUpon>purchased.cs</DependentUpon>
     </EmbeddedResource>

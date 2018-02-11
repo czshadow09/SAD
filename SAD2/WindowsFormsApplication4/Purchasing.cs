@@ -50,5 +50,11 @@ namespace WindowsFormsApplication4
             prod a = new prod();
             a.Show();
         }
+
+        private void update_Click(object sender, EventArgs e)
+        {
+            purchase_list a = new purchase_list();
+            a.Show();
+        }
     }
 }
