@@ -45,8 +45,7 @@ namespace WindowsFormsApplication4
             quan.Enabled = false;
             add.Enabled = false;
             remove.Enabled = false;
-            button2.Enabled = false;
-            tax.Enabled = false;
+            checkout.Enabled = false;
             date.Enabled = false;
         }
         private void CreateDataTableColumns()
@@ -61,7 +60,6 @@ namespace WindowsFormsApplication4
             CreateDataTableColumns();
             loadAll();
             subtot.Text = "0.00";
-            res.Text = "0.00";
             date.Text = DateTime.Now.ToString("MMMM dd, yyyy");
         }
 
@@ -94,10 +92,6 @@ namespace WindowsFormsApplication4
             avquan.Clear();
             quan.Clear();
             amount.Clear();
-            subtot.Clear();
-            tax.Clear();
-            res.Clear();
-            gratot.Clear();
             dataGridView2.DataSource = null;
         }
 
@@ -121,7 +115,14 @@ namespace WindowsFormsApplication4
             DataTable dt = new DataTable();
             adp.Fill(dt);
             amount.Text = dt.Rows[0][0].ToString();
-            add.Enabled = true;
+            if(amount.Text == "0.00")
+            {
+                add.Enabled = false;
+            }
+            else
+            {
+                add.Enabled = true;
+            }
         }
         private void quan_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -141,7 +142,6 @@ namespace WindowsFormsApplication4
             dataGridView2.DataSource = dt;
             decimal sum = Convert.ToDecimal(dt.Compute("SUM(Amount)", string.Empty));
             subtot.Text = sum.ToString();
-            tax.Enabled = true;
             remove.Enabled = true;
         }
 
@@ -149,17 +149,6 @@ namespace WindowsFormsApplication4
         {
             int row = dataGridView2.CurrentCell.RowIndex;
             dataGridView2.Rows.RemoveAt(row);
-        }
-
-        private void tax_KeyUp(object sender, KeyEventArgs e)
-        {
-            decimal amo = Convert.ToDecimal(subtot.Text);
-            decimal ta = Convert.ToDecimal(tax.Text);
-            decimal per = (ta / 100) * amo;
-            decimal grandto = amo + per;
-            res.Text = per.ToString();
-            gratot.Text = grandto.ToString();
-            button2.Enabled = true;
         }
 
         private void refresh_Click(object sender, EventArgs e)
@@ -173,21 +162,24 @@ namespace WindowsFormsApplication4
             panel3.Visible = false;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            panel3.Visible = true;
-        }
-
         private void payment_KeyUp(object sender, KeyEventArgs e)
         {
-            decimal grandtot = Convert.ToDecimal(gratot.Text);
+            decimal grandtot = Convert.ToDecimal(subtot.Text);
             decimal pay = Convert.ToDecimal(payment.Text);
             decimal chan = grandtot - pay;
             change.Text = chan.ToString();
         }
+        private void payment_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) & (Keys)e.KeyChar != Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
 
         private void order_Click(object sender, EventArgs e)
         {
+            change.Text = subtot.Text;
             if (String.IsNullOrEmpty(payment.Text) || String.IsNullOrEmpty(change.Text))
             {
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -204,18 +196,25 @@ namespace WindowsFormsApplication4
             }
         }
 
-        private void tax_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsNumber(e.KeyChar) & (Keys)e.KeyChar != Keys.Back)
-            {
-                e.Handled = true;
-            }
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             purchased a = new purchased();
             a.Show();
         }
+
+        private void checkout_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+        }
+
+        private void subtot_TextChanged(object sender, EventArgs e)
+        {
+            decimal sub = Convert.ToDecimal(subtot.Text);
+            if(sub > 0)
+            {
+                checkout.Enabled = true;
+            }
+        }
+
     }
 }

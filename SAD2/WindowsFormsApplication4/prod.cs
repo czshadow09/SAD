@@ -62,37 +62,10 @@ namespace WindowsFormsApplication4
                 if (dt.Rows.Count >= 1) MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 else
                 {
-                    string query1 = "INSERT INTO product(description, purchase_price, store_price, stock_in, stock_out, tot_quantity, cost_quantity, category_cat_id) VALUES('" + desc.Text + "', '" + Pprice.Text + "', '" + Sprice.Text + "', 0 , 0 , '" + quan.Text + "', '" + quan.Text + "', (SELECT cat_id FROM category WHERE name='" + categ.Text + "'));";
+                    string query1 = "INSERT INTO product(description, unit, purchase_price, store_price, inc, cur_price, stock_in, stock_out, tot_quantity, cost_quantity, category_cat_id) VALUES('" + desc.Text + "', '" + unit.Text + "', '" + Pprice.Text + "', '" + Sprice.Text + "', 0, '" + Sprice.Text + "', 0, 0, '" + quan.Text + "', '" + quan.Text + "', (SELECT cat_id FROM category WHERE name='" + categ.Text + "'));";
                     MessageBox.Show("Product added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     executeQuery(query1);
                     this.Close();
-                }
-            }
-        }
-
-        private void Update_Click(object sender, EventArgs e)
-        {
-            string query = "";
-            string query2 = "SELECT description FROM product WHERE description='" + desc.Text + "' ";
-            conn.Open();
-            MySqlCommand com = new MySqlCommand(query2, conn);
-            MySqlDataAdapter user = new MySqlDataAdapter(com);
-            conn.Close();
-            DataTable dt = new DataTable();
-            user.Fill(dt);
-            if (String.IsNullOrEmpty(id.Text) || String.IsNullOrEmpty(desc.Text) || String.IsNullOrEmpty(categ.Text) || String.IsNullOrEmpty(Pprice.Text) || String.IsNullOrEmpty(Sprice.Text))
-                MessageBox.Show("Please choose a product by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            else
-            {
-                if (dt.Rows.Count >= 1)
-                {
-                    MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    query += " UPDATE product SET description='" + desc.Text + "', purchase_price='" + Pprice.Text + "', store_price='" + Sprice.Text + "', tot_quantity='" + quan.Text + "', cost_quantity='" + quan.Text + "', category_cat_id = (SELECT cat_id FROM category WHERE name='" + categ.Text + "') WHERE product_id='" + id.Text + "'; ";
-                    MessageBox.Show("Product updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    executeQuery(query);
                 }
             }
         }

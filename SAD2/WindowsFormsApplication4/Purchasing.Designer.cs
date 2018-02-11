@@ -50,10 +50,9 @@
             // 
             // id
             // 
-            this.id.Location = new System.Drawing.Point(791, 39);
-            this.id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.id.Location = new System.Drawing.Point(593, 32);
             this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(75, 22);
+            this.id.Size = new System.Drawing.Size(57, 20);
             this.id.TabIndex = 106;
             this.id.Visible = false;
             // 
@@ -62,9 +61,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gill Sans MT", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(329, 23);
+            this.label2.Location = new System.Drawing.Point(247, 19);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(299, 40);
+            this.label2.Size = new System.Drawing.Size(242, 33);
             this.label2.TabIndex = 103;
             this.label2.Text = "Purchasing Management";
             // 
@@ -77,10 +77,10 @@
             this.Se.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Se.Image = ((System.Drawing.Image)(resources.GetObject("Se.Image")));
             this.Se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Se.Location = new System.Drawing.Point(948, 590);
-            this.Se.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Se.Location = new System.Drawing.Point(711, 479);
+            this.Se.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Se.Name = "Se";
-            this.Se.Size = new System.Drawing.Size(55, 52);
+            this.Se.Size = new System.Drawing.Size(41, 42);
             this.Se.TabIndex = 113;
             this.Se.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Se.UseVisualStyleBackColor = true;
@@ -89,10 +89,10 @@
             // search
             // 
             this.search.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.Location = new System.Drawing.Point(633, 602);
-            this.search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.search.Location = new System.Drawing.Point(475, 489);
+            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(308, 32);
+            this.search.Size = new System.Drawing.Size(232, 27);
             this.search.TabIndex = 112;
             this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
@@ -104,10 +104,10 @@
             this.Add.ForeColor = System.Drawing.Color.Teal;
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(23, 574);
-            this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Add.Location = new System.Drawing.Point(17, 466);
+            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(197, 84);
+            this.Add.Size = new System.Drawing.Size(148, 68);
             this.Add.TabIndex = 111;
             this.Add.Text = " Add New Item";
             this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -122,10 +122,10 @@
             this.update.ForeColor = System.Drawing.Color.Teal;
             this.update.Image = ((System.Drawing.Image)(resources.GetObject("update.Image")));
             this.update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.update.Location = new System.Drawing.Point(232, 574);
-            this.update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.update.Location = new System.Drawing.Point(174, 466);
+            this.update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.update.Name = "update";
-            this.update.Size = new System.Drawing.Size(182, 84);
+            this.update.Size = new System.Drawing.Size(136, 68);
             this.update.TabIndex = 116;
             this.update.Text = "Save List";
             this.update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -136,82 +136,93 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(100, 116);
+            this.label5.Location = new System.Drawing.Point(75, 94);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(253, 33);
+            this.label5.Size = new System.Drawing.Size(198, 26);
             this.label5.TabIndex = 108;
             this.label5.Text = "Purchase Order List";
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(23, 158);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 128);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(435, 384);
+            this.dataGridView1.Size = new System.Drawing.Size(326, 312);
             this.dataGridView1.TabIndex = 109;
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridView2.Location = new System.Drawing.Point(571, 158);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView2.Location = new System.Drawing.Point(428, 128);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(431, 384);
+            this.dataGridView2.Size = new System.Drawing.Size(323, 312);
             this.dataGridView2.TabIndex = 107;
             // 
             // Column1
             // 
             this.Column1.HeaderText = "Product Name";
             this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
             // 
             // Column2
             // 
             this.Column2.HeaderText = "Quantity Purchased";
             this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // Column3
             // 
             this.Column3.HeaderText = "Product Status";
             this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
             // 
             // Column4
             // 
             this.Column4.HeaderText = "Budget Spent";
             this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(711, 116);
+            this.label6.Location = new System.Drawing.Point(533, 94);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(149, 33);
+            this.label6.Size = new System.Drawing.Size(117, 26);
             this.label6.TabIndex = 110;
             this.label6.Text = "Item Status";
             // 
             // quant
             // 
-            this.quant.Location = new System.Drawing.Point(895, 90);
-            this.quant.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.quant.Location = new System.Drawing.Point(671, 73);
             this.quant.Name = "quant";
-            this.quant.Size = new System.Drawing.Size(59, 22);
+            this.quant.Size = new System.Drawing.Size(45, 20);
             this.quant.TabIndex = 117;
             this.quant.Visible = false;
             // 
             // Purchasing
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.Controls.Add(this.quant);
@@ -225,9 +236,8 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Purchasing";
-            this.Size = new System.Drawing.Size(1021, 682);
+            this.Size = new System.Drawing.Size(766, 554);
             this.Load += new System.EventHandler(this.Purchasing_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
