@@ -124,7 +124,10 @@
             this.categ.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.categ.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categ.FormattingEnabled = true;
-            this.categ.Location = new System.Drawing.Point(149, 53);
+            this.categ.Items.AddRange(new object[] {
+            "Damaged",
+            "Non-Damaged"});
+            this.categ.Location = new System.Drawing.Point(149, 54);
             this.categ.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.categ.Name = "categ";
             this.categ.Size = new System.Drawing.Size(227, 33);
@@ -137,6 +140,15 @@
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Kilograms",
+            "Grams",
+            "Liters",
+            "Boxes",
+            "Cases",
+            "Meters",
+            "Pieces",
+            "Pads"});
             this.comboBox1.Location = new System.Drawing.Point(149, 8);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
