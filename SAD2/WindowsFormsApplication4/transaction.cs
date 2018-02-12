@@ -93,7 +93,7 @@ namespace WindowsFormsApplication4
             quan.Clear();
             amount.Clear();
             subtot.Text = "0.00";
-            dataGridView2.DataSource = null;
+            dt.Rows.Clear();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -200,9 +200,10 @@ namespace WindowsFormsApplication4
                 executeQuery(query);
                 executeQuery(query1);
                 MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                panel3.Visible = false;
-                panel4.Visible = false;
+                panel3.Hide();
+                panel4.Hide();
                 refr();
+                loadAll();
             }
         }
 
@@ -214,7 +215,7 @@ namespace WindowsFormsApplication4
 
         private void checkout_Click(object sender, EventArgs e)
         {
-            panel3.Visible = true;
+            panel3.Show();
         }
 
         private void subtot_TextChanged(object sender, EventArgs e)
