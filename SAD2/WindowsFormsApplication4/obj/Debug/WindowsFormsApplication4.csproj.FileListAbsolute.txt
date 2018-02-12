@@ -278,3 +278,4 @@ C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\
 C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\Fakes\msd\o\MySql.Data.Fakes.pdb
 C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
 C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache

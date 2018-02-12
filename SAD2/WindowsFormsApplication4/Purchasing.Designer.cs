@@ -39,16 +39,20 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
-            this.quant = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.quan = new System.Windows.Forms.TextBox();
             this.status = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.prod = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addquan = new System.Windows.Forms.Button();
+            this.quan2 = new System.Windows.Forms.TextBox();
+            this.prod2 = new System.Windows.Forms.TextBox();
+            this.unit2 = new System.Windows.Forms.TextBox();
+            this.cur_quan = new System.Windows.Forms.TextBox();
+            this.unit1 = new System.Windows.Forms.TextBox();
+            this.status2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -177,6 +181,7 @@
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(431, 384);
             this.dataGridView2.TabIndex = 107;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // label6
             // 
@@ -188,15 +193,6 @@
             this.label6.Size = new System.Drawing.Size(149, 33);
             this.label6.TabIndex = 110;
             this.label6.Text = "Item Status";
-            // 
-            // quant
-            // 
-            this.quant.Location = new System.Drawing.Point(217, 4);
-            this.quant.Margin = new System.Windows.Forms.Padding(4);
-            this.quant.Name = "quant";
-            this.quant.Size = new System.Drawing.Size(59, 22);
-            this.quant.TabIndex = 117;
-            this.quant.Visible = false;
             // 
             // label1
             // 
@@ -260,32 +256,10 @@
             this.status.Size = new System.Drawing.Size(227, 33);
             this.status.TabIndex = 123;
             // 
-            // comboBox3
-            // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Kilograms",
-            "Grams",
-            "Liters",
-            "Boxes",
-            "Cases",
-            "Meters",
-            "Pieces",
-            "Pads"});
-            this.comboBox3.Location = new System.Drawing.Point(154, 31);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(227, 33);
-            this.comboBox3.TabIndex = 124;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.unit1);
             this.panel1.Controls.Add(this.update);
             this.panel1.Controls.Add(this.status);
             this.panel1.Controls.Add(this.quan);
@@ -306,31 +280,90 @@
             this.prod.TabIndex = 126;
             this.prod.Visible = false;
             // 
-            // button1
+            // addquan
             // 
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Teal;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(885, 491);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 84);
-            this.button1.TabIndex = 125;
-            this.button1.Text = "Add";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.addquan.FlatAppearance.BorderSize = 0;
+            this.addquan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addquan.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addquan.ForeColor = System.Drawing.Color.Teal;
+            this.addquan.Image = ((System.Drawing.Image)(resources.GetObject("addquan.Image")));
+            this.addquan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addquan.Location = new System.Drawing.Point(837, 491);
+            this.addquan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.addquan.Name = "addquan";
+            this.addquan.Size = new System.Drawing.Size(166, 84);
+            this.addquan.TabIndex = 125;
+            this.addquan.Text = "Add to Inventory";
+            this.addquan.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.addquan.UseVisualStyleBackColor = true;
+            this.addquan.Click += new System.EventHandler(this.addquan_Click);
+            // 
+            // quan2
+            // 
+            this.quan2.Location = new System.Drawing.Point(813, 19);
+            this.quan2.Margin = new System.Windows.Forms.Padding(4);
+            this.quan2.Name = "quan2";
+            this.quan2.Size = new System.Drawing.Size(59, 22);
+            this.quan2.TabIndex = 128;
+            this.quan2.Visible = false;
+            // 
+            // prod2
+            // 
+            this.prod2.Location = new System.Drawing.Point(910, 19);
+            this.prod2.Margin = new System.Windows.Forms.Padding(4);
+            this.prod2.Name = "prod2";
+            this.prod2.Size = new System.Drawing.Size(59, 22);
+            this.prod2.TabIndex = 129;
+            this.prod2.Visible = false;
+            // 
+            // unit2
+            // 
+            this.unit2.Location = new System.Drawing.Point(718, 22);
+            this.unit2.Margin = new System.Windows.Forms.Padding(4);
+            this.unit2.Name = "unit2";
+            this.unit2.Size = new System.Drawing.Size(59, 22);
+            this.unit2.TabIndex = 130;
+            this.unit2.Visible = false;
+            // 
+            // cur_quan
+            // 
+            this.cur_quan.Location = new System.Drawing.Point(257, 19);
+            this.cur_quan.Name = "cur_quan";
+            this.cur_quan.Size = new System.Drawing.Size(68, 22);
+            this.cur_quan.TabIndex = 131;
+            this.cur_quan.Visible = false;
+            // 
+            // unit1
+            // 
+            this.unit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.unit1.Location = new System.Drawing.Point(154, 30);
+            this.unit1.Margin = new System.Windows.Forms.Padding(4);
+            this.unit1.Name = "unit1";
+            this.unit1.ReadOnly = true;
+            this.unit1.Size = new System.Drawing.Size(227, 30);
+            this.unit1.TabIndex = 132;
+            // 
+            // status2
+            // 
+            this.status2.Location = new System.Drawing.Point(910, 53);
+            this.status2.Margin = new System.Windows.Forms.Padding(4);
+            this.status2.Name = "status2";
+            this.status2.Size = new System.Drawing.Size(59, 22);
+            this.status2.TabIndex = 132;
+            this.status2.Visible = false;
             // 
             // Purchasing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.status2);
+            this.Controls.Add(this.cur_quan);
+            this.Controls.Add(this.unit2);
+            this.Controls.Add(this.prod2);
+            this.Controls.Add(this.quan2);
+            this.Controls.Add(this.addquan);
             this.Controls.Add(this.prod);
-            this.Controls.Add(this.quant);
             this.Controls.Add(this.Se);
             this.Controls.Add(this.search);
             this.Controls.Add(this.label6);
@@ -364,15 +397,19 @@
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Label label6;
         public System.Windows.Forms.DataGridView dataGridView1;
-        public System.Windows.Forms.TextBox quant;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox quan;
         private System.Windows.Forms.ComboBox status;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox prod;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addquan;
+        public System.Windows.Forms.TextBox quan2;
+        public System.Windows.Forms.TextBox prod2;
+        public System.Windows.Forms.TextBox unit2;
+        private System.Windows.Forms.TextBox cur_quan;
+        public System.Windows.Forms.TextBox unit1;
+        public System.Windows.Forms.TextBox status2;
     }
 }

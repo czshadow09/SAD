@@ -92,6 +92,7 @@ namespace WindowsFormsApplication4
             avquan.Clear();
             quan.Clear();
             amount.Clear();
+            subtot.Text = "0.00";
             dataGridView2.DataSource = null;
         }
 
@@ -119,6 +120,11 @@ namespace WindowsFormsApplication4
             {
                 add.Enabled = false;
             }
+            else if(Int32.Parse(quan.Text) > Int32.Parse(avquan.Text))
+            {
+                add.Enabled = false;
+            }
+
             else
             {
                 add.Enabled = true;
@@ -179,7 +185,9 @@ namespace WindowsFormsApplication4
 
         private void order_Click(object sender, EventArgs e)
         {
-            change.Text = subtot.Text;
+            int avq = Int32.Parse(avquan.Text);
+            int q = Int32.Parse(quan.Text);
+            int sale = avq - q;
             if (String.IsNullOrEmpty(payment.Text) || String.IsNullOrEmpty(change.Text))
             {
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -188,7 +196,9 @@ namespace WindowsFormsApplication4
             else
             {
                 string query = "Insert Into ordering(order_date) values(now())";
+                string query1 = "Update product SET stock_out='" + sale + "' WHERE product_id='" + id.Text + "';";
                 executeQuery(query);
+                executeQuery(query1);
                 MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 panel3.Visible = false;
                 panel4.Visible = false;
