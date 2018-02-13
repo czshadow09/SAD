@@ -46,7 +46,7 @@ namespace WindowsFormsApplication4
 
         private void Add_Click(object sender, EventArgs e)
         {
-            string query = "SELECT product_id From product WHERE description='" + desc.Text + "' ";
+            string query = "SELECT p.product_id From product p inner join category c WHERE description='" + desc.Text + "' and unit='" + unit.Text + "';  ";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter user = new MySqlDataAdapter(com);

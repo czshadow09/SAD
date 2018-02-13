@@ -65,11 +65,30 @@ namespace WindowsFormsApplication4
             dataGridView2.Columns["description"].HeaderText = "Product Name";
             dataGridView2.Columns["name"].HeaderText = "Category";
             dataGridView2.Columns["unit"].HeaderText = "Measurement";
-            dataGridView2.Columns["purchase_price"].HeaderText = "Purchase Price";
-            dataGridView2.Columns["store_price"].HeaderText = "Store Price";
+            dataGridView2.Columns["purchase_price"].Visible = false;
+            dataGridView2.Columns["store_price"].Visible = false;
             dataGridView2.Columns["stock_in"].HeaderText = "In";
             dataGridView2.Columns["stock_out"].HeaderText = "Out";
             dataGridView2.Columns["tot_quantity"].HeaderText = "Quantity";
+            fontcolor();
+        }
+
+        private void fontcolor()
+        {
+            for (int i = 0; i < dataGridView2.Rows.Count; i++)
+            {
+                double cons = Double.Parse(dataGridView2.Rows[i].Cells[11].Value.ToString());
+                double cur = Double.Parse(dataGridView2.Rows[i].Cells[10].Value.ToString());
+                cons = cons * 0.3;
+                if (cur < cons && cur > 0)
+                {
+                    dataGridView2.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
+                }
+                else if(cur == 0)
+                {
+                    dataGridView2.Rows[i].DefaultCellStyle.BackColor = Color.IndianRed;
+                }
+            }
         }
 
         private void In_Click(object sender, EventArgs e)

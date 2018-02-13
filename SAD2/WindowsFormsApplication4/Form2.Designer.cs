@@ -269,7 +269,7 @@
             this.transaction1.BackColor = System.Drawing.Color.GhostWhite;
             this.transaction1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.transaction1.Location = new System.Drawing.Point(218, 38);
-            this.transaction1.Margin = new System.Windows.Forms.Padding(2);
+            this.transaction1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.transaction1.Name = "transaction1";
             this.transaction1.Size = new System.Drawing.Size(766, 554);
             this.transaction1.TabIndex = 6;
@@ -288,7 +288,7 @@
             this.userControl21.BackColor = System.Drawing.Color.GhostWhite;
             this.userControl21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.userControl21.Location = new System.Drawing.Point(218, 37);
-            this.userControl21.Margin = new System.Windows.Forms.Padding(2);
+            this.userControl21.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.userControl21.Name = "userControl21";
             this.userControl21.prevform = null;
             this.userControl21.Size = new System.Drawing.Size(766, 554);

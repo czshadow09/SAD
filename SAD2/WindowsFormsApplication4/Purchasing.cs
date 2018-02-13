@@ -76,13 +76,29 @@ namespace WindowsFormsApplication4
 
         private void refr()
         {
-            dataGridView2.DataSource = null;
+            dt.Rows.Clear();
         }
 
         private void remv()
         {
             int row = dataGridView2.CurrentCell.RowIndex;
             dataGridView2.Rows.RemoveAt(row);
+        }
+
+        private void fontcolor()
+        {
+            for(int i = 0; i < dataGridView2.Rows.Count; i++)
+            {
+                string stat = dataGridView2.Rows[i].Cells[3].Value.ToString();
+                if(stat == "Damaged")
+                {
+                    dataGridView2.Rows[i].DefaultCellStyle.BackColor = Color.Red;
+                }
+                else
+                {
+                    dataGridView2.Rows[i].DefaultCellStyle.BackColor = Color.Green;
+                }
+            }
         }
 
         private void Add_Click(object sender, EventArgs e)
@@ -100,6 +116,7 @@ namespace WindowsFormsApplication4
             dr["Status"] = status.Text;
             dt.Rows.Add(dr);
             dataGridView2.DataSource = dt;
+            fontcolor();
         }
 
         private int select_id;

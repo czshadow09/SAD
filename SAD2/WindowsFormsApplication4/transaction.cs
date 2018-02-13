@@ -93,6 +93,8 @@ namespace WindowsFormsApplication4
             quan.Clear();
             amount.Clear();
             subtot.Text = "0.00";
+            payment.Clear();
+            change.Clear();
             dt.Rows.Clear();
         }
 
@@ -216,6 +218,7 @@ namespace WindowsFormsApplication4
         private void checkout_Click(object sender, EventArgs e)
         {
             panel3.Show();
+            panel4.Show();
         }
 
         private void subtot_TextChanged(object sender, EventArgs e)
