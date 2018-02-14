@@ -57,7 +57,7 @@
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Add.Location = new System.Drawing.Point(30, 429);
-            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(124, 62);
             this.Add.TabIndex = 105;
@@ -75,7 +75,7 @@
             this.AddC.Image = ((System.Drawing.Image)(resources.GetObject("AddC.Image")));
             this.AddC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddC.Location = new System.Drawing.Point(160, 431);
-            this.AddC.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddC.Margin = new System.Windows.Forms.Padding(2);
             this.AddC.Name = "AddC";
             this.AddC.Size = new System.Drawing.Size(124, 58);
             this.AddC.TabIndex = 104;
@@ -101,7 +101,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(14, 375);
+            this.label7.Location = new System.Drawing.Point(15, 187);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 22);
@@ -112,8 +112,8 @@
             // 
             this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.quan.Location = new System.Drawing.Point(18, 399);
-            this.quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quan.Location = new System.Drawing.Point(19, 211);
+            this.quan.Margin = new System.Windows.Forms.Padding(2);
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(282, 28);
             this.quan.TabIndex = 101;
@@ -135,7 +135,7 @@
             this.Sprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Sprice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Sprice.Location = new System.Drawing.Point(18, 331);
-            this.Sprice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Sprice.Margin = new System.Windows.Forms.Padding(2);
             this.Sprice.Name = "Sprice";
             this.Sprice.Size = new System.Drawing.Size(282, 28);
             this.Sprice.TabIndex = 99;
@@ -157,7 +157,7 @@
             this.Pprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pprice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Pprice.Location = new System.Drawing.Point(18, 266);
-            this.Pprice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Pprice.Margin = new System.Windows.Forms.Padding(2);
             this.Pprice.Name = "Pprice";
             this.Pprice.Size = new System.Drawing.Size(282, 28);
             this.Pprice.TabIndex = 97;
@@ -191,7 +191,7 @@
             this.desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.desc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.desc.Location = new System.Drawing.Point(18, 71);
-            this.desc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.desc.Margin = new System.Windows.Forms.Padding(2);
             this.desc.Name = "desc";
             this.desc.Size = new System.Drawing.Size(282, 28);
             this.desc.TabIndex = 94;
@@ -200,7 +200,7 @@
             // 
             this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id.Location = new System.Drawing.Point(242, 9);
-            this.id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.id.Margin = new System.Windows.Forms.Padding(2);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(43, 28);
             this.id.TabIndex = 93;
@@ -227,7 +227,7 @@
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cancel.Location = new System.Drawing.Point(92, 492);
-            this.cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancel.Margin = new System.Windows.Forms.Padding(2);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(128, 61);
             this.cancel.TabIndex = 107;
@@ -251,7 +251,7 @@
             "Meters",
             "Pieces",
             "Pads"});
-            this.unit.Location = new System.Drawing.Point(19, 203);
+            this.unit.Location = new System.Drawing.Point(18, 396);
             this.unit.Name = "unit";
             this.unit.Size = new System.Drawing.Size(281, 30);
             this.unit.TabIndex = 109;
@@ -261,7 +261,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(15, 175);
+            this.label1.Location = new System.Drawing.Point(14, 368);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 22);
@@ -291,7 +291,7 @@
             this.Controls.Add(this.desc);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "prod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "prod";
