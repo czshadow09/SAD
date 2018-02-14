@@ -168,5 +168,9 @@ namespace WindowsFormsApplication4
 
         }
 
+        private void purchasing1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
