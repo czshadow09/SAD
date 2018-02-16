@@ -69,33 +69,13 @@ namespace WindowsFormsApplication4
             dataGridView2.Columns["store_price"].Visible = false;
             dataGridView2.Columns["stock_in"].HeaderText = "In";
             dataGridView2.Columns["stock_out"].HeaderText = "Out";
-            dataGridView2.Columns["tot_quantity"].HeaderText = "Quantity";
-            fontcolor();
-        }
-
-        private void fontcolor()
-        {
-            for (int i = 0; i < dataGridView2.Rows.Count; i++)
-            {
-                double cons = Double.Parse(dataGridView2.Rows[i].Cells[11].Value.ToString());
-                double cur = Double.Parse(dataGridView2.Rows[i].Cells[10].Value.ToString());
-                cons = cons * 0.3;
-                if (cur < cons && cur > 0)
-                {
-                    dataGridView2.Rows[i].DefaultCellStyle.BackColor = Color.Yellow;
-                }
-                else if(cur == 0)
-                {
-                    dataGridView2.Rows[i].DefaultCellStyle.BackColor = Color.IndianRed;
-                }
-            }
+            dataGridView2.Columns["tot_quantity"].Visible = false;
         }
 
         private void In_Click(object sender, EventArgs e)
         {
             In a = new In();
             a.id.Text = dataGridView2.CurrentRow.Cells["product_id"].Value.ToString();
-            a.constant.Text = cons_quan.Text;
             a.Show();
         }
         private void Out_Click(object sender, EventArgs e)

@@ -57,6 +57,11 @@ namespace WindowsFormsApplication4
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            else if (s_in < 0)
+            {
+                MessageBox.Show("Insufficient items.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             else
             {
                 if (dif < 0)
@@ -67,6 +72,10 @@ namespace WindowsFormsApplication4
                 {
                     string query1 = "UPDATE product SET stock_in='" + s_in + "'- '" + input + "', stock_out='" + sum + "' where product_id= '" + id.Text + "';";
                     MessageBox.Show("Stocked out '" + input + "' items!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (s_in <= 30)
+                    {
+                        MessageBox.Show("Item needs to be purchased", "Test", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                     executeQuery(query1);
                     this.Close();
                 }

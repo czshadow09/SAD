@@ -43,7 +43,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.quan = new System.Windows.Forms.TextBox();
-            this.status = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.unit1 = new System.Windows.Forms.TextBox();
             this.prod = new System.Windows.Forms.TextBox();
@@ -52,8 +51,11 @@
             this.prod2 = new System.Windows.Forms.TextBox();
             this.unit2 = new System.Windows.Forms.TextBox();
             this.cur_quan = new System.Windows.Forms.TextBox();
-            this.status2 = new System.Windows.Forms.TextBox();
+            this.price = new System.Windows.Forms.TextBox();
             this.refresh = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.purchasetotal = new System.Windows.Forms.TextBox();
+            this.purchase = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -88,8 +90,8 @@
             this.Se.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Se.Image = ((System.Drawing.Image)(resources.GetObject("Se.Image")));
             this.Se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Se.Location = new System.Drawing.Point(711, 479);
-            this.Se.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Se.Location = new System.Drawing.Point(716, 545);
+            this.Se.Margin = new System.Windows.Forms.Padding(2);
             this.Se.Name = "Se";
             this.Se.Size = new System.Drawing.Size(41, 42);
             this.Se.TabIndex = 113;
@@ -100,8 +102,8 @@
             // search
             // 
             this.search.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.Location = new System.Drawing.Point(475, 489);
-            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search.Location = new System.Drawing.Point(480, 555);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(232, 27);
             this.search.TabIndex = 112;
@@ -116,7 +118,7 @@
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Add.Location = new System.Drawing.Point(10, 147);
-            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(148, 68);
             this.Add.TabIndex = 111;
@@ -134,7 +136,7 @@
             this.update.Image = ((System.Drawing.Image)(resources.GetObject("update.Image")));
             this.update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.update.Location = new System.Drawing.Point(181, 149);
-            this.update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.update.Margin = new System.Windows.Forms.Padding(2);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(136, 68);
             this.update.TabIndex = 116;
@@ -161,7 +163,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(32, 77);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -176,7 +178,7 @@
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(429, 77);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 24;
@@ -206,9 +208,9 @@
             this.label1.Location = new System.Drawing.Point(30, 62);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 22);
+            this.label1.Size = new System.Drawing.Size(56, 22);
             this.label1.TabIndex = 122;
-            this.label1.Text = "Status:";
+            this.label1.Text = "Price:";
             // 
             // label3
             // 
@@ -241,40 +243,24 @@
             this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.quan.Location = new System.Drawing.Point(116, 98);
-            this.quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quan.Margin = new System.Windows.Forms.Padding(2);
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(69, 28);
             this.quan.TabIndex = 118;
             // 
-            // status
-            // 
-            this.status.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.status.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.status.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.status.FormattingEnabled = true;
-            this.status.Items.AddRange(new object[] {
-            "Damaged",
-            "Non-Damaged"});
-            this.status.Location = new System.Drawing.Point(116, 63);
-            this.status.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.status.Name = "status";
-            this.status.Size = new System.Drawing.Size(171, 28);
-            this.status.TabIndex = 123;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.panel1.Controls.Add(this.purchase);
             this.panel1.Controls.Add(this.unit1);
             this.panel1.Controls.Add(this.update);
-            this.panel1.Controls.Add(this.status);
             this.panel1.Controls.Add(this.quan);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Add);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(32, 329);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(326, 219);
             this.panel1.TabIndex = 125;
@@ -290,8 +276,8 @@
             // 
             // prod
             // 
-            this.prod.Location = new System.Drawing.Point(475, 520);
-            this.prod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prod.Location = new System.Drawing.Point(480, 586);
+            this.prod.Margin = new System.Windows.Forms.Padding(2);
             this.prod.Name = "prod";
             this.prod.Size = new System.Drawing.Size(76, 20);
             this.prod.TabIndex = 126;
@@ -306,7 +292,7 @@
             this.addquan.Image = ((System.Drawing.Image)(resources.GetObject("addquan.Image")));
             this.addquan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addquan.Location = new System.Drawing.Point(628, 399);
-            this.addquan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addquan.Margin = new System.Windows.Forms.Padding(2);
             this.addquan.Name = "addquan";
             this.addquan.Size = new System.Drawing.Size(124, 68);
             this.addquan.TabIndex = 125;
@@ -342,19 +328,19 @@
             // cur_quan
             // 
             this.cur_quan.Location = new System.Drawing.Point(193, 15);
-            this.cur_quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cur_quan.Margin = new System.Windows.Forms.Padding(2);
             this.cur_quan.Name = "cur_quan";
             this.cur_quan.Size = new System.Drawing.Size(52, 20);
             this.cur_quan.TabIndex = 131;
             this.cur_quan.Visible = false;
             // 
-            // status2
+            // price
             // 
-            this.status2.Location = new System.Drawing.Point(682, 43);
-            this.status2.Name = "status2";
-            this.status2.Size = new System.Drawing.Size(45, 20);
-            this.status2.TabIndex = 132;
-            this.status2.Visible = false;
+            this.price.Location = new System.Drawing.Point(682, 43);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(45, 20);
+            this.price.TabIndex = 132;
+            this.price.Visible = false;
             // 
             // refresh
             // 
@@ -372,14 +358,46 @@
             this.refresh.Text = "   Refresh";
             this.refresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.refresh.UseVisualStyleBackColor = true;
+            this.refresh.Click += new System.EventHandler(this.refresh_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
+            this.label4.Location = new System.Drawing.Point(425, 478);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(99, 24);
+            this.label4.TabIndex = 134;
+            this.label4.Text = "Total Price";
+            // 
+            // purchasetotal
+            // 
+            this.purchasetotal.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purchasetotal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.purchasetotal.Location = new System.Drawing.Point(541, 476);
+            this.purchasetotal.Name = "purchasetotal";
+            this.purchasetotal.ReadOnly = true;
+            this.purchasetotal.Size = new System.Drawing.Size(171, 27);
+            this.purchasetotal.TabIndex = 133;
+            // 
+            // purchase
+            // 
+            this.purchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.purchase.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.purchase.Location = new System.Drawing.Point(116, 62);
+            this.purchase.Name = "purchase";
+            this.purchase.Size = new System.Drawing.Size(171, 26);
+            this.purchase.TabIndex = 133;
             // 
             // Purchasing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
+            this.Controls.Add(this.purchasetotal);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.refresh);
-            this.Controls.Add(this.status2);
+            this.Controls.Add(this.price);
             this.Controls.Add(this.cur_quan);
             this.Controls.Add(this.unit2);
             this.Controls.Add(this.prod2);
@@ -396,7 +414,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
             this.Name = "Purchasing";
-            this.Size = new System.Drawing.Size(766, 554);
+            this.Size = new System.Drawing.Size(766, 614);
             this.Load += new System.EventHandler(this.Purchasing_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -422,7 +440,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox quan;
-        private System.Windows.Forms.ComboBox status;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox prod;
         private System.Windows.Forms.Button addquan;
@@ -431,7 +448,10 @@
         public System.Windows.Forms.TextBox unit2;
         private System.Windows.Forms.TextBox cur_quan;
         public System.Windows.Forms.TextBox unit1;
-        public System.Windows.Forms.TextBox status2;
+        public System.Windows.Forms.TextBox price;
         private System.Windows.Forms.Button refresh;
+        public System.Windows.Forms.TextBox purchase;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox purchasetotal;
     }
 }

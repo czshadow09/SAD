@@ -34,7 +34,7 @@ namespace WindowsFormsApplication4
             dt.Columns.Add("Product");
             dt.Columns.Add("Unit");
             dt.Columns.Add("Quantity");
-            dt.Columns.Add("Status");
+            dt.Columns.Add("Price", typeof(decimal));
         }
 
         private void Se_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace WindowsFormsApplication4
 
         private void loadAll()
         {
-            string query = "select p.product_id, p.description, p.unit, c.name, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where p.tot_quantity <= cost_quantity * 0.3;";
+            string query = "select p.product_id, p.description, p.unit, c.name, p.stock_in from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in <= 30;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -64,18 +64,23 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             dataGridView1.DataSource = dt;
             dataGridView1.Columns["product_id"].Visible = false;
-            dataGridView1.Columns["tot_quantity"].Visible = false;
+            dataGridView1.Columns["stock_in"].Visible = false;
             dataGridView1.Columns["description"].HeaderText = "Product Name";
             dataGridView1.Columns["unit"].Visible = false;
             dataGridView1.Columns["name"].HeaderText = "Category";
             unit1.Enabled = false;
-            status.Enabled = false;
+            purchase.Enabled = false;
             quan.Enabled = false;
             addquan.Enabled = false;
         }
 
         private void refr()
         {
+            loadAll();
+            unit1.Clear();
+            purchase.Clear();
+            quan.Clear();
+            purchasetotal.Clear();
             dt.Rows.Clear();
         }
 
@@ -83,22 +88,6 @@ namespace WindowsFormsApplication4
         {
             int row = dataGridView2.CurrentCell.RowIndex;
             dataGridView2.Rows.RemoveAt(row);
-        }
-
-        private void fontcolor()
-        {
-            for(int i = 0; i < dataGridView2.Rows.Count; i++)
-            {
-                string stat = dataGridView2.Rows[i].Cells[3].Value.ToString();
-                if(stat == "Damaged")
-                {
-                    dataGridView2.Rows[i].DefaultCellStyle.BackColor = Color.Red;
-                }
-                else
-                {
-                    dataGridView2.Rows[i].DefaultCellStyle.BackColor = Color.Green;
-                }
-            }
         }
 
         private void Add_Click(object sender, EventArgs e)
@@ -109,14 +98,18 @@ namespace WindowsFormsApplication4
 
         private void update_Click(object sender, EventArgs e)
         {
+            decimal purc = Convert.ToDecimal(purchase.Text);
+            decimal qua = Convert.ToDecimal(quan.Text);
+            decimal amount = purc * qua;
             DataRow dr = dt.NewRow();
             dr["Product"] = prod.Text;
             dr["Unit"] = unit1.Text;
             dr["Quantity"] = quan.Text;
-            dr["Status"] = status.Text;
+            dr["Price"] = amount;
             dt.Rows.Add(dr);
             dataGridView2.DataSource = dt;
-            fontcolor();
+            decimal sum = Convert.ToDecimal(dt.Compute("SUM(Price)", string.Empty));
+            purchasetotal.Text = sum.ToString();
         }
 
         private int select_id;
@@ -127,9 +120,9 @@ namespace WindowsFormsApplication4
             id.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
             prod.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
             unit1.Text = dataGridView1.Rows[e.RowIndex].Cells["unit"].Value.ToString();
-            cur_quan.Text = dataGridView1.Rows[e.RowIndex].Cells["tot_quantity"].Value.ToString();
+            cur_quan.Text = dataGridView1.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
             unit1.Enabled = true;
-            status.Enabled = true;
+            purchase.Enabled = true;
             quan.Enabled = true;
         }
 
@@ -138,13 +131,13 @@ namespace WindowsFormsApplication4
             prod2.Text = dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
             unit2.Text = dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
             quan2.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
-            status2.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
+            price.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
             addquan.Enabled = true;
         }
 
         private void addquan_Click(object sender, EventArgs e)
         {
-            string query = "select description, tot_quantity from product where product_id='" + id.Text + "';";
+            string query = "select description, stock_in from product where product_id='" + id.Text + "';";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -158,18 +151,20 @@ namespace WindowsFormsApplication4
             {
                 MessageBox.Show("Nothing added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if(status2.Text == "Damaged")
-            {
-                MessageBox.Show("Damaged items can't be added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
             else
             {
-                string query1 = "UPDATE product SET tot_quantity='" + sum + "' where product_id= '" + id.Text + "' and unit='" + unit1.Text + "';";
+                string query1 = "UPDATE product SET purchase_price='" + purchase.Text + "', stock_in='" + sum + "' where product_id= '" + id.Text + "' and unit='" + unit1.Text + "';";
                 executeQuery(query1);
                 MessageBox.Show("Adding '" + quan2.Text + "' items to inventory!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 remv();
                 loadAll();
             }
+        }
+
+        private void refresh_Click(object sender, EventArgs e)
+        {
+            refr();
         }
     }
 }
