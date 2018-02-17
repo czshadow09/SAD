@@ -21,6 +21,13 @@ namespace WindowsFormsApplication4
             InitializeComponent();
             conn = new MySqlConnection("server=localhost;Database=final;uid=root; Pwd = root;");
         }
+        private void executeQuery(string q)
+        {
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(q, conn);
+            comm.ExecuteNonQuery();
+            conn.Close();
+        }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
@@ -74,13 +81,17 @@ namespace WindowsFormsApplication4
             conn.Close();
             DataTable dt = new DataTable();
             adp.Fill(dt);
+            String fn = dt.Rows[0][4].ToString();
+            String ln = dt.Rows[0][5].ToString();
+
             if (dt.Rows.Count == 1)
             {
                 Form2 f = new Form2();
                 f.usern.Text = user;
                 user = dt.Rows[0][5].ToString() + " "  + dt.Rows[0][4].ToString();
                 id = dt.Rows[0][0].ToString();
-
+                String query2 = "UPDATE user SET present=present + 1 WHERE firstname='" + fn + "' and lastname='" + ln + "';";
+                executeQuery(query2);
                 MessageBox.Show("Welcome " + user);
                 this.Hide();
                 f.Show();

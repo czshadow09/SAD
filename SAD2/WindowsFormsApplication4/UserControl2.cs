@@ -281,5 +281,11 @@ namespace WindowsFormsApplication4
                 e.Handled = true;
             }
         }
+
+        private void usereport_Click(object sender, EventArgs e)
+        {
+            UserReport ur = new UserReport();
+            ur.Show();
+        }
     }
 }
