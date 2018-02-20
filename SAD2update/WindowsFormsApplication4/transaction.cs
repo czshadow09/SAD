@@ -211,8 +211,7 @@ namespace WindowsFormsApplication4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            purchased a = new purchased();
-            a.Show();
+            panel5.Visible = true;
         }
 
         private void checkout_Click(object sender, EventArgs e)
@@ -230,5 +229,9 @@ namespace WindowsFormsApplication4
             }
         }
 
+        private void Update_Click(object sender, EventArgs e)
+        {
+            panel5.Visible = false;
+        }
     }
 }
