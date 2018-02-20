@@ -32,12 +32,6 @@
             this.Add = new System.Windows.Forms.Button();
             this.AddC = new System.Windows.Forms.Button();
             this.categ = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.quan = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.Sprice = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Pprice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.desc = new System.Windows.Forms.TextBox();
@@ -56,7 +50,7 @@
             this.Add.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(30, 429);
+            this.Add.Location = new System.Drawing.Point(31, 246);
             this.Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(124, 62);
@@ -74,7 +68,7 @@
             this.AddC.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.AddC.Image = ((System.Drawing.Image)(resources.GetObject("AddC.Image")));
             this.AddC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddC.Location = new System.Drawing.Point(160, 431);
+            this.AddC.Location = new System.Drawing.Point(161, 248);
             this.AddC.Margin = new System.Windows.Forms.Padding(2);
             this.AddC.Name = "AddC";
             this.AddC.Size = new System.Drawing.Size(124, 58);
@@ -95,72 +89,6 @@
             this.categ.Size = new System.Drawing.Size(281, 30);
             this.categ.TabIndex = 103;
             this.categ.SelectedIndexChanged += new System.EventHandler(this.categ_SelectedIndexChanged);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(15, 187);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 22);
-            this.label7.TabIndex = 102;
-            this.label7.Text = "Quantity:";
-            // 
-            // quan
-            // 
-            this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.quan.Location = new System.Drawing.Point(19, 211);
-            this.quan.Margin = new System.Windows.Forms.Padding(2);
-            this.quan.Name = "quan";
-            this.quan.Size = new System.Drawing.Size(282, 28);
-            this.quan.TabIndex = 101;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(14, 308);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 22);
-            this.label6.TabIndex = 100;
-            this.label6.Text = "Store Price:";
-            // 
-            // Sprice
-            // 
-            this.Sprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sprice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Sprice.Location = new System.Drawing.Point(18, 331);
-            this.Sprice.Margin = new System.Windows.Forms.Padding(2);
-            this.Sprice.Name = "Sprice";
-            this.Sprice.Size = new System.Drawing.Size(282, 28);
-            this.Sprice.TabIndex = 99;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(14, 241);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 22);
-            this.label5.TabIndex = 98;
-            this.label5.Text = "Purchase Price:";
-            // 
-            // Pprice
-            // 
-            this.Pprice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Pprice.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Pprice.Location = new System.Drawing.Point(18, 266);
-            this.Pprice.Margin = new System.Windows.Forms.Padding(2);
-            this.Pprice.Name = "Pprice";
-            this.Pprice.Size = new System.Drawing.Size(282, 28);
-            this.Pprice.TabIndex = 97;
             // 
             // label4
             // 
@@ -226,7 +154,7 @@
             this.cancel.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancel.Location = new System.Drawing.Point(92, 492);
+            this.cancel.Location = new System.Drawing.Point(93, 309);
             this.cancel.Margin = new System.Windows.Forms.Padding(2);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(128, 61);
@@ -251,7 +179,7 @@
             "Meters",
             "Pieces",
             "Pads"});
-            this.unit.Location = new System.Drawing.Point(18, 396);
+            this.unit.Location = new System.Drawing.Point(19, 213);
             this.unit.Name = "unit";
             this.unit.Size = new System.Drawing.Size(281, 30);
             this.unit.TabIndex = 109;
@@ -261,7 +189,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(14, 368);
+            this.label1.Location = new System.Drawing.Point(15, 185);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 22);
@@ -273,19 +201,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(313, 548);
+            this.ClientSize = new System.Drawing.Size(313, 371);
             this.Controls.Add(this.unit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.AddC);
             this.Controls.Add(this.categ);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.quan);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.Sprice);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.Pprice);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.desc);
@@ -304,18 +226,12 @@
         #endregion
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.Button AddC;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button cancel;
         public System.Windows.Forms.ComboBox categ;
-        public System.Windows.Forms.TextBox quan;
-        public System.Windows.Forms.TextBox Sprice;
-        public System.Windows.Forms.TextBox Pprice;
         public System.Windows.Forms.TextBox desc;
         public System.Windows.Forms.ComboBox unit;
         private System.Windows.Forms.Label label1;

@@ -21,7 +21,7 @@ namespace WindowsFormsApplication4
         }
         public void loadAll()
         {
-            string query = "select firstname, lastname, type, attend_date, status from user";
+            string query = "select firstname, lastname, type, attend_date, status from user where status = 'Present'";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);

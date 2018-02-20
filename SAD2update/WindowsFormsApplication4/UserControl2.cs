@@ -124,10 +124,12 @@ namespace WindowsFormsApplication4
             dataGridView1.Columns["firstname"].HeaderText = "First Name";
             dataGridView1.Columns["lastname"].HeaderText = "Last Name";
             dataGridView1.Columns["gender"].HeaderText = "Gender";
-            dataGridView1.Columns["contact"].HeaderText = "Contact #";
-            dataGridView1.Columns["email"].HeaderText = "Email";
-            dataGridView1.Columns["username"].HeaderText = "User Name";
+            dataGridView1.Columns["contact"].Visible = false;
+            dataGridView1.Columns["email"].Visible = false;
+            dataGridView1.Columns["username"].Visible = false;
             dataGridView1.Columns["type"].HeaderText = "User Type";
+            dataGridView1.Columns["attend_date"].Visible = false;
+            dataGridView1.Columns["status"].Visible = false;
         }
 
         public bool IsValid(string emailaddress)

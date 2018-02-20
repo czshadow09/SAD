@@ -129,7 +129,7 @@ namespace WindowsFormsApplication4
             select_user_id = int.Parse(dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
             id.Text = dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
             prodname.Text = dataGridView2.Rows[e.RowIndex].Cells["description"].Value.ToString();
-            quantity.Text = dataGridView2.Rows[e.RowIndex].Cells["tot_quantity"].Value.ToString();
+            quantity.Text = dataGridView2.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
             currentp.Text = dataGridView2.Rows[e.RowIndex].Cells["cur_price"].Value.ToString();
             price.Text = dataGridView2.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
             increase.Text = dataGridView2.Rows[e.RowIndex].Cells["inc"].Value.ToString();

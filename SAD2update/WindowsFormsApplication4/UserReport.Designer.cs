@@ -37,14 +37,14 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(3, 2);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(413, 344);
+            this.dataGridView1.Size = new System.Drawing.Size(492, 344);
             this.dataGridView1.TabIndex = 0;
             // 
             // UserReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 349);
+            this.ClientSize = new System.Drawing.Size(497, 349);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserReport";
             this.Text = "Form3";
