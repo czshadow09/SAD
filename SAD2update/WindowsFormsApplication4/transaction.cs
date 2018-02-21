@@ -48,6 +48,21 @@ namespace WindowsFormsApplication4
             checkout.Enabled = false;
             date.Enabled = false;
         }
+
+        public void loadAll2()
+        {
+            string query = "select * from ordering";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView3.DataSource = dt;
+            dataGridView3.Columns["order_date"].HeaderText = "Date";
+            dataGridView3.Columns["order_id"].HeaderText = "Customer #";
+            dataGridView3.Columns["tot_consume"].HeaderText = "Total Amount";
+        }
         private void CreateDataTableColumns()
         {
             dt.Columns.Add("Product");
@@ -59,6 +74,7 @@ namespace WindowsFormsApplication4
         {
             CreateDataTableColumns();
             loadAll();
+            loadAll2();
             subtot.Text = "0.00";
             date.Text = DateTime.Now.ToString("MMMM dd, yyyy");
         }
@@ -87,6 +103,7 @@ namespace WindowsFormsApplication4
         private void refr()
         {
             loadAll();
+            loadAll2();
             name.Clear();
             sprice.Clear();
             avquan.Clear();
@@ -197,7 +214,7 @@ namespace WindowsFormsApplication4
 
             else
             {
-                string query = "Insert Into ordering(order_date) values(now())";
+                string query = "Insert Into ordering(order_date, tot_consume) values(now(), '" + subtot.Text + "')";
                 string query1 = "Update product SET stock_out='" + sale + "' WHERE product_id='" + id.Text + "';";
                 executeQuery(query);
                 executeQuery(query1);
