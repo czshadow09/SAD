@@ -166,5 +166,17 @@ namespace WindowsFormsApplication4
         {
             refr();
         }
+
+       
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+        }
+
+        private void usereport_Click_1(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+        }
     }
 }

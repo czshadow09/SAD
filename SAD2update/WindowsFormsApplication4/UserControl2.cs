@@ -284,7 +284,9 @@ namespace WindowsFormsApplication4
             }
         }
 
-        private void usereport_Click(object sender, EventArgs e)
+     
+
+        private void usereport_Click_1(object sender, EventArgs e)
         {
             UserReport ur = new UserReport();
             ur.Show();
