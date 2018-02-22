@@ -51,7 +51,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll2()
         {
-            string query = "select * from ordering";
+            string query = "select order_date, order_id, tot_consume from ordering";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -62,6 +62,8 @@ namespace WindowsFormsApplication4
             dataGridView3.Columns["order_date"].HeaderText = "Date";
             dataGridView3.Columns["order_id"].HeaderText = "Customer #";
             dataGridView3.Columns["tot_consume"].HeaderText = "Total Amount";
+            decimal sum = Convert.ToDecimal(dt.Compute("SUM(tot_consume)", string.Empty));
+            purchasetotal.Text = sum.ToString();
         }
         private void CreateDataTableColumns()
         {
@@ -70,12 +72,20 @@ namespace WindowsFormsApplication4
             dt.Columns.Add("Amount", typeof(decimal));
         }
 
+        private void TableForItems()
+        {
+            dt.Columns.Add("Item");
+            dt.Columns.Add("Quantity_On_Hand");
+            dt.Columns.Add("SubTotal");
+        }
+
         private void transaction_Load(object sender, EventArgs e)
         {
             CreateDataTableColumns();
             loadAll();
             loadAll2();
             subtot.Text = "0.00";
+            purchasetotal.Text = "0.00";
             date.Text = DateTime.Now.ToString("MMMM dd, yyyy");
         }
 
@@ -191,7 +201,8 @@ namespace WindowsFormsApplication4
         {
             decimal grandtot = Convert.ToDecimal(subtot.Text);
             decimal pay = Convert.ToDecimal(payment.Text);
-            decimal chan = grandtot - pay;
+            decimal cha = 0 - grandtot;
+            decimal chan = cha + pay;
             change.Text = chan.ToString();
         }
         private void payment_KeyPress(object sender, KeyPressEventArgs e)
@@ -223,6 +234,7 @@ namespace WindowsFormsApplication4
                 panel4.Hide();
                 refr();
                 loadAll();
+                loadAll2();
             }
         }
 
@@ -249,6 +261,16 @@ namespace WindowsFormsApplication4
         private void Update_Click(object sender, EventArgs e)
         {
             panel5.Visible = false;
+        }
+
+        private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataRow dr = dt.NewRow();
+            dr["Item"] = name.Text;
+            dr["Quantity_On_Hand"] = quan.Text;
+            dr["SubTotal"] = amount.Text;
+            dt.Rows.Add(dr);
+            dataGridView4.DataSource = dt;
         }
     }
 }

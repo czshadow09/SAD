@@ -68,8 +68,8 @@ namespace WindowsFormsApplication4
             dataGridView2.Columns["unit"].HeaderText = "Measurement";
             dataGridView2.Columns["purchase_price"].Visible = false;
             dataGridView2.Columns["store_price"].Visible = false;
-            dataGridView2.Columns["stock_in"].HeaderText = "In";
-            dataGridView2.Columns["stock_out"].HeaderText = "Out";
+            dataGridView2.Columns["stock_in"].HeaderText = "Stock";
+            dataGridView2.Columns["stock_out"].Visible = false;
             dataGridView2.Columns["tot_quantity"].Visible = false;
         }
 

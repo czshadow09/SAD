@@ -256,7 +256,6 @@ C:\Users\ACER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug
 C:\Users\ACER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
 C:\Users\ACER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
 C:\Users\ACER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources
-C:\Users\ACER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
 C:\Users\ACER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources
 C:\Users\ACER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
 C:\Users\ACER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
@@ -311,3 +310,4 @@ C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
 C:\Users\USER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ACER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\bin\Debug\Bunifu_UI_v1.5.3.dll
