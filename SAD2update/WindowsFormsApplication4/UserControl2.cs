@@ -56,12 +56,12 @@ namespace WindowsFormsApplication4
 
         private void textBox3_Click(object sender, EventArgs e)
         {
- 
+
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void textBox5_Click(object sender, EventArgs e)
@@ -76,7 +76,7 @@ namespace WindowsFormsApplication4
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void contact_TextChanged(object sender, EventArgs e)
@@ -93,20 +93,20 @@ namespace WindowsFormsApplication4
         {
 
 
-           
+
         }
 
         private void gender_Click(object sender, EventArgs e)
         {
 
-           
+
         }
 
         private void email_TextChanged(object sender, EventArgs e)
         {
             email.ForeColor = Color.Black;
         }
-        
+
         private void loadAll()
         {
             string query = "SELECT * FROM user u inner join login l on l.login_id = u.login_login_id;";
@@ -172,7 +172,7 @@ namespace WindowsFormsApplication4
                 {
                     MessageBox.Show("Username already exist. Please choose a different username", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if(!phoneNumpattern.IsMatch(contact.Text))
+                else if (!phoneNumpattern.IsMatch(contact.Text))
                 {
                     MessageBox.Show("Incorrect phone number", "Phone Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -180,7 +180,7 @@ namespace WindowsFormsApplication4
                 {
                     MessageBox.Show("Incorrect email address", "Email Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                else if(newp.Text != retype.Text)
+                else if (newp.Text != retype.Text)
                 {
                     MessageBox.Show("Password does not match", "Not matched", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
@@ -256,7 +256,7 @@ namespace WindowsFormsApplication4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void usertype_SelectedIndexChanged(object sender, EventArgs e)
@@ -284,7 +284,7 @@ namespace WindowsFormsApplication4
             }
         }
 
-     
+
 
         private void usereport_Click_1(object sender, EventArgs e)
         {

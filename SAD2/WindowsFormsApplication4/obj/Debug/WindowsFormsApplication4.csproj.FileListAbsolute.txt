@@ -238,3 +238,5 @@ C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
 C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserReport.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserReport.resources

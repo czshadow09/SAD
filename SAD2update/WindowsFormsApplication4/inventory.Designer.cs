@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(inventory));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.TextBox();
             this.cons_quan = new System.Windows.Forms.TextBox();
@@ -57,23 +59,25 @@
             this.Category = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.del = new System.Windows.Forms.Button();
             this.Update = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Gill Sans MT", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(16, -2);
+            this.label2.Location = new System.Drawing.Point(22, 7);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(379, 40);
+            this.label2.Size = new System.Drawing.Size(390, 29);
             this.label2.TabIndex = 53;
             this.label2.Text = "Inventory Management System";
             // 
@@ -230,7 +234,7 @@
             this.panel2.Location = new System.Drawing.Point(23, 47);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(423, 559);
+            this.panel2.Size = new System.Drawing.Size(434, 559);
             this.panel2.TabIndex = 127;
             // 
             // pictureBox2
@@ -401,7 +405,7 @@
             this.del.Name = "del";
             this.del.Size = new System.Drawing.Size(154, 46);
             this.del.TabIndex = 147;
-            this.del.Text = "Stock In";
+            this.del.Text = "Delete";
             this.del.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.del.UseVisualStyleBackColor = false;
             // 
@@ -422,30 +426,63 @@
             this.Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Update.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(497, 67);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(489, 463);
-            this.dataGridView2.TabIndex = 149;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.dataGridView2);
             this.panel1.Location = new System.Drawing.Point(481, 47);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(519, 559);
             this.panel1.TabIndex = 150;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
+            this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.DoubleBuffered = true;
+            this.dataGridView2.EnableHeadersVisualStyles = false;
+            this.dataGridView2.HeaderBgColor = System.Drawing.Color.DodgerBlue;
+            this.dataGridView2.HeaderForeColor = System.Drawing.Color.DodgerBlue;
+            this.dataGridView2.Location = new System.Drawing.Point(16, 50);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(488, 440);
+            this.dataGridView2.TabIndex = 151;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Gainsboro;
+            this.label1.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(20, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(202, 33);
+            this.label1.TabIndex = 151;
+            this.label1.Text = "Stock In Record";
             // 
             // inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.Update);
             this.Controls.Add(this.del);
             this.Controls.Add(this.Category);
@@ -473,6 +510,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -508,7 +547,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel Category;
         private System.Windows.Forms.Button del;
         private System.Windows.Forms.Button Update;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dataGridView2;
     }
 }
