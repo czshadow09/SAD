@@ -133,7 +133,7 @@
             this.Add.ForeColor = System.Drawing.Color.White;
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(82, 102);
+            this.Add.Location = new System.Drawing.Point(82, 123);
             this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(197, 74);
@@ -148,7 +148,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(119, 53);
+            this.label5.Location = new System.Drawing.Point(109, 42);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(253, 33);
             this.label5.TabIndex = 108;
@@ -224,10 +224,10 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.bunifuSeparator1);
-            this.panel1.Location = new System.Drawing.Point(460, 95);
+            this.panel1.Location = new System.Drawing.Point(460, 53);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(524, 249);
+            this.panel1.Size = new System.Drawing.Size(524, 291);
             this.panel1.TabIndex = 125;
             // 
             // purchase
@@ -258,7 +258,7 @@
             this.usereport.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.usereport.Image = ((System.Drawing.Image)(resources.GetObject("usereport.Image")));
             this.usereport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.usereport.Location = new System.Drawing.Point(154, 185);
+            this.usereport.Location = new System.Drawing.Point(141, 219);
             this.usereport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usereport.Name = "usereport";
             this.usereport.Size = new System.Drawing.Size(237, 45);
@@ -277,7 +277,7 @@
             this.update.ForeColor = System.Drawing.Color.White;
             this.update.Image = ((System.Drawing.Image)(resources.GetObject("update.Image")));
             this.update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.update.Location = new System.Drawing.Point(285, 102);
+            this.update.Location = new System.Drawing.Point(285, 123);
             this.update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(163, 74);
@@ -292,7 +292,7 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(166, 213);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(153, 247);
             this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(225, 43);
@@ -401,7 +401,7 @@
             this.panel2.Controls.Add(this.dataGridView3);
             this.panel2.Controls.Add(this.Close);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Location = new System.Drawing.Point(542, 594);
+            this.panel2.Location = new System.Drawing.Point(1, -1);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1021, 752);
@@ -507,9 +507,9 @@
             this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -517,14 +517,14 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.DoubleBuffered = true;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.HeaderBgColor = System.Drawing.Color.DodgerBlue;
-            this.dataGridView1.HeaderForeColor = System.Drawing.Color.DodgerBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(80, 89);
+            this.dataGridView1.HeaderBgColor = System.Drawing.Color.Silver;
+            this.dataGridView1.HeaderForeColor = System.Drawing.Color.Silver;
+            this.dataGridView1.Location = new System.Drawing.Point(80, 78);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(329, 249);
+            this.dataGridView1.Size = new System.Drawing.Size(329, 260);
             this.dataGridView1.TabIndex = 153;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -539,9 +539,9 @@
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Silver;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -549,8 +549,8 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.DoubleBuffered = true;
             this.dataGridView2.EnableHeadersVisualStyles = false;
-            this.dataGridView2.HeaderBgColor = System.Drawing.Color.DodgerBlue;
-            this.dataGridView2.HeaderForeColor = System.Drawing.Color.DodgerBlue;
+            this.dataGridView2.HeaderBgColor = System.Drawing.Color.Silver;
+            this.dataGridView2.HeaderForeColor = System.Drawing.Color.Silver;
             this.dataGridView2.Location = new System.Drawing.Point(33, 437);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
