@@ -44,12 +44,13 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.purchasing1 = new WindowsFormsApplication4.Purchasing();
             this.transaction1 = new WindowsFormsApplication4.transaction();
             this.changeprivacy1 = new WindowsFormsApplication4.changeprivacy();
             this.userControl21 = new WindowsFormsApplication4.UserControl2();
             this.inventory1 = new WindowsFormsApplication4.inventory();
-            this.purchasing1 = new WindowsFormsApplication4.Purchasing();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -126,7 +127,7 @@
             // usern
             // 
             this.usern.Location = new System.Drawing.Point(96, 84);
-            this.usern.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usern.Margin = new System.Windows.Forms.Padding(4);
             this.usern.Name = "usern";
             this.usern.Size = new System.Drawing.Size(119, 22);
             this.usern.TabIndex = 7;
@@ -135,7 +136,7 @@
             // type
             // 
             this.type.Location = new System.Drawing.Point(96, 42);
-            this.type.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.type.Margin = new System.Windows.Forms.Padding(4);
             this.type.Name = "type";
             this.type.Size = new System.Drawing.Size(119, 22);
             this.type.TabIndex = 6;
@@ -259,6 +260,30 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 40;
+            this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panel2;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // purchasing1
+            // 
+            this.purchasing1.BackColor = System.Drawing.Color.GhostWhite;
+            this.purchasing1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.purchasing1.ForeColor = System.Drawing.Color.Black;
+            this.purchasing1.Location = new System.Drawing.Point(0, 0);
+            this.purchasing1.Margin = new System.Windows.Forms.Padding(5);
+            this.purchasing1.Name = "purchasing1";
+            this.purchasing1.Size = new System.Drawing.Size(1312, 729);
+            this.purchasing1.TabIndex = 7;
+            this.purchasing1.Load += new System.EventHandler(this.purchasing1_Load);
+            // 
             // transaction1
             // 
             this.transaction1.BackColor = System.Drawing.Color.GhostWhite;
@@ -300,23 +325,6 @@
             this.inventory1.Name = "inventory1";
             this.inventory1.Size = new System.Drawing.Size(1312, 729);
             this.inventory1.TabIndex = 3;
-            // 
-            // purchasing1
-            // 
-            this.purchasing1.BackColor = System.Drawing.Color.GhostWhite;
-            this.purchasing1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.purchasing1.ForeColor = System.Drawing.Color.Black;
-            this.purchasing1.Location = new System.Drawing.Point(0, 0);
-            this.purchasing1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.purchasing1.Name = "purchasing1";
-            this.purchasing1.Size = new System.Drawing.Size(1312, 729);
-            this.purchasing1.TabIndex = 7;
-            this.purchasing1.Load += new System.EventHandler(this.purchasing1_Load);
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 40;
-            this.bunifuElipse1.TargetControl = this;
             // 
             // Form2
             // 
@@ -369,5 +377,6 @@
         private System.Windows.Forms.Label loginIn;
         private Purchasing purchasing1;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
     }
 }
