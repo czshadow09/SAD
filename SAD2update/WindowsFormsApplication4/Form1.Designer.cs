@@ -31,6 +31,7 @@ namespace WindowsFormsApplication4
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.date = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -39,7 +40,6 @@ namespace WindowsFormsApplication4
             this.btnpass = new System.Windows.Forms.TextBox();
             this.btnuser = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.date = new System.Windows.Forms.TextBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -59,6 +59,15 @@ namespace WindowsFormsApplication4
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(447, 65);
             this.panel2.TabIndex = 1;
+            // 
+            // date
+            // 
+            this.date.Location = new System.Drawing.Point(27, 17);
+            this.date.Margin = new System.Windows.Forms.Padding(4);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(69, 22);
+            this.date.TabIndex = 20;
+            this.date.Visible = false;
             // 
             // panel3
             // 
@@ -99,7 +108,7 @@ namespace WindowsFormsApplication4
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(27, 242);
+            this.pictureBox2.Location = new System.Drawing.Point(22, 242);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(39, 33);
@@ -118,7 +127,7 @@ namespace WindowsFormsApplication4
             this.btnok.Margin = new System.Windows.Forms.Padding(0);
             this.btnok.Name = "btnok";
             this.btnok.Size = new System.Drawing.Size(200, 49);
-            this.btnok.TabIndex = 17;
+            this.btnok.TabIndex = 3;
             this.btnok.Text = "Log In";
             this.btnok.UseVisualStyleBackColor = false;
             this.btnok.Click += new System.EventHandler(this.btnok_Click);
@@ -129,12 +138,12 @@ namespace WindowsFormsApplication4
             this.btnpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.btnpass.Font = new System.Drawing.Font("Verdana", 15.8F);
             this.btnpass.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnpass.Location = new System.Drawing.Point(72, 242);
+            this.btnpass.Location = new System.Drawing.Point(67, 242);
             this.btnpass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnpass.Name = "btnpass";
             this.btnpass.PasswordChar = '*';
             this.btnpass.Size = new System.Drawing.Size(344, 33);
-            this.btnpass.TabIndex = 16;
+            this.btnpass.TabIndex = 2;
             this.btnpass.Text = "****";
             this.btnpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnpass.Click += new System.EventHandler(this.btnpass_Click);
@@ -146,11 +155,11 @@ namespace WindowsFormsApplication4
             this.btnuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.btnuser.Font = new System.Drawing.Font("Verdana", 15.8F);
             this.btnuser.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnuser.Location = new System.Drawing.Point(72, 170);
+            this.btnuser.Location = new System.Drawing.Point(67, 170);
             this.btnuser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnuser.Name = "btnuser";
             this.btnuser.Size = new System.Drawing.Size(344, 33);
-            this.btnuser.TabIndex = 15;
+            this.btnuser.TabIndex = 1;
             this.btnuser.Text = "username";
             this.btnuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnuser.Click += new System.EventHandler(this.btnuser_Click);
@@ -159,22 +168,13 @@ namespace WindowsFormsApplication4
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 170);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 170);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(39, 32);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
-            // 
-            // date
-            // 
-            this.date.Location = new System.Drawing.Point(27, 17);
-            this.date.Margin = new System.Windows.Forms.Padding(4);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(69, 22);
-            this.date.TabIndex = 20;
-            this.date.Visible = false;
             // 
             // bunifuElipse1
             // 

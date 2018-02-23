@@ -29,8 +29,8 @@ namespace WindowsFormsApplication4
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.search = new System.Windows.Forms.TextBox();
             this.retype = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.newp = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -74,7 +74,7 @@ namespace WindowsFormsApplication4
             this.search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(321, 36);
-            this.search.TabIndex = 57;
+            this.search.TabIndex = 13;
             // 
             // retype
             // 
@@ -92,7 +92,7 @@ namespace WindowsFormsApplication4
             this.retype.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.retype.Name = "retype";
             this.retype.Size = new System.Drawing.Size(293, 30);
-            this.retype.TabIndex = 133;
+            this.retype.TabIndex = 9;
             this.retype.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // newp
@@ -111,7 +111,7 @@ namespace WindowsFormsApplication4
             this.newp.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.newp.Name = "newp";
             this.newp.Size = new System.Drawing.Size(291, 36);
-            this.newp.TabIndex = 132;
+            this.newp.TabIndex = 8;
             this.newp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // username
@@ -130,7 +130,7 @@ namespace WindowsFormsApplication4
             this.username.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(291, 36);
-            this.username.TabIndex = 131;
+            this.username.TabIndex = 7;
             this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // contact
@@ -149,7 +149,7 @@ namespace WindowsFormsApplication4
             this.contact.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.contact.Name = "contact";
             this.contact.Size = new System.Drawing.Size(299, 36);
-            this.contact.TabIndex = 130;
+            this.contact.TabIndex = 5;
             this.contact.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // email
@@ -168,7 +168,7 @@ namespace WindowsFormsApplication4
             this.email.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(299, 36);
-            this.email.TabIndex = 129;
+            this.email.TabIndex = 4;
             this.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lastname
@@ -187,7 +187,7 @@ namespace WindowsFormsApplication4
             this.lastname.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.lastname.Name = "lastname";
             this.lastname.Size = new System.Drawing.Size(304, 36);
-            this.lastname.TabIndex = 128;
+            this.lastname.TabIndex = 2;
             this.lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // firstname
@@ -206,7 +206,7 @@ namespace WindowsFormsApplication4
             this.firstname.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.firstname.Name = "firstname";
             this.firstname.Size = new System.Drawing.Size(304, 36);
-            this.firstname.TabIndex = 127;
+            this.firstname.TabIndex = 1;
             this.firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // Update
@@ -221,7 +221,7 @@ namespace WindowsFormsApplication4
             this.Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(144, 37);
-            this.Update.TabIndex = 123;
+            this.Update.TabIndex = 11;
             this.Update.Text = "Update";
             this.Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Update.UseVisualStyleBackColor = false;
@@ -239,7 +239,7 @@ namespace WindowsFormsApplication4
             this.se.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.se.Name = "se";
             this.se.Size = new System.Drawing.Size(63, 57);
-            this.se.TabIndex = 58;
+            this.se.TabIndex = 12;
             this.se.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.se.UseVisualStyleBackColor = false;
             // 
@@ -265,7 +265,7 @@ namespace WindowsFormsApplication4
             this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(120, 37);
-            this.Add.TabIndex = 124;
+            this.Add.TabIndex = 10;
             this.Add.Text = " Add";
             this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Add.UseVisualStyleBackColor = false;
@@ -394,7 +394,7 @@ namespace WindowsFormsApplication4
             this.gender.Margin = new System.Windows.Forms.Padding(4);
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(310, 35);
-            this.gender.TabIndex = 112;
+            this.gender.TabIndex = 3;
             // 
             // usertype
             // 
@@ -411,7 +411,7 @@ namespace WindowsFormsApplication4
             this.usertype.Margin = new System.Windows.Forms.Padding(4);
             this.usertype.Name = "usertype";
             this.usertype.Size = new System.Drawing.Size(310, 35);
-            this.usertype.TabIndex = 111;
+            this.usertype.TabIndex = 6;
             // 
             // id
             // 
@@ -454,9 +454,9 @@ namespace WindowsFormsApplication4
             this.panel1.Controls.Add(this.search);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.bunifuSeparator1);
-            this.panel1.Location = new System.Drawing.Point(364, 295);
+            this.panel1.Location = new System.Drawing.Point(371, 295);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(642, 379);
+            this.panel1.Size = new System.Drawing.Size(635, 379);
             this.panel1.TabIndex = 125;
             // 
             // usereport
@@ -471,7 +471,7 @@ namespace WindowsFormsApplication4
             this.usereport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usereport.Name = "usereport";
             this.usereport.Size = new System.Drawing.Size(209, 51);
-            this.usereport.TabIndex = 101;
+            this.usereport.TabIndex = 14;
             this.usereport.Text = " User Report";
             this.usereport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.usereport.UseVisualStyleBackColor = true;
@@ -480,25 +480,25 @@ namespace WindowsFormsApplication4
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 53);
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(23, 53);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(598, 264);
+            this.dataGridView1.Size = new System.Drawing.Size(591, 264);
             this.dataGridView1.TabIndex = 50;
             // 
             // bunifuSeparator1
