@@ -116,23 +116,12 @@ namespace WindowsFormsApplication4
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            select_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
-            id.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
-            prod.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
-            unit1.Text = dataGridView1.Rows[e.RowIndex].Cells["unit"].Value.ToString();
-            cur_quan.Text = dataGridView1.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
-            unit1.Enabled = true;
-            purchase.Enabled = true;
-            quan.Enabled = true;
+            
         }
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            prod2.Text = dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
-            unit2.Text = dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
-            quan2.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
-            price.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
-            addquan.Enabled = true;
+            
         }
 
         private void addquan_Click(object sender, EventArgs e)
@@ -177,6 +166,37 @@ namespace WindowsFormsApplication4
         private void usereport_Click_1(object sender, EventArgs e)
         {
             panel2.Visible = true;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void refresh_Click_1(object sender, EventArgs e)
+        {
+            refr();
+        }
+
+        private void dataGridView2_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            prod2.Text = dataGridView2.Rows[e.RowIndex].Cells[0].Value.ToString();
+            unit2.Text = dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
+            quan2.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
+            price.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
+            addquan.Enabled = true;
+        }
+
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            select_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
+            id.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
+            prod.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
+            unit1.Text = dataGridView1.Rows[e.RowIndex].Cells["unit"].Value.ToString();
+            cur_quan.Text = dataGridView1.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
+            unit1.Enabled = true;
+            purchase.Enabled = true;
+            quan.Enabled = true;
         }
     }
 }

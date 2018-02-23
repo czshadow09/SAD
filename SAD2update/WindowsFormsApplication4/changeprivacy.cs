@@ -29,6 +29,11 @@ namespace WindowsFormsApplication4
 
         private void update_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void Update_Click_1(object sender, EventArgs e)
+        {
             string npass = newp.Text;
             string rpass = retype.Text;
             string query = "";

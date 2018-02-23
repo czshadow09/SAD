@@ -50,7 +50,7 @@
             this.purchase = new System.Windows.Forms.TextBox();
             this.unit1 = new System.Windows.Forms.TextBox();
             this.usereport = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.update = new System.Windows.Forms.Button();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.prod = new System.Windows.Forms.TextBox();
             this.addquan = new System.Windows.Forms.Button();
@@ -62,11 +62,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.purchasetotal = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Close = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.refresh = new System.Windows.Forms.Button();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.dataGridView3 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.dataGridView1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.dataGridView2 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.panel1.SuspendLayout();
@@ -217,7 +217,7 @@
             this.panel1.Controls.Add(this.purchase);
             this.panel1.Controls.Add(this.unit1);
             this.panel1.Controls.Add(this.usereport);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.update);
             this.panel1.Controls.Add(this.quan);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Add);
@@ -268,24 +268,24 @@
             this.usereport.UseVisualStyleBackColor = true;
             this.usereport.Click += new System.EventHandler(this.usereport_Click_1);
             // 
-            // button1
+            // update
             // 
-            this.button1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(285, 102);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(163, 74);
-            this.button1.TabIndex = 116;
-            this.button1.Text = " Purchase Item";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.update_Click);
+            this.update.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.update.FlatAppearance.BorderSize = 0;
+            this.update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.update.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.ForeColor = System.Drawing.Color.White;
+            this.update.Image = ((System.Drawing.Image)(resources.GetObject("update.Image")));
+            this.update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.update.Location = new System.Drawing.Point(285, 102);
+            this.update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(163, 74);
+            this.update.TabIndex = 116;
+            this.update.Text = " Purchase Item";
+            this.update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.update.UseVisualStyleBackColor = false;
+            this.update.Click += new System.EventHandler(this.update_Click);
             // 
             // bunifuSeparator1
             // 
@@ -401,12 +401,42 @@
             this.panel2.Controls.Add(this.dataGridView3);
             this.panel2.Controls.Add(this.Close);
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Location = new System.Drawing.Point(0, -1);
+            this.panel2.Location = new System.Drawing.Point(542, 594);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1021, 752);
             this.panel2.TabIndex = 134;
             this.panel2.Visible = false;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView3.BackgroundColor = System.Drawing.Color.LightGray;
+            this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.DoubleBuffered = true;
+            this.dataGridView3.EnableHeadersVisualStyles = false;
+            this.dataGridView3.HeaderBgColor = System.Drawing.Color.DodgerBlue;
+            this.dataGridView3.HeaderForeColor = System.Drawing.Color.DodgerBlue;
+            this.dataGridView3.Location = new System.Drawing.Point(158, 194);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataGridView3.RowTemplate.Height = 24;
+            this.dataGridView3.Size = new System.Drawing.Size(697, 410);
+            this.dataGridView3.TabIndex = 152;
             // 
             // Close
             // 
@@ -452,6 +482,7 @@
             this.refresh.Text = "Refresh";
             this.refresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.refresh.UseVisualStyleBackColor = false;
+            this.refresh.Click += new System.EventHandler(this.refresh_Click_1);
             // 
             // bunifuSeparator2
             // 
@@ -465,36 +496,6 @@
             this.bunifuSeparator2.TabIndex = 145;
             this.bunifuSeparator2.Transparency = 255;
             this.bunifuSeparator2.Vertical = false;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.LightGray;
-            this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.DoubleBuffered = true;
-            this.dataGridView3.EnableHeadersVisualStyles = false;
-            this.dataGridView3.HeaderBgColor = System.Drawing.Color.DodgerBlue;
-            this.dataGridView3.HeaderForeColor = System.Drawing.Color.DodgerBlue;
-            this.dataGridView3.Location = new System.Drawing.Point(158, 194);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(697, 410);
-            this.dataGridView3.TabIndex = 152;
             // 
             // dataGridView1
             // 
@@ -525,6 +526,8 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(329, 249);
             this.dataGridView1.TabIndex = 153;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // dataGridView2
             // 
@@ -555,6 +558,7 @@
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.Size = new System.Drawing.Size(556, 218);
             this.dataGridView2.TabIndex = 154;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick_1);
             // 
             // Purchasing
             // 
@@ -626,7 +630,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button Close;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button update;
         private System.Windows.Forms.Button refresh;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator2;

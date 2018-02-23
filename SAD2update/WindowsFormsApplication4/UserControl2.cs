@@ -148,6 +148,111 @@ namespace WindowsFormsApplication4
 
         private void Add_Click(object sender, EventArgs e)
         {
+            
+
+        }
+        private void Update_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private int select_user_id;
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void UserControl2_Load(object sender, EventArgs e)
+        {
+            loadAll();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usertype_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void se_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM user u inner join login l on l.login_id = u.login_login_id where firstname like'" + search.Text + "%';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView1.DataSource = dt;
+        }
+
+        private void contact_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar) & (Keys)e.KeyChar != Keys.Back & e.KeyChar != ('+'))
+            {
+                e.Handled = true;
+            }
+        }
+
+
+
+        private void usereport_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void usereport_Click(object sender, EventArgs e)
+        {
+            UserReport ur = new UserReport();
+            ur.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void Update_Click_1(object sender, EventArgs e)
+        {
+            Regex phoneNumpattern = new Regex(@"[0][9][0-9]{2}[0-9]{3}[0-9]{4}");
+            string query = "";
+            string query2 = "SELECT firstname FROM user WHERE firstname='" + firstname.Text + "' ";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query2, conn);
+            MySqlDataAdapter user = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            user.Fill(dt);
+            if (String.IsNullOrEmpty(firstname.Text) && String.IsNullOrEmpty(lastname.Text) && String.IsNullOrEmpty(gender.Text) && String.IsNullOrEmpty(email.Text) && String.IsNullOrEmpty(contact.Text) && String.IsNullOrEmpty(usertype.Text))
+            {
+                MessageBox.Show("Please choose a user by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!String.IsNullOrEmpty(username.Text) || !String.IsNullOrEmpty(newp.Text) || !String.IsNullOrEmpty(retype.Text))
+            {
+                MessageBox.Show("Username or password can only be updated in the change privacy module!", "Note", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!phoneNumpattern.IsMatch(contact.Text))
+            {
+                MessageBox.Show("Incorrect phone number", "Phone Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!IsValid(email.Text))
+            {
+                MessageBox.Show("Incorrect email address", "Email Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                query += " UPDATE user SET firstname='" + firstname.Text + "', lastname='" + lastname.Text + "', gender='" + gender.Text + "', email='" + email.Text + "', contact='" + contact.Text + "', type='" + usertype.Text + "' WHERE user_id='" + id.Text + "'; ";
+                MessageBox.Show("User updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                executeQuery(query);
+                loadAll();
+            }
+        }
+
+        private void Add_Click_1(object sender, EventArgs e)
+        {
             Regex phoneNumpattern = new Regex(@"[0][9][0-9]{2}[0-9]{3}[0-9]{4}");
             string query = "SELECT username From login WHERE username='" + username.Text + "' ";
             conn.Open();
@@ -195,46 +300,14 @@ namespace WindowsFormsApplication4
                     loadAll();
                 }
             }
-
         }
-        private void Update_Click(object sender, EventArgs e)
+
+        private void contact_OnValueChanged(object sender, EventArgs e)
         {
-            Regex phoneNumpattern = new Regex(@"[0][9][0-9]{2}[0-9]{3}[0-9]{4}");
-            string query = "";
-            string query2 = "SELECT firstname FROM user WHERE firstname='" + firstname.Text + "' ";
-            conn.Open();
-            MySqlCommand com = new MySqlCommand(query2, conn);
-            MySqlDataAdapter user = new MySqlDataAdapter(com);
-            conn.Close();
-            DataTable dt = new DataTable();
-            user.Fill(dt);
-            if (String.IsNullOrEmpty(firstname.Text) && String.IsNullOrEmpty(lastname.Text) && String.IsNullOrEmpty(gender.Text) && String.IsNullOrEmpty(email.Text) && String.IsNullOrEmpty(contact.Text) && String.IsNullOrEmpty(usertype.Text))
-            {
-                MessageBox.Show("Please choose a user by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (!String.IsNullOrEmpty(username.Text) || !String.IsNullOrEmpty(newp.Text) || !String.IsNullOrEmpty(retype.Text))
-            {
-                MessageBox.Show("Username or password can only be updated in the change privacy module!", "Note", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (!phoneNumpattern.IsMatch(contact.Text))
-            {
-                MessageBox.Show("Incorrect phone number", "Phone Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (!IsValid(email.Text))
-            {
-                MessageBox.Show("Incorrect email address", "Email Validation", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                query += " UPDATE user SET firstname='" + firstname.Text + "', lastname='" + lastname.Text + "', gender='" + gender.Text + "', email='" + email.Text + "', contact='" + contact.Text + "', type='" + usertype.Text + "' WHERE user_id='" + id.Text + "'; ";
-                MessageBox.Show("User updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                executeQuery(query);
-                loadAll();
-            }
+
         }
 
-        private int select_user_id;
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex > -1)
             {
@@ -247,49 +320,6 @@ namespace WindowsFormsApplication4
                 usertype.Text = dataGridView1.Rows[e.RowIndex].Cells["type"].Value.ToString();
                 id.Text = dataGridView1.Rows[e.RowIndex].Cells["user_id"].Value.ToString();
             }
-        }
-
-        private void UserControl2_Load(object sender, EventArgs e)
-        {
-            loadAll();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void usertype_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void se_Click(object sender, EventArgs e)
-        {
-            string query = "SELECT * FROM user u inner join login l on l.login_id = u.login_login_id where firstname like'" + search.Text + "%';";
-            conn.Open();
-            MySqlCommand comm = new MySqlCommand(query, conn);
-            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
-            conn.Close();
-            DataTable dt = new DataTable();
-            adp.Fill(dt);
-            dataGridView1.DataSource = dt;
-        }
-
-        private void contact_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsNumber(e.KeyChar) & (Keys)e.KeyChar != Keys.Back & e.KeyChar != ('+'))
-            {
-                e.Handled = true;
-            }
-        }
-
-
-
-        private void usereport_Click_1(object sender, EventArgs e)
-        {
-            UserReport ur = new UserReport();
-            ur.Show();
         }
     }
 }

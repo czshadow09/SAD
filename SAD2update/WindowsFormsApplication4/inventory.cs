@@ -81,9 +81,7 @@ namespace WindowsFormsApplication4
         }
         private void Out_Click(object sender, EventArgs e)
         {
-            Out a = new Out();
-            a.id.Text = dataGridView2.CurrentRow.Cells["product_id"].Value.ToString();
-            a.Show();
+            
         }
 
         private void entry_Click(object sender, EventArgs e)
@@ -94,56 +92,36 @@ namespace WindowsFormsApplication4
 
         private void Se_Click(object sender, EventArgs e)
         {
-            string query = "select p.description, p.unit, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where p.description like'" + search.Text + "%';";
-            conn.Open();
-            MySqlCommand comm = new MySqlCommand(query, conn);
-            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
-            conn.Close();
-            DataTable dt = new DataTable();
-            adp.Fill(dt);
-            dataGridView2.DataSource = dt;
+            
         }
 
         private void view_Click(object sender, EventArgs e)
         {
-            loadAll2();
-            search.Clear();
-            categ.SelectedIndex = -1;
+            
         }
 
         private void categ_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string query = "select p.product_id, p.description, p.unit, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.inc, p.cur_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
-            conn.Open();
-            MySqlCommand comm = new MySqlCommand(query, conn);
-            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
-            conn.Close();
-            DataTable dt = new DataTable();
-            adp.Fill(dt);
-            dataGridView2.DataSource = dt;
+            
         }
 
         private int select_user_id;
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            In i = new In();
-            select_user_id = int.Parse(dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
-            id.Text = dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
-            prodname.Text = dataGridView2.Rows[e.RowIndex].Cells["description"].Value.ToString();
-            quantity.Text = dataGridView2.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
-            currentp.Text = dataGridView2.Rows[e.RowIndex].Cells["cur_price"].Value.ToString();
-            price.Text = dataGridView2.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
-            increase.Text = dataGridView2.Rows[e.RowIndex].Cells["inc"].Value.ToString();
-            unit.Text = dataGridView2.Rows[e.RowIndex].Cells["unit"].Value.ToString();
-            cons_quan.Text = dataGridView2.Rows[e.RowIndex].Cells["cost_quantity"].Value.ToString();
-            double constant = Double.Parse(cons_quan.Text);
-            constant = constant * 0.3;
-            cons_quan.Text = constant.ToString();
-            Update.Enabled = true;
-            Out.Enabled = true;
+            
         }
 
         private void Update_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
+
+        private void Update_Click_1(object sender, EventArgs e)
         {
             decimal curp = Convert.ToDecimal(increase.Text);
             decimal orgp = Convert.ToDecimal(price.Text);
@@ -172,6 +150,56 @@ namespace WindowsFormsApplication4
                 }
                 loadAll2();
             }
+        }
+
+        private void categ_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            string query = "select p.product_id, p.description, p.unit, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.inc, p.cur_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView2.DataSource = dt;
+        }
+
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            In i = new In();
+            select_user_id = int.Parse(dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
+            id.Text = dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
+            prodname.Text = dataGridView2.Rows[e.RowIndex].Cells["description"].Value.ToString();
+            quantity.Text = dataGridView2.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
+            currentp.Text = dataGridView2.Rows[e.RowIndex].Cells["cur_price"].Value.ToString();
+            price.Text = dataGridView2.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
+            increase.Text = dataGridView2.Rows[e.RowIndex].Cells["inc"].Value.ToString();
+            unit.Text = dataGridView2.Rows[e.RowIndex].Cells["unit"].Value.ToString();
+            cons_quan.Text = dataGridView2.Rows[e.RowIndex].Cells["cost_quantity"].Value.ToString();
+            double constant = Double.Parse(cons_quan.Text);
+            constant = constant * 0.3;
+            cons_quan.Text = constant.ToString();
+            Update.Enabled = true;
+            Out.Enabled = true;
+        }
+
+        private void Out_Click_1(object sender, EventArgs e)
+        {
+            Out a = new Out();
+            a.id.Text = dataGridView2.CurrentRow.Cells["product_id"].Value.ToString();
+            a.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            loadAll2();
+            search.Clear();
+            categ.SelectedIndex = -1;
         }
     }
 }

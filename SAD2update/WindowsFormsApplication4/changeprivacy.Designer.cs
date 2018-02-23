@@ -36,10 +36,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.old = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Update = new System.Windows.Forms.Button();
             this.usern = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.Update = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
@@ -138,10 +138,28 @@
             this.panel1.Size = new System.Drawing.Size(732, 480);
             this.panel1.TabIndex = 28;
             // 
+            // Update
+            // 
+            this.Update.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.Update.FlatAppearance.BorderSize = 0;
+            this.Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Update.ForeColor = System.Drawing.Color.White;
+            this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Update.Location = new System.Drawing.Point(323, 349);
+            this.Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(165, 50);
+            this.Update.TabIndex = 124;
+            this.Update.Text = "Update";
+            this.Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Update.UseVisualStyleBackColor = false;
+            this.Update.Click += new System.EventHandler(this.Update_Click_1);
+            // 
             // usern
             // 
             this.usern.Location = new System.Drawing.Point(112, 96);
-            this.usern.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usern.Margin = new System.Windows.Forms.Padding(4);
             this.usern.Name = "usern";
             this.usern.Size = new System.Drawing.Size(107, 22);
             this.usern.TabIndex = 49;
@@ -168,23 +186,6 @@
             this.label1.Size = new System.Drawing.Size(242, 38);
             this.label1.TabIndex = 3;
             this.label1.Text = "Change Privacy";
-            // 
-            // Update
-            // 
-            this.Update.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.Update.FlatAppearance.BorderSize = 0;
-            this.Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update.ForeColor = System.Drawing.Color.White;
-            this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Update.Location = new System.Drawing.Point(323, 349);
-            this.Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(165, 50);
-            this.Update.TabIndex = 124;
-            this.Update.Text = "Update";
-            this.Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Update.UseVisualStyleBackColor = false;
             // 
             // changeprivacy
             // 
