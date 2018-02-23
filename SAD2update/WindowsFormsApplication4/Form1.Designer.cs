@@ -28,6 +28,7 @@ namespace WindowsFormsApplication4
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -39,6 +40,8 @@ namespace WindowsFormsApplication4
             this.btnuser = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.date = new System.Windows.Forms.TextBox();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -49,6 +52,7 @@ namespace WindowsFormsApplication4
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.panel2.Controls.Add(this.date);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 368);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -70,7 +74,7 @@ namespace WindowsFormsApplication4
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(413, 7);
+            this.pictureBox4.Location = new System.Drawing.Point(400, 15);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(35, 28);
@@ -105,11 +109,12 @@ namespace WindowsFormsApplication4
             // 
             // btnok
             // 
-            this.btnok.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnok.Font = new System.Drawing.Font("Bahnschrift", 16.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnok.ForeColor = System.Drawing.Color.Black;
-            this.btnok.Location = new System.Drawing.Point(133, 304);
+            this.btnok.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnok.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.btnok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnok.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnok.ForeColor = System.Drawing.Color.White;
+            this.btnok.Location = new System.Drawing.Point(130, 298);
             this.btnok.Margin = new System.Windows.Forms.Padding(0);
             this.btnok.Name = "btnok";
             this.btnok.Size = new System.Drawing.Size(200, 49);
@@ -164,12 +169,17 @@ namespace WindowsFormsApplication4
             // 
             // date
             // 
-            this.date.Location = new System.Drawing.Point(27, 304);
-            this.date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.date.Location = new System.Drawing.Point(27, 17);
+            this.date.Margin = new System.Windows.Forms.Padding(4);
             this.date.Name = "date";
             this.date.Size = new System.Drawing.Size(69, 22);
             this.date.TabIndex = 20;
             this.date.Visible = false;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 45;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // Form1
             // 
@@ -177,7 +187,6 @@ namespace WindowsFormsApplication4
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(447, 433);
-            this.Controls.Add(this.date);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.btnok);
@@ -191,6 +200,8 @@ namespace WindowsFormsApplication4
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -212,6 +223,7 @@ namespace WindowsFormsApplication4
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox date;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
 

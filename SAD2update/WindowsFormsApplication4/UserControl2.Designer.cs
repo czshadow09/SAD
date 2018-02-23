@@ -29,42 +29,202 @@ namespace WindowsFormsApplication4
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl2));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.se = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.search = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.TextBox();
+            this.retype = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.newp = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.username = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.contact = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.email = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.lastname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.firstname = new Bunifu.Framework.UI.BunifuMaterialTextbox();
+            this.Update = new System.Windows.Forms.Button();
+            this.se = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Add = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.gender = new System.Windows.Forms.ComboBox();
-            this.email = new System.Windows.Forms.TextBox();
             this.usertype = new System.Windows.Forms.ComboBox();
-            this.contact = new System.Windows.Forms.TextBox();
-            this.lastname = new System.Windows.Forms.TextBox();
-            this.firstname = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.username = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.newp = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.retype = new System.Windows.Forms.TextBox();
-            this.Add = new System.Windows.Forms.Button();
-            this.Update = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.id = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.usereport = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // search
+            // 
+            this.search.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search.Location = new System.Drawing.Point(76, 333);
+            this.search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.search.Name = "search";
+            this.search.Size = new System.Drawing.Size(321, 36);
+            this.search.TabIndex = 57;
+            // 
+            // retype
+            // 
+            this.retype.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.retype.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.retype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.retype.HintForeColor = System.Drawing.Color.Empty;
+            this.retype.HintText = "";
+            this.retype.isPassword = false;
+            this.retype.LineFocusedColor = System.Drawing.Color.Black;
+            this.retype.LineIdleColor = System.Drawing.Color.Black;
+            this.retype.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.retype.LineThickness = 2;
+            this.retype.Location = new System.Drawing.Point(693, 200);
+            this.retype.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.retype.Name = "retype";
+            this.retype.Size = new System.Drawing.Size(293, 30);
+            this.retype.TabIndex = 133;
+            this.retype.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // newp
+            // 
+            this.newp.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.newp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.newp.HintForeColor = System.Drawing.Color.Empty;
+            this.newp.HintText = "";
+            this.newp.isPassword = false;
+            this.newp.LineFocusedColor = System.Drawing.Color.Black;
+            this.newp.LineIdleColor = System.Drawing.Color.Black;
+            this.newp.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.newp.LineThickness = 2;
+            this.newp.Location = new System.Drawing.Point(693, 137);
+            this.newp.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.newp.Name = "newp";
+            this.newp.Size = new System.Drawing.Size(291, 36);
+            this.newp.TabIndex = 132;
+            this.newp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // username
+            // 
+            this.username.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.username.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.username.HintForeColor = System.Drawing.Color.Empty;
+            this.username.HintText = "";
+            this.username.isPassword = false;
+            this.username.LineFocusedColor = System.Drawing.Color.Black;
+            this.username.LineIdleColor = System.Drawing.Color.Black;
+            this.username.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.username.LineThickness = 2;
+            this.username.Location = new System.Drawing.Point(693, 74);
+            this.username.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(291, 36);
+            this.username.TabIndex = 131;
+            this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // contact
+            // 
+            this.contact.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.contact.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.contact.HintForeColor = System.Drawing.Color.Empty;
+            this.contact.HintText = "";
+            this.contact.isPassword = false;
+            this.contact.LineFocusedColor = System.Drawing.Color.Black;
+            this.contact.LineIdleColor = System.Drawing.Color.Black;
+            this.contact.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.contact.LineThickness = 2;
+            this.contact.Location = new System.Drawing.Point(356, 136);
+            this.contact.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.contact.Name = "contact";
+            this.contact.Size = new System.Drawing.Size(299, 36);
+            this.contact.TabIndex = 130;
+            this.contact.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // email
+            // 
+            this.email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.email.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.email.HintForeColor = System.Drawing.Color.Empty;
+            this.email.HintText = "";
+            this.email.isPassword = false;
+            this.email.LineFocusedColor = System.Drawing.Color.Black;
+            this.email.LineIdleColor = System.Drawing.Color.Black;
+            this.email.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.email.LineThickness = 2;
+            this.email.Location = new System.Drawing.Point(354, 74);
+            this.email.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(299, 36);
+            this.email.TabIndex = 129;
+            this.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // lastname
+            // 
+            this.lastname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.lastname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lastname.HintForeColor = System.Drawing.Color.Empty;
+            this.lastname.HintText = "";
+            this.lastname.isPassword = false;
+            this.lastname.LineFocusedColor = System.Drawing.Color.Black;
+            this.lastname.LineIdleColor = System.Drawing.Color.Black;
+            this.lastname.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.lastname.LineThickness = 2;
+            this.lastname.Location = new System.Drawing.Point(21, 137);
+            this.lastname.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.lastname.Name = "lastname";
+            this.lastname.Size = new System.Drawing.Size(304, 36);
+            this.lastname.TabIndex = 128;
+            this.lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // firstname
+            // 
+            this.firstname.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.firstname.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.firstname.HintForeColor = System.Drawing.Color.Empty;
+            this.firstname.HintText = "";
+            this.firstname.isPassword = false;
+            this.firstname.LineFocusedColor = System.Drawing.Color.Black;
+            this.firstname.LineIdleColor = System.Drawing.Color.Black;
+            this.firstname.LineMouseHoverColor = System.Drawing.Color.Black;
+            this.firstname.LineThickness = 2;
+            this.firstname.Location = new System.Drawing.Point(21, 75);
+            this.firstname.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.firstname.Name = "firstname";
+            this.firstname.Size = new System.Drawing.Size(304, 36);
+            this.firstname.TabIndex = 127;
+            this.firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // Update
+            // 
+            this.Update.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.Update.FlatAppearance.BorderSize = 0;
+            this.Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Update.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Update.ForeColor = System.Drawing.Color.White;
+            this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Update.Location = new System.Drawing.Point(840, 247);
+            this.Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Update.Name = "Update";
+            this.Update.Size = new System.Drawing.Size(144, 37);
+            this.Update.TabIndex = 123;
+            this.Update.Text = "Update";
+            this.Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Update.UseVisualStyleBackColor = false;
             // 
             // se
             // 
@@ -82,332 +242,209 @@ namespace WindowsFormsApplication4
             this.se.TabIndex = 58;
             this.se.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.se.UseVisualStyleBackColor = false;
-            this.se.Click += new System.EventHandler(this.se_Click);
             // 
-            // search
+            // pictureBox1
             // 
-            this.search.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.Location = new System.Drawing.Point(76, 333);
-            this.search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.search.Name = "search";
-            this.search.Size = new System.Drawing.Size(321, 36);
-            this.search.TabIndex = 57;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(15, 339);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(317, 316);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 126;
+            this.pictureBox1.TabStop = false;
             // 
-            // label2
+            // Add
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Cambria", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(378, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(269, 30);
-            this.label2.TabIndex = 52;
-            this.label2.Text = "Create Or Update User";
+            this.Add.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.Add.FlatAppearance.BorderSize = 0;
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Add.Location = new System.Drawing.Point(694, 247);
+            this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(120, 37);
+            this.Add.TabIndex = 124;
+            this.Add.Text = " Add";
+            this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Add.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // label12
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(625, 308);
-            this.label1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 46);
-            this.label1.TabIndex = 51;
-            this.label1.Text = "User List";
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label12.Location = new System.Drawing.Point(688, 174);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(184, 23);
+            this.label12.TabIndex = 122;
+            this.label12.Text = "Retype Password:";
             // 
-            // dataGridView1
+            // label11
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 55);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(598, 264);
-            this.dataGridView1.TabIndex = 50;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(688, 113);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(108, 23);
+            this.label11.TabIndex = 121;
+            this.label11.Text = "Password:";
             // 
-            // id
+            // label10
             // 
-            this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id.Location = new System.Drawing.Point(910, 11);
-            this.id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(56, 36);
-            this.id.TabIndex = 63;
-            this.id.Visible = false;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(688, 52);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(113, 23);
+            this.label10.TabIndex = 120;
+            this.label10.Text = "Username:";
             // 
-            // label6
+            // label9
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(352, 100);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 28);
-            this.label6.TabIndex = 84;
-            this.label6.Text = "Contact:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(352, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 28);
-            this.label5.TabIndex = 83;
-            this.label5.Text = "Email:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(20, 96);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 28);
-            this.label4.TabIndex = 82;
-            this.label4.Text = "Lastname:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(20, 34);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 28);
-            this.label3.TabIndex = 81;
-            this.label3.Text = "Firstname:";
-            // 
-            // gender
-            // 
-            this.gender.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.gender.FormattingEnabled = true;
-            this.gender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.gender.Location = new System.Drawing.Point(19, 185);
-            this.gender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(310, 35);
-            this.gender.TabIndex = 80;
-            // 
-            // email
-            // 
-            this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.email.Location = new System.Drawing.Point(351, 65);
-            this.email.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(310, 34);
-            this.email.TabIndex = 79;
-            // 
-            // usertype
-            // 
-            this.usertype.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usertype.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.usertype.FormattingEnabled = true;
-            this.usertype.Items.AddRange(new object[] {
-            "Admin",
-            "Employee"});
-            this.usertype.Location = new System.Drawing.Point(351, 188);
-            this.usertype.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.usertype.Name = "usertype";
-            this.usertype.Size = new System.Drawing.Size(310, 35);
-            this.usertype.TabIndex = 78;
-            this.usertype.SelectedIndexChanged += new System.EventHandler(this.usertype_SelectedIndexChanged);
-            // 
-            // contact
-            // 
-            this.contact.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contact.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.contact.Location = new System.Drawing.Point(351, 127);
-            this.contact.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.contact.Name = "contact";
-            this.contact.Size = new System.Drawing.Size(310, 34);
-            this.contact.TabIndex = 77;
-            this.contact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.contact_KeyPress);
-            // 
-            // lastname
-            // 
-            this.lastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lastname.Location = new System.Drawing.Point(19, 123);
-            this.lastname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lastname.Name = "lastname";
-            this.lastname.Size = new System.Drawing.Size(310, 34);
-            this.lastname.TabIndex = 74;
-            // 
-            // firstname
-            // 
-            this.firstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.firstname.Location = new System.Drawing.Point(19, 61);
-            this.firstname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.firstname.Name = "firstname";
-            this.firstname.Size = new System.Drawing.Size(310, 34);
-            this.firstname.TabIndex = 73;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(20, 157);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 28);
-            this.label7.TabIndex = 86;
-            this.label7.Text = "Gender:";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(348, 173);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(107, 23);
+            this.label9.TabIndex = 119;
+            this.label9.Text = "User Type:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(20, 373);
+            this.label8.Location = new System.Drawing.Point(16, 382);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 28);
-            this.label8.TabIndex = 87;
+            this.label8.TabIndex = 118;
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(352, 161);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 28);
-            this.label9.TabIndex = 88;
-            this.label9.Text = "User Type:";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label7.Location = new System.Drawing.Point(16, 172);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 23);
+            this.label7.TabIndex = 117;
+            this.label7.Text = "Gender:";
             // 
-            // label10
+            // label6
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(692, 39);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(123, 28);
-            this.label10.TabIndex = 89;
-            this.label10.Text = "Username:";
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(348, 113);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(97, 23);
+            this.label6.TabIndex = 116;
+            this.label6.Text = "Contact:";
             // 
-            // username
+            // label5
             // 
-            this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.username.Location = new System.Drawing.Point(691, 65);
-            this.username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(310, 34);
-            this.username.TabIndex = 90;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(348, 51);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(67, 23);
+            this.label5.TabIndex = 115;
+            this.label5.Text = "Email:";
             // 
-            // label11
+            // label4
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(692, 100);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(119, 28);
-            this.label11.TabIndex = 91;
-            this.label11.Text = "Password:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(16, 111);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(111, 23);
+            this.label4.TabIndex = 114;
+            this.label4.Text = "Lastname:";
             // 
-            // newp
+            // label3
             // 
-            this.newp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newp.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.newp.Location = new System.Drawing.Point(691, 126);
-            this.newp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.newp.Name = "newp";
-            this.newp.PasswordChar = '*';
-            this.newp.Size = new System.Drawing.Size(310, 34);
-            this.newp.TabIndex = 92;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(16, 49);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(107, 23);
+            this.label3.TabIndex = 113;
+            this.label3.Text = "Firstname:";
             // 
-            // label12
+            // gender
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(692, 161);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(196, 28);
-            this.label12.TabIndex = 93;
-            this.label12.Text = "Retype Password:";
+            this.gender.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.gender.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gender.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.gender.FormattingEnabled = true;
+            this.gender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.gender.Location = new System.Drawing.Point(15, 199);
+            this.gender.Margin = new System.Windows.Forms.Padding(4);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(310, 35);
+            this.gender.TabIndex = 112;
             // 
-            // retype
+            // usertype
             // 
-            this.retype.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.retype.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.retype.Location = new System.Drawing.Point(691, 190);
-            this.retype.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.retype.Name = "retype";
-            this.retype.PasswordChar = '*';
-            this.retype.Size = new System.Drawing.Size(310, 34);
-            this.retype.TabIndex = 94;
+            this.usertype.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.usertype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.usertype.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.usertype.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usertype.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.usertype.FormattingEnabled = true;
+            this.usertype.Items.AddRange(new object[] {
+            "Admin",
+            "Employee"});
+            this.usertype.Location = new System.Drawing.Point(347, 200);
+            this.usertype.Margin = new System.Windows.Forms.Padding(4);
+            this.usertype.Name = "usertype";
+            this.usertype.Size = new System.Drawing.Size(310, 35);
+            this.usertype.TabIndex = 111;
             // 
-            // Add
+            // id
             // 
-            this.Add.FlatAppearance.BorderSize = 0;
-            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
-            this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(623, 231);
-            this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(163, 62);
-            this.Add.TabIndex = 97;
-            this.Add.Text = " Add";
-            this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Add.UseVisualStyleBackColor = true;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
+            this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.id.Location = new System.Drawing.Point(906, 20);
+            this.id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(56, 36);
+            this.id.TabIndex = 110;
+            this.id.Visible = false;
             // 
-            // Update
+            // label2
             // 
-            this.Update.FlatAppearance.BorderSize = 0;
-            this.Update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Update.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Update.ForeColor = System.Drawing.Color.Black;
-            this.Update.Image = ((System.Drawing.Image)(resources.GetObject("Update.Image")));
-            this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Update.Location = new System.Drawing.Point(812, 228);
-            this.Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Update.Name = "Update";
-            this.Update.Size = new System.Drawing.Size(178, 65);
-            this.Update.TabIndex = 96;
-            this.Update.Text = "Update";
-            this.Update.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Update.UseVisualStyleBackColor = true;
-            this.Update.Click += new System.EventHandler(this.Update_Click);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(374, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(275, 28);
+            this.label2.TabIndex = 109;
+            this.label2.Text = "Create Or Update User";
             // 
-            // pictureBox1
+            // label1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(19, 330);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(317, 316);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 100;
-            this.pictureBox1.TabStop = false;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(616, 303);
+            this.label1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(206, 46);
+            this.label1.TabIndex = 108;
+            this.label1.Text = "User List";
             // 
             // panel1
             // 
@@ -416,10 +453,11 @@ namespace WindowsFormsApplication4
             this.panel1.Controls.Add(this.se);
             this.panel1.Controls.Add(this.search);
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(368, 298);
+            this.panel1.Controls.Add(this.bunifuSeparator1);
+            this.panel1.Location = new System.Drawing.Point(364, 295);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(642, 379);
-            this.panel1.TabIndex = 99;
+            this.panel1.TabIndex = 125;
             // 
             // usereport
             // 
@@ -429,29 +467,70 @@ namespace WindowsFormsApplication4
             this.usereport.ForeColor = System.Drawing.Color.DeepSkyBlue;
             this.usereport.Image = ((System.Drawing.Image)(resources.GetObject("usereport.Image")));
             this.usereport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.usereport.Location = new System.Drawing.Point(424, 324);
+            this.usereport.Location = new System.Drawing.Point(424, 318);
             this.usereport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.usereport.Name = "usereport";
-            this.usereport.Size = new System.Drawing.Size(209, 53);
+            this.usereport.Size = new System.Drawing.Size(209, 51);
             this.usereport.TabIndex = 101;
             this.usereport.Text = " User Report";
             this.usereport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.usereport.UseVisualStyleBackColor = true;
-            this.usereport.Click += new System.EventHandler(this.usereport_Click_1);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 0, 4, 0);
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 4, 0, 4);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView1.Location = new System.Drawing.Point(24, 53);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(598, 264);
+            this.dataGridView1.TabIndex = 50;
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(426, 349);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Size = new System.Drawing.Size(186, 43);
+            this.bunifuSeparator1.TabIndex = 108;
+            this.bunifuSeparator1.Transparency = 255;
+            this.bunifuSeparator1.Vertical = false;
             // 
             // UserControl2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
+            this.Controls.Add(this.retype);
+            this.Controls.Add(this.newp);
+            this.Controls.Add(this.username);
+            this.Controls.Add(this.contact);
+            this.Controls.Add(this.email);
+            this.Controls.Add(this.lastname);
+            this.Controls.Add(this.firstname);
+            this.Controls.Add(this.Update);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Add);
-            this.Controls.Add(this.Update);
-            this.Controls.Add(this.retype);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.newp);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.username);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -461,11 +540,7 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gender);
-            this.Controls.Add(this.email);
             this.Controls.Add(this.usertype);
-            this.Controls.Add(this.contact);
-            this.Controls.Add(this.lastname);
-            this.Controls.Add(this.firstname);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -475,10 +550,10 @@ namespace WindowsFormsApplication4
             this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(1021, 690);
             this.Load += new System.EventHandler(this.UserControl2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,35 +561,36 @@ namespace WindowsFormsApplication4
 
         #endregion
 
-        private System.Windows.Forms.Button se;
         private System.Windows.Forms.TextBox search;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox id;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox retype;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox newp;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox username;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox contact;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox email;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox lastname;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox firstname;
+        private System.Windows.Forms.Button Update;
+        private System.Windows.Forms.Button se;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Add;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox gender;
-        private System.Windows.Forms.TextBox email;
         private System.Windows.Forms.ComboBox usertype;
-        private System.Windows.Forms.TextBox contact;
-        private System.Windows.Forms.TextBox lastname;
-        private System.Windows.Forms.TextBox firstname;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox username;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox newp;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox retype;
-        private System.Windows.Forms.Button Add;
-        private System.Windows.Forms.Button Update;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox id;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button usereport;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
     }
 }
