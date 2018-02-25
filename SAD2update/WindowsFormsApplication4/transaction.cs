@@ -72,13 +72,6 @@ namespace WindowsFormsApplication4
             dt.Columns.Add("Amount", typeof(decimal));
         }
 
-        private void TableForItems()
-        {
-            dt.Columns.Add("Item");
-            dt.Columns.Add("Quantity_On_Hand");
-            dt.Columns.Add("SubTotal");
-        }
-
         private void transaction_Load(object sender, EventArgs e)
         {
             CreateDataTableColumns();

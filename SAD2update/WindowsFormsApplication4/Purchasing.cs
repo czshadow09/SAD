@@ -98,18 +98,26 @@ namespace WindowsFormsApplication4
 
         private void update_Click(object sender, EventArgs e)
         {
-            decimal purc = Convert.ToDecimal(purchase.Text);
-            decimal qua = Convert.ToDecimal(quan.Text);
-            decimal amount = purc * qua;
-            DataRow dr = dt.NewRow();
-            dr["Product"] = prod.Text;
-            dr["Unit"] = unit1.Text;
-            dr["Quantity"] = quan.Text;
-            dr["Price"] = amount;
-            dt.Rows.Add(dr);
-            dataGridView2.DataSource = dt;
-            decimal sum = Convert.ToDecimal(dt.Compute("SUM(Price)", string.Empty));
-            purchasetotal.Text = sum.ToString();
+            if(String.IsNullOrEmpty(purchase.Text) || String.IsNullOrEmpty(quan.Text))
+            {
+                MessageBox.Show("Both price and quantity required!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                decimal purc = Convert.ToDecimal(purchase.Text);
+                decimal qua = Convert.ToDecimal(quan.Text);
+                decimal amount = purc * qua;
+                DataRow dr = dt.NewRow();
+                dr["Product"] = prod.Text;
+                dr["Unit"] = unit1.Text;
+                dr["Quantity"] = quan.Text;
+                dr["Price"] = amount;
+                dt.Rows.Add(dr);
+                dataGridView2.DataSource = dt;
+                decimal sum = Convert.ToDecimal(dt.Compute("SUM(Price)", string.Empty));
+                purchasetotal.Text = sum.ToString();
+            }
+            
         }
 
         private int select_id;
@@ -198,5 +206,6 @@ namespace WindowsFormsApplication4
             purchase.Enabled = true;
             quan.Enabled = true;
         }
+
     }
 }
