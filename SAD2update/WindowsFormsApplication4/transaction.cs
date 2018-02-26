@@ -62,8 +62,8 @@ namespace WindowsFormsApplication4
             dataGridView3.Columns["order_date"].HeaderText = "Date";
             dataGridView3.Columns["order_id"].HeaderText = "Customer #";
             dataGridView3.Columns["tot_consume"].HeaderText = "Total Amount";
-            decimal sum = Convert.ToDecimal(dt.Compute("SUM(tot_consume)", string.Empty));
-            purchasetotal.Text = sum.ToString();
+            //decimal sum = Convert.ToDecimal(dt.Compute("SUM(tot_consume)", string.Empty));
+            //purchasetotal.Text = sum.ToString();
         }
         private void CreateDataTableColumns()
         {
@@ -79,7 +79,7 @@ namespace WindowsFormsApplication4
             loadAll2();
             subtot.Text = "0.00";
             purchasetotal.Text = "0.00";
-            date.Text = DateTime.Now.ToString("MMMM dd, yyyy");
+            date.Text = DateTime.Now.ToString("dd/MM/yyy, HH:mm");
         }
 
         private void firstname_TextChanged(object sender, EventArgs e)

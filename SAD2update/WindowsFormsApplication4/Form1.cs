@@ -117,7 +117,7 @@ namespace WindowsFormsApplication4
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            date.Text = DateTime.Now.ToString("MMMM dd, yyyy");
+            date.Text = DateTime.Now.ToString("dd/MM/yyy, HH:mm:ss");
         }
     }
 }
