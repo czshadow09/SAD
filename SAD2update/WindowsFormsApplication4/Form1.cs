@@ -81,11 +81,11 @@ namespace WindowsFormsApplication4
             conn.Close();
             DataTable dt = new DataTable();
             adp.Fill(dt);
-            String fn = dt.Rows[0][1].ToString();
-            String ln = dt.Rows[0][2].ToString();
 
             if (dt.Rows.Count == 1)
             {
+                String fn = dt.Rows[0][1].ToString();
+                String ln = dt.Rows[0][2].ToString();
                 Form2 f = new Form2();
                 f.usern.Text = user;
                 user = dt.Rows[0][2].ToString() + " "  + dt.Rows[0][1].ToString();

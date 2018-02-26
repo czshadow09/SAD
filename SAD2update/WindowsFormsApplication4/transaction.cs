@@ -78,7 +78,6 @@ namespace WindowsFormsApplication4
             loadAll();
             loadAll2();
             subtot.Text = "0.00";
-            purchasetotal.Text = "0.00";
             date.Text = DateTime.Now.ToString("dd/MM/yyy, HH:mm");
         }
 
