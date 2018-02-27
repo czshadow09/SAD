@@ -207,5 +207,9 @@ namespace WindowsFormsApplication4
             quan.Enabled = true;
         }
 
+        private void Close_Click_1(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+        }
     }
 }

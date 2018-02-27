@@ -223,7 +223,7 @@ namespace WindowsFormsApplication4
                 executeQuery(query1);
                 MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 panel3.Hide();
-                panel4.Hide();
+                
                 refr();
                 loadAll();
                 loadAll2();
@@ -238,7 +238,7 @@ namespace WindowsFormsApplication4
         private void checkout_Click(object sender, EventArgs e)
         {
             panel3.Show();
-            panel4.Show();
+            
         }
 
         private void subtot_TextChanged(object sender, EventArgs e)
@@ -263,6 +263,11 @@ namespace WindowsFormsApplication4
             dr["SubTotal"] = amount.Text;
             dt.Rows.Add(dr);
             dataGridView4.DataSource = dt;
+        }
+
+        private void Close_Click(object sender, EventArgs e)
+        {
+            panel5.Visible = false;
         }
     }
 }

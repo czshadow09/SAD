@@ -339,3 +339,4 @@ C:\Users\frfllanos\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
 C:\Users\frfllanos\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\USER\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\bin\Debug\MySql.Data.xml

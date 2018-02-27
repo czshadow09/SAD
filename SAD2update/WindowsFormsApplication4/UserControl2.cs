@@ -309,6 +309,11 @@ namespace WindowsFormsApplication4
 
         private void dataGridView1_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
+            
+        }
+
+        private void dataGridView1_CellClick_2(object sender, DataGridViewCellEventArgs e)
+        {
             if (e.RowIndex > -1)
             {
                 select_user_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["user_id"].Value.ToString());

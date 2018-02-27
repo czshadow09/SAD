@@ -201,5 +201,29 @@ namespace WindowsFormsApplication4
             search.Clear();
             categ.SelectedIndex = -1;
         }
+
+        private void dataGridView2_CellClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+            In i = new In();
+            select_user_id = int.Parse(dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
+            id.Text = dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
+            prodname.Text = dataGridView2.Rows[e.RowIndex].Cells["description"].Value.ToString();
+            quantity.Text = dataGridView2.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
+            currentp.Text = dataGridView2.Rows[e.RowIndex].Cells["cur_price"].Value.ToString();
+            price.Text = dataGridView2.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
+            increase.Text = dataGridView2.Rows[e.RowIndex].Cells["inc"].Value.ToString();
+            unit.Text = dataGridView2.Rows[e.RowIndex].Cells["unit"].Value.ToString();
+            cons_quan.Text = dataGridView2.Rows[e.RowIndex].Cells["cost_quantity"].Value.ToString();
+            double constant = Double.Parse(cons_quan.Text);
+            constant = constant * 0.3;
+            cons_quan.Text = constant.ToString();
+            Update.Enabled = true;
+            Out.Enabled = true;
+        }
+
+        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            
+        }
     }
 }
