@@ -46,7 +46,7 @@ namespace WindowsFormsApplication4
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.cancel.Location = new System.Drawing.Point(141, 84);
-            this.cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cancel.Margin = new System.Windows.Forms.Padding(2);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(128, 54);
             this.cancel.TabIndex = 100;
@@ -64,7 +64,7 @@ namespace WindowsFormsApplication4
             this.Subtract.Image = ((System.Drawing.Image)(resources.GetObject("Subtract.Image")));
             this.Subtract.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Subtract.Location = new System.Drawing.Point(11, 84);
-            this.Subtract.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Subtract.Margin = new System.Windows.Forms.Padding(2);
             this.Subtract.Name = "Subtract";
             this.Subtract.Size = new System.Drawing.Size(134, 54);
             this.Subtract.TabIndex = 99;
@@ -90,7 +90,7 @@ namespace WindowsFormsApplication4
             this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.quan.Location = new System.Drawing.Point(141, 23);
-            this.quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quan.Margin = new System.Windows.Forms.Padding(2);
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(111, 28);
             this.quan.TabIndex = 97;
@@ -123,7 +123,7 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.Subtract);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.quan);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Out";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Out";

@@ -14,6 +14,8 @@ namespace WindowsFormsApplication4
     public partial class Out : Form
     {
         MySqlConnection conn;
+        public UserControl a3;
+        public bool b = false;
         public Out()
         {
             InitializeComponent();
@@ -64,20 +66,27 @@ namespace WindowsFormsApplication4
 
             else
             {
-                if (dif < 0)
+                DialogResult dialogResult = MessageBox.Show("are u sure", "Some Title", MessageBoxButtons.YesNo); if (dialogResult == DialogResult.Yes)
                 {
-                    MessageBox.Show("Insufficient stocked in items.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                else
-                {
-                    string query1 = "UPDATE product SET stock_in='" + s_in + "'- '" + input + "', stock_out='" + sum + "' where product_id= '" + id.Text + "';";
-                    MessageBox.Show("Stocked out '" + input + "' items!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    if (s_in <= 30)
+                    if (dif < 0)
                     {
-                        MessageBox.Show("Item needs to be purchased", "Test", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        MessageBox.Show("Insufficient stocked in items.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
-                    executeQuery(query1);
-                    this.Close();
+                    else
+                    {
+                        string query1 = "UPDATE product SET stock_in='" + s_in + "'- '" + input + "', stock_out='" + sum + "' where product_id= '" + id.Text + "';";
+                        MessageBox.Show("Stocked out '" + input + "' items!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (s_in <= 30)
+                        {
+                            MessageBox.Show("Item needs to be purchased", "Test", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        }
+                        b = true;
+                        executeQuery(query1);
+                        this.Close();
+                        inventory i = new inventory();
+                        i.loadAll2();
+                        this.DialogResult = DialogResult.Yes;
+                    }
                 }
             }
         }

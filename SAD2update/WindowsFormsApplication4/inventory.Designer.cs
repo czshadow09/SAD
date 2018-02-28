@@ -128,7 +128,7 @@
             this.prodname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.prodname.Location = new System.Drawing.Point(152, 84);
-            this.prodname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prodname.Margin = new System.Windows.Forms.Padding(2);
             this.prodname.Name = "prodname";
             this.prodname.Size = new System.Drawing.Size(175, 27);
             this.prodname.TabIndex = 112;
@@ -165,7 +165,7 @@
             this.increase.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.increase.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.increase.Location = new System.Drawing.Point(136, 259);
-            this.increase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.increase.Margin = new System.Windows.Forms.Padding(2);
             this.increase.Name = "increase";
             this.increase.Size = new System.Drawing.Size(93, 27);
             this.increase.TabIndex = 122;
@@ -237,7 +237,7 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Location = new System.Drawing.Point(17, 38);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(326, 454);
             this.panel2.TabIndex = 127;
@@ -286,7 +286,7 @@
             this.price.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.price.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.price.Location = new System.Drawing.Point(157, 221);
-            this.price.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.price.Margin = new System.Windows.Forms.Padding(2);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(72, 27);
             this.price.TabIndex = 119;
@@ -319,7 +319,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(273, 511);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(41, 33);
             this.pictureBox3.TabIndex = 139;
@@ -331,7 +331,7 @@
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.search.Location = new System.Drawing.Point(31, 514);
-            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(238, 27);
             this.search.TabIndex = 141;
@@ -346,7 +346,7 @@
             this.Out.ForeColor = System.Drawing.Color.White;
             this.Out.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Out.Location = new System.Drawing.Point(374, 445);
-            this.Out.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Out.Margin = new System.Windows.Forms.Padding(2);
             this.Out.Name = "Out";
             this.Out.Size = new System.Drawing.Size(116, 37);
             this.Out.TabIndex = 142;
@@ -364,7 +364,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(494, 445);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 37);
             this.button2.TabIndex = 143;
@@ -410,7 +410,7 @@
             this.del.ForeColor = System.Drawing.Color.White;
             this.del.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.del.Location = new System.Drawing.Point(144, 445);
-            this.del.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.del.Margin = new System.Windows.Forms.Padding(2);
             this.del.Name = "del";
             this.del.Size = new System.Drawing.Size(116, 37);
             this.del.TabIndex = 147;
@@ -427,7 +427,7 @@
             this.Update.ForeColor = System.Drawing.Color.White;
             this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Update.Location = new System.Drawing.Point(26, 445);
-            this.Update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Update.Margin = new System.Windows.Forms.Padding(2);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(113, 37);
             this.Update.TabIndex = 148;
@@ -442,7 +442,7 @@
             this.panel1.Controls.Add(this.dataGridView2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(361, 38);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(389, 454);
             this.panel1.TabIndex = 150;
@@ -453,7 +453,7 @@
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(20, 46);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 24;
@@ -499,7 +499,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "inventory";
             this.Size = new System.Drawing.Size(766, 554);
             this.Load += new System.EventHandler(this.inventory_Load);

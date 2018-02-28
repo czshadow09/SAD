@@ -69,7 +69,7 @@ namespace WindowsFormsApplication4
             // 
             this.search.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.Location = new System.Drawing.Point(57, 271);
-            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(242, 30);
             this.search.TabIndex = 13;
@@ -217,7 +217,7 @@ namespace WindowsFormsApplication4
             this.Update.ForeColor = System.Drawing.Color.White;
             this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Update.Location = new System.Drawing.Point(630, 201);
-            this.Update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Update.Margin = new System.Windows.Forms.Padding(2);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(108, 30);
             this.Update.TabIndex = 11;
@@ -236,7 +236,7 @@ namespace WindowsFormsApplication4
             this.se.Image = ((System.Drawing.Image)(resources.GetObject("se.Image")));
             this.se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.se.Location = new System.Drawing.Point(14, 262);
-            this.se.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.se.Margin = new System.Windows.Forms.Padding(2);
             this.se.Name = "se";
             this.se.Size = new System.Drawing.Size(47, 46);
             this.se.TabIndex = 12;
@@ -247,7 +247,7 @@ namespace WindowsFormsApplication4
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(11, 275);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(238, 257);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -263,7 +263,7 @@ namespace WindowsFormsApplication4
             this.Add.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Add.Location = new System.Drawing.Point(520, 201);
-            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(90, 30);
             this.Add.TabIndex = 10;
@@ -427,7 +427,7 @@ namespace WindowsFormsApplication4
             // 
             this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.id.Location = new System.Drawing.Point(678, 3);
-            this.id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.id.Margin = new System.Windows.Forms.Padding(2);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(43, 30);
             this.id.TabIndex = 110;
@@ -451,7 +451,7 @@ namespace WindowsFormsApplication4
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(462, 246);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 37);
             this.label1.TabIndex = 108;
@@ -466,17 +466,20 @@ namespace WindowsFormsApplication4
             this.panel1.Controls.Add(this.search);
             this.panel1.Controls.Add(this.bunifuSeparator1);
             this.panel1.Location = new System.Drawing.Point(278, 240);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(476, 308);
             this.panel1.TabIndex = 125;
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(16, 48);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(446, 206);
@@ -492,7 +495,7 @@ namespace WindowsFormsApplication4
             this.usereport.Image = ((System.Drawing.Image)(resources.GetObject("usereport.Image")));
             this.usereport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.usereport.Location = new System.Drawing.Point(318, 258);
-            this.usereport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usereport.Margin = new System.Windows.Forms.Padding(2);
             this.usereport.Name = "usereport";
             this.usereport.Size = new System.Drawing.Size(157, 41);
             this.usereport.TabIndex = 14;
@@ -507,7 +510,7 @@ namespace WindowsFormsApplication4
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(320, 284);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(140, 35);
             this.bunifuSeparator1.TabIndex = 108;
@@ -546,7 +549,7 @@ namespace WindowsFormsApplication4
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControl2";
             this.Size = new System.Drawing.Size(766, 561);
             this.Load += new System.EventHandler(this.UserControl2_Load);

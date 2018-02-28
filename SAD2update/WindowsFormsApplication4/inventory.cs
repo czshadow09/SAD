@@ -191,8 +191,15 @@ namespace WindowsFormsApplication4
         private void Out_Click_1(object sender, EventArgs e)
         {
             Out a = new Out();
-            a.id.Text = dataGridView2.CurrentRow.Cells["product_id"].Value.ToString();
-            a.Show();
+            a.a3 = this;
+            a.id.Text = id.Text;
+            DialogResult res = a.ShowDialog();
+            if (res == DialogResult.Yes)
+            {
+                a.id.Text = dataGridView2.CurrentRow.Cells["product_id"].Value.ToString();
+                a.Show();
+                loadAll2();
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

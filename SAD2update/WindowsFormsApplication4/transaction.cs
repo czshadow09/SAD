@@ -62,8 +62,10 @@ namespace WindowsFormsApplication4
             dataGridView3.Columns["order_date"].HeaderText = "Date";
             dataGridView3.Columns["order_id"].HeaderText = "Customer #";
             dataGridView3.Columns["tot_consume"].HeaderText = "Total Amount";
-            decimal sum = Convert.ToDecimal(dt.Compute("SUM(tot_consume)", string.Empty));
-            purchasetotal.Text = sum.ToString();
+            if (dt.Rows.Count > 0) {
+                decimal sum = Convert.ToDecimal(dt.Compute("SUM(tot_consume)", string.Empty));
+                purchasetotal.Text = sum.ToString();
+            }
         }
         private void CreateDataTableColumns()
         {
