@@ -461,7 +461,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(356, 344);
             this.dataGridView2.TabIndex = 153;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick_2);
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick_1);
             // 
             // label1
             // 

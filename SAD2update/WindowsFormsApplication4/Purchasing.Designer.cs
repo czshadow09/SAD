@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Purchasing));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Se = new System.Windows.Forms.Button();
@@ -104,7 +104,7 @@
             this.Se.Image = ((System.Drawing.Image)(resources.GetObject("Se.Image")));
             this.Se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Se.Location = new System.Drawing.Point(692, 483);
-            this.Se.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Se.Margin = new System.Windows.Forms.Padding(2);
             this.Se.Name = "Se";
             this.Se.Size = new System.Drawing.Size(41, 42);
             this.Se.TabIndex = 113;
@@ -116,7 +116,7 @@
             // 
             this.search.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.Location = new System.Drawing.Point(460, 492);
-            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(232, 27);
             this.search.TabIndex = 112;
@@ -132,7 +132,7 @@
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Add.Location = new System.Drawing.Point(62, 100);
-            this.Add.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Add.Margin = new System.Windows.Forms.Padding(2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(148, 60);
             this.Add.TabIndex = 111;
@@ -209,7 +209,7 @@
             this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.quan.Location = new System.Drawing.Point(304, 12);
-            this.quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quan.Margin = new System.Windows.Forms.Padding(2);
             this.quan.Name = "quan";
             this.quan.Size = new System.Drawing.Size(69, 28);
             this.quan.TabIndex = 118;
@@ -228,7 +228,7 @@
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(345, 43);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(393, 236);
             this.panel1.TabIndex = 125;
@@ -242,7 +242,7 @@
             this.print.ForeColor = System.Drawing.Color.White;
             this.print.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.print.Location = new System.Drawing.Point(244, 163);
-            this.print.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.print.Margin = new System.Windows.Forms.Padding(2);
             this.print.Name = "print";
             this.print.Size = new System.Drawing.Size(101, 44);
             this.print.TabIndex = 136;
@@ -278,7 +278,7 @@
             this.usereport.ForeColor = System.Drawing.Color.White;
             this.usereport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.usereport.Location = new System.Drawing.Point(62, 163);
-            this.usereport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.usereport.Margin = new System.Windows.Forms.Padding(2);
             this.usereport.Name = "usereport";
             this.usereport.Size = new System.Drawing.Size(178, 44);
             this.usereport.TabIndex = 135;
@@ -297,7 +297,7 @@
             this.update.Image = ((System.Drawing.Image)(resources.GetObject("update.Image")));
             this.update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.update.Location = new System.Drawing.Point(214, 100);
-            this.update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.update.Margin = new System.Windows.Forms.Padding(2);
             this.update.Name = "update";
             this.update.Size = new System.Drawing.Size(132, 60);
             this.update.TabIndex = 116;
@@ -309,7 +309,7 @@
             // prod
             // 
             this.prod.Location = new System.Drawing.Point(480, 586);
-            this.prod.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prod.Margin = new System.Windows.Forms.Padding(2);
             this.prod.Name = "prod";
             this.prod.Size = new System.Drawing.Size(76, 20);
             this.prod.TabIndex = 126;
@@ -325,7 +325,7 @@
             this.addquan.Image = ((System.Drawing.Image)(resources.GetObject("addquan.Image")));
             this.addquan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.addquan.Location = new System.Drawing.Point(582, 427);
-            this.addquan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addquan.Margin = new System.Windows.Forms.Padding(2);
             this.addquan.Name = "addquan";
             this.addquan.Size = new System.Drawing.Size(128, 53);
             this.addquan.TabIndex = 125;
@@ -361,7 +361,7 @@
             // cur_quan
             // 
             this.cur_quan.Location = new System.Drawing.Point(193, 15);
-            this.cur_quan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cur_quan.Margin = new System.Windows.Forms.Padding(2);
             this.cur_quan.Name = "cur_quan";
             this.cur_quan.Size = new System.Drawing.Size(52, 20);
             this.cur_quan.TabIndex = 131;
@@ -404,7 +404,7 @@
             this.refresh.ForeColor = System.Drawing.Color.White;
             this.refresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.refresh.Location = new System.Drawing.Point(455, 427);
-            this.refresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.refresh.Margin = new System.Windows.Forms.Padding(2);
             this.refresh.Name = "refresh";
             this.refresh.Size = new System.Drawing.Size(122, 53);
             this.refresh.TabIndex = 144;
@@ -419,7 +419,7 @@
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.bunifuSeparator2.LineThickness = 1;
             this.bunifuSeparator2.Location = new System.Drawing.Point(0, 291);
-            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(4);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(798, 35);
             this.bunifuSeparator2.TabIndex = 145;
@@ -433,14 +433,14 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(52, 76);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(243, 203);
             this.dataGridView1.TabIndex = 155;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick_1);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // dataGridView2
             // 
@@ -449,14 +449,14 @@
             this.dataGridView2.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(16, 355);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.Size = new System.Drawing.Size(417, 178);
             this.dataGridView2.TabIndex = 156;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick_1);
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // panel2
             // 
@@ -465,7 +465,7 @@
             this.panel2.Controls.Add(this.Close);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Location = new System.Drawing.Point(2, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(766, 611);
             this.panel2.TabIndex = 159;
@@ -475,26 +475,26 @@
             // 
             this.dataGridView3.AllowUserToAddRows = false;
             this.dataGridView3.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataGridView3.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
             this.dataGridView3.BackgroundColor = System.Drawing.Color.LightGray;
             this.dataGridView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.DoubleBuffered = true;
             this.dataGridView3.EnableHeadersVisualStyles = false;
             this.dataGridView3.HeaderBgColor = System.Drawing.Color.DodgerBlue;
             this.dataGridView3.HeaderForeColor = System.Drawing.Color.DodgerBlue;
             this.dataGridView3.Location = new System.Drawing.Point(118, 158);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -512,7 +512,7 @@
             this.Close.Image = ((System.Drawing.Image)(resources.GetObject("Close.Image")));
             this.Close.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Close.Location = new System.Drawing.Point(11, 9);
-            this.Close.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Close.Margin = new System.Windows.Forms.Padding(2);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(40, 50);
             this.Close.TabIndex = 132;

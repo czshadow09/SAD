@@ -95,31 +95,7 @@ namespace WindowsFormsApplication4
             
         }
 
-        private void view_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void categ_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private int select_user_id;
-        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
-        private void Update_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
 
         private void Update_Click_1(object sender, EventArgs e)
         {
@@ -169,25 +145,6 @@ namespace WindowsFormsApplication4
 
         }
 
-        private void dataGridView2_CellClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            In i = new In();
-            select_user_id = int.Parse(dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
-            id.Text = dataGridView2.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
-            prodname.Text = dataGridView2.Rows[e.RowIndex].Cells["description"].Value.ToString();
-            quantity.Text = dataGridView2.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
-            currentp.Text = dataGridView2.Rows[e.RowIndex].Cells["cur_price"].Value.ToString();
-            price.Text = dataGridView2.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
-            increase.Text = dataGridView2.Rows[e.RowIndex].Cells["inc"].Value.ToString();
-            unit.Text = dataGridView2.Rows[e.RowIndex].Cells["unit"].Value.ToString();
-            cons_quan.Text = dataGridView2.Rows[e.RowIndex].Cells["cost_quantity"].Value.ToString();
-            double constant = Double.Parse(cons_quan.Text);
-            constant = constant * 0.3;
-            cons_quan.Text = constant.ToString();
-            Update.Enabled = true;
-            Out.Enabled = true;
-        }
-
         private void Out_Click_1(object sender, EventArgs e)
         {
             Out a = new Out();
@@ -226,11 +183,6 @@ namespace WindowsFormsApplication4
             cons_quan.Text = constant.ToString();
             Update.Enabled = true;
             Out.Enabled = true;
-        }
-
-        private void dataGridView2_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-            
         }
     }
 }

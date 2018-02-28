@@ -14,6 +14,7 @@ namespace WindowsFormsApplication4
     public partial class prod : Form
     {
         MySqlConnection conn;
+        public UserControl a3;
         public prod()
         {
             InitializeComponent();
@@ -59,13 +60,20 @@ namespace WindowsFormsApplication4
             }
             else
             {
-                if (dt.Rows.Count >= 1) MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                else
+                DialogResult dialogResult = MessageBox.Show("Add product?", "Confirm", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
                 {
-                    string query1 = "INSERT INTO product(description, unit, purchase_price, store_price, inc, cur_price, stock_in, stock_out, tot_quantity, cost_quantity, category_cat_id) VALUES('" + desc.Text + "', '" + unit.Text + "' ,0 ,0, 0, 0, 0, 0, 0, 0, (SELECT cat_id FROM category WHERE name='" + categ.Text + "'));";
-                    MessageBox.Show("Product added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    executeQuery(query1);
-                    this.Close();
+                    if (dt.Rows.Count >= 1) MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                    {
+                        string query1 = "INSERT INTO product(description, unit, purchase_price, store_price, inc, cur_price, stock_in, stock_out, tot_quantity, cost_quantity, category_cat_id) VALUES('" + desc.Text + "', '" + unit.Text + "' ,0 ,0, 0, 0, 0, 0, 0, 0, (SELECT cat_id FROM category WHERE name='" + categ.Text + "'));";
+                        MessageBox.Show("Product added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        executeQuery(query1);
+                        Purchasing p = new Purchasing();
+                        p.loadAll();
+                        this.DialogResult = DialogResult.Yes;
+                        this.Close();
+                    }
                 }
             }
         }

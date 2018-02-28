@@ -66,7 +66,7 @@ namespace WindowsFormsApplication4
 
             else
             {
-                DialogResult dialogResult = MessageBox.Show("are u sure", "Some Title", MessageBoxButtons.YesNo); if (dialogResult == DialogResult.Yes)
+                DialogResult dialogResult = MessageBox.Show("Stock items?", "Confirm", MessageBoxButtons.YesNo); if (dialogResult == DialogResult.Yes)
                 {
                     if (dif < 0)
                     {
