@@ -140,9 +140,10 @@ namespace WindowsFormsApplication4
                 dt.Rows.Add(dr);
                 dataGridView2.DataSource = dt;
                 decimal sum1 = Convert.ToDecimal(dt.Compute("SUM(Price)", string.Empty));
-                purchasetotal.Text = sum.ToString();
+                purchasetotal.Text = sum1.ToString();
                 string query1 = "UPDATE product SET purchase_price='" + purchase.Text + "', store_price='" + purchase.Text + "', cur_price='" + purchase.Text + "', stock_in='" + sum + "' where product_id= '" + id.Text + "' and unit='" + unit1.Text + "';";
                 executeQuery(query1);
+                addquan.Enabled = true;
             }
             
         }
@@ -167,7 +168,6 @@ namespace WindowsFormsApplication4
             unit2.Text = dataGridView2.Rows[e.RowIndex].Cells[1].Value.ToString();
             quan2.Text = dataGridView2.Rows[e.RowIndex].Cells[2].Value.ToString();
             price.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
-            addquan.Enabled = true;
         }
 
         private void addquan_Click(object sender, EventArgs e)
@@ -180,7 +180,7 @@ namespace WindowsFormsApplication4
             DataTable dt = new DataTable();
             adp.Fill(dt);
             string query1 = "Insert Into purchase_order(purchase_date, pur_total) values(now(), '" + purchasetotal.Text + "')";
-            executeQuery(query);
+            executeQuery(query1);
 
             MessageBox.Show("Total payments: '" + purchasetotal.Text + "' ", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
             refr();
@@ -232,7 +232,7 @@ namespace WindowsFormsApplication4
 
         private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            s
+            
         }
     }
 }

@@ -177,6 +177,7 @@ namespace WindowsFormsApplication4
             remove.Enabled = true;
             string query1 = "Update product SET stock_out='" + sale + "' WHERE product_id='" + id.Text + "';";
             executeQuery(query1);
+            quan.Clear();
         }
 
         private void remove_Click(object sender, EventArgs e)
