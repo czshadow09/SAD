@@ -223,11 +223,8 @@ namespace WindowsFormsApplication4
 
         private void print_Click(object sender, EventArgs e)
         {
-            Graphics g = this.CreateGraphics();
-            bmp = new Bitmap(this.Size.Width, this.Size.Height, g);
-            Graphics mg = Graphics.FromImage(bmp);
-            mg.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, this.Size);
-            printPreviewDialog1.ShowDialog();
+            PurchaseReport print = new PurchaseReport();
+            print.Show();
         }
 
         private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)

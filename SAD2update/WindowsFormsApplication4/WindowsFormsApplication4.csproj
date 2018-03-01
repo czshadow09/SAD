@@ -100,6 +100,32 @@
     <Compile Include="addcategoryp.Designer.cs">
       <DependentUpon>addcategoryp.cs</DependentUpon>
     </Compile>
+    <Compile Include="InventoryReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryReport.Designer.cs">
+      <DependentUpon>InventoryReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReport.Designer.cs">
+      <DependentUpon>PurchaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <DependentUpon>Reports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesReport.Designer.cs">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="UserReport.cs">
       <SubType>Form</SubType>
@@ -175,6 +201,18 @@
     <EmbeddedResource Include="addcategoryp.resx">
       <DependentUpon>addcategoryp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Inventory.rdlc" />
+    <EmbeddedResource Include="InventoryReport.resx">
+      <DependentUpon>InventoryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReport.resx">
+      <DependentUpon>PurchaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchasing.rdlc" />
+    <EmbeddedResource Include="Sales.rdlc" />
+    <EmbeddedResource Include="SalesReport.resx">
+      <DependentUpon>SalesReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserReport.resx">
       <DependentUpon>UserReport.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +269,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Reports.xsc">
+      <DependentUpon>Reports.xsd</DependentUpon>
+    </None>
+    <None Include="Reports.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Reports.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports.xss">
+      <DependentUpon>Reports.xsd</DependentUpon>
+    </None>
     <None Include="Resources\cancel-48.png" />
   </ItemGroup>
   <ItemGroup>
