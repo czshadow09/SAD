@@ -81,7 +81,13 @@ namespace WindowsFormsApplication4
         private void AddC_Click(object sender, EventArgs e)
         {
             addcategoryp a = new addcategoryp();
-            a.Show();
+            a.a3 = this;
+            DialogResult res = a.ShowDialog();
+            if (res == DialogResult.Yes)
+            {
+                a.Show();
+                loadAll2();
+            }
         }
 
         private void cancel_Click(object sender, EventArgs e)

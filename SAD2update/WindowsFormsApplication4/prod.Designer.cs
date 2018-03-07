@@ -68,10 +68,10 @@
             this.AddC.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.AddC.Image = ((System.Drawing.Image)(resources.GetObject("AddC.Image")));
             this.AddC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddC.Location = new System.Drawing.Point(161, 248);
+            this.AddC.Location = new System.Drawing.Point(150, 248);
             this.AddC.Margin = new System.Windows.Forms.Padding(2);
             this.AddC.Name = "AddC";
-            this.AddC.Size = new System.Drawing.Size(124, 58);
+            this.AddC.Size = new System.Drawing.Size(152, 58);
             this.AddC.TabIndex = 104;
             this.AddC.Text = "Add Category";
             this.AddC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

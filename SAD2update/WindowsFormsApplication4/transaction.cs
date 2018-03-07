@@ -193,7 +193,16 @@ namespace WindowsFormsApplication4
 
         private void refresh_Click(object sender, EventArgs e)
         {
-            refr();
+            DialogResult dialog = MessageBox.Show("Are you sure you want to cancel your order?",
+          "Log Out", MessageBoxButtons.YesNo);
+            if (dialog == DialogResult.Yes)
+            {
+                
+            }
+            else
+            {
+
+            }
         }
 
 

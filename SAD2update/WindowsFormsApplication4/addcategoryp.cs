@@ -14,6 +14,7 @@ namespace WindowsFormsApplication4
     public partial class addcategoryp : Form
     {
         MySqlConnection conn;
+        public Form a3;
         public addcategoryp()
         {
             InitializeComponent();
@@ -53,10 +54,14 @@ namespace WindowsFormsApplication4
                 }
                 else
                 {
-                    string query1 = "INSERT INTO category(name) VALUES('" + categ.Text + "');";
-                    MessageBox.Show("Category added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    executeQuery(query1);
-                    this.Close();
+                    DialogResult dialogResult = MessageBox.Show("Add product?", "Confirm", MessageBoxButtons.YesNo);
+                    if (dialogResult == DialogResult.Yes)
+                    {
+                        string query1 = "INSERT INTO category(name) VALUES('" + categ.Text + "');";
+                        MessageBox.Show("Category added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        executeQuery(query1);
+                        this.Close();
+                    }
                 }
             }
         }
