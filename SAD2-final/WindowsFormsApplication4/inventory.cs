@@ -17,7 +17,7 @@ namespace WindowsFormsApplication4
         public inventory()
         {
             InitializeComponent();
-            conn = new MySqlConnection("server=localhost;Database=final;uid=root; Pwd = root;");
+            conn = new MySqlConnection("server=localhost;Database=finalnafinal;uid=root; Pwd = root;");
         }
         private void executeQuery(string q)
         {
@@ -25,12 +25,12 @@ namespace WindowsFormsApplication4
             MySqlCommand comm = new MySqlCommand(q, conn);
             comm.ExecuteNonQuery();
             conn.Close();
-            
+
         }
 
         private void inventory_Load(object sender, EventArgs e)
         {
-            string query = "SELECT * FROM category;";
+            string query = "SELECT name FROM category;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -39,17 +39,17 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             for (int x = 0; x < dt.Rows.Count; x++)
             {
-                categ.Items.Add(dt.Rows[x][1].ToString());
+                categ.Items.Add(dt.Rows[x][0].ToString());
             }
             Update.Enabled = false;
             Out.Enabled = false;
-          
+
             loadAll2();
         }
 
         public void loadAll2()
         {
-            string query = "select p.product_id, p.description, p.unit, c.name, p.purchase_price, p.store_price, p.inc, p.cur_price, stock_in, stock_out, p.tot_quantity, p.cost_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
+            string query = "select p.product_id, p.description, c.name, p.store_price, p.inc, p.cur_price, p.stock_in, p.stock_out, p.tot_quantity, p.cost_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -60,13 +60,10 @@ namespace WindowsFormsApplication4
             dataGridView2.Columns["product_id"].Visible = false;
             dataGridView2.Columns["cost_quantity"].Visible = false;
             dataGridView2.Columns["inc"].Visible = false;
-            dataGridView2.Columns["purchase_price"].Visible = false;
             dataGridView2.Columns["store_price"].Visible = false;
             dataGridView2.Columns["cur_price"].Visible = false;
             dataGridView2.Columns["description"].HeaderText = "Product Name";
-            dataGridView2.Columns["name"].HeaderText = "Category";
-            dataGridView2.Columns["unit"].HeaderText = "Measurement";
-            dataGridView2.Columns["purchase_price"].Visible = false;
+            dataGridView2.Columns["name"].Visible = false;
             dataGridView2.Columns["store_price"].Visible = false;
             dataGridView2.Columns["stock_in"].HeaderText = "Stock";
             dataGridView2.Columns["stock_out"].Visible = false;
@@ -81,7 +78,7 @@ namespace WindowsFormsApplication4
         }
         private void Out_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void entry_Click(object sender, EventArgs e)
@@ -92,7 +89,7 @@ namespace WindowsFormsApplication4
 
         private void Se_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private int select_user_id;
@@ -110,7 +107,7 @@ namespace WindowsFormsApplication4
             conn.Close();
             DataTable dt = new DataTable();
             user.Fill(dt);
-            if (String.IsNullOrEmpty(id.Text) || String.IsNullOrEmpty(prodname.Text) || String.IsNullOrEmpty(price.Text) || String.IsNullOrEmpty(increase.Text) || String.IsNullOrEmpty(unit.Text))
+            if (String.IsNullOrEmpty(id.Text) || String.IsNullOrEmpty(prodname.Text) || String.IsNullOrEmpty(price.Text) || String.IsNullOrEmpty(increase.Text))
                 MessageBox.Show("Please select a product by clicking one.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
@@ -120,7 +117,7 @@ namespace WindowsFormsApplication4
                 }
                 else
                 {
-                    query += " UPDATE product SET description='" + prodname.Text + "', store_price='" + price.Text + "', inc='" + increase.Text + "', unit='" + unit.Text + "', cur_price='" + sum + "' where product_id='" + id.Text + "';";
+                    query += " UPDATE product SET description='" + prodname.Text + "', store_price='" + price.Text + "', inc='" + increase.Text + "', cur_price='" + sum + "' where product_id='" + id.Text + "';";
                     MessageBox.Show("Product updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     executeQuery(query);
                 }
@@ -130,7 +127,7 @@ namespace WindowsFormsApplication4
 
         private void categ_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            string query = "select p.product_id, p.description, p.unit, c.name, concat('₱', format(p.purchase_price,2)) as purchase_price, concat('₱', format(p.store_price,2)) as store_price, p.inc, p.cur_price, p.stock_in, p.stock_out, p.tot_quantity from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
+            string query = "select p.product_id, p.description, p.stock_in from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
             conn.Open();
             MySqlCommand comm = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(comm);
@@ -176,7 +173,6 @@ namespace WindowsFormsApplication4
             currentp.Text = dataGridView2.Rows[e.RowIndex].Cells["cur_price"].Value.ToString();
             price.Text = dataGridView2.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
             increase.Text = dataGridView2.Rows[e.RowIndex].Cells["inc"].Value.ToString();
-            unit.Text = dataGridView2.Rows[e.RowIndex].Cells["unit"].Value.ToString();
             cons_quan.Text = dataGridView2.Rows[e.RowIndex].Cells["cost_quantity"].Value.ToString();
             double constant = Double.Parse(cons_quan.Text);
             constant = constant * 0.3;

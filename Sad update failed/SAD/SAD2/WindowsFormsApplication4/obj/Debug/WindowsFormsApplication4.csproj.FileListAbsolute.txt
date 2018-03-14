@@ -1,0 +1,242 @@
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl1.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\MySql.Data.dll
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\USER\documents\visual studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\USER\documents\visual studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.home.resources
+C:\Users\USER\Documents\Visual Studio 2015\Projects\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.home.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl1.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\WindowsFormsApplication4\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.home.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl1.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\ACER\Documents\IT\SAD2\SAD-master\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Downloads\Update-Nov27\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+D:\Downloads\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+D:\Downloads\Update-Nov27\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\bin\Debug\MySql.Data.dll
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.home.resources
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl1.resources
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+D:\Downloads\Update-Nov30\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.home.resources
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl1.resources
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\fmmmonton\Downloads\WindowsFormsApplication4\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\bin\Debug\MySql.Data.dll
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.home.resources
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl1.resources
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+D:\Downloads\UiProgressdonotDownload-20171206T114849Z-001\UiProgressdonotDownload\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\bin\Debug\MySql.Data.dll
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.home.resources
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl1.resources
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+D:\Downloads\dec 6 ui update\ui\Update-dec3\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form3.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.addcategoryp.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.In.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Out.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.addcategoryp.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.In.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Out.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prod.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prod.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.addcategoryp.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.In.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Out.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prod.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.addcategoryp.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.In.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Out.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prod.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe.config
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.exe
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\WindowsFormsApplication4.pdb
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.addcategoryp.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.In.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Out.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prod.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources
+C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.dll
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\fmmmonton\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources
+C:\Users\frfllanos\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchased.resources
+C:\Users\ACER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserReport.resources
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
+C:\Users\USER\Documents\GitHub\SAD\SAD2\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserReport.resources

@@ -104,6 +104,12 @@ namespace WindowsFormsApplication4
         {
             loadAll2();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            measurement a=new measurement();
+            a.Show();
+        }
     }
 
 

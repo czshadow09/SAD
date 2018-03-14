@@ -60,6 +60,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.month = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -69,10 +73,6 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.month = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -86,7 +86,7 @@
             // id
             // 
             this.id.Location = new System.Drawing.Point(133, 4);
-            this.id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.id.Margin = new System.Windows.Forms.Padding(4);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(75, 22);
             this.id.TabIndex = 106;
@@ -260,7 +260,7 @@
             this.purchase.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.purchase.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.purchase.Location = new System.Drawing.Point(139, 59);
-            this.purchase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.purchase.Margin = new System.Windows.Forms.Padding(4);
             this.purchase.Name = "purchase";
             this.purchase.Size = new System.Drawing.Size(143, 30);
             this.purchase.TabIndex = 133;
@@ -269,7 +269,7 @@
             // 
             this.unit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.unit1.Location = new System.Drawing.Point(139, 17);
-            this.unit1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.unit1.Margin = new System.Windows.Forms.Padding(4);
             this.unit1.Name = "unit1";
             this.unit1.ReadOnly = true;
             this.unit1.Size = new System.Drawing.Size(143, 30);
@@ -343,7 +343,7 @@
             // quan2
             // 
             this.quan2.Location = new System.Drawing.Point(43, 32);
-            this.quan2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.quan2.Margin = new System.Windows.Forms.Padding(4);
             this.quan2.Name = "quan2";
             this.quan2.Size = new System.Drawing.Size(59, 22);
             this.quan2.TabIndex = 128;
@@ -352,7 +352,7 @@
             // prod2
             // 
             this.prod2.Location = new System.Drawing.Point(216, 32);
-            this.prod2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.prod2.Margin = new System.Windows.Forms.Padding(4);
             this.prod2.Name = "prod2";
             this.prod2.Size = new System.Drawing.Size(59, 22);
             this.prod2.TabIndex = 129;
@@ -361,7 +361,7 @@
             // unit2
             // 
             this.unit2.Location = new System.Drawing.Point(149, 27);
-            this.unit2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.unit2.Margin = new System.Windows.Forms.Padding(4);
             this.unit2.Name = "unit2";
             this.unit2.Size = new System.Drawing.Size(59, 22);
             this.unit2.TabIndex = 130;
@@ -379,7 +379,7 @@
             // price
             // 
             this.price.Location = new System.Drawing.Point(125, 4);
-            this.price.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.price.Margin = new System.Windows.Forms.Padding(4);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(59, 22);
             this.price.TabIndex = 132;
@@ -401,7 +401,7 @@
             this.purchasetotal.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.purchasetotal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.purchasetotal.Location = new System.Drawing.Point(749, 434);
-            this.purchasetotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.purchasetotal.Margin = new System.Windows.Forms.Padding(4);
             this.purchasetotal.Name = "purchasetotal";
             this.purchasetotal.ReadOnly = true;
             this.purchasetotal.Size = new System.Drawing.Size(227, 32);
@@ -431,7 +431,7 @@
             this.bunifuSeparator2.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.bunifuSeparator2.LineThickness = 1;
             this.bunifuSeparator2.Location = new System.Drawing.Point(0, 358);
-            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator2.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator2.Name = "bunifuSeparator2";
             this.bunifuSeparator2.Size = new System.Drawing.Size(1064, 43);
             this.bunifuSeparator2.TabIndex = 145;
@@ -488,6 +488,89 @@
             this.panel2.Size = new System.Drawing.Size(1021, 752);
             this.panel2.TabIndex = 159;
             this.panel2.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(574, 684);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 23);
+            this.label10.TabIndex = 141;
+            this.label10.Text = "Year:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label9.Location = new System.Drawing.Point(40, 684);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(76, 23);
+            this.label9.TabIndex = 140;
+            this.label9.Text = "Month:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            "2004",
+            "2005",
+            "2006",
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"});
+            this.comboBox1.Location = new System.Drawing.Point(642, 678);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(311, 35);
+            this.comboBox1.TabIndex = 139;
+            // 
+            // month
+            // 
+            this.month.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.month.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.month.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.month.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.month.FormattingEnabled = true;
+            this.month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March ",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.month.Location = new System.Drawing.Point(136, 678);
+            this.month.Margin = new System.Windows.Forms.Padding(4);
+            this.month.Name = "month";
+            this.month.Size = new System.Drawing.Size(311, 35);
+            this.month.TabIndex = 138;
             // 
             // label8
             // 
@@ -592,89 +675,6 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(574, 684);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 23);
-            this.label10.TabIndex = 141;
-            this.label10.Text = "Year:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(40, 684);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 23);
-            this.label9.TabIndex = 140;
-            this.label9.Text = "Month:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "2000",
-            "2001",
-            "2002",
-            "2003",
-            "2004",
-            "2005",
-            "2006",
-            "2007",
-            "2008",
-            "2009",
-            "2010",
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018"});
-            this.comboBox1.Location = new System.Drawing.Point(642, 678);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(311, 35);
-            this.comboBox1.TabIndex = 139;
-            // 
-            // month
-            // 
-            this.month.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.month.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.month.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.month.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.month.FormattingEnabled = true;
-            this.month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March ",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.month.Location = new System.Drawing.Point(136, 678);
-            this.month.Margin = new System.Windows.Forms.Padding(4);
-            this.month.Name = "month";
-            this.month.Size = new System.Drawing.Size(311, 35);
-            this.month.TabIndex = 138;
-            // 
             // Purchasing
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -701,7 +701,7 @@
             this.Controls.Add(this.bunifuSeparator2);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Purchasing";
             this.Size = new System.Drawing.Size(1021, 731);
             this.Load += new System.EventHandler(this.Purchasing_Load);

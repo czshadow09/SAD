@@ -106,6 +106,12 @@
     <Compile Include="InventoryReport.Designer.cs">
       <DependentUpon>InventoryReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="measurement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="measurement.Designer.cs">
+      <DependentUpon>measurement.cs</DependentUpon>
+    </Compile>
     <Compile Include="PurchaseReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     <EmbeddedResource Include="Inventory.rdlc" />
     <EmbeddedResource Include="InventoryReport.resx">
       <DependentUpon>InventoryReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="measurement.resx">
+      <DependentUpon>measurement.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PurchaseReport.resx">
       <DependentUpon>PurchaseReport.cs</DependentUpon>

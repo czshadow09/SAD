@@ -40,6 +40,7 @@
             this.cancel = new System.Windows.Forms.Button();
             this.unit = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.measurement = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Add
@@ -50,10 +51,10 @@
             this.Add.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(31, 246);
-            this.Add.Margin = new System.Windows.Forms.Padding(2);
+            this.Add.Location = new System.Drawing.Point(41, 303);
+            this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(124, 62);
+            this.Add.Size = new System.Drawing.Size(165, 76);
             this.Add.TabIndex = 105;
             this.Add.Text = " Add";
             this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -68,10 +69,10 @@
             this.AddC.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.AddC.Image = ((System.Drawing.Image)(resources.GetObject("AddC.Image")));
             this.AddC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddC.Location = new System.Drawing.Point(150, 248);
-            this.AddC.Margin = new System.Windows.Forms.Padding(2);
+            this.AddC.Location = new System.Drawing.Point(200, 305);
+            this.AddC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddC.Name = "AddC";
-            this.AddC.Size = new System.Drawing.Size(152, 58);
+            this.AddC.Size = new System.Drawing.Size(203, 71);
             this.AddC.TabIndex = 104;
             this.AddC.Text = "Add Category";
             this.AddC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -84,9 +85,10 @@
             this.categ.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.categ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.categ.FormattingEnabled = true;
-            this.categ.Location = new System.Drawing.Point(18, 143);
+            this.categ.Location = new System.Drawing.Point(24, 176);
+            this.categ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.categ.Name = "categ";
-            this.categ.Size = new System.Drawing.Size(281, 30);
+            this.categ.Size = new System.Drawing.Size(373, 37);
             this.categ.TabIndex = 103;
             this.categ.SelectedIndexChanged += new System.EventHandler(this.categ_SelectedIndexChanged);
             // 
@@ -95,10 +97,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(15, 110);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(20, 135);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(87, 22);
+            this.label4.Size = new System.Drawing.Size(111, 28);
             this.label4.TabIndex = 96;
             this.label4.Text = "Category:";
             // 
@@ -107,10 +108,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(14, 46);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(19, 57);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 22);
+            this.label3.Size = new System.Drawing.Size(138, 28);
             this.label3.TabIndex = 95;
             this.label3.Text = "Description:";
             // 
@@ -118,19 +118,19 @@
             // 
             this.desc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.desc.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.desc.Location = new System.Drawing.Point(18, 71);
-            this.desc.Margin = new System.Windows.Forms.Padding(2);
+            this.desc.Location = new System.Drawing.Point(24, 87);
+            this.desc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.desc.Name = "desc";
-            this.desc.Size = new System.Drawing.Size(282, 28);
+            this.desc.Size = new System.Drawing.Size(375, 34);
             this.desc.TabIndex = 94;
             // 
             // id
             // 
             this.id.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id.Location = new System.Drawing.Point(242, 9);
-            this.id.Margin = new System.Windows.Forms.Padding(2);
+            this.id.Location = new System.Drawing.Point(323, 11);
+            this.id.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(43, 28);
+            this.id.Size = new System.Drawing.Size(56, 34);
             this.id.TabIndex = 93;
             this.id.Visible = false;
             // 
@@ -139,10 +139,9 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(14, 2);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(19, 2);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(201, 26);
+            this.label2.Size = new System.Drawing.Size(256, 33);
             this.label2.TabIndex = 92;
             this.label2.Text = "Create New Product";
             // 
@@ -154,12 +153,11 @@
             this.cancel.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancel.Location = new System.Drawing.Point(93, 309);
-            this.cancel.Margin = new System.Windows.Forms.Padding(2);
+            this.cancel.Location = new System.Drawing.Point(285, 380);
+            this.cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(128, 61);
+            this.cancel.Size = new System.Drawing.Size(72, 75);
             this.cancel.TabIndex = 107;
-            this.cancel.Text = "Cancel";
             this.cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.cancel.UseVisualStyleBackColor = true;
             this.cancel.Click += new System.EventHandler(this.cancel_Click);
@@ -170,9 +168,10 @@
             this.unit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.unit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.unit.FormattingEnabled = true;
-            this.unit.Location = new System.Drawing.Point(19, 213);
+            this.unit.Location = new System.Drawing.Point(25, 262);
+            this.unit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.unit.Name = "unit";
-            this.unit.Size = new System.Drawing.Size(281, 30);
+            this.unit.Size = new System.Drawing.Size(373, 37);
             this.unit.TabIndex = 109;
             // 
             // label1
@@ -180,19 +179,37 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(15, 185);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(20, 228);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 22);
+            this.label1.Size = new System.Drawing.Size(160, 28);
             this.label1.TabIndex = 108;
             this.label1.Text = "Measurement:";
             // 
+            // measurement
+            // 
+            this.measurement.FlatAppearance.BorderSize = 0;
+            this.measurement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.measurement.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.measurement.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.measurement.Image = ((System.Drawing.Image)(resources.GetObject("measurement.Image")));
+            this.measurement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.measurement.Location = new System.Drawing.Point(25, 375);
+            this.measurement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.measurement.Name = "measurement";
+            this.measurement.Size = new System.Drawing.Size(216, 71);
+            this.measurement.TabIndex = 110;
+            this.measurement.Text = "Add Measurement";
+            this.measurement.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.measurement.UseVisualStyleBackColor = true;
+            this.measurement.Click += new System.EventHandler(this.button1_Click);
+            // 
             // prod
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(313, 371);
+            this.ClientSize = new System.Drawing.Size(417, 457);
+            this.Controls.Add(this.measurement);
             this.Controls.Add(this.unit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cancel);
@@ -204,7 +221,7 @@
             this.Controls.Add(this.desc);
             this.Controls.Add(this.id);
             this.Controls.Add(this.label2);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "prod";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "prod";
@@ -226,5 +243,6 @@
         public System.Windows.Forms.TextBox desc;
         public System.Windows.Forms.ComboBox unit;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button measurement;
     }
 }
