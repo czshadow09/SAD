@@ -170,15 +170,6 @@
             this.unit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
             this.unit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.unit.FormattingEnabled = true;
-            this.unit.Items.AddRange(new object[] {
-            "Kilograms",
-            "Grams",
-            "Liters",
-            "Boxes",
-            "Cases",
-            "Meters",
-            "Pieces",
-            "Pads"});
             this.unit.Location = new System.Drawing.Point(19, 213);
             this.unit.Name = "unit";
             this.unit.Size = new System.Drawing.Size(281, 30);

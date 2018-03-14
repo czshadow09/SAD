@@ -18,7 +18,7 @@ namespace WindowsFormsApplication4
         public prod()
         {
             InitializeComponent();
-            conn = new MySqlConnection("server=localhost;Database=final;uid=root; Pwd = root;");
+            conn = new MySqlConnection("server=localhost;Database=finalnafinal;uid=root; Pwd = root;");
         }
         private void executeQuery(string q)
         {
