@@ -140,7 +140,9 @@ namespace WindowsFormsApplication4
                 dataGridView2.DataSource = dt;
                 decimal sum1 = Convert.ToDecimal(dt.Compute("SUM(Price)", string.Empty));
                 purchasetotal.Text = sum1.ToString();
-                string query1 = "UPDATE product SET purchase_price='" + purchase.Text + "', store_price='" + purchase.Text + "', cur_price='" + purchase.Text + "', stock_in='" + sum + "' where product_id= '" + id.Text + "';";
+                string query2 = "INSERT INTO purchasing(purchase_price, quantity_sold, product_product_id) VALUES( '" + purchase.Text + "', '" + sum + "', '" + id.Text + "');";
+                string query1 = "UPDATE product SET store_price='" + purchase.Text + "', cur_price='" + purchase.Text + "', stock_in='" + sum + "' where product_id= '" + id.Text + "';";
+                executeQuery(query2);
                 executeQuery(query1);
                 addquan.Enabled = true;
             }
@@ -178,7 +180,7 @@ namespace WindowsFormsApplication4
             conn.Close();
             DataTable dt = new DataTable();
             adp.Fill(dt);
-            string query1 = "Insert Into purchase_order(purchase_date, tot_consume) values(now(), '" + purchasetotal.Text + "')";
+            string query1 = "Insert Into purchase_order(purchase_date, tot_consume, purchasing_purchased_id) values(now(), '" + purchasetotal.Text + "')";
             executeQuery(query1);
 
             MessageBox.Show("Total payments: '" + purchasetotal.Text + "' ", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
