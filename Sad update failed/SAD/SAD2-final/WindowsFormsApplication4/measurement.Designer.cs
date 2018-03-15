@@ -43,10 +43,10 @@
             this.cancel.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancel.Location = new System.Drawing.Point(134, 71);
-            this.cancel.Margin = new System.Windows.Forms.Padding(2);
+            this.cancel.Location = new System.Drawing.Point(179, 87);
+            this.cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(128, 54);
+            this.cancel.Size = new System.Drawing.Size(171, 66);
             this.cancel.TabIndex = 96;
             this.cancel.Text = "Cancel";
             this.cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -60,10 +60,10 @@
             this.Add.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(22, 71);
-            this.Add.Margin = new System.Windows.Forms.Padding(2);
+            this.Add.Location = new System.Drawing.Point(29, 87);
+            this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(107, 54);
+            this.Add.Size = new System.Drawing.Size(143, 66);
             this.Add.TabIndex = 95;
             this.Add.Text = " Add";
             this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -75,32 +75,32 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(27, 20);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(12, 29);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 22);
+            this.label7.Size = new System.Drawing.Size(160, 28);
             this.label7.TabIndex = 94;
-            this.label7.Text = "Name:";
+            this.label7.Text = "Measurement:";
             // 
             // unit
             // 
             this.unit.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.unit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.unit.Location = new System.Drawing.Point(108, 20);
-            this.unit.Margin = new System.Windows.Forms.Padding(2);
+            this.unit.Location = new System.Drawing.Point(179, 29);
+            this.unit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.unit.Name = "unit";
-            this.unit.Size = new System.Drawing.Size(121, 28);
+            this.unit.Size = new System.Drawing.Size(160, 34);
             this.unit.TabIndex = 93;
             // 
             // Measurement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(262, 141);
+            this.ClientSize = new System.Drawing.Size(349, 174);
             this.Controls.Add(this.cancel);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.unit);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Measurement";
             this.Text = "Add measurement";
             this.Load += new System.EventHandler(this.Measurement_Load);

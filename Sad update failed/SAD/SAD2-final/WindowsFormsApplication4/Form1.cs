@@ -122,8 +122,8 @@ namespace WindowsFormsApplication4
 
         private void sign_Click_1(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            
+            signup f = new signup();
+            f.Show();
         }
     }
 }

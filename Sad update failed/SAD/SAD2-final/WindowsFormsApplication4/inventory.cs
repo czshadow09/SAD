@@ -49,7 +49,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll2()
         {
-            string query = "select p.product_id, p.description, c.name, p.store_price, p.inc, p.cur_price, p.stock_in, p.stock_out, p.tot_quantity, p.cost_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
+            string query = "select p.product_id, p.description, c.name, p.store_price, p.inc, p.cur_price, p.stock_in, p.tot_quantity, p.cost_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -66,7 +66,6 @@ namespace WindowsFormsApplication4
             dataGridView2.Columns["name"].Visible = false;
             dataGridView2.Columns["store_price"].Visible = false;
             dataGridView2.Columns["stock_in"].HeaderText = "Stock";
-            dataGridView2.Columns["stock_out"].Visible = false;
             dataGridView2.Columns["tot_quantity"].Visible = false;
         }
 

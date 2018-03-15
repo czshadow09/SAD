@@ -29,7 +29,7 @@ namespace WindowsFormsApplication4
         }
         public void loadAll()
         {
-            string query = "select p.product_id, p.description, c.name, format(store_price,2) as store_price, stock_out from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_out > 0;";
+            string query = "select p.product_id, p.description, c.name, format(store_price,2) as store_price, stock_in from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in > 0;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -41,7 +41,7 @@ namespace WindowsFormsApplication4
             dataGridView1.Columns["description"].HeaderText = "Product Name";
             dataGridView1.Columns["name"].HeaderText = "Category";
             dataGridView1.Columns["store_price"].HeaderText = "Price";
-            dataGridView1.Columns["stock_out"].HeaderText = "Available";
+            dataGridView1.Columns["stock_in"].HeaderText = "Available";
             quan.Enabled = false;
             add.Enabled = false;
             remove.Enabled = false;
@@ -125,7 +125,7 @@ namespace WindowsFormsApplication4
             id.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
             name.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
             sprice.Text = dataGridView1.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
-            avquan.Text = dataGridView1.Rows[e.RowIndex].Cells["stock_out"].Value.ToString();
+            avquan.Text = dataGridView1.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
             quan.Enabled = true;
         }
 
@@ -175,7 +175,8 @@ namespace WindowsFormsApplication4
             decimal sum = Convert.ToDecimal(dt.Compute("SUM(Amount)", string.Empty));
             subtot.Text = sum.ToString();
             remove.Enabled = true;
-            string query1 = "Update product SET stock_out='" + sale + "' WHERE product_id='" + id.Text + "';";
+            string query2 = "INSERT INTO sales(quantity_hand, product_product_id) VALUES('" + quan.Text + "', (SELECT product_id FROM product WHERE description='" + name.Text + "'));";
+            string query1 = "Update product SET stock_in='" + sale + "' WHERE product_id='" + id.Text + "';";
             executeQuery(query1);
             quan.Clear();
         }
@@ -236,7 +237,7 @@ namespace WindowsFormsApplication4
 
             else
             {
-                string query = "Insert Into sales_order(order_date, tot_consume) values(now(), '" + subtot.Text + "')";
+                string query = "Insert Into sales_order(order_date, tot_consume, sales_sales_id) values(now(), '" + subtot.Text + "')";
                 executeQuery(query);
                 MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 panel3.Hide();

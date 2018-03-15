@@ -21,7 +21,7 @@ namespace WindowsFormsApplication4
         }
         public void loadAll()
         {
-            string query = "select firstname, lastname, type, attend_date, status from user where status = 'Present'";
+            string query = "select u.firstname, u.lastname, u.type, ur.attend_date, ur.status from user u INNER JOIN user_report ur ON u.user_id = ur.user_user_id where status = 'Present'";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);

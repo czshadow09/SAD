@@ -87,6 +87,7 @@ namespace WindowsFormsApplication4
             dataGridView3.Columns["plist_id"].Visible = false;
             dataGridView3.Columns["purchase_date"].HeaderText = "Date";
             dataGridView3.Columns["tot_consume"].HeaderText = "Total Amount";
+            dataGridView3.Columns["purchasing_purchased_id"].Visible = false;
         }
 
         private void refr()

@@ -68,6 +68,10 @@
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.month = new System.Windows.Forms.ComboBox();
             this.purchasetotal = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -78,10 +82,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.id2 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.month = new System.Windows.Forms.ComboBox();
+            this.sales_id = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -272,7 +273,7 @@
             // date
             // 
             this.date.Location = new System.Drawing.Point(549, 305);
-            this.date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.date.Margin = new System.Windows.Forms.Padding(4);
             this.date.Name = "date";
             this.date.ReadOnly = true;
             this.date.Size = new System.Drawing.Size(296, 22);
@@ -300,7 +301,7 @@
             // id
             // 
             this.id.Location = new System.Drawing.Point(943, 4);
-            this.id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.id.Margin = new System.Windows.Forms.Padding(4);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(48, 22);
             this.id.TabIndex = 115;
@@ -597,7 +598,7 @@
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(-5, 348);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(1047, 43);
             this.bunifuSeparator1.TabIndex = 126;
@@ -618,19 +619,102 @@
             this.panel5.Controls.Add(this.Close);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.panel7);
-            this.panel5.Location = new System.Drawing.Point(-1, -1);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1027, 686);
             this.panel5.TabIndex = 133;
             this.panel5.Visible = false;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label15.Location = new System.Drawing.Point(579, 616);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(61, 23);
+            this.label15.TabIndex = 141;
+            this.label15.Text = "Year:";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label16.Location = new System.Drawing.Point(45, 616);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(76, 23);
+            this.label16.TabIndex = 140;
+            this.label16.Text = "Month:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "2000",
+            "2001",
+            "2002",
+            "2003",
+            "2004",
+            "2005",
+            "2006",
+            "2007",
+            "2008",
+            "2009",
+            "2010",
+            "2011",
+            "2012",
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"});
+            this.comboBox1.Location = new System.Drawing.Point(647, 610);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(311, 35);
+            this.comboBox1.TabIndex = 139;
+            // 
+            // month
+            // 
+            this.month.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.month.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.month.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.month.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.month.FormattingEnabled = true;
+            this.month.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March ",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.month.Location = new System.Drawing.Point(141, 610);
+            this.month.Margin = new System.Windows.Forms.Padding(4);
+            this.month.Name = "month";
+            this.month.Size = new System.Drawing.Size(311, 35);
+            this.month.TabIndex = 138;
+            // 
             // purchasetotal
             // 
             this.purchasetotal.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.purchasetotal.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.purchasetotal.Location = new System.Drawing.Point(211, 104);
-            this.purchasetotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.purchasetotal.Margin = new System.Windows.Forms.Padding(4);
             this.purchasetotal.Name = "purchasetotal";
             this.purchasetotal.ReadOnly = true;
             this.purchasetotal.Size = new System.Drawing.Size(227, 32);
@@ -741,100 +825,27 @@
             // id2
             // 
             this.id2.Location = new System.Drawing.Point(744, 4);
-            this.id2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.id2.Margin = new System.Windows.Forms.Padding(4);
             this.id2.Name = "id2";
             this.id2.Size = new System.Drawing.Size(48, 22);
             this.id2.TabIndex = 127;
             this.id2.Visible = false;
             // 
-            // label15
+            // sales_id
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label15.Location = new System.Drawing.Point(579, 616);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(61, 23);
-            this.label15.TabIndex = 141;
-            this.label15.Text = "Year:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label16.Location = new System.Drawing.Point(45, 616);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(76, 23);
-            this.label16.TabIndex = 140;
-            this.label16.Text = "Month:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "2000",
-            "2001",
-            "2002",
-            "2003",
-            "2004",
-            "2005",
-            "2006",
-            "2007",
-            "2008",
-            "2009",
-            "2010",
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018"});
-            this.comboBox1.Location = new System.Drawing.Point(647, 610);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(311, 35);
-            this.comboBox1.TabIndex = 139;
-            // 
-            // month
-            // 
-            this.month.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.month.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.month.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.month.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.month.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.month.FormattingEnabled = true;
-            this.month.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March ",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.month.Location = new System.Drawing.Point(141, 610);
-            this.month.Margin = new System.Windows.Forms.Padding(4);
-            this.month.Name = "month";
-            this.month.Size = new System.Drawing.Size(311, 35);
-            this.month.TabIndex = 138;
+            this.sales_id.Location = new System.Drawing.Point(834, 4);
+            this.sales_id.Margin = new System.Windows.Forms.Padding(4);
+            this.sales_id.Name = "sales_id";
+            this.sales_id.Size = new System.Drawing.Size(48, 22);
+            this.sales_id.TabIndex = 134;
+            this.sales_id.Visible = false;
             // 
             // transaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
+            this.Controls.Add(this.sales_id);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.id2);
             this.Controls.Add(this.id);
@@ -939,5 +950,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox month;
+        private System.Windows.Forms.TextBox sales_id;
     }
 }

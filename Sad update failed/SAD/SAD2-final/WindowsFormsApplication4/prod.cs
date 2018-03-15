@@ -81,7 +81,7 @@ namespace WindowsFormsApplication4
                     if (dt.Rows.Count >= 1) MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                     {
-                        string query1 = "INSERT INTO product(description, store_price, inc, cur_price, stock_in, stock_out, tot_quantity, cost_quantity, category_cat_id, unit_unit_id) VALUES('" + desc.Text + "' , 0, 0, 0, 0, 0, 0, 0, (SELECT cat_id FROM category WHERE name='" + categ.Text + "'), (SELECT unit_id FROM unit WHERE name='" + unit.Text + "'));";
+                        string query1 = "INSERT INTO product(description, store_price, inc, cur_price, stock_in, tot_quantity, cost_quantity, category_cat_id, unit_unit_id) VALUES('" + desc.Text + "' ,0, 0, 0, 0, 0, 0, (SELECT cat_id FROM category WHERE name='" + categ.Text + "'), (SELECT unit_id FROM unit WHERE name='" + unit.Text + "'));";
                         MessageBox.Show("Product added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         executeQuery(query1);
                         Purchasing p = new Purchasing();
