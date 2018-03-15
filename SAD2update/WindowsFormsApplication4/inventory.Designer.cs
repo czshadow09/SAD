@@ -47,7 +47,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.unit = new System.Windows.Forms.ComboBox();
             this.price = new System.Windows.Forms.TextBox();
-            this.quantity = new System.Windows.Forms.Label();
             this.currentp = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.search = new System.Windows.Forms.TextBox();
@@ -60,6 +59,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.quantity = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -225,11 +225,11 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.quantity);
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.unit);
             this.panel2.Controls.Add(this.price);
-            this.panel2.Controls.Add(this.quantity);
             this.panel2.Controls.Add(this.currentp);
             this.panel2.Controls.Add(this.increase);
             this.panel2.Controls.Add(this.label12);
@@ -241,6 +241,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(326, 454);
             this.panel2.TabIndex = 127;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pictureBox2
             // 
@@ -290,18 +291,7 @@
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(72, 27);
             this.price.TabIndex = 119;
-            // 
-            // quantity
-            // 
-            this.quantity.AutoSize = true;
-            this.quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.quantity.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.quantity.Location = new System.Drawing.Point(131, 84);
-            this.quantity.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.quantity.Name = "quantity";
-            this.quantity.Size = new System.Drawing.Size(14, 20);
-            this.quantity.TabIndex = 1;
-            this.quantity.Text = "-";
+            this.price.TextChanged += new System.EventHandler(this.price_TextChanged);
             // 
             // currentp
             // 
@@ -475,6 +465,18 @@
             this.label1.TabIndex = 151;
             this.label1.Text = "Stock In Record";
             // 
+            // quantity
+            // 
+            this.quantity.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.quantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quantity.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.quantity.Location = new System.Drawing.Point(136, 80);
+            this.quantity.Margin = new System.Windows.Forms.Padding(2);
+            this.quantity.Name = "quantity";
+            this.quantity.Size = new System.Drawing.Size(72, 27);
+            this.quantity.TabIndex = 135;
+            this.quantity.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -530,7 +532,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label quantity;
         private System.Windows.Forms.Label currentp;
         private System.Windows.Forms.ComboBox unit;
         private System.Windows.Forms.TextBox price;
@@ -547,5 +548,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TextBox quantity;
     }
 }

@@ -292,5 +292,10 @@ namespace WindowsFormsApplication4
             select_user_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
             id2.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -574,3 +574,4 @@ C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\bin\
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.InventoryReport.resources
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.PurchaseReport.resources
 C:\Users\rjsreroma\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.SalesReport.resources
+C:\Users\Standout. Ace\Documents\GitHub\SAD\SAD2update\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CopyComplete

@@ -211,6 +211,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>Inventory</DataSetName>
+        <Top>-0.00001cm</Top>
         <Left>2.54cm</Left>
         <Height>0.6cm</Height>
         <Width>12.97534cm</Width>
@@ -238,7 +239,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Sales Report</Value>
+                  <Value>Inventory Report</Value>
                   <Style>
                     <FontSize>18pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -250,9 +251,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>0.39583in</Top>
-          <Left>2.5625in</Left>
+          <Left>2.40625in</Left>
           <Height>0.45833in</Height>
-          <Width>1.64684in</Width>
+          <Width>2.28226in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -500,7 +501,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.65745cm</Top>
+          <Top>0.65744cm</Top>
           <Left>13.28271cm</Left>
           <Height>0.6cm</Height>
           <Width>1.91792cm</Width>
@@ -529,7 +530,7 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>0.65745cm</Top>
+          <Top>0.65744cm</Top>
           <Left>15.20062cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>

@@ -120,7 +120,7 @@ namespace WindowsFormsApplication4
                 }
                 else
                 {
-                    query += " UPDATE product SET description='" + prodname.Text + "', store_price='" + price.Text + "', inc='" + increase.Text + "', unit='" + unit.Text + "', cur_price='" + sum + "' where product_id='" + id.Text + "';";
+                    query += " UPDATE product SET description='" + prodname.Text + "', stock_in='" + quantity.Text + "', store_price='" + price.Text + "', inc='" + increase.Text + "', unit='" + unit.Text + "', cur_price='" + sum + "' where product_id='" + id.Text + "';";
                     MessageBox.Show("Product updated!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     executeQuery(query);
                 }
@@ -183,6 +183,21 @@ namespace WindowsFormsApplication4
             cons_quan.Text = constant.ToString();
             Update.Enabled = true;
             Out.Enabled = true;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void price_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
