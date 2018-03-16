@@ -51,7 +51,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll2()
         {
-            string query = "select * from sales_order";
+            string query = "select o.order_date, o.order_id, o.tot_consume, u.lastname from sales_order o inner join user u on o.user_user_id = u.user_id;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -62,6 +62,7 @@ namespace WindowsFormsApplication4
             dataGridView3.Columns["order_date"].HeaderText = "Date";
             dataGridView3.Columns["order_id"].HeaderText = "Customer #";
             dataGridView3.Columns["tot_consume"].HeaderText = "Total Amount";
+            dataGridView3.Columns["lastname"].HeaderText = "Encoder";
             if (dt.Rows.Count > 0) {
                 decimal sum = Convert.ToDecimal(dt.Compute("SUM(tot_consume)", string.Empty));
                 purchasetotal.Text = sum.ToString();
@@ -178,6 +179,7 @@ namespace WindowsFormsApplication4
             string query2 = "INSERT INTO sales(quantity_hand, product_product_id) VALUES('" + quan.Text + "', (SELECT product_id FROM product WHERE description='" + name.Text + "'));";
             string query1 = "Update product SET stock_in='" + sale + "' WHERE product_id='" + id.Text + "';";
             executeQuery(query1);
+            executeQuery(query2);
             quan.Clear();
         }
 
@@ -186,7 +188,7 @@ namespace WindowsFormsApplication4
             int avq = Int32.Parse(avquan.Text);
             int q = Int32.Parse(quan.Text);
             int sale = avq + q;
-            string query1 = "Update product SET stock_out='" + sale + "' WHERE product_id='" + id2.Text + "';";
+            string query1 = "Update product SET stock_in='" + sale + "' WHERE product_id='" + id2.Text + "';";
             executeQuery(query1);
             int row = dataGridView2.CurrentCell.RowIndex;
             dataGridView2.Rows.RemoveAt(row);
@@ -230,6 +232,15 @@ namespace WindowsFormsApplication4
 
         private void order_Click(object sender, EventArgs e)
         {
+            Form2 f2 = new Form2();
+            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='rjr');";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            string id = dt.Rows[0][0].ToString();
             if (String.IsNullOrEmpty(payment.Text) || String.IsNullOrEmpty(change.Text))
             {
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -237,8 +248,8 @@ namespace WindowsFormsApplication4
 
             else
             {
-                string query = "Insert Into sales_order(order_date, tot_consume, sales_sales_id) values(now(), '" + subtot.Text + "')";
-                executeQuery(query);
+                string query1 = "Insert Into sales_order(order_date, tot_consume, user_user_id) values(now(), '" + subtot.Text + "', '" + id + "')";
+                executeQuery(query1);
                 MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 panel3.Hide();
                 

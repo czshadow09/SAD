@@ -57,7 +57,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll()
         {
-            string query = "select p.product_id, p.description, u.name, p.stock_in from product p inner join unit u on p.unit_unit_id = u.unit_id where p.stock_in <= 30;";
+            string query = "select p.product_id, p.description, u.name, p.stock_in, p.tot_quantity from product p inner join unit u on p.unit_unit_id = u.unit_id where p.stock_in <= 30;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -69,6 +69,7 @@ namespace WindowsFormsApplication4
             dataGridView1.Columns["stock_in"].Visible = false;
             dataGridView1.Columns["description"].HeaderText = "Product Name";
             dataGridView1.Columns["name"].HeaderText = "Unit";
+            dataGridView1.Columns["tot_quantity"].HeaderText = "Quantity Needed";
             unit1.Enabled = false;
             purchase.Enabled = false;
             quan.Enabled = false;
@@ -76,7 +77,7 @@ namespace WindowsFormsApplication4
         }
         public void loadAll2()
         {
-            string query = "select * from purchase_order";
+            string query = "select p.purchase_date, p.plist_id, p.tot_consume, u.lastname from purchase_order p inner join user u on p.user_user_id = u.user_id";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -85,9 +86,10 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             dataGridView3.DataSource = dt;
             dataGridView3.Columns["plist_id"].Visible = false;
+            dataGridView1.Columns["name"].HeaderText = "Unit";
             dataGridView3.Columns["purchase_date"].HeaderText = "Date";
             dataGridView3.Columns["tot_consume"].HeaderText = "Total Amount";
-            dataGridView3.Columns["purchasing_purchased_id"].Visible = false;
+            dataGridView3.Columns["lastname"].HeaderText = "Encoder";
         }
 
         private void refr()
@@ -172,17 +174,31 @@ namespace WindowsFormsApplication4
             price.Text = dataGridView2.Rows[e.RowIndex].Cells[3].Value.ToString();
         }
 
-        private void addquan_Click(object sender, EventArgs e)
+        private void insQuery()
         {
-            string query = "select description, stock_in from product where product_id='" + id.Text + "';";
+            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='rjr');";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
             conn.Close();
             DataTable dt = new DataTable();
             adp.Fill(dt);
-            string query1 = "Insert Into purchase_order(purchase_date, tot_consume, purchasing_purchased_id) values(now(), '" + purchasetotal.Text + "')";
+            int id1 = Int32.Parse(dt.Rows[0][0].ToString());
+
+            string query1 = "Insert Into purchase_order(purchase_date, tot_consume, user_user_id) values(now(), '" + purchasetotal.Text + "', '" + id1 + "')";
             executeQuery(query1);
+        }
+
+        private void addquan_Click(object sender, EventArgs e)
+        {
+            string query = "select product_id, description, stock_in from product where product_id='" + id.Text + "';";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            insQuery();
 
             MessageBox.Show("Total payments: '" + purchasetotal.Text + "' ", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
             refr();

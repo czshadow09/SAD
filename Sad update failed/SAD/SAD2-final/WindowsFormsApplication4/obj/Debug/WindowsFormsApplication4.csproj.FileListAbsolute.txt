@@ -952,3 +952,4 @@ C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsForms
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.transaction.resources
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.UserControl2.resources
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.GenerateResource.Cache
+C:\Users\ACER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.signup.resources

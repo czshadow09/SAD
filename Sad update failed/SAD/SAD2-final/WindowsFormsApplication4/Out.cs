@@ -42,7 +42,7 @@ namespace WindowsFormsApplication4
 
         private void Subtract_Click(object sender, EventArgs e)
         {
-            string query = "select stock_in, stock_out from product where product_id='" + id.Text + "';";
+            string query = "select stock_in from product where product_id='" + id.Text + "';";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -51,9 +51,7 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             int input = Int32.Parse(quan.Text);
             int s_in = Int32.Parse(dt.Rows[0][0].ToString());
-            int s_out = Int32.Parse(dt.Rows[0][1].ToString());
             int dif = (s_in - input);
-            int sum = input + s_out;
             if (String.IsNullOrEmpty(quan.Text))
             {
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -74,7 +72,7 @@ namespace WindowsFormsApplication4
                     }
                     else
                     {
-                        string query1 = "UPDATE product SET stock_in='" + s_in + "'- '" + input + "', stock_out='" + sum + "' where product_id= '" + id.Text + "';";
+                        string query1 = "UPDATE product SET stock_in='" + dif + "' where product_id= '" + id.Text + "';";
                         MessageBox.Show("Stocked out '" + input + "' items!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         if (s_in <= 30)
                         {

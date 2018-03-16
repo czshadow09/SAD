@@ -49,7 +49,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll2()
         {
-            string query = "select p.product_id, p.description, c.name, p.store_price, p.inc, p.cur_price, p.stock_in, p.tot_quantity, p.cost_quantity from product p inner join category c on p.category_cat_id = c.cat_id;";
+            string query = "select p.product_id, p.description, c.name, p.store_price, p.inc, p.cur_price, p.stock_in, p.tot_quantity, p.cost_quantity from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in > 0;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -63,7 +63,7 @@ namespace WindowsFormsApplication4
             dataGridView2.Columns["store_price"].Visible = false;
             dataGridView2.Columns["cur_price"].Visible = false;
             dataGridView2.Columns["description"].HeaderText = "Product Name";
-            dataGridView2.Columns["name"].Visible = false;
+            dataGridView2.Columns["name"].HeaderText = "Category";
             dataGridView2.Columns["store_price"].Visible = false;
             dataGridView2.Columns["stock_in"].HeaderText = "Stock";
             dataGridView2.Columns["tot_quantity"].Visible = false;
@@ -126,7 +126,7 @@ namespace WindowsFormsApplication4
 
         private void categ_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            string query = "select p.product_id, p.description, p.stock_in from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
+            string query = "select p.product_id, p.description, c.name, p.stock_in from product p inner join category c on p.category_cat_id = c.cat_id where c.name='" + categ.Text + "';";
             conn.Open();
             MySqlCommand comm = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(comm);

@@ -70,6 +70,26 @@ namespace WindowsFormsApplication4
             }
         }
 
+        private void dateif()
+        {
+            String query = "select date(attend_date) from user_report where user_user_id=(select user_id from user where login_login_id= (select login_id from login where username='" + btnuser.Text + "'))";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            if (dt.Rows.Count >= 1)
+            {
+                
+            }
+            else
+            {
+                string att = "INSERT INTO user_report(attend_date, status, user_user_id) values(now(), 'Present', (select user_id from user where login_login_id= (select login_id from login where username='" + btnuser.Text + "'))); ";
+                executeQuery(att);
+            }
+        }
+
         private void btnok_Click(object sender, EventArgs e)
         {
             user = btnuser.Text;
@@ -87,6 +107,8 @@ namespace WindowsFormsApplication4
                 String fn = dt.Rows[0][1].ToString();
                 String ln = dt.Rows[0][2].ToString();
                 Form2 f = new Form2();
+                transaction t = new transaction();
+                t.usern.Text = user;
                 f.usern.Text = user;
                 user = dt.Rows[0][2].ToString() + " "  + dt.Rows[0][1].ToString();
                 id = dt.Rows[0][0].ToString();
@@ -95,11 +117,7 @@ namespace WindowsFormsApplication4
                 this.Hide();
                 f.Show();
                 f.previousform = this;
-                if(date.Text != dat)
-                {
-                    string att = "UPDATE user_report AS ur INNER JOIN user AS u ON ur.user_user_id = u.user_id SET ur.attend_date='" + date.Text + "', ur.status = 'Present' WHERE u.firstname = '" + fn + "' and u.lastname = '" + ln + "';";
-                    executeQuery(att);
-                }
+                dateif();
             }
             else MessageBox.Show("Wrong username or password", "Please type again", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         
