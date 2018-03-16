@@ -41,6 +41,8 @@
             this.unit = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.quan = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Add
@@ -51,7 +53,7 @@
             this.Add.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(41, 303);
+            this.Add.Location = new System.Drawing.Point(25, 385);
             this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(165, 76);
@@ -69,7 +71,7 @@
             this.AddC.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.AddC.Image = ((System.Drawing.Image)(resources.GetObject("AddC.Image")));
             this.AddC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddC.Location = new System.Drawing.Point(212, 305);
+            this.AddC.Location = new System.Drawing.Point(196, 387);
             this.AddC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddC.Name = "AddC";
             this.AddC.Size = new System.Drawing.Size(203, 71);
@@ -86,7 +88,7 @@
             this.categ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.categ.FormattingEnabled = true;
             this.categ.Location = new System.Drawing.Point(24, 176);
-            this.categ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.categ.Margin = new System.Windows.Forms.Padding(4);
             this.categ.Name = "categ";
             this.categ.Size = new System.Drawing.Size(373, 37);
             this.categ.TabIndex = 103;
@@ -153,7 +155,7 @@
             this.cancel.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
             this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancel.Location = new System.Drawing.Point(286, 380);
+            this.cancel.Location = new System.Drawing.Point(270, 462);
             this.cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(78, 75);
@@ -169,7 +171,7 @@
             this.unit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.unit.FormattingEnabled = true;
             this.unit.Location = new System.Drawing.Point(25, 262);
-            this.unit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.unit.Margin = new System.Windows.Forms.Padding(4);
             this.unit.Name = "unit";
             this.unit.Size = new System.Drawing.Size(373, 37);
             this.unit.TabIndex = 109;
@@ -193,7 +195,7 @@
             this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(41, 375);
+            this.button1.Location = new System.Drawing.Point(25, 457);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(224, 71);
@@ -203,12 +205,35 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label5.Location = new System.Drawing.Point(20, 317);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(107, 28);
+            this.label5.TabIndex = 112;
+            this.label5.Text = "Quantity:";
+            // 
+            // quan
+            // 
+            this.quan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.quan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.quan.Location = new System.Drawing.Point(25, 347);
+            this.quan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.quan.Name = "quan";
+            this.quan.Size = new System.Drawing.Size(375, 34);
+            this.quan.TabIndex = 111;
+            // 
             // prod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(417, 457);
+            this.ClientSize = new System.Drawing.Size(417, 551);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.quan);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.unit);
             this.Controls.Add(this.label1);
@@ -244,5 +269,7 @@
         public System.Windows.Forms.ComboBox unit;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox quan;
     }
 }

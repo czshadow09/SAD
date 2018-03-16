@@ -104,5 +104,50 @@ namespace WindowsFormsApplication4
                 }
             }
         }
+
+        private void firstname_OnValueChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Add;
+        }
+
+        private void lastname_OnValueChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Add;
+        }
+
+        private void gender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Add;
+        }
+
+        private void email_OnValueChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Add;
+        }
+
+        private void contact_OnValueChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Add;
+        }
+
+        private void usertype_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Add;
+        }
+
+        private void username_OnValueChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Add;
+        }
+
+        private void newp_OnValueChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Add;
+        }
+
+        private void retype_OnValueChanged(object sender, EventArgs e)
+        {
+            this.AcceptButton = Add;
+        }
     }
 }

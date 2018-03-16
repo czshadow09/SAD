@@ -31,6 +31,7 @@ namespace WindowsFormsApplication4
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.sign = new System.Windows.Forms.Button();
             this.date = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -43,7 +44,6 @@ namespace WindowsFormsApplication4
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.sign = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -63,6 +63,20 @@ namespace WindowsFormsApplication4
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(447, 65);
             this.panel2.TabIndex = 1;
+            // 
+            // sign
+            // 
+            this.sign.FlatAppearance.BorderSize = 0;
+            this.sign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sign.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sign.ForeColor = System.Drawing.Color.White;
+            this.sign.Location = new System.Drawing.Point(313, 17);
+            this.sign.Name = "sign";
+            this.sign.Size = new System.Drawing.Size(114, 36);
+            this.sign.TabIndex = 4;
+            this.sign.Text = "Sign up";
+            this.sign.UseVisualStyleBackColor = true;
+            this.sign.Click += new System.EventHandler(this.sign_Click_1);
             // 
             // date
             // 
@@ -198,20 +212,6 @@ namespace WindowsFormsApplication4
             this.bunifuDragControl2.Horizontal = true;
             this.bunifuDragControl2.TargetControl = this.pictureBox5;
             this.bunifuDragControl2.Vertical = true;
-            // 
-            // sign
-            // 
-            this.sign.FlatAppearance.BorderSize = 0;
-            this.sign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sign.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sign.ForeColor = System.Drawing.Color.White;
-            this.sign.Location = new System.Drawing.Point(313, 17);
-            this.sign.Name = "sign";
-            this.sign.Size = new System.Drawing.Size(114, 36);
-            this.sign.TabIndex = 20;
-            this.sign.Text = "Sign up";
-            this.sign.UseVisualStyleBackColor = true;
-            this.sign.Click += new System.EventHandler(this.sign_Click_1);
             // 
             // Form1
             // 

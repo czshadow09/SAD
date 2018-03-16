@@ -80,7 +80,7 @@
             // id
             // 
             this.id.Location = new System.Drawing.Point(413, 14);
-            this.id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.id.Margin = new System.Windows.Forms.Padding(4);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(75, 22);
             this.id.TabIndex = 72;
@@ -89,7 +89,7 @@
             // cons_quan
             // 
             this.cons_quan.Location = new System.Drawing.Point(497, 14);
-            this.cons_quan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cons_quan.Margin = new System.Windows.Forms.Padding(4);
             this.cons_quan.Name = "cons_quan";
             this.cons_quan.Size = new System.Drawing.Size(60, 22);
             this.cons_quan.TabIndex = 73;
@@ -223,7 +223,7 @@
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(171, 281);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 23);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -234,7 +234,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(171, 148);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 23);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -304,12 +304,12 @@
             this.Out.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Out.ForeColor = System.Drawing.Color.White;
             this.Out.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Out.Location = new System.Drawing.Point(499, 548);
+            this.Out.Location = new System.Drawing.Point(19, 501);
             this.Out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Out.Name = "Out";
             this.Out.Size = new System.Drawing.Size(155, 46);
             this.Out.TabIndex = 142;
-            this.Out.Text = "Stock In";
+            this.Out.Text = "Stock Out";
             this.Out.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Out.UseVisualStyleBackColor = false;
             this.Out.Click += new System.EventHandler(this.Out_Click_1);
@@ -322,7 +322,7 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(659, 548);
+            this.button2.Location = new System.Drawing.Point(179, 501);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(152, 46);
@@ -341,7 +341,7 @@
             this.categ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.categ.FormattingEnabled = true;
             this.categ.Location = new System.Drawing.Point(655, 626);
-            this.categ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.categ.Margin = new System.Windows.Forms.Padding(4);
             this.categ.Name = "categ";
             this.categ.Size = new System.Drawing.Size(311, 35);
             this.categ.TabIndex = 144;
@@ -397,10 +397,12 @@
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.dataGridView2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(481, 47);
+            this.panel1.Controls.Add(this.Out);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Location = new System.Drawing.Point(513, 47);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(519, 559);
+            this.panel1.Size = new System.Drawing.Size(487, 559);
             this.panel1.TabIndex = 150;
             // 
             // dataGridView2
@@ -408,13 +410,13 @@
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(27, 57);
+            this.dataGridView2.Location = new System.Drawing.Point(19, 56);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(475, 423);
+            this.dataGridView2.Size = new System.Drawing.Size(450, 423);
             this.dataGridView2.TabIndex = 153;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick_2);
             // 
@@ -439,8 +441,6 @@
             this.Controls.Add(this.del);
             this.Controls.Add(this.Category);
             this.Controls.Add(this.categ);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.Out);
             this.Controls.Add(this.search);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label7);

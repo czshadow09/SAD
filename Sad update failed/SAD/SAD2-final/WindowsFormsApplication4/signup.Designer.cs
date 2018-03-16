@@ -51,9 +51,9 @@
             this.gender = new System.Windows.Forms.ComboBox();
             this.usertype = new System.Windows.Forms.ComboBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
@@ -79,8 +79,9 @@
             this.retype.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.retype.Name = "retype";
             this.retype.Size = new System.Drawing.Size(293, 37);
-            this.retype.TabIndex = 131;
+            this.retype.TabIndex = 10;
             this.retype.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.retype.OnValueChanged += new System.EventHandler(this.retype_OnValueChanged);
             // 
             // newp
             // 
@@ -98,8 +99,9 @@
             this.newp.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.newp.Name = "newp";
             this.newp.Size = new System.Drawing.Size(291, 37);
-            this.newp.TabIndex = 130;
+            this.newp.TabIndex = 9;
             this.newp.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.newp.OnValueChanged += new System.EventHandler(this.newp_OnValueChanged);
             // 
             // username
             // 
@@ -117,8 +119,9 @@
             this.username.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(291, 37);
-            this.username.TabIndex = 129;
+            this.username.TabIndex = 8;
             this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.username.OnValueChanged += new System.EventHandler(this.username_OnValueChanged);
             // 
             // contact
             // 
@@ -136,8 +139,9 @@
             this.contact.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.contact.Name = "contact";
             this.contact.Size = new System.Drawing.Size(299, 37);
-            this.contact.TabIndex = 127;
+            this.contact.TabIndex = 5;
             this.contact.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.contact.OnValueChanged += new System.EventHandler(this.contact_OnValueChanged);
             // 
             // email
             // 
@@ -155,8 +159,9 @@
             this.email.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(299, 37);
-            this.email.TabIndex = 126;
+            this.email.TabIndex = 4;
             this.email.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.email.OnValueChanged += new System.EventHandler(this.email_OnValueChanged);
             // 
             // lastname
             // 
@@ -174,8 +179,9 @@
             this.lastname.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.lastname.Name = "lastname";
             this.lastname.Size = new System.Drawing.Size(304, 37);
-            this.lastname.TabIndex = 124;
+            this.lastname.TabIndex = 2;
             this.lastname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.lastname.OnValueChanged += new System.EventHandler(this.lastname_OnValueChanged);
             // 
             // firstname
             // 
@@ -193,8 +199,9 @@
             this.firstname.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.firstname.Name = "firstname";
             this.firstname.Size = new System.Drawing.Size(304, 37);
-            this.firstname.TabIndex = 123;
+            this.firstname.TabIndex = 1;
             this.firstname.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.firstname.OnValueChanged += new System.EventHandler(this.firstname_OnValueChanged);
             // 
             // Add
             // 
@@ -208,7 +215,7 @@
             this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(120, 37);
-            this.Add.TabIndex = 132;
+            this.Add.TabIndex = 11;
             this.Add.Text = "Sign Up";
             this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.Add.UseVisualStyleBackColor = false;
@@ -328,7 +335,8 @@
             this.gender.Margin = new System.Windows.Forms.Padding(4);
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(311, 35);
-            this.gender.TabIndex = 125;
+            this.gender.TabIndex = 3;
+            this.gender.SelectedIndexChanged += new System.EventHandler(this.gender_SelectedIndexChanged);
             // 
             // usertype
             // 
@@ -345,7 +353,8 @@
             this.usertype.Margin = new System.Windows.Forms.Padding(4);
             this.usertype.Name = "usertype";
             this.usertype.Size = new System.Drawing.Size(311, 35);
-            this.usertype.TabIndex = 128;
+            this.usertype.TabIndex = 7;
+            this.usertype.SelectedIndexChanged += new System.EventHandler(this.usertype_SelectedIndexChanged);
             // 
             // panel2
             // 
@@ -360,16 +369,17 @@
             this.panel2.Size = new System.Drawing.Size(1004, 47);
             this.panel2.TabIndex = 143;
             // 
-            // label1
+            // pictureBox4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(39, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Angel\'s Access Point";
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(957, 11);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(35, 28);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 144;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label2
             // 
@@ -382,17 +392,16 @@
             this.label2.TabIndex = 144;
             this.label2.Text = "Sign Up";
             // 
-            // pictureBox4
+            // label1
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(957, 11);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(35, 28);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 144;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(39, 11);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(177, 24);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Angel\'s Access Point";
             // 
             // signup
             // 
