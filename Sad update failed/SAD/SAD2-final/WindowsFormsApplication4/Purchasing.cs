@@ -122,7 +122,7 @@ namespace WindowsFormsApplication4
 
         private void update_Click(object sender, EventArgs e)
         {
-            if(String.IsNullOrEmpty(purchase.Text) || String.IsNullOrEmpty(quan.Text))
+            if (String.IsNullOrEmpty(purchase.Text) || String.IsNullOrEmpty(quan.Text))
             {
                 MessageBox.Show("Both price and quantity required!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -143,13 +143,21 @@ namespace WindowsFormsApplication4
                 dataGridView2.DataSource = dt;
                 decimal sum1 = Convert.ToDecimal(dt.Compute("SUM(Price)", string.Empty));
                 purchasetotal.Text = sum1.ToString();
-                string query2 = "INSERT INTO purchasing(purchase_price, quantity_sold, product_product_id) VALUES( '" + purchase.Text + "', '" + sum + "', '" + id.Text + "');";
+                if(dt.Rows.Count > 1)
+                {
+                    string query2 = "INSERT INTO purchasing(purchase_price, quantity_sold, product_product_id) VALUES( '" + purchase.Text + "', '" + sum + "', '" + id.Text + "');";
+                    executeQuery(query2);
+                    addquan.Enabled = true;
+                }
+                else if(dt.Rows.Count == 1)
+                {
+                    string query3 = "UPDATE purchasing SET purchase_price='" + purchase.Text + "', quantity_sold='" + sum + "' where product_product_id='" + id + "';";
+                    executeQuery(query3);
+                }
                 string query1 = "UPDATE product SET store_price='" + purchase.Text + "', cur_price='" + purchase.Text + "', stock_in='" + sum + "' where product_id= '" + id.Text + "';";
-                executeQuery(query2);
                 executeQuery(query1);
-                addquan.Enabled = true;
             }
-            
+
         }
 
         private int select_id;

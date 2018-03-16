@@ -221,6 +221,15 @@ namespace WindowsFormsApplication4
             decimal cha = 0 - grandtot;
             decimal chan = cha + pay;
             change.Text = chan.ToString();
+            if (chan < 0)
+            {
+                order.Enabled = false;
+            }
+
+            else
+            {
+                order.Enabled = true;
+            }
         }
         private void payment_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -303,6 +312,66 @@ namespace WindowsFormsApplication4
         {
             select_user_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
             id2.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
+        }
+
+        private void month_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string query = "select o.order_date, o.order_id, o.tot_consume, u.lastname from sales_order o inner join user u on o.user_user_id = u.user_id where month(o.order_date)='" + month.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView3.DataSource = dt;
+            if (month.Text == "January")
+            {
+                monthnum.Text = "1";
+            }
+            else if (month.Text == "February")
+            {
+                monthnum.Text = "2";
+            }
+            else if (month.Text == "March")
+            {
+                monthnum.Text = "3";
+            }
+            else if (month.Text == "April")
+            {
+                monthnum.Text = "4";
+            }
+            else if (month.Text == "May")
+            {
+                monthnum.Text = "5";
+            }
+            else if (month.Text == "June")
+            {
+                monthnum.Text = "6";
+            }
+            else if (month.Text == "July")
+            {
+                monthnum.Text = "7";
+            }
+            else if (month.Text == "August")
+            {
+                monthnum.Text = "8";
+            }
+            else if (month.Text == "September")
+            {
+                monthnum.Text = "9";
+            }
+            else if (month.Text == "October")
+            {
+                monthnum.Text = "10";
+            }
+            else if (month.Text == "November")
+            {
+                monthnum.Text = "11";
+            }
+            else if (month.Text == "December")
+            {
+                monthnum.Text = "12";
+            }
         }
     }
 }
