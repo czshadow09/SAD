@@ -72,18 +72,14 @@ namespace WindowsFormsApplication4
 
         private void dateif()
         {
-            String query = "select date(attend_date) from user_report where user_user_id=(select user_id from user where login_login_id= (select login_id from login where username='" + btnuser.Text + "'))";
+            String query = "select date(attend_date) from user_report where user_user_id=(select user_id from user where login_login_id= (select login_id from login where username='" + btnuser.Text + "')) and date(attend_date) ='" + dateonly.Text +"';";
             conn.Open();
             MySqlCommand comm = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(comm);
             conn.Close();
             DataTable dt = new DataTable();
             adp.Fill(dt);
-            if (dt.Rows.Count >= 1)
-            {
-                
-            }
-            else
+            if (dt.Rows.Count < 1)
             {
                 string att = "INSERT INTO user_report(attend_date, status, user_user_id) values(now(), 'Present', (select user_id from user where login_login_id= (select login_id from login where username='" + btnuser.Text + "'))); ";
                 executeQuery(att);
@@ -136,6 +132,7 @@ namespace WindowsFormsApplication4
         private void Form1_Load(object sender, EventArgs e)
         {
             date.Text = DateTime.Now.ToString("dd/MM/yyy, HH:mm");
+            dateonly.Text = DateTime.Now.ToString("yyyy-MM-dd");
         }
 
         private void sign_Click_1(object sender, EventArgs e)
