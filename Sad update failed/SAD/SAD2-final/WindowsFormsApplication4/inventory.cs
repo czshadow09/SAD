@@ -42,7 +42,6 @@ namespace WindowsFormsApplication4
                 categ.Items.Add(dt.Rows[x][0].ToString());
             }
             Update.Enabled = false;
-            Out.Enabled = false;
           
             loadAll2();
         }
@@ -177,7 +176,6 @@ namespace WindowsFormsApplication4
             constant = constant * 0.3;
             cons_quan.Text = constant.ToString();
             Update.Enabled = true;
-            Out.Enabled = true;
         }
     }
 }

@@ -49,7 +49,6 @@
             this.currentp = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.search = new System.Windows.Forms.TextBox();
-            this.Out = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.categ = new System.Windows.Forms.ComboBox();
             this.Category = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -296,24 +295,6 @@
             this.search.TabIndex = 141;
             this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
-            // Out
-            // 
-            this.Out.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.Out.FlatAppearance.BorderSize = 0;
-            this.Out.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Out.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Out.ForeColor = System.Drawing.Color.White;
-            this.Out.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Out.Location = new System.Drawing.Point(19, 501);
-            this.Out.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Out.Name = "Out";
-            this.Out.Size = new System.Drawing.Size(155, 46);
-            this.Out.TabIndex = 142;
-            this.Out.Text = "Stock Out";
-            this.Out.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Out.UseVisualStyleBackColor = false;
-            this.Out.Click += new System.EventHandler(this.Out_Click_1);
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.MediumSeaGreen;
@@ -322,7 +303,7 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(179, 501);
+            this.button2.Location = new System.Drawing.Point(19, 501);
             this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(152, 46);
@@ -397,7 +378,6 @@
             this.panel1.BackColor = System.Drawing.Color.Gainsboro;
             this.panel1.Controls.Add(this.dataGridView2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.Out);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(513, 47);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -416,7 +396,7 @@
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 24;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(450, 423);
+            this.dataGridView2.Size = new System.Drawing.Size(450, 427);
             this.dataGridView2.TabIndex = 153;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick_2);
             // 
@@ -491,7 +471,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox search;
-        private System.Windows.Forms.Button Out;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox categ;
         private Bunifu.Framework.UI.BunifuCustomLabel Category;

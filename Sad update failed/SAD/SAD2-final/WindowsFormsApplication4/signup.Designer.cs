@@ -70,7 +70,7 @@
             this.retype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.retype.HintForeColor = System.Drawing.Color.Empty;
             this.retype.HintText = "";
-            this.retype.isPassword = false;
+            this.retype.isPassword = true;
             this.retype.LineFocusedColor = System.Drawing.Color.Black;
             this.retype.LineIdleColor = System.Drawing.Color.Black;
             this.retype.LineMouseHoverColor = System.Drawing.Color.Black;
@@ -90,7 +90,7 @@
             this.newp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.newp.HintForeColor = System.Drawing.Color.Empty;
             this.newp.HintText = "";
-            this.newp.isPassword = false;
+            this.newp.isPassword = true;
             this.newp.LineFocusedColor = System.Drawing.Color.Black;
             this.newp.LineIdleColor = System.Drawing.Color.Black;
             this.newp.LineMouseHoverColor = System.Drawing.Color.Black;
