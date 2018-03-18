@@ -37,12 +37,13 @@
             this.desc = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.cancel = new System.Windows.Forms.Button();
             this.unit = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.quan = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.packquan = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Add
@@ -53,7 +54,7 @@
             this.Add.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(25, 385);
+            this.Add.Location = new System.Drawing.Point(25, 468);
             this.Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(165, 76);
@@ -71,7 +72,7 @@
             this.AddC.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.AddC.Image = ((System.Drawing.Image)(resources.GetObject("AddC.Image")));
             this.AddC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.AddC.Location = new System.Drawing.Point(196, 387);
+            this.AddC.Location = new System.Drawing.Point(196, 470);
             this.AddC.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddC.Name = "AddC";
             this.AddC.Size = new System.Drawing.Size(203, 71);
@@ -147,23 +148,6 @@
             this.label2.TabIndex = 92;
             this.label2.Text = "Create New Product";
             // 
-            // cancel
-            // 
-            this.cancel.FlatAppearance.BorderSize = 0;
-            this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cancel.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.cancel.Image = ((System.Drawing.Image)(resources.GetObject("cancel.Image")));
-            this.cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.cancel.Location = new System.Drawing.Point(270, 462);
-            this.cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(78, 75);
-            this.cancel.TabIndex = 107;
-            this.cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.cancel.UseVisualStyleBackColor = true;
-            this.cancel.Click += new System.EventHandler(this.cancel_Click);
-            // 
             // unit
             // 
             this.unit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -195,7 +179,7 @@
             this.button1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(25, 457);
+            this.button1.Location = new System.Drawing.Point(81, 545);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(224, 71);
@@ -226,18 +210,40 @@
             this.quan.Size = new System.Drawing.Size(375, 34);
             this.quan.TabIndex = 111;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label6.Location = new System.Drawing.Point(19, 391);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(162, 28);
+            this.label6.TabIndex = 114;
+            this.label6.Text = "Pack Quantity:";
+            // 
+            // packquan
+            // 
+            this.packquan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.packquan.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.packquan.Location = new System.Drawing.Point(24, 421);
+            this.packquan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.packquan.Name = "packquan";
+            this.packquan.Size = new System.Drawing.Size(375, 34);
+            this.packquan.TabIndex = 113;
+            // 
             // prod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
-            this.ClientSize = new System.Drawing.Size(417, 551);
+            this.ClientSize = new System.Drawing.Size(417, 627);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.packquan);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.quan);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.unit);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.cancel);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.AddC);
             this.Controls.Add(this.categ);
@@ -263,7 +269,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button cancel;
         public System.Windows.Forms.ComboBox categ;
         public System.Windows.Forms.TextBox desc;
         public System.Windows.Forms.ComboBox unit;
@@ -271,5 +276,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.TextBox quan;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox packquan;
     }
 }

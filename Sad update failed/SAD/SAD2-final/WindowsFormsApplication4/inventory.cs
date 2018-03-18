@@ -177,5 +177,17 @@ namespace WindowsFormsApplication4
             cons_quan.Text = constant.ToString();
             Update.Enabled = true;
         }
+
+        private void sear_Click(object sender, EventArgs e)
+        {
+            string query = "select p.description, c.name, p.stock_in from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in > 0 and p.description like '" + search.Text + "%' ;";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView2.DataSource = dt;
+        }
     }
 }

@@ -69,6 +69,10 @@ namespace WindowsFormsApplication4
             conn.Close();
             DataTable dt = new DataTable();
             user.Fill(dt);
+            int pack = Int32.Parse(packquan.Text);
+            int quan1 = Int32.Parse(quan.Text);
+            int quanpack = pack * quan1;
+            string quant = quanpack.ToString();
             if (String.IsNullOrEmpty(desc.Text) || String.IsNullOrEmpty(categ.Text))
             {
                 MessageBox.Show("Please fill up all the fields.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -81,7 +85,7 @@ namespace WindowsFormsApplication4
                     if (dt.Rows.Count >= 1) MessageBox.Show("Product already exist. Please choose a different product", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     else
                     {
-                        string query1 = "INSERT INTO product(description, store_price, inc, cur_price, stock_in, tot_quantity, cost_quantity, category_cat_id, unit_unit_id) VALUES('" + desc.Text + "' ,0, 0, 0, 0, '" + quan.Text + "', '" + quan.Text + "', (SELECT cat_id FROM category WHERE name='" + categ.Text + "'), (SELECT unit_id FROM unit WHERE name='" + unit.Text + "'));";
+                        string query1 = "INSERT INTO product(description, store_price, inc, cur_price, quan, stock_in, packquan, tot_quantity, cost_quantity, category_cat_id, unit_unit_id) VALUES('" + desc.Text + "' ,0, 0, 0, '" + quan.Text + "', 0, '" + packquan.Text + "', '" + quant + "', '" + quant + "', (SELECT cat_id FROM category WHERE name='" + categ.Text + "'), (SELECT unit_id FROM unit WHERE name='" + unit.Text + "'));";
                         MessageBox.Show("Product added!", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         executeQuery(query1);
                         Purchasing p = new Purchasing();

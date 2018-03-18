@@ -73,7 +73,7 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.packqty = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -223,7 +223,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.packqty);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.print);
             this.panel1.Controls.Add(this.purchase);
@@ -486,7 +486,7 @@
             this.panel2.Controls.Add(this.panel7);
             this.panel2.Controls.Add(this.Close);
             this.panel2.Controls.Add(this.panel3);
-            this.panel2.Location = new System.Drawing.Point(-4, -6);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1021, 752);
@@ -684,15 +684,15 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
-            // textBox1
+            // packqty
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox1.Location = new System.Drawing.Point(389, 57);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(122, 34);
-            this.textBox1.TabIndex = 137;
+            this.packqty.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.packqty.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.packqty.Location = new System.Drawing.Point(389, 57);
+            this.packqty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.packqty.Name = "packqty";
+            this.packqty.Size = new System.Drawing.Size(122, 34);
+            this.packqty.TabIndex = 137;
             // 
             // label11
             // 
@@ -796,7 +796,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox month;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox packqty;
         private System.Windows.Forms.Label label11;
     }
 }

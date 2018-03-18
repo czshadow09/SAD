@@ -36,6 +36,9 @@ namespace WindowsFormsApplication4
             dt.Columns.Add("Unit");
             dt.Columns.Add("Quantity");
             dt.Columns.Add("Price", typeof(decimal));
+            DataColumn[] keyColumns = new DataColumn[1];
+            keyColumns[0] = dt.Columns["Product"];
+            dt.PrimaryKey = keyColumns;
         }
 
         private void Se_Click(object sender, EventArgs e)
@@ -57,7 +60,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll()
         {
-            string query = "select p.product_id, p.description, u.name, p.stock_in, p.tot_quantity from product p inner join unit u on p.unit_unit_id = u.unit_id where p.stock_in <= 30;";
+            string query = "select p.product_id, p.description, u.name, p.store_price, p.quan, p.stock_in, p.packquan, p.tot_quantity from product p inner join unit u on p.unit_unit_id = u.unit_id where p.stock_in <= 30;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -67,12 +70,16 @@ namespace WindowsFormsApplication4
             dataGridView1.DataSource = dt;
             dataGridView1.Columns["product_id"].Visible = false;
             dataGridView1.Columns["stock_in"].Visible = false;
+            dataGridView1.Columns["packquan"].Visible = false;
+            dataGridView1.Columns["store_price"].Visible = false;
+            dataGridView1.Columns["quan"].Visible = false;
             dataGridView1.Columns["description"].HeaderText = "Product Name";
             dataGridView1.Columns["name"].HeaderText = "Unit";
             dataGridView1.Columns["tot_quantity"].HeaderText = "Quantity Needed";
             unit1.Enabled = false;
             purchase.Enabled = false;
             quan.Enabled = false;
+            packqty.Enabled = false;
             addquan.Enabled = false;
         }
         public void loadAll2()
@@ -129,17 +136,23 @@ namespace WindowsFormsApplication4
             else
             {
                 decimal purc = Convert.ToDecimal(purchase.Text);
-                decimal qua = Convert.ToDecimal(quan.Text);
-                decimal amount = purc * qua;
-                int quant = Int32.Parse(quan.Text);
+                int quant = Int32.Parse(packqty.Text);
+                int qua1 = Int32.Parse(quan.Text);
+                int prod1 = quant * qua1;
+                decimal qua = Convert.ToDecimal(packqty.Text);
+                decimal amount = purc * prod1;
                 int curq = Int32.Parse(cur_quan.Text);
-                int sum = quant + curq;
+                int sum = prod1 + curq;
                 DataRow dr = dt.NewRow();
                 dr["Product"] = prod.Text;
                 dr["Unit"] = unit1.Text;
-                dr["Quantity"] = quan.Text;
+                dr["Quantity"] = prod1;
                 dr["Price"] = amount;
-                dt.Rows.Add(dr);
+                var rowExists = dt.Rows.Find(dr);
+                if(rowExists == null)
+                {
+                    dt.Rows.Add(dr);
+                }
                 dataGridView2.DataSource = dt;
                 decimal sum1 = Convert.ToDecimal(dt.Compute("SUM(Price)", string.Empty));
                 purchasetotal.Text = sum1.ToString();
@@ -147,15 +160,17 @@ namespace WindowsFormsApplication4
                 {
                     string query2 = "INSERT INTO purchasing(purchase_price, quantity_sold, product_product_id) VALUES( '" + purchase.Text + "', '" + sum + "', '" + id.Text + "');";
                     executeQuery(query2);
-                    addquan.Enabled = true;
                 }
                 else if(dt.Rows.Count == 1)
                 {
+                    string query4 = "UPDATE product SET quan='" + quan.Text + "', packquan='" + packqty.Text + "', tot_quantity='" + prod1 + "' where product_id='" + id.Text + "';";
                     string query3 = "UPDATE purchasing SET purchase_price='" + purchase.Text + "', quantity_sold='" + sum + "' where product_product_id='" + id + "';";
                     executeQuery(query3);
+                    executeQuery(query4);
                 }
                 string query1 = "UPDATE product SET store_price='" + purchase.Text + "', cur_price='" + purchase.Text + "', stock_in='" + sum + "' where product_id= '" + id.Text + "';";
                 executeQuery(query1);
+                addquan.Enabled = true;
             }
 
         }
@@ -169,9 +184,13 @@ namespace WindowsFormsApplication4
             prod.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
             unit1.Text = dataGridView1.Rows[e.RowIndex].Cells["name"].Value.ToString();
             cur_quan.Text = dataGridView1.Rows[e.RowIndex].Cells["stock_in"].Value.ToString();
+            purchase.Text = dataGridView1.Rows[e.RowIndex].Cells["store_price"].Value.ToString();
+            quan.Text = dataGridView1.Rows[e.RowIndex].Cells["quan"].Value.ToString();
+            packqty.Text = dataGridView1.Rows[e.RowIndex].Cells["packquan"].Value.ToString();
             unit1.Enabled = true;
             purchase.Enabled = true;
             quan.Enabled = true;
+            packqty.Enabled = true;
         }
 
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)

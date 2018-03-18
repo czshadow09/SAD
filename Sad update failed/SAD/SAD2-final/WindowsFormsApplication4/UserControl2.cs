@@ -205,6 +205,7 @@ namespace WindowsFormsApplication4
         private void usereport_Click(object sender, EventArgs e)
         {
             UserReport ur = new UserReport();
+            ur.id.Text = dataGridView1.CurrentRow.Cells["user_id"].Value.ToString();
             ur.Show();
         }
 

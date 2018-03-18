@@ -85,7 +85,7 @@
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.id2 = new System.Windows.Forms.TextBox();
             this.sales_id = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.refre = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -624,7 +624,7 @@
             this.panel5.Controls.Add(this.Close);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.panel7);
-            this.panel5.Location = new System.Drawing.Point(-3, -1);
+            this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1027, 686);
@@ -638,6 +638,7 @@
             this.monthnum.Name = "monthnum";
             this.monthnum.Size = new System.Drawing.Size(48, 22);
             this.monthnum.TabIndex = 145;
+            this.monthnum.Visible = false;
             // 
             // usern
             // 
@@ -646,6 +647,7 @@
             this.usern.Name = "usern";
             this.usern.Size = new System.Drawing.Size(119, 22);
             this.usern.TabIndex = 142;
+            this.usern.Visible = false;
             // 
             // label15
             // 
@@ -862,22 +864,23 @@
             this.sales_id.TabIndex = 134;
             this.sales_id.Visible = false;
             // 
-            // button2
+            // refre
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(389, 314);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 34);
-            this.button2.TabIndex = 144;
-            this.button2.Text = "Refresh";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = false;
+            this.refre.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.refre.FlatAppearance.BorderSize = 0;
+            this.refre.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.refre.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refre.ForeColor = System.Drawing.Color.White;
+            this.refre.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.refre.Location = new System.Drawing.Point(389, 314);
+            this.refre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.refre.Name = "refre";
+            this.refre.Size = new System.Drawing.Size(117, 34);
+            this.refre.TabIndex = 144;
+            this.refre.Text = "Refresh";
+            this.refre.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.refre.UseVisualStyleBackColor = false;
+            this.refre.Click += new System.EventHandler(this.refre_Click);
             // 
             // transaction
             // 
@@ -913,7 +916,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.bunifuSeparator1);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.refre);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "transaction";
             this.Size = new System.Drawing.Size(1021, 682);
@@ -992,7 +995,7 @@
         private System.Windows.Forms.ComboBox month;
         private System.Windows.Forms.TextBox sales_id;
         public System.Windows.Forms.TextBox usern;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button refre;
         private System.Windows.Forms.TextBox monthnum;
     }
 }

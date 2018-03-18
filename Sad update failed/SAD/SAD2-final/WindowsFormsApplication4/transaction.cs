@@ -29,7 +29,7 @@ namespace WindowsFormsApplication4
         }
         public void loadAll()
         {
-            string query = "select p.product_id, p.description, c.name, format(store_price,2) as store_price, stock_in from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in > 0;";
+            string query = "select p.product_id, p.description, c.name, format(cur_price,2) as store_price, stock_in from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in > 0;";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -101,7 +101,14 @@ namespace WindowsFormsApplication4
 
         private void Se_Click(object sender, EventArgs e)
         {
-
+            string query = "select p.product_id, p.description, c.name, format(cur_price,2) as store_price, stock_in from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in > 0 and p.description like '" + search.Text + "%';";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
         private int select_user_id;
 
@@ -118,6 +125,27 @@ namespace WindowsFormsApplication4
             payment.Clear();
             change.Clear();
             dt.Rows.Clear();
+        }
+
+        private void addrefr()
+        {
+            string query = "select p.product_id, p.description, c.name, format(cur_price,2) as store_price, stock_in from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in > 0;";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.Columns["product_id"].Visible = false;
+            dataGridView1.Columns["description"].HeaderText = "Product Name";
+            dataGridView1.Columns["name"].HeaderText = "Category";
+            dataGridView1.Columns["store_price"].HeaderText = "Price";
+            dataGridView1.Columns["stock_in"].HeaderText = "Available";
+            quan.Enabled = false;
+            add.Enabled = false;
+            date.Enabled = false;
+            quan.Clear();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -180,7 +208,7 @@ namespace WindowsFormsApplication4
             string query1 = "Update product SET stock_in='" + sale + "' WHERE product_id='" + id.Text + "';";
             executeQuery(query1);
             executeQuery(query2);
-            quan.Clear();
+            addrefr();
         }
 
         private void remove_Click(object sender, EventArgs e)
@@ -372,6 +400,11 @@ namespace WindowsFormsApplication4
             {
                 monthnum.Text = "12";
             }
+        }
+
+        private void refre_Click(object sender, EventArgs e)
+        {
+            refr();
         }
     }
 }
