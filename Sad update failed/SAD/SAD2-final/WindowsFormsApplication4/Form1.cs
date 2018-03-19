@@ -103,8 +103,6 @@ namespace WindowsFormsApplication4
                 String fn = dt.Rows[0][1].ToString();
                 String ln = dt.Rows[0][2].ToString();
                 Form2 f = new Form2();
-                transaction t = new transaction();
-                t.usern.Text = user;
                 f.usern.Text = user;
                 user = dt.Rows[0][2].ToString() + " "  + dt.Rows[0][1].ToString();
                 id = dt.Rows[0][0].ToString();

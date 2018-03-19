@@ -48,6 +48,8 @@ namespace WindowsFormsApplication4
             checkout.Enabled = false;
             date.Enabled = false;
             dataGridView1.Visible = false;
+            morder.Enabled = true;
+            refresh.Enabled = false;
         }
 
         public void loadAll2()
@@ -229,32 +231,39 @@ namespace WindowsFormsApplication4
             dataGridView2.DataSource = dt;
             decimal sum = Convert.ToDecimal(dt.Compute("SUM(Amount)", string.Empty));
             subtot.Text = sum.ToString();
-            remove.Enabled = true;
             string query2 = "INSERT INTO sales(quantity_hand, product_product_id, sales_order_order_id) VALUES('" + quan.Text + "', (SELECT product_id FROM product WHERE description='" + name.Text + "'), '" + ordid.Text + "');";
             string query1 = "Update product SET stock_in='" + sale + "' WHERE product_id='" + id.Text + "';";
             executeQuery(query1);
             executeQuery(query2);
             addrefr();
+            avquan.Text = sale.ToString();
+            refresh.Enabled = true;
         }
 
         private void remove_Click(object sender, EventArgs e)
         {
             int avq = Int32.Parse(avquan.Text);
-            int q = Int32.Parse(quan.Text);
+            int q = Int32.Parse(quan2.Text);
             int sale = avq + q;
-            string query1 = "Update product SET stock_in='" + sale + "' WHERE product_id='" + id2.Text + "';";
+            string id = id2.Text;
+            string query1 = "Update product SET stock_in='" + sale + "' WHERE description='" + id2.Text + "';";
             executeQuery(query1);
             int row = dataGridView2.CurrentCell.RowIndex;
             dataGridView2.Rows.RemoveAt(row);
+            addrefr();
         }
 
         private void refresh_Click(object sender, EventArgs e)
         {
             DialogResult dialog = MessageBox.Show("Are you sure you want to cancel your order?",
-          "Log Out", MessageBoxButtons.YesNo);
+          "Cancel Order", MessageBoxButtons.YesNo);
             if (dialog == DialogResult.Yes)
             {
-                
+                string query1 = "delete from sales where sales_order_order_id = '" + ordid.Text + "';";
+                string query = "delete from sales_order where order_id = '" + ordid.Text + "';";
+                executeQuery(query1);
+                executeQuery(query);
+                refr();
             }
             else
             {
@@ -295,15 +304,6 @@ namespace WindowsFormsApplication4
 
         private void order_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
-            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='rjr');";
-            conn.Open();
-            MySqlCommand com = new MySqlCommand(query, conn);
-            MySqlDataAdapter adp = new MySqlDataAdapter(com);
-            conn.Close();
-            DataTable dt = new DataTable();
-            adp.Fill(dt);
-            string id = dt.Rows[0][0].ToString();
             if (String.IsNullOrEmpty(payment.Text) || String.IsNullOrEmpty(change.Text))
             {
                 MessageBox.Show("Please fill up the field.", "Test", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -350,7 +350,9 @@ namespace WindowsFormsApplication4
         private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             select_user_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
-            id2.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
+            id2.Text = dataGridView2.Rows[e.RowIndex].Cells["Product"].Value.ToString();
+            quan2.Text = dataGridView2.Rows[e.RowIndex].Cells["Quantity"].Value.ToString();
+            remove.Enabled = true;
         }
 
         private void month_SelectedIndexChanged(object sender, EventArgs e)
@@ -420,6 +422,8 @@ namespace WindowsFormsApplication4
 
         private void morder_Click(object sender, EventArgs e)
         {
+            Form2 f2 = new Form2();
+            string user = f2.usern.Text;
             string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='rjr');";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
@@ -431,6 +435,7 @@ namespace WindowsFormsApplication4
             string query1 = "insert into sales_order(order_date, tot_consume, user_user_id) values(now(), 0, '" + id + "');";
             executeQuery(query1);
             dataGridView1.Visible = true;
+            morder.Enabled = false;
         }
 
         private void dataGridView3_CellClick_1(object sender, DataGridViewCellEventArgs e)

@@ -81,6 +81,7 @@ namespace WindowsFormsApplication4
             quan.Enabled = false;
             packqty.Enabled = false;
             addquan.Enabled = false;
+            dataGridView1.Enabled = false;
         }
         public void loadAll2()
         {
@@ -324,6 +325,7 @@ namespace WindowsFormsApplication4
             string id = dt.Rows[0][0].ToString();
             string query1 = "insert into purchase_order(purchase_date, tot_consume, user_user_id) values(now(), 0, '" + id + "');";
             executeQuery(query1);
+            dataGridView1.Enabled = true;
         }
     }
 }
