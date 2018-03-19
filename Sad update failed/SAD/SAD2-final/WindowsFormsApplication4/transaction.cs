@@ -47,6 +47,7 @@ namespace WindowsFormsApplication4
             remove.Enabled = false;
             checkout.Enabled = false;
             date.Enabled = false;
+            dataGridView1.Visible = false;
         }
 
         public void loadAll2()
@@ -67,6 +68,23 @@ namespace WindowsFormsApplication4
                 decimal sum = Convert.ToDecimal(dt.Compute("SUM(tot_consume)", string.Empty));
                 purchasetotal.Text = sum.ToString();
             }
+        }
+        public void loadAll3()
+        {
+            string query = "select so.order_id, p.description, p.store_price, s.quantity_hand, p.store_price * s.quantity_hand as SubTotal from sales s inner join product p on s.product_product_id = p.product_id inner join sales_order so on s.sales_order_order_id = so.order_id where so.order_id = '" + ordid1.Text + "';";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            ordid1.Text = dt.Rows[0][0].ToString();
+            dataGridView4.DataSource = dt;
+            dataGridView4.Columns["order_id"].Visible = false;
+            dataGridView4.Columns["description"].HeaderText = "Product";
+            dataGridView4.Columns["store_price"].HeaderText = "Price";
+            dataGridView4.Columns["quantity_hand"].HeaderText = "Quantity Hand";
+            dataGridView4.Columns["SubTotal"].HeaderText = "Subtotal";
         }
         private void CreateDataTableColumns()
         {
@@ -150,6 +168,14 @@ namespace WindowsFormsApplication4
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            string query = "select order_id from sales_order where tot_consume = 0;";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            ordid.Text = dt.Rows[0][0].ToString();
             select_user_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
             id.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
             name.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
@@ -204,7 +230,7 @@ namespace WindowsFormsApplication4
             decimal sum = Convert.ToDecimal(dt.Compute("SUM(Amount)", string.Empty));
             subtot.Text = sum.ToString();
             remove.Enabled = true;
-            string query2 = "INSERT INTO sales(quantity_hand, product_product_id) VALUES('" + quan.Text + "', (SELECT product_id FROM product WHERE description='" + name.Text + "'));";
+            string query2 = "INSERT INTO sales(quantity_hand, product_product_id, sales_order_order_id) VALUES('" + quan.Text + "', (SELECT product_id FROM product WHERE description='" + name.Text + "'), '" + ordid.Text + "');";
             string query1 = "Update product SET stock_in='" + sale + "' WHERE product_id='" + id.Text + "';";
             executeQuery(query1);
             executeQuery(query2);
@@ -285,7 +311,7 @@ namespace WindowsFormsApplication4
 
             else
             {
-                string query1 = "Insert Into sales_order(order_date, tot_consume, user_user_id) values(now(), '" + subtot.Text + "', '" + id + "')";
+                string query1 = "UPDATE sales_order SET tot_consume= '" + subtot.Text + "' where order_id='" + ordid.Text + "';";
                 executeQuery(query1);
                 MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 panel3.Hide();
@@ -314,21 +340,6 @@ namespace WindowsFormsApplication4
             {
                 checkout.Enabled = true;
             }
-        }
-
-        private void Update_Click(object sender, EventArgs e)
-        {
-            panel5.Visible = false;
-        }
-
-        private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataRow dr = dt.NewRow();
-            dr["Item"] = name.Text;
-            dr["Quantity_On_Hand"] = quan.Text;
-            dr["SubTotal"] = amount.Text;
-            dt.Rows.Add(dr);
-            dataGridView4.DataSource = dt;
         }
 
         private void Close_Click(object sender, EventArgs e)
@@ -405,6 +416,28 @@ namespace WindowsFormsApplication4
         private void refre_Click(object sender, EventArgs e)
         {
             refr();
+        }
+
+        private void morder_Click(object sender, EventArgs e)
+        {
+            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='rjr');";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            string id = dt.Rows[0][0].ToString();
+            string query1 = "insert into sales_order(order_date, tot_consume, user_user_id) values(now(), 0, '" + id + "');";
+            executeQuery(query1);
+            dataGridView1.Visible = true;
+        }
+
+        private void dataGridView3_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            select_user_id = int.Parse(dataGridView3.Rows[e.RowIndex].Cells["order_id"].Value.ToString());
+            ordid1.Text = dataGridView3.Rows[e.RowIndex].Cells["order_id"].Value.ToString();
+            loadAll3();
         }
     }
 }

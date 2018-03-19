@@ -98,6 +98,23 @@ namespace WindowsFormsApplication4
             dataGridView3.Columns["tot_consume"].HeaderText = "Total Amount";
             dataGridView3.Columns["lastname"].HeaderText = "Encoder";
         }
+        public void loadAll3()
+        {
+            string query = "select po.plist_id, pr.description, p.purchase_price, p.quantity_sold, p.purchase_price * p.quantity_sold as Subtotal from purchasing p inner join product pr on p.product_product_id = pr.product_id inner join purchase_order po on p.purchase_order_plist_id = po.plist_id where po.plist_id = '" + ordid1.Text + "';";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            ordid1.Text = dt.Rows[0][0].ToString();
+            dataGridView4.DataSource = dt;
+            dataGridView4.Columns["plist_id"].Visible = false;
+            dataGridView4.Columns["description"].HeaderText = "Product";
+            dataGridView4.Columns["purchase_price"].HeaderText = "Price";
+            dataGridView4.Columns["quantity_sold"].HeaderText = "Quantity Hand";
+            dataGridView4.Columns["Subtotal"].HeaderText = "Subtotal";
+        }
 
         private void refr()
         {
@@ -105,6 +122,7 @@ namespace WindowsFormsApplication4
             unit1.Clear();
             purchase.Clear();
             quan.Clear();
+            packqty.Clear();
             purchasetotal.Clear();
             dt.Rows.Clear();
         }
@@ -158,15 +176,15 @@ namespace WindowsFormsApplication4
                 purchasetotal.Text = sum1.ToString();
                 if(dt.Rows.Count > 1)
                 {
-                    string query2 = "INSERT INTO purchasing(purchase_price, quantity_sold, product_product_id) VALUES( '" + purchase.Text + "', '" + sum + "', '" + id.Text + "');";
+                    string query2 = "INSERT INTO purchasing(purchase_price, quantity_sold, product_product_id, purchase_order_plist_id) VALUES( '" + purchase.Text + "', '" + sum + "', '" + id.Text + "', '" + ordid.Text + "');";
                     executeQuery(query2);
                 }
                 else if(dt.Rows.Count == 1)
                 {
                     string query4 = "UPDATE product SET quan='" + quan.Text + "', packquan='" + packqty.Text + "', tot_quantity='" + prod1 + "' where product_id='" + id.Text + "';";
-                    string query3 = "UPDATE purchasing SET purchase_price='" + purchase.Text + "', quantity_sold='" + sum + "' where product_product_id='" + id + "';";
-                    executeQuery(query3);
                     executeQuery(query4);
+                    string query2 = "INSERT INTO purchasing(purchase_price, quantity_sold, product_product_id, purchase_order_plist_id) VALUES( '" + purchase.Text + "', '" + sum + "', '" + id.Text + "', '" + ordid.Text + "');";
+                    executeQuery(query2);
                 }
                 string query1 = "UPDATE product SET store_price='" + purchase.Text + "', cur_price='" + purchase.Text + "', stock_in='" + sum + "' where product_id= '" + id.Text + "';";
                 executeQuery(query1);
@@ -179,6 +197,14 @@ namespace WindowsFormsApplication4
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            string query = "select plist_id from purchase_order where tot_consume = 0;";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            ordid.Text = dt.Rows[0][0].ToString();
             select_id = int.Parse(dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString());
             id.Text = dataGridView1.Rows[e.RowIndex].Cells["product_id"].Value.ToString();
             prod.Text = dataGridView1.Rows[e.RowIndex].Cells["description"].Value.ToString();
@@ -212,7 +238,7 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             int id1 = Int32.Parse(dt.Rows[0][0].ToString());
 
-            string query1 = "Insert Into purchase_order(purchase_date, tot_consume, user_user_id) values(now(), '" + purchasetotal.Text + "', '" + id1 + "')";
+            string query1 = "UPDATE purchase_order SET tot_consume='" + purchasetotal.Text + "' where plist_id='" + ordid.Text + "';";
             executeQuery(query1);
         }
 
@@ -272,14 +298,32 @@ namespace WindowsFormsApplication4
             print.Show();
         }
 
+        private int select_user_id;
+
         private void dataGridView3_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+            select_user_id = int.Parse(dataGridView3.Rows[e.RowIndex].Cells["plist_id"].Value.ToString());
+            ordid1.Text = dataGridView3.Rows[e.RowIndex].Cells["plist_id"].Value.ToString();
+            loadAll3();
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void morder_Click(object sender, EventArgs e)
+        {
+            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='rjr');";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            string id = dt.Rows[0][0].ToString();
+            string query1 = "insert into purchase_order(purchase_date, tot_consume, user_user_id) values(now(), 0, '" + id + "');";
+            executeQuery(query1);
         }
     }
 }
