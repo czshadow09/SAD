@@ -34,8 +34,8 @@ namespace WindowsFormsApplication4
         {
             dt.Columns.Add("Product");
             dt.Columns.Add("Unit");
-            dt.Columns.Add("Quantity");
-            dt.Columns.Add("Price", typeof(decimal));
+            dt.Columns.Add("PackQty");
+            dt.Columns.Add("TotalPrice", typeof(decimal));
             DataColumn[] keyColumns = new DataColumn[1];
             keyColumns[0] = dt.Columns["Product"];
             dt.PrimaryKey = keyColumns;
@@ -165,15 +165,15 @@ namespace WindowsFormsApplication4
                 DataRow dr = dt.NewRow();
                 dr["Product"] = prod.Text;
                 dr["Unit"] = unit1.Text;
-                dr["Quantity"] = prod1;
-                dr["Price"] = amount;
+                dr["PackQty"] = prod1;
+                dr["TotalPrice"] = amount;
                 var rowExists = dt.Rows.Find(dr);
                 if(rowExists == null)
                 {
                     dt.Rows.Add(dr);
                 }
                 dataGridView2.DataSource = dt;
-                decimal sum1 = Convert.ToDecimal(dt.Compute("SUM(Price)", string.Empty));
+                decimal sum1 = Convert.ToDecimal(dt.Compute("SUM(TotalPrice)", string.Empty));
                 purchasetotal.Text = sum1.ToString();
                 if(dt.Rows.Count > 1)
                 {

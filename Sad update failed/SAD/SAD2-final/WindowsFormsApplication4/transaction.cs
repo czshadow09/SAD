@@ -97,6 +97,17 @@ namespace WindowsFormsApplication4
 
         private void transaction_Load(object sender, EventArgs e)
         {
+            string query = "SELECT name FROM category;";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            for (int x = 0; x < dt.Rows.Count; x++)
+            {
+                categ.Items.Add(dt.Rows[x][0].ToString());
+            }
             CreateDataTableColumns();
             loadAll();
             loadAll2();
@@ -443,6 +454,18 @@ namespace WindowsFormsApplication4
             select_user_id = int.Parse(dataGridView3.Rows[e.RowIndex].Cells["order_id"].Value.ToString());
             ordid1.Text = dataGridView3.Rows[e.RowIndex].Cells["order_id"].Value.ToString();
             loadAll3();
+        }
+
+        private void categ_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string query = "select p.product_id, p.description, c.name, format(cur_price,2) as store_price, stock_in from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in > 0 and c.name='" + categ.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView1.DataSource = dt;
         }
     }
 }
