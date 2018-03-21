@@ -35,11 +35,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.addquan = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.Se = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bunifuSeparator2 = new Bunifu.Framework.UI.BunifuSeparator();
             this.price = new System.Windows.Forms.TextBox();
             this.cur_quan = new System.Windows.Forms.TextBox();
@@ -57,23 +60,20 @@
             this.packqty = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.quan = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Add = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Add = new System.Windows.Forms.Button();
             this.search = new System.Windows.Forms.TextBox();
-            this.Se = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.Year = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Year = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.Close = new System.Windows.Forms.Button();
             this.ordid = new System.Windows.Forms.TextBox();
             this.ordid1 = new System.Windows.Forms.TextBox();
@@ -85,8 +85,8 @@
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
@@ -176,6 +176,36 @@
             this.panel5.Size = new System.Drawing.Size(440, 293);
             this.panel5.TabIndex = 161;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(147, 12);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(117, 26);
+            this.label6.TabIndex = 110;
+            this.label6.Text = "Item Status";
+            // 
+            // Se
+            // 
+            this.Se.AccessibleDescription = "";
+            this.Se.FlatAppearance.BorderSize = 0;
+            this.Se.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Se.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Se.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Se.Image = ((System.Drawing.Image)(resources.GetObject("Se.Image")));
+            this.Se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Se.Location = new System.Drawing.Point(249, 250);
+            this.Se.Margin = new System.Windows.Forms.Padding(2);
+            this.Se.Name = "Se";
+            this.Se.Size = new System.Drawing.Size(41, 42);
+            this.Se.TabIndex = 113;
+            this.Se.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Se.UseVisualStyleBackColor = true;
+            this.Se.Click += new System.EventHandler(this.Se_Click);
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Gainsboro;
@@ -186,6 +216,35 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(388, 263);
             this.panel4.TabIndex = 160;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(86, 9);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(198, 26);
+            this.label5.TabIndex = 108;
+            this.label5.Text = "Purchase Order List";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(21, 47);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(343, 199);
+            this.dataGridView1.TabIndex = 155;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // printPreviewDialog1
             // 
@@ -217,23 +276,6 @@
             this.dataGridView2.Size = new System.Drawing.Size(417, 178);
             this.dataGridView2.TabIndex = 156;
             this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Menu;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 47);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(343, 199);
-            this.dataGridView1.TabIndex = 155;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // bunifuSeparator2
             // 
@@ -445,6 +487,38 @@
             this.quan.Size = new System.Drawing.Size(92, 28);
             this.quan.TabIndex = 118;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.label1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(17, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(56, 22);
+            this.label1.TabIndex = 122;
+            this.label1.Text = "Price:";
+            // 
+            // Add
+            // 
+            this.Add.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.Add.FlatAppearance.BorderSize = 0;
+            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Add.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add.ForeColor = System.Drawing.Color.White;
+            this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
+            this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Add.Location = new System.Drawing.Point(21, 90);
+            this.Add.Margin = new System.Windows.Forms.Padding(2);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(178, 63);
+            this.Add.TabIndex = 111;
+            this.Add.Text = " Add New Item";
+            this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Add.UseVisualStyleBackColor = false;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -471,62 +545,6 @@
             this.label3.TabIndex = 121;
             this.label3.Text = "Unit:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(17, 48);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 22);
-            this.label1.TabIndex = 122;
-            this.label1.Text = "Price:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(147, 12);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(117, 26);
-            this.label6.TabIndex = 110;
-            this.label6.Text = "Item Status";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cambria", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(86, 9);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 26);
-            this.label5.TabIndex = 108;
-            this.label5.Text = "Purchase Order List";
-            // 
-            // Add
-            // 
-            this.Add.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.Add.FlatAppearance.BorderSize = 0;
-            this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Add.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Add.ForeColor = System.Drawing.Color.White;
-            this.Add.Image = ((System.Drawing.Image)(resources.GetObject("Add.Image")));
-            this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(21, 90);
-            this.Add.Margin = new System.Windows.Forms.Padding(2);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(178, 63);
-            this.Add.TabIndex = 111;
-            this.Add.Text = " Add New Item";
-            this.Add.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Add.UseVisualStyleBackColor = false;
-            this.Add.Click += new System.EventHandler(this.Add_Click);
-            // 
             // search
             // 
             this.search.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -536,24 +554,6 @@
             this.search.Size = new System.Drawing.Size(232, 27);
             this.search.TabIndex = 112;
             this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
-            // 
-            // Se
-            // 
-            this.Se.AccessibleDescription = "";
-            this.Se.FlatAppearance.BorderSize = 0;
-            this.Se.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Se.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Se.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.Se.Image = ((System.Drawing.Image)(resources.GetObject("Se.Image")));
-            this.Se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Se.Location = new System.Drawing.Point(249, 250);
-            this.Se.Margin = new System.Windows.Forms.Padding(2);
-            this.Se.Name = "Se";
-            this.Se.Size = new System.Drawing.Size(41, 42);
-            this.Se.TabIndex = 113;
-            this.Se.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.Se.UseVisualStyleBackColor = true;
-            this.Se.Click += new System.EventHandler(this.Se_Click);
             // 
             // label2
             // 
@@ -590,43 +590,33 @@
             this.panel3.Size = new System.Drawing.Size(878, 542);
             this.panel3.TabIndex = 164;
             // 
-            // label10
+            // dataGridView4
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label10.Location = new System.Drawing.Point(500, 484);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 21);
-            this.label10.TabIndex = 141;
-            this.label10.Text = "Year:";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.dataGridView4.AllowUserToAddRows = false;
+            this.dataGridView4.AllowUserToDeleteRows = false;
+            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(508, 50);
+            this.dataGridView4.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.ReadOnly = true;
+            this.dataGridView4.RowTemplate.Height = 24;
+            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView4.Size = new System.Drawing.Size(334, 376);
+            this.dataGridView4.TabIndex = 163;
             // 
-            // label8
+            // label12
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label8.Font = new System.Drawing.Font("Calibri", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label8.Location = new System.Drawing.Point(109, 20);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(222, 28);
-            this.label8.TabIndex = 137;
-            this.label8.Text = "Purchased Transaction";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label9.Location = new System.Drawing.Point(43, 487);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 21);
-            this.label9.TabIndex = 140;
-            this.label9.Text = "Month:";
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.label12.Font = new System.Drawing.Font("Calibri", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label12.Location = new System.Drawing.Point(602, 20);
+            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(160, 28);
+            this.label12.TabIndex = 136;
+            this.label12.Text = "Item Purchased";
             // 
             // Year
             // 
@@ -662,33 +652,43 @@
             this.Year.TabIndex = 139;
             this.Year.SelectedIndexChanged += new System.EventHandler(this.Year_SelectedIndexChanged);
             // 
-            // label12
+            // label9
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label12.Font = new System.Drawing.Font("Calibri", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label12.Location = new System.Drawing.Point(602, 20);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(160, 28);
-            this.label12.TabIndex = 136;
-            this.label12.Text = "Item Purchased";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label9.Location = new System.Drawing.Point(43, 487);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 21);
+            this.label9.TabIndex = 140;
+            this.label9.Text = "Month:";
             // 
-            // dataGridView4
+            // label8
             // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(508, 50);
-            this.dataGridView4.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView4.Size = new System.Drawing.Size(334, 376);
-            this.dataGridView4.TabIndex = 163;
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.label8.Font = new System.Drawing.Font("Calibri", 16.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label8.Location = new System.Drawing.Point(109, 20);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(222, 28);
+            this.label8.TabIndex = 137;
+            this.label8.Text = "Purchased Transaction";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label10.Location = new System.Drawing.Point(500, 484);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(51, 21);
+            this.label10.TabIndex = 141;
+            this.label10.Text = "Year:";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // Close
             // 
@@ -836,8 +836,8 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);

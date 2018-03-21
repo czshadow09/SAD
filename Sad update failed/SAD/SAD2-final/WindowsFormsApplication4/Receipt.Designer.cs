@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication4
 {
-    partial class PurchaseReport
+    partial class Receipt
     {
         /// <summary>
         /// Required designer variable.
@@ -31,51 +31,51 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.Reports = new WindowsFormsApplication4.Reports();
-            this.PurchaseOrderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.PurchaseOrderTableAdapter = new WindowsFormsApplication4.ReportsTableAdapters.PurchaseOrderTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.Reports)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PurchaseOrderBindingSource)).BeginInit();
+            this.DataSet1 = new WindowsFormsApplication4.DataSet1();
+            this.Print_ReceiptBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Print_ReceiptTableAdapter = new WindowsFormsApplication4.DataSet1TableAdapters.Print_ReceiptTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Print_ReceiptBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "Purchasing";
-            reportDataSource1.Value = this.PurchaseOrderBindingSource;
+            reportDataSource1.Name = "Receipt";
+            reportDataSource1.Value = this.Print_ReceiptBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApplication4.Purchasing.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApplication4.Receipt.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(284, 262);
+            this.reportViewer1.Size = new System.Drawing.Size(294, 227);
             this.reportViewer1.TabIndex = 0;
             // 
-            // Reports
+            // DataSet1
             // 
-            this.Reports.DataSetName = "Reports";
-            this.Reports.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.DataSet1.DataSetName = "DataSet1";
+            this.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // PurchaseOrderBindingSource
+            // Print_ReceiptBindingSource
             // 
-            this.PurchaseOrderBindingSource.DataMember = "PurchaseOrder";
-            this.PurchaseOrderBindingSource.DataSource = this.Reports;
+            this.Print_ReceiptBindingSource.DataMember = "Print_Receipt";
+            this.Print_ReceiptBindingSource.DataSource = this.DataSet1;
             // 
-            // PurchaseOrderTableAdapter
+            // Print_ReceiptTableAdapter
             // 
-            this.PurchaseOrderTableAdapter.ClearBeforeFill = true;
+            this.Print_ReceiptTableAdapter.ClearBeforeFill = true;
             // 
-            // PurchaseReport
+            // Receipt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(294, 227);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "PurchaseReport";
-            this.Text = "PurchaseReport";
-            this.Load += new System.EventHandler(this.PurchaseReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Reports)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PurchaseOrderBindingSource)).EndInit();
+            this.Name = "Receipt";
+            this.Text = "Receipt";
+            this.Load += new System.EventHandler(this.Receipt_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Print_ReceiptBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,8 +83,8 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource PurchaseOrderBindingSource;
-        private Reports Reports;
-        private ReportsTableAdapters.PurchaseOrderTableAdapter PurchaseOrderTableAdapter;
+        private System.Windows.Forms.BindingSource Print_ReceiptBindingSource;
+        private DataSet1 DataSet1;
+        private DataSet1TableAdapters.Print_ReceiptTableAdapter Print_ReceiptTableAdapter;
     }
 }

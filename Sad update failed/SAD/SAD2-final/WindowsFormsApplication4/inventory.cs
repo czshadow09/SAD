@@ -206,5 +206,11 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             dataGridView2.DataSource = dt;
         }
+
+        private void print_Click(object sender, EventArgs e)
+        {
+            Inventory_Report print = new Inventory_Report();
+            print.Show();
+        }
     }
 }

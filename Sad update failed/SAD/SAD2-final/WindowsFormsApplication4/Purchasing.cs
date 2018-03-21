@@ -295,7 +295,7 @@ namespace WindowsFormsApplication4
 
         private void print_Click(object sender, EventArgs e)
         {
-            PurchaseReport print = new PurchaseReport();
+            Purchase_List print = new Purchase_List();
             print.Show();
         }
 

@@ -6,21 +6,30 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.135cm</Width>
+              <Width>2.5181cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.87042cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.92333cm</Width>
+              <Width>1.42357cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.76458cm</Width>
+              <Width>2.32315cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.5cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.5cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>2.5cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.78521cm</Height>
+              <Height>0.81167cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -31,7 +40,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Product Name</Value>
+                              <Value>Date Added</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -72,7 +81,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Qty. Unsold</Value>
+                              <Value>Product </Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -113,7 +122,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Qty. Sold</Value>
+                              <Value>Qty. Requested</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -143,11 +152,95 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <ColSpan>2</ColSpan>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell />
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Price</Value>
+                              <Style>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BottomBorder>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox7">
+                    <Textbox Name="Textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Packed Qty.</Value>
+                              <Style>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#666666</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BottomBorder>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox13">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -167,7 +260,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <rd:DefaultName>Textbox13</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -191,6 +284,41 @@
             <TablixRow>
               <Height>0.6cm</Height>
               <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="purchase_date">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!purchase_date.Value</Value>
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>purchase_date</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
                 <TablixCell>
                   <CellContents>
                     <Textbox Name="description">
@@ -228,14 +356,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="stock_in">
+                    <Textbox Name="quan">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!stock_in.Value)</Value>
+                              <Value>=Sum(Fields!quan.Value)</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -243,11 +371,11 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Right</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>stock_in</rd:DefaultName>
+                      <rd:DefaultName>quan</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -263,14 +391,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="StockOut">
+                    <Textbox Name="Unit">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!StockOut.Value)</Value>
+                              <Value>=Fields!Unit.Value</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -278,11 +406,11 @@
                             </TextRun>
                           </TextRuns>
                           <Style>
-                            <TextAlign>Center</TextAlign>
+                            <TextAlign>Left</TextAlign>
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>StockOut</rd:DefaultName>
+                      <rd:DefaultName>Unit</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -298,14 +426,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="total_quantity">
+                    <Textbox Name="purchase_price">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!total_quantity.Value)</Value>
+                              <Value>=Sum(Fields!purchase_price.Value)</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -317,7 +445,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>total_quantity</rd:DefaultName>
+                      <rd:DefaultName>purchase_price</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -329,6 +457,77 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="packquan">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Sum(Fields!packquan.Value)</Value>
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>packquan</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="quantity_purchase">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!quantity_purchase.Value + " Pieces"</Value>
+                              <Style>
+                                <FontWeight>Normal</FontWeight>
+                                <Color>#333333</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>quantity_purchase</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                        <BackgroundColor>White</BackgroundColor>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -337,6 +536,9 @@
         </TablixBody>
         <TablixColumnHierarchy>
           <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
             <TablixMember />
             <TablixMember />
             <TablixMember />
@@ -353,11 +555,10 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>Inventory_Report</DataSetName>
-        <Top>0.17639cm</Top>
-        <Left>2.5148cm</Left>
-        <Height>1.38521cm</Height>
-        <Width>11.69333cm</Width>
+        <DataSetName>Purchasing</DataSetName>
+        <Left>0.635cm</Left>
+        <Height>1.41167cm</Height>
+        <Width>16.26482cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -368,7 +569,7 @@
     <Height>2in</Height>
     <Style />
   </Body>
-  <Width>6.5in</Width>
+  <Width>6.88976in</Width>
   <Page>
     <PageHeader>
       <Height>2.54cm</Height>
@@ -382,7 +583,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Inventory Report</Value>
+                  <Value>Purchase List</Value>
                   <Style>
                     <FontSize>18pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -394,9 +595,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>0.27084in</Top>
-          <Left>2.13491in</Left>
+          <Left>2.62146in</Left>
           <Height>0.45833in</Height>
-          <Width>2.19893in</Width>
+          <Width>1.93851in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -434,8 +635,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>0.59958cm</Top>
-          <Left>13.46729cm</Left>
+          <Top>0.62604cm</Top>
+          <Left>14.41791cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <Style>
@@ -463,11 +664,71 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.59958cm</Top>
-          <Left>11.54938cm</Left>
+          <Top>0.62604cm</Top>
+          <Left>12.5cm</Left>
           <Height>0.6cm</Height>
           <Width>1.91792cm</Width>
           <ZIndex>1</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox18">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Page: </Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox18</rd:DefaultName>
+          <Top>0.62604cm</Top>
+          <Left>0.3356cm</Left>
+          <Height>0.6cm</Height>
+          <Width>1.15062cm</Width>
+          <ZIndex>2</ZIndex>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <PaddingLeft>2pt</PaddingLeft>
+            <PaddingRight>2pt</PaddingRight>
+            <PaddingTop>2pt</PaddingTop>
+            <PaddingBottom>2pt</PaddingBottom>
+          </Style>
+        </Textbox>
+        <Textbox Name="Textbox19">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>=Globals!PageNumber</Value>
+                  <Style />
+                </TextRun>
+              </TextRuns>
+              <Style />
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox19</rd:DefaultName>
+          <Top>0.62604cm</Top>
+          <Left>1.48622cm</Left>
+          <Height>0.6cm</Height>
+          <Width>2.5cm</Width>
+          <ZIndex>3</ZIndex>
           <Style>
             <Border>
               <Style>None</Style>
@@ -501,43 +762,55 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>af909f9a-e16d-43ab-bfd2-2cc998f2e932</rd:DataSourceID>
+      <rd:DataSourceID>b2d11ede-4a45-40f7-8f70-d81bf79f18b8</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="Inventory_Report">
+    <DataSet Name="Purchasing">
       <Query>
         <DataSourceName>DataSet1</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
+        <Field Name="purchase_date">
+          <DataField>purchase_date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="description">
           <DataField>description</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="stock_in">
-          <DataField>stock_in</DataField>
+        <Field Name="Unit">
+          <DataField>Unit</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="purchase_price">
+          <DataField>purchase_price</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="quan">
+          <DataField>quan</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="StockOut">
-          <DataField>StockOut</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+        <Field Name="packquan">
+          <DataField>packquan</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="total_quantity">
-          <DataField>total_quantity</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
+        <Field Name="quantity_purchase">
+          <DataField>quantity_purchase</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1</rd:DataSetName>
         <rd:SchemaPath>C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\DataSet1.xsd</rd:SchemaPath>
-        <rd:TableName>Inventory_Report</rd:TableName>
+        <rd:TableName>Purchase1</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>Inventory_ReportTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>Purchase1TableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>0121485f-a4e4-446d-a1d9-504ebc16bda5</rd:ReportID>
+  <rd:ReportID>1e03a4a1-9081-4ad3-9238-77d200126e04</rd:ReportID>
 </Report>

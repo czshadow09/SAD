@@ -529,5 +529,11 @@ namespace WindowsFormsApplication4
         {
 
         }
+
+        private void print_Click(object sender, EventArgs e)
+        {
+            Receipt print = new Receipt();
+            print.Show();
+        }
     }
 }

@@ -6,21 +6,21 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>3.135cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.87042cm</Width>
+              <Width>4.00812cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.92333cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.76458cm</Width>
+              <Width>2.5cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.78521cm</Height>
+              <Height>0.83812cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -31,7 +31,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Product Name</Value>
+                              <Value>Product</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -72,7 +72,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Qty. Unsold</Value>
+                              <Value>Qty. Purchased</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -113,7 +113,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Qty. Sold</Value>
+                              <Value>Price</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -154,7 +154,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Total Pieces</Value>
+                              <Value>Total due</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -228,14 +228,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="stock_in">
+                    <Textbox Name="QuantitySold">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!stock_in.Value)</Value>
+                              <Value>=Sum(Fields!QuantitySold.Value)</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -247,7 +247,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>stock_in</rd:DefaultName>
+                      <rd:DefaultName>QuantitySold</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -263,14 +263,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="StockOut">
+                    <Textbox Name="store_price">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!StockOut.Value)</Value>
+                              <Value>=Sum(Fields!store_price.Value)</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -282,7 +282,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>StockOut</rd:DefaultName>
+                      <rd:DefaultName>store_price</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -298,14 +298,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="total_quantity">
+                    <Textbox Name="SubTotal">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Sum(Fields!total_quantity.Value)</Value>
+                              <Value>=Sum(Fields!SubTotal.Value)</Value>
                               <Style>
                                 <FontWeight>Normal</FontWeight>
                                 <Color>#333333</Color>
@@ -317,7 +317,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>total_quantity</rd:DefaultName>
+                      <rd:DefaultName>SubTotal</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -353,11 +353,10 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>Inventory_Report</DataSetName>
-        <Top>0.17639cm</Top>
-        <Left>2.5148cm</Left>
-        <Height>1.38521cm</Height>
-        <Width>11.69333cm</Width>
+        <DataSetName>Receipt</DataSetName>
+        <Left>2.54cm</Left>
+        <Height>1.43812cm</Height>
+        <Width>11.50813cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -382,7 +381,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Inventory Report</Value>
+                  <Value>Receipt</Value>
                   <Style>
                     <FontSize>18pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -394,9 +393,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox12</rd:DefaultName>
           <Top>0.27084in</Top>
-          <Left>2.13491in</Left>
+          <Left>2.65574in</Left>
           <Height>0.45833in</Height>
-          <Width>2.19893in</Width>
+          <Width>0.99059in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -434,8 +433,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox5</rd:DefaultName>
-          <Top>0.59958cm</Top>
-          <Left>13.46729cm</Left>
+          <Top>0.62604cm</Top>
+          <Left>13.335cm</Left>
           <Height>0.6cm</Height>
           <Width>2.5cm</Width>
           <Style>
@@ -463,8 +462,8 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox6</rd:DefaultName>
-          <Top>0.59958cm</Top>
-          <Left>11.54938cm</Left>
+          <Top>0.62604cm</Top>
+          <Left>11.41709cm</Left>
           <Height>0.6cm</Height>
           <Width>1.91792cm</Width>
           <ZIndex>1</ZIndex>
@@ -501,11 +500,11 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>af909f9a-e16d-43ab-bfd2-2cc998f2e932</rd:DataSourceID>
+      <rd:DataSourceID>4a0f2447-dbb0-4663-8417-860cbfcb8fd2</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="Inventory_Report">
+    <DataSet Name="Receipt">
       <Query>
         <DataSourceName>DataSet1</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
@@ -515,29 +514,29 @@
           <DataField>description</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="stock_in">
-          <DataField>stock_in</DataField>
+        <Field Name="QuantitySold">
+          <DataField>QuantitySold</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="StockOut">
-          <DataField>StockOut</DataField>
+        <Field Name="store_price">
+          <DataField>store_price</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="total_quantity">
-          <DataField>total_quantity</DataField>
+        <Field Name="SubTotal">
+          <DataField>SubTotal</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>DataSet1</rd:DataSetName>
         <rd:SchemaPath>C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\DataSet1.xsd</rd:SchemaPath>
-        <rd:TableName>Inventory_Report</rd:TableName>
+        <rd:TableName>Print_Receipt</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>Inventory_ReportTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>Print_ReceiptTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>0121485f-a4e4-446d-a1d9-504ebc16bda5</rd:ReportID>
+  <rd:ReportID>95dc2ebf-14fb-4e67-95b5-a02957f7c585</rd:ReportID>
 </Report>

@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication4
 {
-    partial class InventoryReport
+    partial class Sales_Report
     {
         /// <summary>
         /// Required designer variable.
@@ -31,51 +31,51 @@
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.Reports = new WindowsFormsApplication4.Reports();
-            this.ProductsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ProductsTableAdapter = new WindowsFormsApplication4.ReportsTableAdapters.ProductsTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.Reports)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductsBindingSource)).BeginInit();
+            this.DataSet1 = new WindowsFormsApplication4.DataSet1();
+            this.Sales_ReportBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.Sales_ReportTableAdapter = new WindowsFormsApplication4.DataSet1TableAdapters.Sales_ReportTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sales_ReportBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "Inventory";
-            reportDataSource1.Value = this.ProductsBindingSource;
+            reportDataSource1.Name = "Sales";
+            reportDataSource1.Value = this.Sales_ReportBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApplication4.Inventory.rdlc";
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "WindowsFormsApplication4.Sales_Report.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(284, 262);
+            this.reportViewer1.Size = new System.Drawing.Size(339, 282);
             this.reportViewer1.TabIndex = 0;
             // 
-            // Reports
+            // DataSet1
             // 
-            this.Reports.DataSetName = "Reports";
-            this.Reports.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.DataSet1.DataSetName = "DataSet1";
+            this.DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // ProductsBindingSource
+            // Sales_ReportBindingSource
             // 
-            this.ProductsBindingSource.DataMember = "Products";
-            this.ProductsBindingSource.DataSource = this.Reports;
+            this.Sales_ReportBindingSource.DataMember = "Sales_Report";
+            this.Sales_ReportBindingSource.DataSource = this.DataSet1;
             // 
-            // ProductsTableAdapter
+            // Sales_ReportTableAdapter
             // 
-            this.ProductsTableAdapter.ClearBeforeFill = true;
+            this.Sales_ReportTableAdapter.ClearBeforeFill = true;
             // 
-            // InventoryReport
+            // Sales_Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(339, 282);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "InventoryReport";
-            this.Text = "InventoryReport";
-            this.Load += new System.EventHandler(this.InventoryReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Reports)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ProductsBindingSource)).EndInit();
+            this.Name = "Sales_Report";
+            this.Text = "Sales_Report";
+            this.Load += new System.EventHandler(this.Sales_Report_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Sales_ReportBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,8 +83,8 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource ProductsBindingSource;
-        private Reports Reports;
-        private ReportsTableAdapters.ProductsTableAdapter ProductsTableAdapter;
+        private System.Windows.Forms.BindingSource Sales_ReportBindingSource;
+        private DataSet1 DataSet1;
+        private DataSet1TableAdapters.Sales_ReportTableAdapter Sales_ReportTableAdapter;
     }
 }

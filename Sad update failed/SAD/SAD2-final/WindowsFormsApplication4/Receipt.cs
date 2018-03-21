@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication4
 {
-    public partial class InventoryReport : Form
+    public partial class Receipt : Form
     {
-        public InventoryReport()
+        public Receipt()
         {
             InitializeComponent();
         }
 
-        private void InventoryReport_Load(object sender, EventArgs e)
+        private void Receipt_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'Reports.Products' table. You can move, or remove it, as needed.
-            this.ProductsTableAdapter.Fill(this.Reports.Products);
+            // TODO: This line of code loads data into the 'DataSet1.Print_Receipt' table. You can move, or remove it, as needed.
+            this.Print_ReceiptTableAdapter.Fill(this.DataSet1.Print_Receipt);
 
             this.reportViewer1.RefreshReport();
         }
