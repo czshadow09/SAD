@@ -69,7 +69,6 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.panel5 = new System.Windows.Forms.Panel();
             this.ordid = new System.Windows.Forms.TextBox();
-            this.usern = new System.Windows.Forms.TextBox();
             this.sales_id = new System.Windows.Forms.TextBox();
             this.quan2 = new System.Windows.Forms.TextBox();
             this.ordid1 = new System.Windows.Forms.TextBox();
@@ -93,6 +92,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
+            this.usern = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -630,8 +630,8 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.GhostWhite;
-            this.panel5.Controls.Add(this.ordid);
             this.panel5.Controls.Add(this.usern);
+            this.panel5.Controls.Add(this.ordid);
             this.panel5.Controls.Add(this.sales_id);
             this.panel5.Controls.Add(this.quan2);
             this.panel5.Controls.Add(this.ordid1);
@@ -651,19 +651,11 @@
             // 
             // ordid
             // 
-            this.ordid.Location = new System.Drawing.Point(467, 0);
+            this.ordid.Location = new System.Drawing.Point(189, 2);
             this.ordid.Name = "ordid";
             this.ordid.Size = new System.Drawing.Size(37, 20);
             this.ordid.TabIndex = 145;
             this.ordid.Visible = false;
-            // 
-            // usern
-            // 
-            this.usern.Location = new System.Drawing.Point(447, 3);
-            this.usern.Name = "usern";
-            this.usern.Size = new System.Drawing.Size(90, 20);
-            this.usern.TabIndex = 148;
-            this.usern.Visible = false;
             // 
             // sales_id
             // 
@@ -1021,6 +1013,14 @@
             this.label21.TabIndex = 154;
             this.label21.Text = "Empty Table";
             // 
+            // usern
+            // 
+            this.usern.Location = new System.Drawing.Point(617, 3);
+            this.usern.Name = "usern";
+            this.usern.Size = new System.Drawing.Size(37, 20);
+            this.usern.TabIndex = 151;
+            this.usern.Visible = false;
+            // 
             // transaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1097,7 +1097,6 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Button refresh;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox date;
         private System.Windows.Forms.Button order;
         private System.Windows.Forms.Button cancel;
         private System.Windows.Forms.TextBox change;
@@ -1124,7 +1123,6 @@
         private System.Windows.Forms.Button morder;
         private System.Windows.Forms.TextBox ordid;
         private System.Windows.Forms.TextBox ordid1;
-        public System.Windows.Forms.TextBox usern;
         private System.Windows.Forms.TextBox quan2;
         private System.Windows.Forms.ComboBox categ;
         private System.Windows.Forms.Label label19;
@@ -1133,5 +1131,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.DataGridView dataGridView4;
+        public System.Windows.Forms.TextBox date;
+        public System.Windows.Forms.TextBox usern;
     }
 }

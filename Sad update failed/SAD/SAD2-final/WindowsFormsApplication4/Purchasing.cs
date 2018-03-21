@@ -230,7 +230,7 @@ namespace WindowsFormsApplication4
 
         private void insQuery()
         {
-            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='rjr');";
+            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='" + usern.Text + "');";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -315,7 +315,7 @@ namespace WindowsFormsApplication4
 
         private void morder_Click(object sender, EventArgs e)
         {
-            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='rjr');";
+            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='" + usern.Text + "');";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);

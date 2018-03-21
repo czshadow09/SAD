@@ -81,6 +81,7 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.monthnum = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.usern = new System.Windows.Forms.TextBox();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -779,6 +780,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.GhostWhite;
+            this.panel2.Controls.Add(this.usern);
             this.panel2.Controls.Add(this.monthnum);
             this.panel2.Controls.Add(this.dataGridView3);
             this.panel2.Controls.Add(this.month);
@@ -794,6 +796,15 @@
             this.panel2.TabIndex = 159;
             this.panel2.Visible = false;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // usern
+            // 
+            this.usern.Location = new System.Drawing.Point(769, 16);
+            this.usern.Margin = new System.Windows.Forms.Padding(2);
+            this.usern.Name = "usern";
+            this.usern.Size = new System.Drawing.Size(52, 20);
+            this.usern.TabIndex = 166;
+            this.usern.Visible = false;
             // 
             // Purchasing
             // 
@@ -894,5 +905,6 @@
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.TextBox monthnum;
         private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.TextBox usern;
     }
 }

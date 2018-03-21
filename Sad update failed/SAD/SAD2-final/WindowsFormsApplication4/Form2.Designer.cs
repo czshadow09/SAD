@@ -276,7 +276,7 @@
             this.inventory1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inventory1.ForeColor = System.Drawing.Color.Black;
             this.inventory1.Location = new System.Drawing.Point(0, 0);
-            this.inventory1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.inventory1.Margin = new System.Windows.Forms.Padding(2);
             this.inventory1.Name = "inventory1";
             this.inventory1.Size = new System.Drawing.Size(1040, 640);
             this.inventory1.TabIndex = 3;
@@ -373,9 +373,9 @@
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private UserControl2 userControl21;
-        private transaction transaction1;
-        private Purchasing purchasing1;
         private inventory inventory1;
         private changeprivacy changeprivacy1;
+        public transaction transaction1;
+        public Purchasing purchasing1;
     }
 }

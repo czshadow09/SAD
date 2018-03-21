@@ -104,6 +104,8 @@ namespace WindowsFormsApplication4
                 String ln = dt.Rows[0][2].ToString();
                 Form2 f = new Form2();
                 f.usern.Text = user;
+                f.transaction1.usern.Text = user;
+                f.purchasing1.usern.Text = user;
                 user = dt.Rows[0][2].ToString() + " "  + dt.Rows[0][1].ToString();
                 id = dt.Rows[0][0].ToString();
                 string dat = dt.Rows[0][4].ToString();

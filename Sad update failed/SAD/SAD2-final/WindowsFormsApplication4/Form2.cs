@@ -15,6 +15,7 @@ namespace WindowsFormsApplication4
     {
         MySqlConnection conn;
         public Form previousform;
+        public static string pass;
         
         public Form2()
         {
@@ -151,6 +152,7 @@ namespace WindowsFormsApplication4
             {
                 inventory1.Enabled = false;
             }
+            pass = usern.Text;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

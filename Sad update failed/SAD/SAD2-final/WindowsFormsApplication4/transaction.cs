@@ -121,7 +121,6 @@ namespace WindowsFormsApplication4
             loadAll2();
             loadAll4();
             subtot.Text = "0.00";
-            date.Text = DateTime.Now.ToString("dd/MM/yyy, HH:mm");
         }
 
         private void firstname_TextChanged(object sender, EventArgs e)
