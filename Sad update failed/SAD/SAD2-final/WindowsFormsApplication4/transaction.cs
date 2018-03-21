@@ -66,10 +66,6 @@ namespace WindowsFormsApplication4
             dataGridView3.Columns["order_id"].HeaderText = "Customer #";
             dataGridView3.Columns["tot_consume"].HeaderText = "Total Amount";
             dataGridView3.Columns["lastname"].HeaderText = "Encoder";
-            if (dt.Rows.Count > 0) {
-                decimal sum = Convert.ToDecimal(dt.Compute("SUM(tot_consume)", string.Empty));
-                purchasetotal.Text = sum.ToString();
-            }
         }
         public void loadAll3()
         {
@@ -87,6 +83,18 @@ namespace WindowsFormsApplication4
             dataGridView4.Columns["store_price"].HeaderText = "Price";
             dataGridView4.Columns["quantity_hand"].HeaderText = "Quantity Hand";
             dataGridView4.Columns["SubTotal"].HeaderText = "Subtotal";
+        }
+
+        public void loadAll4()
+        {
+            string query = "SELECT sum(tot_consume) FROM sales_order WHERE month(order_date) = '" + month.Text + "';";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            purchasetotal.Text = dt.Rows[0][0].ToString();
         }
         private void CreateDataTableColumns()
         {
@@ -111,6 +119,7 @@ namespace WindowsFormsApplication4
             CreateDataTableColumns();
             loadAll();
             loadAll2();
+            loadAll4();
             subtot.Text = "0.00";
             date.Text = DateTime.Now.ToString("dd/MM/yyy, HH:mm");
         }
@@ -424,6 +433,7 @@ namespace WindowsFormsApplication4
             {
                 monthnum.Text = "12";
             }
+            loadAll4();
         }
 
         private void refre_Click(object sender, EventArgs e)
