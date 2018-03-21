@@ -127,7 +127,7 @@
             // usern
             // 
             this.usern.Location = new System.Drawing.Point(96, 84);
-            this.usern.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usern.Margin = new System.Windows.Forms.Padding(4);
             this.usern.Name = "usern";
             this.usern.Size = new System.Drawing.Size(119, 22);
             this.usern.TabIndex = 7;
@@ -136,7 +136,7 @@
             // type
             // 
             this.type.Location = new System.Drawing.Point(96, 42);
-            this.type.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.type.Margin = new System.Windows.Forms.Padding(4);
             this.type.Name = "type";
             this.type.Size = new System.Drawing.Size(119, 22);
             this.type.TabIndex = 6;
@@ -181,7 +181,7 @@
             this.button5.Location = new System.Drawing.Point(27, 472);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(250, 62);
+            this.button5.Size = new System.Drawing.Size(236, 62);
             this.button5.TabIndex = 4;
             this.button5.Text = "   Change Privacy";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
