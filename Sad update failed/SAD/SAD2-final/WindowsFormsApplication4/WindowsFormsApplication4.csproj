@@ -169,12 +169,6 @@
     <Compile Include="prod.Designer.cs">
       <DependentUpon>prod.cs</DependentUpon>
     </Compile>
-    <Compile Include="prodcategory.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="prodcategory.Designer.cs">
-      <DependentUpon>prodcategory.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="purchase list.cs">
@@ -245,10 +239,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="prod.resx">
       <DependentUpon>prod.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="prodcategory.resx">
-      <DependentUpon>prodcategory.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

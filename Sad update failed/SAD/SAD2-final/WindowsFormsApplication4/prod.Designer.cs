@@ -182,7 +182,7 @@
             this.button1.Location = new System.Drawing.Point(81, 545);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(224, 71);
+            this.button1.Size = new System.Drawing.Size(236, 71);
             this.button1.TabIndex = 110;
             this.button1.Text = "Add Measurement";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

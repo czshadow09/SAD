@@ -327,5 +327,10 @@ namespace WindowsFormsApplication4
             executeQuery(query1);
             dataGridView1.Enabled = true;
         }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

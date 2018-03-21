@@ -882,7 +882,6 @@ C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsForms
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\bin\Debug\Microsoft.Build.Utilities.Core.dll
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\bin\Debug\Microsoft.Build.Framework.dll
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\bin\Debug\VSLangProj2.dll
-C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\bin\Debug\MySql.Data.xml
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\bin\Debug\EnvDTE.xml
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\bin\Debug\Microsoft.VisualStudio.TemplateWizardInterface.xml
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\bin\Debug\EnvDTE80.xml
@@ -945,7 +944,6 @@ C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsForms
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Out.resources
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prod.resources
-C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources
 C:\Users\USER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources

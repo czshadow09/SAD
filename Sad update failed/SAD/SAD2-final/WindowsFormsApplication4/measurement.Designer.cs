@@ -75,7 +75,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(12, 29);
+            this.label7.Location = new System.Drawing.Point(1, 29);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(160, 28);
             this.label7.TabIndex = 94;
@@ -100,8 +100,9 @@
             this.Controls.Add(this.Add);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.unit);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Measurement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add measurement";
             this.Load += new System.EventHandler(this.Measurement_Load);
             this.ResumeLayout(false);
