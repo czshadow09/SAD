@@ -450,7 +450,7 @@ namespace WindowsFormsApplication4
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(462, 246);
+            this.label1.Location = new System.Drawing.Point(486, 257);
             this.label1.Margin = new System.Windows.Forms.Padding(2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 37);
@@ -465,7 +465,7 @@ namespace WindowsFormsApplication4
             this.panel1.Controls.Add(this.se);
             this.panel1.Controls.Add(this.search);
             this.panel1.Controls.Add(this.bunifuSeparator1);
-            this.panel1.Location = new System.Drawing.Point(278, 240);
+            this.panel1.Location = new System.Drawing.Point(302, 251);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(476, 308);
@@ -551,7 +551,7 @@ namespace WindowsFormsApplication4
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserControl2";
-            this.Size = new System.Drawing.Size(766, 561);
+            this.Size = new System.Drawing.Size(1379, 561);
             this.Load += new System.EventHandler(this.UserControl2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);

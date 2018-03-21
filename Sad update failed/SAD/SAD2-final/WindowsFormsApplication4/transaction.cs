@@ -477,5 +477,10 @@ namespace WindowsFormsApplication4
             adp.Fill(dt);
             dataGridView1.DataSource = dt;
         }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

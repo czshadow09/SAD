@@ -46,6 +46,22 @@ namespace WindowsFormsApplication4
             loadAll2();
         }
 
+        private void loadAll()
+        {
+            string query = "select so.order_id, p.description, c.name, sum(s.quantity_hand) AS stock_out from sales s inner join product p on s.product_product_id = p.product_id inner join category c on c.cat_id = p.category_cat_id inner join sales_order so on s.sales_order_order_id = so.order_id where p.description = '" + prodname.Text + "';";
+            conn.Open();
+            MySqlCommand com = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(com);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView1.DataSource = dt;
+            dataGridView1.Columns["order_id"].Visible = false;
+            dataGridView1.Columns["description"].HeaderText = "Product Name";
+            dataGridView1.Columns["name"].HeaderText = "Category";
+            dataGridView1.Columns["stock_out"].HeaderText = "Sold";
+        }
+
         public void loadAll2()
         {
             string query = "select p.product_id, p.description, c.name, p.store_price, p.inc, p.cur_price, p.stock_in, p.tot_quantity, p.cost_quantity from product p inner join category c on p.category_cat_id = c.cat_id where p.stock_in > 0;";
@@ -176,6 +192,7 @@ namespace WindowsFormsApplication4
             constant = constant * 0.3;
             cons_quan.Text = constant.ToString();
             Update.Enabled = true;
+            loadAll();
         }
 
         private void sear_Click(object sender, EventArgs e)
