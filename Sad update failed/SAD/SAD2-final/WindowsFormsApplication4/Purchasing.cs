@@ -101,7 +101,7 @@ namespace WindowsFormsApplication4
         }
         public void loadAll3()
         {
-            string query = "select po.plist_id, pr.description, p.purchase_price, p.quantity_sold, p.purchase_price * p.quantity_sold as Subtotal from purchasing p inner join product pr on p.product_product_id = pr.product_id inner join purchase_order po on p.purchase_order_plist_id = po.plist_id where po.plist_id = '" + ordid1.Text + "';";
+            string query = "select po.plist_id, p.description, pr.purchase_price, pr.quantity_sold, pr.purchase_price * pr.quantity_sold as SubTotal from purchasing pr inner join product p on pr.product_product_id = p.product_id inner join purchase_order po on pr.purchase_order_plist_id = po.plist_id where po.plist_id = '" + ordid1.Text + ";'";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -331,6 +331,82 @@ namespace WindowsFormsApplication4
         private void label10_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void month_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (month.Text == "January")
+            {
+                monthnum.Text = "1";
+            }
+            else if (month.Text == "February")
+            {
+                monthnum.Text = "2";
+            }
+            else if (month.Text == "March")
+            {
+                monthnum.Text = "3";
+            }
+            else if (month.Text == "April")
+            {
+                monthnum.Text = "4";
+            }
+            else if (month.Text == "May")
+            {
+                monthnum.Text = "5";
+            }
+            else if (month.Text == "June")
+            {
+                monthnum.Text = "6";
+            }
+            else if (month.Text == "July")
+            {
+                monthnum.Text = "7";
+            }
+            else if (month.Text == "August")
+            {
+                monthnum.Text = "8";
+            }
+            else if (month.Text == "September")
+            {
+                monthnum.Text = "9";
+            }
+            else if (month.Text == "October")
+            {
+                monthnum.Text = "10";
+            }
+            else if (month.Text == "November")
+            {
+                monthnum.Text = "11";
+            }
+            else if (month.Text == "December")
+            {
+                monthnum.Text = "12";
+            }
+            string query = "select po.purchase_date, po.plist_id, po.tot_consume, u.lastname from purchase_order po inner join user u on po.user_user_id = u.user_id where month(po.purchase_date)='" + monthnum.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView3.DataSource = dt;
+            dataGridView4.DataSource = null;
+            dataGridView4.Rows.Clear();
+        }
+
+        private void Year_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string query = "select po.purchase_date, po.plist_id, po.tot_consume, u.lastname from purchase_order po inner join user u on po.user_user_id = u.user_id where year(po.purchase_date)='" + Year.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView3.DataSource = dt;
+            dataGridView4.DataSource = null;
+            dataGridView4.Rows.Clear();
         }
     }
 }

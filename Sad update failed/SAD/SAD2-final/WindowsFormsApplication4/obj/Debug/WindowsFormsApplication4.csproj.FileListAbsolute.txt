@@ -842,7 +842,6 @@ C:\Users\ACER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsForms
 C:\Users\ACER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.inventory.resources
 C:\Users\ACER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Out.resources
 C:\Users\ACER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prod.resources
-C:\Users\ACER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.prodcategory.resources
 C:\Users\ACER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Properties.Resources.resources
 C:\Users\ACER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.purchase_list.resources
 C:\Users\ACER\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Purchasing.resources

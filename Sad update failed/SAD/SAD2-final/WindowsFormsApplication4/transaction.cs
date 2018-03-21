@@ -87,7 +87,7 @@ namespace WindowsFormsApplication4
 
         public void loadAll4()
         {
-            string query = "SELECT sum(tot_consume) FROM sales_order WHERE month(order_date) = '" + month.Text + "';";
+            string query = "SELECT sum(tot_consume) FROM sales_order WHERE month(order_date) = '" + monthnum.Text + "';";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -377,14 +377,6 @@ namespace WindowsFormsApplication4
 
         private void month_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string query = "select o.order_date, o.order_id, o.tot_consume, u.lastname from sales_order o inner join user u on o.user_user_id = u.user_id where month(o.order_date)='" + month.Text + "';";
-            conn.Open();
-            MySqlCommand comm = new MySqlCommand(query, conn);
-            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
-            conn.Close();
-            DataTable dt = new DataTable();
-            adp.Fill(dt);
-            dataGridView3.DataSource = dt;
             if (month.Text == "January")
             {
                 monthnum.Text = "1";
@@ -433,7 +425,17 @@ namespace WindowsFormsApplication4
             {
                 monthnum.Text = "12";
             }
+            string query = "select o.order_date, o.order_id, o.tot_consume, u.lastname from sales_order o inner join user u on o.user_user_id = u.user_id where month(o.order_date)='" + monthnum.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView3.DataSource = dt;
             loadAll4();
+            dataGridView4.DataSource = null;
+            dataGridView4.Rows.Clear();
         }
 
         private void refre_Click(object sender, EventArgs e)
@@ -481,6 +483,26 @@ namespace WindowsFormsApplication4
         private void label16_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Year_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string query = "select o.order_date, o.order_id, o.tot_consume, u.lastname from sales_order o inner join user u on o.user_user_id = u.user_id where year(o.order_date)='" + Year.Text + "';";
+            conn.Open();
+            MySqlCommand comm = new MySqlCommand(query, conn);
+            MySqlDataAdapter adp = new MySqlDataAdapter(comm);
+            conn.Close();
+            DataTable dt = new DataTable();
+            adp.Fill(dt);
+            dataGridView3.DataSource = dt;
+            loadAll4();
+            dataGridView4.DataSource = null;
+            dataGridView4.Rows.Clear();
         }
     }
 }
