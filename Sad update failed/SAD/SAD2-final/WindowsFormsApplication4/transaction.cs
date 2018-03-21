@@ -121,6 +121,7 @@ namespace WindowsFormsApplication4
             loadAll2();
             loadAll4();
             subtot.Text = "0.00";
+            date.Text = DateTime.Now.ToString();
         }
 
         private void firstname_TextChanged(object sender, EventArgs e)
@@ -446,7 +447,7 @@ namespace WindowsFormsApplication4
         {
             Form2 f2 = new Form2();
             string user = f2.usern.Text;
-            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='rjr');";
+            string query = "select u.user_id from user u inner join login l on u.login_login_id = l.login_id where login_login_id = (select login_id from login where username='" + usern.Text + "');";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);

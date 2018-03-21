@@ -939,30 +939,11 @@
             this.categ.Font = new System.Drawing.Font("Cambria", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categ.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.categ.FormattingEnabled = true;
-            this.categ.Items.AddRange(new object[] {
-            "2000",
-            "2001",
-            "2002",
-            "2003",
-            "2004",
-            "2005",
-            "2006",
-            "2007",
-            "2008",
-            "2009",
-            "2010",
-            "2011",
-            "2012",
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017",
-            "2018"});
             this.categ.Location = new System.Drawing.Point(128, 323);
             this.categ.Name = "categ";
             this.categ.Size = new System.Drawing.Size(200, 29);
             this.categ.TabIndex = 150;
+            this.categ.SelectedIndexChanged += new System.EventHandler(this.categ_SelectedIndexChanged);
             // 
             // label19
             // 
