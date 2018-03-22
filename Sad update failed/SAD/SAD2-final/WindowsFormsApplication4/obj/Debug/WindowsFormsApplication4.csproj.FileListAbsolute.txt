@@ -1039,7 +1039,6 @@ C:\Users\rjsreroma\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\Windows
 C:\Users\rjsreroma\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CoreCompileInputs.cache
 C:\Users\rjsreroma\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.exe
 C:\Users\rjsreroma\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.pdb
-C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache
 C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.changeprivacy.resources
 C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form1.resources
 C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Form2.resources
@@ -1126,3 +1125,4 @@ C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\Win
 C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Inventory_Report.resources
 C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Sales_Report.resources
 C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CopyComplete
+C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.hhh.resources

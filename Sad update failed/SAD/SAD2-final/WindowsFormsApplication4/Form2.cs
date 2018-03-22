@@ -22,9 +22,9 @@ namespace WindowsFormsApplication4
             InitializeComponent();
             Form1 f2 = new Form1();
             conn = new MySqlConnection("server=localhost;Database=finalnafinal;uid=root; Pwd = root;");
-            sidepanel.Height = button1.Height;
-            sidepanel.Top = button1.Top;
-            purchasing1.BringToFront();
+            sidepanel.Height = home.Height;
+            sidepanel.Top = home.Top;
+            hhh1.BringToFront();
 
         }
 

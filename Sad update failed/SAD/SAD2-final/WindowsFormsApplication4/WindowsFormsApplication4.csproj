@@ -108,6 +108,12 @@
     <Compile Include="addcategoryp.Designer.cs">
       <DependentUpon>addcategoryp.cs</DependentUpon>
     </Compile>
+    <Compile Include="hhh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="hhh.Designer.cs">
+      <DependentUpon>hhh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inventory_Report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="addcategoryp.resx">
       <DependentUpon>addcategoryp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hhh.resx">
+      <DependentUpon>hhh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inventory.rdlc" />
     <EmbeddedResource Include="Inventory_Report.resx">
