@@ -232,7 +232,7 @@ namespace WindowsFormsApplication4
             this.se.FlatAppearance.BorderSize = 0;
             this.se.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.se.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.se.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.se.ForeColor = System.Drawing.Color.Black;
             this.se.Image = ((System.Drawing.Image)(resources.GetObject("se.Image")));
             this.se.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.se.Location = new System.Drawing.Point(19, 391);
@@ -256,7 +256,7 @@ namespace WindowsFormsApplication4
             // 
             // Add
             // 
-            this.Add.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.Add.BackColor = System.Drawing.Color.Silver;
             this.Add.FlatAppearance.BorderSize = 0;
             this.Add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Add.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -393,7 +393,7 @@ namespace WindowsFormsApplication4
             "Male",
             "Female"});
             this.gender.Location = new System.Drawing.Point(53, 223);
-            this.gender.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gender.Margin = new System.Windows.Forms.Padding(4);
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(340, 35);
             this.gender.TabIndex = 3;
@@ -410,7 +410,7 @@ namespace WindowsFormsApplication4
             "Admin",
             "Employee"});
             this.usertype.Location = new System.Drawing.Point(473, 223);
-            this.usertype.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usertype.Margin = new System.Windows.Forms.Padding(4);
             this.usertype.Name = "usertype";
             this.usertype.Size = new System.Drawing.Size(340, 35);
             this.usertype.TabIndex = 6;
@@ -460,7 +460,7 @@ namespace WindowsFormsApplication4
             this.panel1.Location = new System.Drawing.Point(651, 319);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(639, 491);
+            this.panel1.Size = new System.Drawing.Size(639, 484);
             this.panel1.TabIndex = 125;
             // 
             // dataGridView1
@@ -483,7 +483,7 @@ namespace WindowsFormsApplication4
             this.usereport.FlatAppearance.BorderSize = 0;
             this.usereport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.usereport.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usereport.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.usereport.ForeColor = System.Drawing.Color.White;
             this.usereport.Image = ((System.Drawing.Image)(resources.GetObject("usereport.Image")));
             this.usereport.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.usereport.Location = new System.Drawing.Point(424, 387);
@@ -499,10 +499,10 @@ namespace WindowsFormsApplication4
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.White;
             this.bunifuSeparator1.LineThickness = 1;
             this.bunifuSeparator1.Location = new System.Drawing.Point(427, 419);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
             this.bunifuSeparator1.Size = new System.Drawing.Size(187, 43);
             this.bunifuSeparator1.TabIndex = 108;
