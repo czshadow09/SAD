@@ -208,7 +208,7 @@ namespace WindowsFormsApplication4
 
         private void quan_KeyUp(object sender, KeyEventArgs e)
         {
-            string query = "select format(store_price * '" + quan.Text + "',2) from product where product_id='" + id.Text + "';";
+            string query = "select format(cur_price * '" + quan.Text + "',2) from product where product_id='" + id.Text + "';";
             conn.Open();
             MySqlCommand com = new MySqlCommand(query, conn);
             MySqlDataAdapter adp = new MySqlDataAdapter(com);
@@ -335,7 +335,8 @@ namespace WindowsFormsApplication4
                 executeQuery(query1);
                 MessageBox.Show("Order added." + "\n" + "Payment: " + payment.Text + " \n" + "Change: " + change.Text + "", "Test", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 panel3.Hide();
-                
+                Receipt print = new Receipt();
+                print.Show();
                 refr();
                 loadAll();
                 loadAll2();
@@ -532,7 +533,12 @@ namespace WindowsFormsApplication4
 
         private void print_Click(object sender, EventArgs e)
         {
-            Receipt print = new Receipt();
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Sales_Report print = new Sales_Report();
             print.Show();
         }
     }

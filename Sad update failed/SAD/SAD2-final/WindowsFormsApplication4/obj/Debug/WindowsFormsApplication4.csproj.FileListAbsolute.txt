@@ -1126,3 +1126,4 @@ C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\Win
 C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.Sales_Report.resources
 C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csproj.CopyComplete
 C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.hhh.resources
+C:\Users\Standout. Ace\Documents\GitHub\SAD\Sad update failed\SAD\SAD2-final\WindowsFormsApplication4\obj\Debug\WindowsFormsApplication4.csprojResolveAssemblyReference.cache

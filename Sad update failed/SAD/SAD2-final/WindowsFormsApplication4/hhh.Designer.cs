@@ -52,11 +52,11 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("MineCrafter 3", 54.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.label1.Location = new System.Drawing.Point(241, 180);
+            this.label1.Location = new System.Drawing.Point(149, 172);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(533, 119);
+            this.label1.Size = new System.Drawing.Size(693, 119);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Welcome";
+            this.label1.Text = "Welcome to";
             // 
             // hhh
             // 

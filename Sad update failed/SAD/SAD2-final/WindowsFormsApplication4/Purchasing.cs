@@ -157,16 +157,18 @@ namespace WindowsFormsApplication4
                 decimal purc = Convert.ToDecimal(purchase.Text);
                 int quant = Int32.Parse(packqty.Text);
                 int qua1 = Int32.Parse(quan.Text);
+                decimal qua2 = Convert.ToDecimal(quan.Text);
                 int prod1 = quant * qua1;
                 decimal qua = Convert.ToDecimal(packqty.Text);
                 decimal amount = purc * prod1;
+                decimal amount2 = qua2 * purc;
                 int curq = Int32.Parse(cur_quan.Text);
                 int sum = prod1 + curq;
                 DataRow dr = dt.NewRow();
                 dr["Product"] = prod.Text;
                 dr["Unit"] = unit1.Text;
                 dr["PackQty"] = prod1;
-                dr["TotalPrice"] = amount;
+                dr["TotalPrice"] = amount2;
                 var rowExists = dt.Rows.Find(dr);
                 if(rowExists == null)
                 {

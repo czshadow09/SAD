@@ -45,7 +45,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Update = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.del = new System.Windows.Forms.Button();
             this.price = new System.Windows.Forms.TextBox();
             this.quantity = new System.Windows.Forms.Label();
             this.currentp = new System.Windows.Forms.Label();
@@ -55,12 +54,12 @@
             this.categ = new System.Windows.Forms.ComboBox();
             this.Category = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.print = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.aw = new System.Windows.Forms.TextBox();
-            this.print = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -130,7 +129,7 @@
             this.prodname.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prodname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.prodname.Location = new System.Drawing.Point(139, 84);
-            this.prodname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prodname.Margin = new System.Windows.Forms.Padding(2);
             this.prodname.Name = "prodname";
             this.prodname.Size = new System.Drawing.Size(150, 27);
             this.prodname.TabIndex = 112;
@@ -167,7 +166,7 @@
             this.increase.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.increase.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.increase.Location = new System.Drawing.Point(137, 259);
-            this.increase.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.increase.Margin = new System.Windows.Forms.Padding(2);
             this.increase.Name = "increase";
             this.increase.Size = new System.Drawing.Size(93, 27);
             this.increase.TabIndex = 122;
@@ -217,7 +216,6 @@
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.Update);
             this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.del);
             this.panel2.Controls.Add(this.price);
             this.panel2.Controls.Add(this.quantity);
             this.panel2.Controls.Add(this.currentp);
@@ -226,7 +224,7 @@
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Location = new System.Drawing.Point(4, 38);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(292, 521);
             this.panel2.TabIndex = 127;
@@ -250,7 +248,7 @@
             this.Update.ForeColor = System.Drawing.Color.White;
             this.Update.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Update.Location = new System.Drawing.Point(4, 471);
-            this.Update.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Update.Margin = new System.Windows.Forms.Padding(2);
             this.Update.Name = "Update";
             this.Update.Size = new System.Drawing.Size(113, 37);
             this.Update.TabIndex = 148;
@@ -269,30 +267,13 @@
             this.pictureBox1.TabIndex = 132;
             this.pictureBox1.TabStop = false;
             // 
-            // del
-            // 
-            this.del.BackColor = System.Drawing.Color.Firebrick;
-            this.del.FlatAppearance.BorderSize = 0;
-            this.del.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.del.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.del.ForeColor = System.Drawing.Color.White;
-            this.del.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.del.Location = new System.Drawing.Point(122, 471);
-            this.del.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.del.Name = "del";
-            this.del.Size = new System.Drawing.Size(116, 37);
-            this.del.TabIndex = 147;
-            this.del.Text = "Delete";
-            this.del.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.del.UseVisualStyleBackColor = false;
-            // 
             // price
             // 
             this.price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.price.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.price.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.price.Location = new System.Drawing.Point(158, 221);
-            this.price.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.price.Margin = new System.Windows.Forms.Padding(2);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(72, 27);
             this.price.TabIndex = 119;
@@ -325,7 +306,7 @@
             // 
             this.sear.Image = ((System.Drawing.Image)(resources.GetObject("sear.Image")));
             this.sear.Location = new System.Drawing.Point(286, 600);
-            this.sear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sear.Margin = new System.Windows.Forms.Padding(2);
             this.sear.Name = "sear";
             this.sear.Size = new System.Drawing.Size(41, 33);
             this.sear.TabIndex = 139;
@@ -338,7 +319,7 @@
             this.search.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.search.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.search.Location = new System.Drawing.Point(18, 603);
-            this.search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.search.Margin = new System.Windows.Forms.Padding(2);
             this.search.Name = "search";
             this.search.Size = new System.Drawing.Size(264, 27);
             this.search.TabIndex = 141;
@@ -353,7 +334,7 @@
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.Location = new System.Drawing.Point(6, 471);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 37);
             this.button2.TabIndex = 143;
@@ -397,10 +378,28 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Location = new System.Drawing.Point(302, 38);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(665, 521);
             this.panel1.TabIndex = 150;
+            // 
+            // print
+            // 
+            this.print.BackColor = System.Drawing.Color.Orange;
+            this.print.FlatAppearance.BorderSize = 0;
+            this.print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.print.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.print.ForeColor = System.Drawing.Color.White;
+            this.print.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.print.Location = new System.Drawing.Point(124, 471);
+            this.print.Margin = new System.Windows.Forms.Padding(2);
+            this.print.Name = "print";
+            this.print.Size = new System.Drawing.Size(114, 37);
+            this.print.TabIndex = 156;
+            this.print.Text = "Print";
+            this.print.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.print.UseVisualStyleBackColor = false;
+            this.print.Click += new System.EventHandler(this.print_Click);
             // 
             // dataGridView1
             // 
@@ -409,7 +408,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(345, 46);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -437,7 +436,7 @@
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Menu;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(5, 46);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 24;
@@ -467,24 +466,6 @@
             this.aw.TabIndex = 151;
             this.aw.Visible = false;
             // 
-            // print
-            // 
-            this.print.BackColor = System.Drawing.Color.Orange;
-            this.print.FlatAppearance.BorderSize = 0;
-            this.print.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.print.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.print.ForeColor = System.Drawing.Color.White;
-            this.print.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.print.Location = new System.Drawing.Point(124, 471);
-            this.print.Margin = new System.Windows.Forms.Padding(2);
-            this.print.Name = "print";
-            this.print.Size = new System.Drawing.Size(114, 37);
-            this.print.TabIndex = 156;
-            this.print.Text = "Print";
-            this.print.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.print.UseVisualStyleBackColor = false;
-            this.print.Click += new System.EventHandler(this.print_Click);
-            // 
             // inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -505,7 +486,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "inventory";
             this.Size = new System.Drawing.Size(976, 654);
             this.Load += new System.EventHandler(this.inventory_Load);
@@ -547,7 +528,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox categ;
         private Bunifu.Framework.UI.BunifuCustomLabel Category;
-        private System.Windows.Forms.Button del;
         private System.Windows.Forms.Button Update;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
