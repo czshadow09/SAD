@@ -36,7 +36,7 @@ namespace WindowsFormsApplication4
 
         private void btnuser_TextChanged(object sender, EventArgs e)
         {
-            btnuser.ForeColor = Color.Black;
+            btnuser.ForeColor =Color.Black;
             this.AcceptButton = btnok;
         }
 
